@@ -1,0 +1,55 @@
+** Drc report for touch-panel.kicad_pcb **
+** Created on 2026-09-11T11:35:56+0000 **
+** Report includes: Errors **
+
+** Found 4 DRC violations **
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(163.0000 mm, 244.5000 mm): NPTH pad of MH4
+    @(163.7701 mm, 246.4306 mm): Track [ROW11] on B.Cu, length 1.6307 mm
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(163.0000 mm, 244.5000 mm): NPTH pad of MH4
+    @(163.7701 mm, 246.4306 mm): Track [ROW11] on B.Cu, length 1.6307 mm
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(163.0000 mm, 244.5000 mm): NPTH pad of MH4
+    @(163.7701 mm, 246.4306 mm): Track [ROW11] on B.Cu, length 1.6307 mm
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(163.0000 mm, 244.5000 mm): NPTH pad of MH4
+    @(163.7701 mm, 246.4306 mm): Track [ROW11] on B.Cu, length 1.6307 mm
+
+** Found 7 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(127.2500 mm, 243.1500 mm): Pad 4 [ROW3] of J1 on F.Cu
+    @(131.3625 mm, 129.2500 mm): Track [ROW3] on F.Cu, length 6.4000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(131.3625 mm, 142.0500 mm): Track [ROW5] on F.Cu, length 6.4000 mm
+    @(128.2500 mm, 243.1500 mm): Pad 6 [ROW5] of J1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(137.7625 mm, 161.2500 mm): Track [ROW8] on F.Cu, length 6.4000 mm
+    @(129.7500 mm, 243.1500 mm): Pad 9 [ROW8] of J1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(136.2500 mm, 243.1500 mm): Pad 22 [CSEL0] of J1 on F.Cu
+    @(109.4900 mm, 242.5000 mm): Track [CSEL0] on F.Cu, length 0.5176 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(134.2500 mm, 243.1500 mm): Pad 18 [ROW17] of J1 on F.Cu
+    @(131.3625 mm, 218.8500 mm): Track [ROW17] on F.Cu, length 6.4000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(131.3625 mm, 225.2500 mm): Track [ROW18] on F.Cu, length 6.4000 mm
+    @(134.7500 mm, 243.1500 mm): Pad 19 [ROW18] of J1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(129.2500 mm, 243.1500 mm): Pad 8 [ROW7] of J1 on F.Cu
+    @(147.6501 mm, 156.0616 mm): Track [ROW7] on F.Cu, length 1.8372 mm
+
+** Found 0 Footprint errors **
+
+** End of Report **

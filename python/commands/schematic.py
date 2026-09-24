@@ -2,11 +2,13 @@ import logging
 import os
 import shutil
 import sys
+import tempfile
 import traceback
 import uuid
 from typing import Any, List, Optional
 
 import sexpdata
+from utils.kicad_sch_version import schematic_format
 from utils.sexpr_format import prettify
 
 try:
@@ -176,12 +178,18 @@ class SchematicManager:
                 schematic_uuid = str(uuid.uuid4())
                 # Write with explicit UTF-8 encoding and Unix line endings for cross-platform compatibility
                 with open(output_path, "w", encoding="utf-8", newline="\n") as f:
-                    # KiCad 10 schematic header (matches what eeschema writes for a
-                    # new file). The older 20250114 token is the KiCad 9 format and
-                    # is stale under KiCad 10 (issue #221).
+                    # Stamp the format of the KiCad we are actually running
+                    # under. Hardcoding 20260101 broke every downstream
+                    # kicad-cli call on a KiCad 9 install: eeschema rejects a
+                    # file whose version is newer than itself with a bare
+                    # "Failed to load schematic", and the schematic->board sync
+                    # reads components through `kicad-cli sch export netlist`,
+                    # which then returns nothing and silently adds no
+                    # footprints.
+                    sch_version, generator_version = schematic_format()
                     f.write(
-                        '(kicad_sch (version 20260101) (generator "eeschema")'
-                        ' (generator_version "10.0")\n\n'
+                        f'(kicad_sch (version {sch_version}) (generator "eeschema")'
+                        f' (generator_version "{generator_version}")\n\n'
                     )
                     f.write(f"  (uuid {schematic_uuid})\n\n")
                     f.write('  (paper "A4")\n\n')
@@ -226,22 +234,49 @@ class SchematicManager:
 
     @staticmethod
     def save_schematic(schematic: Any, file_path: str) -> bool:
-        """Save a schematic to file"""
+        """Save a schematic to file, atomically.
+
+        Built in a temp file alongside the target and renamed into place. Both
+        kicad-skip's ``write`` and the prettify pass below open the real path
+        with mode "w", which truncates on open -- so a worker killed between
+        the truncate and the write (the bridge abandoning a timed-out command,
+        a shutdown landing mid-save) left a 0-byte .kicad_sch and every symbol
+        in it was gone. ``os.replace`` is atomic within a filesystem, so the
+        path always holds either the previous schematic or the complete new
+        one, never a partial write.
+        """
+        tmp_path: Optional[str] = None
         try:
+            directory = os.path.dirname(os.path.abspath(file_path))
+            # Same directory as the target: os.replace is only atomic within a
+            # filesystem, and /tmp may be a different mount. The suffix keeps
+            # kicad-skip writing .kicad_sch content, since it infers the format
+            # from the extension.
+            fd, tmp_path = tempfile.mkstemp(
+                dir=directory, prefix=".", suffix=".kicad_sch"
+            )
+            os.close(fd)
+
             # kicad-skip uses write method, not save
-            schematic.write(file_path)
+            schematic.write(tmp_path)
             # kicad-skip emits a semi-minified layout; reformat to KiCad's
             # canonical pretty format so tool writes match eeschema's "Save"
             # and produce minimal, reviewable diffs.
-            with open(file_path, "r", encoding="utf-8") as f:
+            with open(tmp_path, "r", encoding="utf-8") as f:
                 content = f.read()
-            with open(file_path, "w", encoding="utf-8") as f:
+            with open(tmp_path, "w", encoding="utf-8") as f:
                 f.write(prettify(content))
+
+            os.replace(tmp_path, file_path)
+            tmp_path = None
             logger.info(f"Saved schematic to: {file_path}")
             return True
         except Exception as e:
             logger.error(f"Error saving schematic to {file_path}: {e}")
             return False
+        finally:
+            if tmp_path and os.path.exists(tmp_path):
+                os.remove(tmp_path)
 
     @staticmethod
     def get_schematic_metadata(schematic: Any) -> dict[str, Any]:

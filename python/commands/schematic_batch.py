@@ -29,6 +29,7 @@ from commands.schematic_text_utils import (
     _move_property_in_block,
 )
 from commands.wire_manager import WireManager
+from utils.file_io import read_text_preserve_newline, write_text_atomic
 
 logger = logging.getLogger("kicad_interface")
 
@@ -166,7 +167,7 @@ class SchematicBatchCommands:
                     all_pins = locator.get_all_symbol_pins(schematic_file, reference) or {}
 
                     block_text = None
-                    raw_content = schematic_file.read_text(encoding="utf-8")
+                    raw_content, raw_newline = read_text_preserve_newline(schematic_file)
                     block_text, block_start, block_end = _find_placed_symbol_block(
                         raw_content, reference
                     )
@@ -181,7 +182,7 @@ class SchematicBatchCommands:
                             raw_content = (
                                 raw_content[:block_start] + new_block + raw_content[block_end + 1 :]
                             )
-                            schematic_file.write_text(raw_content, encoding="utf-8")
+                            write_text_atomic(schematic_file, raw_content, raw_newline)
                             block_text = new_block
 
                     if block_text:
@@ -333,7 +334,7 @@ class SchematicBatchCommands:
             old_fields = comp_info.get("fields", {})
             use_rotation = new_rotation if new_rotation is not None else old_rotation
 
-            content = sch_file.read_text(encoding="utf-8")
+            content, content_newline = read_text_preserve_newline(sch_file)
             block_text, block_start, block_end = _find_placed_symbol_block(content, reference)
             if block_text is None:
                 return {
@@ -347,7 +348,7 @@ class SchematicBatchCommands:
             if trim_start > 0 and content[trim_start - 1] == "\n":
                 trim_start -= 1
             content = content[:trim_start] + content[block_end + 1 :]
-            sch_file.write_text(content, encoding="utf-8")
+            write_text_atomic(sch_file, content, content_newline)
 
             derived_project_path = _find_project_root(sch_file.parent)
             loader = DynamicSymbolLoader(project_path=derived_project_path)
@@ -689,7 +690,8 @@ class SchematicBatchCommands:
             from sexpdata import Symbol
             from utils.sexpr_format import dumps as kicad_dumps
 
-            data = sexpdata.loads(sch_path.read_text(encoding="utf-8"))
+            source, source_newline = read_text_preserve_newline(sch_path)
+            data = sexpdata.loads(source)
             changed = False
             new_data = []
             for item in data:
@@ -711,7 +713,7 @@ class SchematicBatchCommands:
                         continue
                 new_data.append(item)
             if changed:
-                sch_path.write_text(kicad_dumps(new_data), encoding="utf-8")
+                write_text_atomic(sch_path, kicad_dumps(new_data), source_newline)
         except Exception as e:
             logger.warning(f"replace cleanup failed: {e}")
 

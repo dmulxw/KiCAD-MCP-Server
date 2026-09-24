@@ -1,0 +1,4 @@
+{"method":"initialize","params":{"protocolVersion":"2024-11-05","capabilities":{},"clientInfo":{"name":"diag","version":"1.0"}}}
+{"method":"notifications/initialized"}
+{"method":"tools/call","params":{"name":"open_board","arguments":{"boardPath":"/workspace/projects/touch-panel/touch-panel.kicad_pcb"}}}
+{"method":"tools/call","params":{"name":"check_courtyard_overlaps","arguments":{}}}

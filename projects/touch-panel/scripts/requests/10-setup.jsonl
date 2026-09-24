@@ -1,0 +1,7 @@
+{"method":"initialize","params":{"protocolVersion":"2024-11-05","capabilities":{},"clientInfo":{"name":"touch-panel-pcb","version":"1.0"}}}
+{"method":"notifications/initialized"}
+{"method":"tools/call","params":{"name":"open_board","arguments":{"boardPath":"/workspace/projects/touch-panel/touch-panel.kicad_pcb"}}}
+{"method":"tools/call","params":{"name":"set_design_rules","arguments":{"clearance":0.2,"trackWidth":0.2,"viaDiameter":0.6,"viaDrill":0.3,"minTrackWidth":0.2,"minViaDiameter":0.6,"minViaDrill":0.3,"minHoleDiameter":0.3}}}
+{"method":"tools/call","params":{"name":"set_design_rules","arguments":{"requireCourtyard":false}}}
+{"method":"tools/call","params":{"name":"save_project","arguments":{}}}
+{"method":"tools/call","params":{"name":"get_design_rules","arguments":{}}}

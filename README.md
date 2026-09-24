@@ -1416,7 +1416,7 @@ Automatically route all unconnected nets using the [Freerouting](https://github.
 # 1. Download the Freerouting JAR
 mkdir -p ~/.kicad-mcp
 curl -L -o ~/.kicad-mcp/freerouting.jar \
-  https://github.com/freerouting/freerouting/releases/download/v2.0.1/freerouting-2.0.1-executable.jar
+  https://github.com/freerouting/freerouting/releases/download/v2.4.1/freerouting-2.4.1.jar
 
 # 2. Runtime — pick ONE:
 #    Option A: Docker (recommended, no Java install needed)

@@ -1,0 +1,20 @@
+=== board drawings on copper ===
+=== footprint graphics / zones on copper ===
+=== pads overlapping the bay ===
+   pad J1.3 net=BTN_RST                                       x   10.15..11.85   y   12.23..13.93  
+   pad J1.4 net=BTN_VOL_UP                                    x   10.15..11.85   y   14.77..16.47  
+   pad J1.5 net=BTN_VOL_DN                                    x   10.15..11.85   y   17.31..19.01  
+   pad J1.6 net=I2S_DO                                        x   10.15..11.85   y   19.85..21.55  
+   pad J1.7 net=I2S_DI                                        x   10.15..11.85   y   22.39..24.09  
+   pad J1.8 net=I2S_BCK                                       x   10.15..11.85   y   24.93..26.63  
+   pad J1.9 net=I2S_WS                                        x   10.15..11.85   y   27.47..29.17  
+   pad J2.3 net=IO44                                          x   35.55..37.25   y   12.23..13.93  
+   pad J2.4 net=I2C_SDA                                       x   35.55..37.25   y   14.77..16.47  
+   pad J2.5 net=I2C_SCL                                       x   35.55..37.25   y   17.31..19.01  
+   pad J2.6 net=IO42                                          x   35.55..37.25   y   19.85..21.55  
+   pad J2.7 net=LCD_CS                                        x   35.55..37.25   y   22.39..24.09  
+   pad J2.8 net=LCD_DC                                        x   35.55..37.25   y   24.93..26.63  
+   pad J2.9 net=IO39                                          x   35.55..37.25   y   27.47..29.17  
+=== other footprints whose body box overlaps the bay ===
+   body J1 PinSocket_1x22_P2.54mm_Vertical                    x    9.21..12.79   y    6.21..63.13  
+   body J2 PinSocket_1x22_P2.54mm_Vertical                    x   34.60..38.20   y    6.21..63.13  

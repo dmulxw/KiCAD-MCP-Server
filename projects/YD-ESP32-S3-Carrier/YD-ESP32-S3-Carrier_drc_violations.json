@@ -1,0 +1,27 @@
+{
+  "board": "D:\\source\\repos\\KiCAD-MCP-Server\\projects\\YD-ESP32-S3-Carrier\\YD-ESP32-S3-Carrier.kicad_pcb",
+  "timestamp": "2026-09-23T02:21:46",
+  "total_violations": 1,
+  "total_unconnected": 0,
+  "violation_counts": {
+    "lib_footprint_mismatch": 1
+  },
+  "severity_counts": {
+    "error": 0,
+    "warning": 1,
+    "info": 0
+  },
+  "violations": [
+    {
+      "type": "lib_footprint_mismatch",
+      "severity": "warning",
+      "message": "\u5c01\u88c5 'SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.3mm_ThermalVias' \u4e0e\u5e93 'Package_SO' \u4e2d\u7684\u526f\u672c\u4e0d\u5339\u914d",
+      "location": {
+        "x": 67.244999,
+        "y": 5.845,
+        "unit": "mm"
+      }
+    }
+  ],
+  "unconnected_items": []
+}

@@ -1,0 +1,56 @@
+[2026-09-11 11:14:24,009] [INFO] Using STDIO transport for local communication
+[2026-09-11 11:14:24,011] [INFO] Registering KiCAD tools, resources, and prompts...
+[2026-09-11 11:14:24,012] [INFO] Registering router tools
+[2026-09-11 11:14:24,013] [INFO] Router tools registered successfully
+[2026-09-11 11:14:24,015] [INFO] Registering board management tools
+[2026-09-11 11:14:24,016] [INFO] Board management tools registered
+[2026-09-11 11:14:24,017] [INFO] Registering component management tools
+[2026-09-11 11:14:24,020] [INFO] Component management tools registered
+[2026-09-11 11:14:24,022] [INFO] Registering design rule tools
+[2026-09-11 11:14:24,023] [INFO] Design rule tools registered
+[2026-09-11 11:14:24,024] [INFO] Registering export tools
+[2026-09-11 11:14:24,030] [INFO] Export tools registered
+[2026-09-11 11:14:24,038] [INFO] UI management tools registered
+[2026-09-11 11:14:24,040] [INFO] Registering project resources
+[2026-09-11 11:14:24,040] [INFO] Project resources registered
+[2026-09-11 11:14:24,041] [INFO] Registering board resources
+[2026-09-11 11:14:24,041] [INFO] Board resources registered
+[2026-09-11 11:14:24,042] [INFO] Registering component resources
+[2026-09-11 11:14:24,042] [INFO] Component resources registered
+[2026-09-11 11:14:24,042] [INFO] Registering library resources
+[2026-09-11 11:14:24,043] [INFO] Library resources registered
+[2026-09-11 11:14:24,043] [INFO] Registering component prompts
+[2026-09-11 11:14:24,043] [INFO] Component prompts registered
+[2026-09-11 11:14:24,044] [INFO] Registering routing prompts
+[2026-09-11 11:14:24,044] [INFO] Routing prompts registered
+[2026-09-11 11:14:24,044] [INFO] Registering design prompts
+[2026-09-11 11:14:24,048] [INFO] Design prompts registered
+[2026-09-11 11:14:24,048] [INFO] Registering footprint prompts
+[2026-09-11 11:14:24,048] [INFO] All KiCAD tools, resources, and prompts registered
+[2026-09-11 11:14:24,049] [INFO] Starting KiCAD MCP server...
+[2026-09-11 11:14:24,049] [INFO] Connecting MCP server to STDIO transport...
+[2026-09-11 11:14:24,049] [INFO] Successfully connected to STDIO transport
+[2026-09-11 11:14:24,049] [INFO] Starting Python process with script: /workspace/python/kicad_interface.py
+[2026-09-11 11:14:24,050] [INFO] Using KICAD_PYTHON environment variable: /opt/kicad-mcp-venv/bin/python
+[2026-09-11 11:14:24,050] [INFO] Using Python executable: /opt/kicad-mcp-venv/bin/python
+[2026-09-11 11:14:24,052] [INFO] Validating pcbnew module access...
+{"result":{"protocolVersion":"2024-11-05","capabilities":{"tools":{"listChanged":true},"resources":{"listChanged":true},"prompts":{"listChanged":true}},"serverInfo":{"name":"kicad-mcp-server","version":"2.7.0","description":"MCP server for KiCAD PCB design operations"}},"jsonrpc":"2.0","id":1}
+[2026-09-11 11:14:24,282] [INFO] ✓ pcbnew module validated successfully
+[2026-09-11 11:14:24,285] [INFO] Waiting for Python process to be ready...
+[2026-09-11 11:14:25,598] [INFO] Python process READY — stdin loop is live
+[2026-09-11 11:14:25,598] [INFO] Python process is ready.
+[2026-09-11 11:14:25,599] [INFO] Sending warm-up command (background)...
+[2026-09-11 11:14:25,608] [INFO] Warm-up succeeded: pcbnew 9.0.9 (0s)
+[2026-09-11 11:14:25,608] [INFO] Warm-up complete — pcbnew/wxApp initialised
+KiCAD MCP SERVER READY
+[2026-09-11 11:14:25,608] [INFO] KiCAD MCP server started and ready
+[2026-09-11 11:14:25,609] [INFO] KiCAD MCP server started with STDIO transport
+{"result":{"content":[{"type":"text","text":"{\n  \"success\": true,\n  \"message\": \"Opened board: touch-panel.kicad_pcb\",\n  \"boardPath\": \"/workspace/projects/touch-panel/touch-panel.kicad_pcb\",\n  \"sessionBackend\": \"swig\",\n  \"_backend\": \"swig\",\n  \"_realtime\": false\n}"}]},"jsonrpc":"2.0","id":2}
+[2026-09-11 11:14:36,263] [INFO] Using extended timeout (1020s) for command: autoroute
+{"result":{"content":[{"type":"text","text":"{\n  \"success\": false,\n  \"message\": \"All Freerouting attempts failed\",\n  \"errorDetails\": \"No attempt produced a usable SES file\",\n  \"elapsed_seconds\": 0.4,\n  \"attempts\": [\n    {\n      \"attempt\": 1,\n      \"max_passes\": 50,\n      \"elapsed_seconds\": 0.1,\n      \"ok\": false,\n      \"exit_code\": 1,\n      \"exit_reason\": \"nonzero exit\",\n      \"stderr\": \"Error: LinkageError occurred while loading main class app.freerouting.Freerouting\\n\\tjava.lang.UnsupportedClassVersionError: app/freerouting/Freerouting has been compiled by a more recent version of the\"\n    },\n    {\n      \"attempt\": 2,\n      \"max_passes\": 60,\n      \"elapsed_seconds\": 0.1,\n      \"ok\": false,\n      \"exit_code\": 1,\n      \"exit_reason\": \"nonzero exit\",\n      \"stderr\": \"Error: LinkageError occurred while loading main class app.freerouting.Freerouting\\n\\tjava.lang.UnsupportedClassVersionError: app/freerouting/Freerouting has been compiled by a more recent version of the\"\n    },\n    {\n      \"attempt\": 3,\n      \"max_passes\": 65,\n      \"elapsed_seconds\": 0.1,\n      \"ok\": false,\n      \"exit_code\": 1,\n      \"exit_reason\": \"nonzero exit\",\n      \"stderr\": \"Error: LinkageError occurred while loading main class app.freerouting.Freerouting\\n\\tjava.lang.UnsupportedClassVersionError: app/freerouting/Freerouting has been compiled by a more recent version of the\"\n    }\n  ],\n  \"_backend\": \"swig\",\n  \"_realtime\": false\n}"}]},"jsonrpc":"2.0","id":3}
+{"result":{"content":[{"type":"text","text":"{\n  \"success\": true,\n  \"message\": \"Saved project to: /workspace/projects/touch-panel/touch-panel.kicad_pcb\",\n  \"project\": {\n    \"name\": \"touch-panel\",\n    \"path\": \"/workspace/projects/touch-panel/touch-panel.kicad_pcb\"\n  },\n  \"_backend\": \"swig\",\n  \"_realtime\": false\n}"}]},"jsonrpc":"2.0","id":4}
+[2026-09-11 11:14:37,862] [INFO] process.stdin closed. Shutting down...
+[2026-09-11 11:14:37,862] [INFO] Shutting down KiCAD MCP server...
+[2026-09-11 11:14:37,862] [INFO] Stopping KiCAD MCP server...
+[2026-09-11 11:14:37,863] [INFO] KiCAD MCP server stopped
+[2026-09-11 11:14:37,863] [INFO] Server shutdown complete. Exiting...

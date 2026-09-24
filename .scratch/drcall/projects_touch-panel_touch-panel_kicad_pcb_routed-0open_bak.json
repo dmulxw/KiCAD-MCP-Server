@@ -1,0 +1,2498 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-11T17:20:25+0000",
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "9.0.9",
+    "schematic_parity": [],
+    "source": "probe.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [ROW1] on F.Cu, length 2.0574 mm",
+                    "pos": {
+                        "x": 115.3428,
+                        "y": 117.5011
+                    },
+                    "uuid": "a74b05a9-5cbc-4be3-928f-74a37138ab64"
+                },
+                {
+                    "description": "Pad 2 [ROW1] of J1 on F.Cu",
+                    "pos": {
+                        "x": 126.25,
+                        "y": 243.15
+                    },
+                    "uuid": "e16b9a85-7480-49a3-9396-5b867946dbc0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL1] on F.Cu, length 0.1129 mm",
+                    "pos": {
+                        "x": 113.2546,
+                        "y": 238.3704
+                    },
+                    "uuid": "36ebeaa3-e2a4-43d8-8f4a-13d562e05bd3"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL1] on F.Cu, length 0.1204 mm",
+                    "pos": {
+                        "x": 113.2546,
+                        "y": 238.25
+                    },
+                    "uuid": "4251d3e2-382d-4749-bcf3-34ddcfa5c2fa"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL1] on F.Cu, length 2.2166 mm",
+                    "pos": {
+                        "x": 113.2546,
+                        "y": 235.8872
+                    },
+                    "uuid": "66e7db9a-d449-49ff-b10d-e9a5b3d6d34f"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL1] on F.Cu, length 2.5932 mm",
+                    "pos": {
+                        "x": 114.8973,
+                        "y": 217.5277
+                    },
+                    "uuid": "7d5847f6-031a-495b-bed5-c87546472ca3"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL1] on F.Cu, length 0.5628 mm",
+                    "pos": {
+                        "x": 113.2008,
+                        "y": 235.3244
+                    },
+                    "uuid": "b2108cb1-7b0e-488f-b8c9-a6a42f8acf64"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL1] on F.Cu, length 0.4429 mm",
+                    "pos": {
+                        "x": 114.8973,
+                        "y": 217.0848
+                    },
+                    "uuid": "d0ce2d80-5f38-4ee6-a152-f8e938c0ea48"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL2] on F.Cu, length 0.0375 mm",
+                    "pos": {
+                        "x": 119.4636,
+                        "y": 161.7239
+                    },
+                    "uuid": "303f7b6b-ec61-4e33-97f7-01e582da4ad3"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL2] on F.Cu, length 0.7030 mm",
+                    "pos": {
+                        "x": 119.9607,
+                        "y": 212.4268
+                    },
+                    "uuid": "85ed5f41-4bbb-4c8e-9a11-c7143e213450"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL2] on F.Cu, length 0.7029 mm",
+                    "pos": {
+                        "x": 119.9606,
+                        "y": 161.2269
+                    },
+                    "uuid": "9da62135-7fdf-49d1-a1f0-90fef256895d"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL2] on F.Cu, length 0.0375 mm",
+                    "pos": {
+                        "x": 119.4636,
+                        "y": 212.9239
+                    },
+                    "uuid": "a462bef7-cc24-4756-b501-e18ddae382c7"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL2] on F.Cu, length 0.0375 mm",
+                    "pos": {
+                        "x": 119.4636,
+                        "y": 123.3239
+                    },
+                    "uuid": "a472545f-6328-4cbf-989a-94282ac8838f"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL2] on F.Cu, length 0.7617 mm",
+                    "pos": {
+                        "x": 121.1379,
+                        "y": 172.1254
+                    },
+                    "uuid": "abe081fb-fe8a-4607-859e-956e1fd55dc4"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL2] on F.Cu, length 2.3678 mm",
+                    "pos": {
+                        "x": 121.1379,
+                        "y": 172.8871
+                    },
+                    "uuid": "e4393a45-2c77-459a-894b-3887e2a7840c"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL2] on F.Cu, length 0.7029 mm",
+                    "pos": {
+                        "x": 119.9606,
+                        "y": 122.8269
+                    },
+                    "uuid": "ed3116c9-719d-40a2-818f-0ecb703fb182"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL7] on F.Cu, length 0.7617 mm",
+                    "pos": {
+                        "x": 153.1379,
+                        "y": 133.7254
+                    },
+                    "uuid": "35803e9f-8d10-4b27-b078-1c580c8036da"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL7] on F.Cu, length 2.3678 mm",
+                    "pos": {
+                        "x": 153.1379,
+                        "y": 134.4871
+                    },
+                    "uuid": "f1b7f0d5-e6c7-44cd-a1ee-c6a652d7e96a"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL9] on F.Cu, length 0.0375 mm",
+                    "pos": {
+                        "x": 164.2636,
+                        "y": 129.7239
+                    },
+                    "uuid": "0683d866-1352-492a-aa16-c96d5754eb40"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL9] on F.Cu, length 0.7029 mm",
+                    "pos": {
+                        "x": 164.7606,
+                        "y": 206.0269
+                    },
+                    "uuid": "1b99d7e6-e6f9-4057-b694-172e5b5449fa"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL9] on F.Cu, length 0.0375 mm",
+                    "pos": {
+                        "x": 164.2636,
+                        "y": 219.3239
+                    },
+                    "uuid": "21348101-f2f2-4ffc-900c-cdf62c1bdda8"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL9] on F.Cu, length 0.7029 mm",
+                    "pos": {
+                        "x": 164.7606,
+                        "y": 167.6269
+                    },
+                    "uuid": "2c467d57-2238-4593-a3d4-178c75d1233d"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL9] on F.Cu, length 0.0375 mm",
+                    "pos": {
+                        "x": 164.2636,
+                        "y": 206.5239
+                    },
+                    "uuid": "2fcff7e2-152d-4817-9396-2c763d35a25a"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL9] on F.Cu, length 0.0375 mm",
+                    "pos": {
+                        "x": 164.2636,
+                        "y": 168.1239
+                    },
+                    "uuid": "3208c238-26bb-4ae7-a628-ea701f2334c8"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL9] on F.Cu, length 0.0375 mm",
+                    "pos": {
+                        "x": 164.2636,
+                        "y": 148.9239
+                    },
+                    "uuid": "34218717-00b2-4135-8e18-f0c1ae280bee"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL9] on F.Cu, length 0.0376 mm",
+                    "pos": {
+                        "x": 165.7049,
+                        "y": 211.4825
+                    },
+                    "uuid": "39fae38f-592e-4e89-9086-24776b1c05db"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL9] on F.Cu, length 2.0383 mm",
+                    "pos": {
+                        "x": 165.7049,
+                        "y": 211.5201
+                    },
+                    "uuid": "3b260f62-3217-4432-aece-7f2944f1883c"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL9] on F.Cu, length 2.0384 mm",
+                    "pos": {
+                        "x": 165.705,
+                        "y": 217.8825
+                    },
+                    "uuid": "4685cbcc-e9ff-4814-a09a-e6360cb0d3c4"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL9] on F.Cu, length 0.0375 mm",
+                    "pos": {
+                        "x": 164.2636,
+                        "y": 200.1239
+                    },
+                    "uuid": "4bdcf09b-c5ba-4587-a979-0f9c25282e1c"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL9] on F.Cu, length 0.7029 mm",
+                    "pos": {
+                        "x": 164.7606,
+                        "y": 135.6269
+                    },
+                    "uuid": "4d5133d7-3cc0-4e12-8d02-f0146bb044cb"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL9] on F.Cu, length 2.0383 mm",
+                    "pos": {
+                        "x": 165.7049,
+                        "y": 173.1201
+                    },
+                    "uuid": "553c3d52-6473-4971-8e66-d28ef655e4c3"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL9] on F.Cu, length 1.3643 mm",
+                    "pos": {
+                        "x": 165.2283,
+                        "y": 224.7967
+                    },
+                    "uuid": "5f7bbdbb-1f6a-4fcc-af30-9922a0212162"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL9] on F.Cu, length 1.4783 mm",
+                    "pos": {
+                        "x": 165.3089,
+                        "y": 199.0786
+                    },
+                    "uuid": "71077098-9f0e-4a38-9c94-ec025fd7af93"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL9] on F.Cu, length 0.0375 mm",
+                    "pos": {
+                        "x": 164.2636,
+                        "y": 187.3239
+                    },
+                    "uuid": "7f6c29a3-4372-492a-833d-830b6f3b2476"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL9] on F.Cu, length 2.0384 mm",
+                    "pos": {
+                        "x": 165.705,
+                        "y": 179.4825
+                    },
+                    "uuid": "8dea9aaa-3cd3-4975-8900-7607c4dbd29c"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL9] on F.Cu, length 0.7029 mm",
+                    "pos": {
+                        "x": 164.7606,
+                        "y": 238.0269
+                    },
+                    "uuid": "910b0120-227b-4e81-8ba7-1edb5407e9d3"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL9] on F.Cu, length 0.7029 mm",
+                    "pos": {
+                        "x": 164.7606,
+                        "y": 129.2269
+                    },
+                    "uuid": "93ee44b6-36fc-4324-8d62-80ae2a5a624c"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL9] on F.Cu, length 2.0384 mm",
+                    "pos": {
+                        "x": 165.705,
+                        "y": 185.8825
+                    },
+                    "uuid": "98a628bd-07d1-4d6b-8536-15b51e466ff4"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL9] on F.Cu, length 0.0375 mm",
+                    "pos": {
+                        "x": 164.2636,
+                        "y": 136.1239
+                    },
+                    "uuid": "b2baba8f-7f90-4b92-b99a-87e51c02be93"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL9] on F.Cu, length 0.0376 mm",
+                    "pos": {
+                        "x": 165.7049,
+                        "y": 173.0825
+                    },
+                    "uuid": "c2034924-3a55-42eb-a867-e282b9bd5655"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL9] on F.Cu, length 0.7029 mm",
+                    "pos": {
+                        "x": 164.7606,
+                        "y": 161.2269
+                    },
+                    "uuid": "c5e87bf1-e84f-4d5e-9263-1265519b201f"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL9] on F.Cu, length 0.0375 mm",
+                    "pos": {
+                        "x": 164.2636,
+                        "y": 161.7239
+                    },
+                    "uuid": "cab6f6d5-d355-47d3-94cc-37fc5f9afa1e"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL9] on F.Cu, length 2.0384 mm",
+                    "pos": {
+                        "x": 165.705,
+                        "y": 147.4825
+                    },
+                    "uuid": "cff6dd16-431c-4015-88c8-c4bef845884b"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL9] on F.Cu, length 0.0375 mm",
+                    "pos": {
+                        "x": 164.2636,
+                        "y": 238.5239
+                    },
+                    "uuid": "dc7e46db-dd79-484a-829a-82e001f31141"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL9] on F.Cu, length 0.0375 mm",
+                    "pos": {
+                        "x": 164.2636,
+                        "y": 180.9239
+                    },
+                    "uuid": "fca43ecb-d981-44fd-8ead-050c8f93dd95"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL9] on F.Cu, length 0.7007 mm",
+                    "pos": {
+                        "x": 165.705,
+                        "y": 224.2825
+                    },
+                    "uuid": "ff04447f-6433-491d-8d00-4b01776f7d6e"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL6] on F.Cu, length 0.7029 mm",
+                    "pos": {
+                        "x": 145.5606,
+                        "y": 161.2269
+                    },
+                    "uuid": "550651b0-8447-42cc-ac8c-f773e1f95c98"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL6] on F.Cu, length 0.0761 mm",
+                    "pos": {
+                        "x": 145.2008,
+                        "y": 122.85
+                    },
+                    "uuid": "b0434c64-26ef-453e-abd3-e4b4ab09d583"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL6] on F.Cu, length 2.7130 mm",
+                    "pos": {
+                        "x": 145.2008,
+                        "y": 120.137
+                    },
+                    "uuid": "bb3b046e-d0f9-4f40-bde2-d5894820e257"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL6] on F.Cu, length 0.1129 mm",
+                    "pos": {
+                        "x": 145.2546,
+                        "y": 123.1704
+                    },
+                    "uuid": "edd37fac-787f-46c6-b8f4-92804749a1d2"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL6] on F.Cu, length 0.2093 mm",
+                    "pos": {
+                        "x": 145.2116,
+                        "y": 187.2134
+                    },
+                    "uuid": "ef39a215-e05d-40ce-9518-a9440b84b172"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL6] on F.Cu, length 0.0375 mm",
+                    "pos": {
+                        "x": 145.0636,
+                        "y": 161.7239
+                    },
+                    "uuid": "f88052f3-7713-48fa-8838-31ad1f9ff801"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL6] on F.Cu, length 0.1204 mm",
+                    "pos": {
+                        "x": 145.2546,
+                        "y": 123.05
+                    },
+                    "uuid": "fef564bd-04fc-49c6-a5de-67f33dffbc49"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL6] on F.Cu, length 2.2880 mm",
+                    "pos": {
+                        "x": 145.2116,
+                        "y": 184.9254
+                    },
+                    "uuid": "ff8a813a-a9f1-4dab-9d3c-84dde467628f"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL4] on F.Cu, length 0.7030 mm",
+                    "pos": {
+                        "x": 132.7607,
+                        "y": 206.0268
+                    },
+                    "uuid": "144d0969-7745-469b-9f9d-8422d38f8a9a"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL4] on F.Cu, length 0.0375 mm",
+                    "pos": {
+                        "x": 132.2636,
+                        "y": 206.5239
+                    },
+                    "uuid": "190aa4f2-2e51-4c99-b6ba-7f271b509e65"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL0] on F.Cu, length 0.0761 mm",
+                    "pos": {
+                        "x": 106.8546,
+                        "y": 238.1038
+                    },
+                    "uuid": "3a91ab39-632b-4941-8359-a2cde2895cc9"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL0] on F.Cu, length 0.1129 mm",
+                    "pos": {
+                        "x": 106.8546,
+                        "y": 238.3704
+                    },
+                    "uuid": "6caea72a-dd0d-4177-b6d5-29e571c4cf71"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL0] on F.Cu, length 2.9645 mm",
+                    "pos": {
+                        "x": 106.8008,
+                        "y": 238.05
+                    },
+                    "uuid": "6d4ff1e7-aa31-48fc-aac8-89efd30de447"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL0] on F.Cu, length 0.1204 mm",
+                    "pos": {
+                        "x": 106.8546,
+                        "y": 238.25
+                    },
+                    "uuid": "c1ea6fd5-102c-4a87-8377-553cef4e0087"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL3] on F.Cu, length 0.0110 mm",
+                    "pos": {
+                        "x": 125.8636,
+                        "y": 116.9504
+                    },
+                    "uuid": "d7fe2d99-8605-472e-9dd9-75c738a50b8b"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL5] on F.Cu, length 2.3678 mm",
+                    "pos": {
+                        "x": 140.3379,
+                        "y": 166.4871
+                    },
+                    "uuid": "722b3224-99a4-48c3-975b-dd364a098ddf"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL5] on F.Cu, length 2.3678 mm",
+                    "pos": {
+                        "x": 140.3379,
+                        "y": 172.8871
+                    },
+                    "uuid": "c883fa9c-0081-4d69-9038-cc3118c20fde"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL5] on F.Cu, length 0.7617 mm",
+                    "pos": {
+                        "x": 140.3379,
+                        "y": 165.7254
+                    },
+                    "uuid": "d958c8ae-723e-46a1-8bba-1522525e31f2"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL5] on F.Cu, length 0.7617 mm",
+                    "pos": {
+                        "x": 140.3379,
+                        "y": 172.1254
+                    },
+                    "uuid": "d9ca0e3b-7593-4da4-935e-cc32650e2a39"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL8] on F.Cu, length 0.6751 mm",
+                    "pos": {
+                        "x": 164.5139,
+                        "y": 245.6734
+                    },
+                    "uuid": "4f92c999-4c9e-49cd-8f76-dc3ce981563a"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [COL8] on F.Cu, length 0.8383 mm",
+                    "pos": {
+                        "x": 165.1067,
+                        "y": 245.0806
+                    },
+                    "uuid": "a4484f04-0fa3-4b65-ad29-12e18d499ff2"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [ROW6] on F.Cu, length 0.0375 mm",
+                    "pos": {
+                        "x": 157.8636,
+                        "y": 149.8761
+                    },
+                    "uuid": "1e317ed5-eb74-4b55-b03d-3a76fc1cfb25"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [ROW6] on F.Cu, length 0.7274 mm",
+                    "pos": {
+                        "x": 158.378,
+                        "y": 150.3904
+                    },
+                    "uuid": "384d1954-050a-406d-968e-89e0740becb0"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [GND] on F.Cu, length 0.0375 mm",
+                    "pos": {
+                        "x": 150.9636,
+                        "y": 247.3239
+                    },
+                    "uuid": "0dec3102-a870-4082-ab00-5abd447dba4b"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [GND] on F.Cu, length 0.0375 mm",
+                    "pos": {
+                        "x": 119.9636,
+                        "y": 247.3239
+                    },
+                    "uuid": "4081411d-a9c1-41c1-bce2-1e1fd7c6ac05"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [GND] on F.Cu, length 0.5285 mm",
+                    "pos": {
+                        "x": 120.3373,
+                        "y": 246.9502
+                    },
+                    "uuid": "504951f4-a278-4132-b06a-e71eb34a0583"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (board setup constraints min width 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [GND] on F.Cu, length 0.5285 mm",
+                    "pos": {
+                        "x": 151.3373,
+                        "y": 246.9502
+                    },
+                    "uuid": "6011e29a-6a6a-4279-8d40-63c7ec7b92ee"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Footprint 'MountingHole_2.7mm' does not match copy in library 'MountingHole'.",
+            "items": [
+                {
+                    "description": "Footprint MH4",
+                    "pos": {
+                        "x": 163.0,
+                        "y": 244.5
+                    },
+                    "uuid": "126cb74f-1e57-4c24-a870-30ff17a5bc69"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'MountingHole_2.7mm' does not match copy in library 'MountingHole'.",
+            "items": [
+                {
+                    "description": "Footprint MH3",
+                    "pos": {
+                        "x": 163.0,
+                        "y": 105.5
+                    },
+                    "uuid": "1e95bbe5-0e2e-4b54-9673-da7d144ee89d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'touch-panel'.",
+            "items": [
+                {
+                    "description": "Footprint TP4",
+                    "pos": {
+                        "x": 125.9,
+                        "y": 175.0
+                    },
+                    "uuid": "1eb7c95a-ed2b-4d9e-b4b3-a8d003656c63"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'touch-panel'.",
+            "items": [
+                {
+                    "description": "Footprint TP5",
+                    "pos": {
+                        "x": 132.3,
+                        "y": 175.0
+                    },
+                    "uuid": "38eef59b-6439-4f1b-a033-86f1415049cf"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'touch-panel'.",
+            "items": [
+                {
+                    "description": "Footprint TP9",
+                    "pos": {
+                        "x": 157.9,
+                        "y": 175.0
+                    },
+                    "uuid": "424971d0-130b-4d78-ab8e-4997c4c4f438"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Footprint 'MountingHole_2.7mm' does not match copy in library 'MountingHole'.",
+            "items": [
+                {
+                    "description": "Footprint MH2",
+                    "pos": {
+                        "x": 108.0,
+                        "y": 244.5
+                    },
+                    "uuid": "5a5c77f1-5ba3-4d44-b2e4-17392dfc5db8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'touch-panel'.",
+            "items": [
+                {
+                    "description": "Footprint TP2",
+                    "pos": {
+                        "x": 113.1,
+                        "y": 175.0
+                    },
+                    "uuid": "82a7d8d9-b7b3-4d6d-bb5e-34664bcafc5f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'touch-panel'.",
+            "items": [
+                {
+                    "description": "Footprint TP1",
+                    "pos": {
+                        "x": 106.7,
+                        "y": 175.0
+                    },
+                    "uuid": "9cc06e79-b3ec-405c-96e6-f0acf59f99b4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'touch-panel'.",
+            "items": [
+                {
+                    "description": "Footprint TP10",
+                    "pos": {
+                        "x": 164.3,
+                        "y": 175.0
+                    },
+                    "uuid": "ac10b1a2-8d2f-4631-be49-d76c2dac08f5"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'touch-panel'.",
+            "items": [
+                {
+                    "description": "Footprint TP7",
+                    "pos": {
+                        "x": 145.1,
+                        "y": 175.0
+                    },
+                    "uuid": "b3f071da-b5f3-4c07-93ad-241aa4960ff7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'touch-panel'.",
+            "items": [
+                {
+                    "description": "Footprint TP6",
+                    "pos": {
+                        "x": 138.7,
+                        "y": 175.0
+                    },
+                    "uuid": "b5d478fc-bc47-4cbe-877b-80bd1e8f5272"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'touch-panel'.",
+            "items": [
+                {
+                    "description": "Footprint TP8",
+                    "pos": {
+                        "x": 151.5,
+                        "y": 175.0
+                    },
+                    "uuid": "d080f447-6359-4f9f-9c0f-3267157b86b7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Footprint 'MountingHole_2.7mm' does not match copy in library 'MountingHole'.",
+            "items": [
+                {
+                    "description": "Footprint MH1",
+                    "pos": {
+                        "x": 108.0,
+                        "y": 105.5
+                    },
+                    "uuid": "da021ba8-edd5-45ab-ae7f-869391d54543"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'touch-panel'.",
+            "items": [
+                {
+                    "description": "Footprint TP3",
+                    "pos": {
+                        "x": 119.5,
+                        "y": 175.0
+                    },
+                    "uuid": "f7dbd2e8-2f0f-46ed-9e26-e54485d62b71"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of MH4",
+                    "pos": {
+                        "x": 163.0,
+                        "y": 244.5
+                    },
+                    "uuid": "b4c92551-39b0-404f-9e73-ec68305e6755"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of MH3",
+                    "pos": {
+                        "x": 163.0,
+                        "y": 105.5
+                    },
+                    "uuid": "b0f80799-b0ed-4fd4-8225-f1e5d8232eef"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of TP4",
+                    "pos": {
+                        "x": 125.9,
+                        "y": 173.73
+                    },
+                    "uuid": "f53ecf5c-ec68-49ad-abd2-2abbe55a7b31"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of TP5",
+                    "pos": {
+                        "x": 132.3,
+                        "y": 173.73
+                    },
+                    "uuid": "79afb2c9-e23e-47ae-ada0-34b784e3b678"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of TP9",
+                    "pos": {
+                        "x": 157.9,
+                        "y": 173.73
+                    },
+                    "uuid": "f62fda94-6b97-4b6c-8d39-4a1386922f33"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of MH2",
+                    "pos": {
+                        "x": 108.0,
+                        "y": 244.5
+                    },
+                    "uuid": "bfd5625e-e9b2-4f9f-a425-144e12e107ad"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of TP2",
+                    "pos": {
+                        "x": 113.1,
+                        "y": 173.73
+                    },
+                    "uuid": "25f29d9c-8fba-4e96-a4c7-70efc0ff53fd"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of TP1",
+                    "pos": {
+                        "x": 106.7,
+                        "y": 173.73
+                    },
+                    "uuid": "87bc6481-e19e-44d3-8af2-1ddeea01f901"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of TP10",
+                    "pos": {
+                        "x": 164.3,
+                        "y": 173.73
+                    },
+                    "uuid": "3e7b6147-f692-426b-9b37-a2046c0449a3"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of TP7",
+                    "pos": {
+                        "x": 145.1,
+                        "y": 173.73
+                    },
+                    "uuid": "ac99c347-4a32-4050-9782-9aca4c5a2497"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of TP6",
+                    "pos": {
+                        "x": 138.7,
+                        "y": 173.73
+                    },
+                    "uuid": "e10448c2-8afe-492a-948e-49154c05e837"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of TP8",
+                    "pos": {
+                        "x": 151.5,
+                        "y": 173.73
+                    },
+                    "uuid": "51caf50c-f7cb-4066-b574-b943810f95ea"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of MH1",
+                    "pos": {
+                        "x": 108.0,
+                        "y": 105.5
+                    },
+                    "uuid": "b06db283-7146-409b-abcd-2db03e706166"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of Q219",
+                    "pos": {
+                        "x": 163.0,
+                        "y": 245.4
+                    },
+                    "uuid": "428e7550-86a9-43d9-b9b1-92dca3a52aec"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of Q212",
+                    "pos": {
+                        "x": 108.0,
+                        "y": 245.4
+                    },
+                    "uuid": "befacae6-e0ae-4a83-af0f-9bae22614282"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of TP3",
+                    "pos": {
+                        "x": 119.5,
+                        "y": 173.73
+                    },
+                    "uuid": "d595c5fa-cfec-4ca6-b7e6-3ffbe47bb36a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Segment of Q109 on F.Silkscreen",
+                    "pos": {
+                        "x": 157.14,
+                        "y": 173.44
+                    },
+                    "uuid": "ada96552-7d55-4655-8dad-63f9aec6fe8f"
+                },
+                {
+                    "description": "Reference field of TP9",
+                    "pos": {
+                        "x": 157.9,
+                        "y": 173.73
+                    },
+                    "uuid": "f62fda94-6b97-4b6c-8d39-4a1386922f33"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of TP10",
+                    "pos": {
+                        "x": 164.3,
+                        "y": 173.73
+                    },
+                    "uuid": "3e7b6147-f692-426b-9b37-a2046c0449a3"
+                },
+                {
+                    "description": "Reference field of Q110",
+                    "pos": {
+                        "x": 164.3,
+                        "y": 172.6
+                    },
+                    "uuid": "ecdb8e86-f5c2-4a21-9b98-3585317a8bda"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of TP10",
+                    "pos": {
+                        "x": 164.3,
+                        "y": 173.73
+                    },
+                    "uuid": "3e7b6147-f692-426b-9b37-a2046c0449a3"
+                },
+                {
+                    "description": "Segment of Q110 on F.Silkscreen",
+                    "pos": {
+                        "x": 163.54,
+                        "y": 173.44
+                    },
+                    "uuid": "b1e409d4-f976-4ced-ab44-e37773b4e3aa"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of TP10",
+                    "pos": {
+                        "x": 164.3,
+                        "y": 173.73
+                    },
+                    "uuid": "3e7b6147-f692-426b-9b37-a2046c0449a3"
+                },
+                {
+                    "description": "Segment of Q110 on F.Silkscreen",
+                    "pos": {
+                        "x": 163.54,
+                        "y": 173.49
+                    },
+                    "uuid": "ac35cc8c-9e1a-4c14-a7a0-e408d29b9f76"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of Q109",
+                    "pos": {
+                        "x": 157.9,
+                        "y": 172.6
+                    },
+                    "uuid": "74de7a11-8eba-4c98-aaac-7f30823645da"
+                },
+                {
+                    "description": "Reference field of TP9",
+                    "pos": {
+                        "x": 157.9,
+                        "y": 173.73
+                    },
+                    "uuid": "f62fda94-6b97-4b6c-8d39-4a1386922f33"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of TP10",
+                    "pos": {
+                        "x": 164.3,
+                        "y": 173.73
+                    },
+                    "uuid": "3e7b6147-f692-426b-9b37-a2046c0449a3"
+                },
+                {
+                    "description": "Segment of Q110 on F.Silkscreen",
+                    "pos": {
+                        "x": 165.06,
+                        "y": 173.44
+                    },
+                    "uuid": "9aedb813-2568-4cf3-baf2-17c5816384d5"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Segment of Q109 on F.Silkscreen",
+                    "pos": {
+                        "x": 158.66,
+                        "y": 173.44
+                    },
+                    "uuid": "920408e8-6ce8-48f6-9f06-86ee851341b6"
+                },
+                {
+                    "description": "Reference field of TP9",
+                    "pos": {
+                        "x": 157.9,
+                        "y": 173.73
+                    },
+                    "uuid": "f62fda94-6b97-4b6c-8d39-4a1386922f33"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of TP8",
+                    "pos": {
+                        "x": 151.5,
+                        "y": 173.73
+                    },
+                    "uuid": "51caf50c-f7cb-4066-b574-b943810f95ea"
+                },
+                {
+                    "description": "Reference field of Q108",
+                    "pos": {
+                        "x": 151.5,
+                        "y": 172.6
+                    },
+                    "uuid": "8ee1e3ae-92f9-4360-b944-bba0d45229f4"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Segment of Q108 on F.Silkscreen",
+                    "pos": {
+                        "x": 150.74,
+                        "y": 173.44
+                    },
+                    "uuid": "40df9089-12d1-4101-b439-97a310bbb722"
+                },
+                {
+                    "description": "Reference field of TP8",
+                    "pos": {
+                        "x": 151.5,
+                        "y": 173.73
+                    },
+                    "uuid": "51caf50c-f7cb-4066-b574-b943810f95ea"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of TP8",
+                    "pos": {
+                        "x": 151.5,
+                        "y": 173.73
+                    },
+                    "uuid": "51caf50c-f7cb-4066-b574-b943810f95ea"
+                },
+                {
+                    "description": "Segment of Q108 on F.Silkscreen",
+                    "pos": {
+                        "x": 152.26,
+                        "y": 173.44
+                    },
+                    "uuid": "78c2e9f7-0d74-40ed-a453-673daf01699d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Segment of Q107 on F.Silkscreen",
+                    "pos": {
+                        "x": 144.34,
+                        "y": 173.44
+                    },
+                    "uuid": "15a2735a-60b1-4662-a5f7-259530934939"
+                },
+                {
+                    "description": "Reference field of TP7",
+                    "pos": {
+                        "x": 145.1,
+                        "y": 173.73
+                    },
+                    "uuid": "ac99c347-4a32-4050-9782-9aca4c5a2497"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of Q107",
+                    "pos": {
+                        "x": 145.1,
+                        "y": 172.6
+                    },
+                    "uuid": "0da08a0d-ba84-4d4e-8a6f-8367a0d72551"
+                },
+                {
+                    "description": "Reference field of TP7",
+                    "pos": {
+                        "x": 145.1,
+                        "y": 173.73
+                    },
+                    "uuid": "ac99c347-4a32-4050-9782-9aca4c5a2497"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Segment of Q107 on F.Silkscreen",
+                    "pos": {
+                        "x": 145.86,
+                        "y": 173.44
+                    },
+                    "uuid": "97e3dc55-2338-4f8f-af32-53836bbb2a0e"
+                },
+                {
+                    "description": "Reference field of TP7",
+                    "pos": {
+                        "x": 145.1,
+                        "y": 173.73
+                    },
+                    "uuid": "ac99c347-4a32-4050-9782-9aca4c5a2497"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of TP1",
+                    "pos": {
+                        "x": 106.7,
+                        "y": 173.73
+                    },
+                    "uuid": "87bc6481-e19e-44d3-8af2-1ddeea01f901"
+                },
+                {
+                    "description": "Reference field of Q101",
+                    "pos": {
+                        "x": 106.7,
+                        "y": 172.6
+                    },
+                    "uuid": "baabc486-be77-4fa1-9c7b-76a4653591e1"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of TP1",
+                    "pos": {
+                        "x": 106.7,
+                        "y": 173.73
+                    },
+                    "uuid": "87bc6481-e19e-44d3-8af2-1ddeea01f901"
+                },
+                {
+                    "description": "Segment of Q101 on F.Silkscreen",
+                    "pos": {
+                        "x": 105.94,
+                        "y": 173.44
+                    },
+                    "uuid": "c2399f84-9aab-4aae-ae99-a4b46e48f4bf"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Segment of Q101 on F.Silkscreen",
+                    "pos": {
+                        "x": 107.46,
+                        "y": 173.44
+                    },
+                    "uuid": "4f11d819-2db8-4115-962d-569e59b44b05"
+                },
+                {
+                    "description": "Reference field of TP1",
+                    "pos": {
+                        "x": 106.7,
+                        "y": 173.73
+                    },
+                    "uuid": "87bc6481-e19e-44d3-8af2-1ddeea01f901"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of Q103",
+                    "pos": {
+                        "x": 119.5,
+                        "y": 172.6
+                    },
+                    "uuid": "8f8744c1-653e-4e14-8e1d-77f48173047c"
+                },
+                {
+                    "description": "Reference field of TP3",
+                    "pos": {
+                        "x": 119.5,
+                        "y": 173.73
+                    },
+                    "uuid": "d595c5fa-cfec-4ca6-b7e6-3ffbe47bb36a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of TP3",
+                    "pos": {
+                        "x": 119.5,
+                        "y": 173.73
+                    },
+                    "uuid": "d595c5fa-cfec-4ca6-b7e6-3ffbe47bb36a"
+                },
+                {
+                    "description": "Segment of Q103 on F.Silkscreen",
+                    "pos": {
+                        "x": 120.26,
+                        "y": 173.44
+                    },
+                    "uuid": "e8a1bca5-9b47-4c34-98c4-252e3dd3ef32"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of Q104",
+                    "pos": {
+                        "x": 125.9,
+                        "y": 172.6
+                    },
+                    "uuid": "6bc86956-c3c7-4e89-84c9-004c5113ce38"
+                },
+                {
+                    "description": "Reference field of TP4",
+                    "pos": {
+                        "x": 125.9,
+                        "y": 173.73
+                    },
+                    "uuid": "f53ecf5c-ec68-49ad-abd2-2abbe55a7b31"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Segment of Q104 on F.Silkscreen",
+                    "pos": {
+                        "x": 125.14,
+                        "y": 173.44
+                    },
+                    "uuid": "467db705-1d5c-460a-9931-41d252447ed9"
+                },
+                {
+                    "description": "Reference field of TP4",
+                    "pos": {
+                        "x": 125.9,
+                        "y": 173.73
+                    },
+                    "uuid": "f53ecf5c-ec68-49ad-abd2-2abbe55a7b31"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Segment of Q104 on F.Silkscreen",
+                    "pos": {
+                        "x": 126.66,
+                        "y": 173.44
+                    },
+                    "uuid": "4abcbdba-70a9-41e4-81e7-d3dd1d867d48"
+                },
+                {
+                    "description": "Reference field of TP4",
+                    "pos": {
+                        "x": 125.9,
+                        "y": 173.73
+                    },
+                    "uuid": "f53ecf5c-ec68-49ad-abd2-2abbe55a7b31"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of Q106",
+                    "pos": {
+                        "x": 138.7,
+                        "y": 172.6
+                    },
+                    "uuid": "1d486a2a-6a39-47d7-a14c-14faa1c08713"
+                },
+                {
+                    "description": "Reference field of TP6",
+                    "pos": {
+                        "x": 138.7,
+                        "y": 173.73
+                    },
+                    "uuid": "e10448c2-8afe-492a-948e-49154c05e837"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of TP5",
+                    "pos": {
+                        "x": 132.3,
+                        "y": 173.73
+                    },
+                    "uuid": "79afb2c9-e23e-47ae-ada0-34b784e3b678"
+                },
+                {
+                    "description": "Segment of Q105 on F.Silkscreen",
+                    "pos": {
+                        "x": 133.06,
+                        "y": 173.44
+                    },
+                    "uuid": "898bd56a-9020-4dd1-8a76-4d7991e7c0ac"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Segment of Q106 on F.Silkscreen",
+                    "pos": {
+                        "x": 139.46,
+                        "y": 173.44
+                    },
+                    "uuid": "5b4bba47-f592-40f5-baa5-de9199310f0e"
+                },
+                {
+                    "description": "Reference field of TP6",
+                    "pos": {
+                        "x": 138.7,
+                        "y": 173.73
+                    },
+                    "uuid": "e10448c2-8afe-492a-948e-49154c05e837"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Segment of Q106 on F.Silkscreen",
+                    "pos": {
+                        "x": 137.94,
+                        "y": 173.44
+                    },
+                    "uuid": "6f5650bd-c0ca-4ae7-9edf-ee83fb55b4bb"
+                },
+                {
+                    "description": "Reference field of TP6",
+                    "pos": {
+                        "x": 138.7,
+                        "y": 173.73
+                    },
+                    "uuid": "e10448c2-8afe-492a-948e-49154c05e837"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Segment of Q103 on F.Silkscreen",
+                    "pos": {
+                        "x": 118.74,
+                        "y": 173.44
+                    },
+                    "uuid": "a14c9943-7fe9-4e72-b6d9-714cc13cc6ac"
+                },
+                {
+                    "description": "Reference field of TP3",
+                    "pos": {
+                        "x": 119.5,
+                        "y": 173.73
+                    },
+                    "uuid": "d595c5fa-cfec-4ca6-b7e6-3ffbe47bb36a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of Q102",
+                    "pos": {
+                        "x": 113.1,
+                        "y": 172.6
+                    },
+                    "uuid": "23b8643e-9ade-4525-836e-3c44856cb14f"
+                },
+                {
+                    "description": "Reference field of TP2",
+                    "pos": {
+                        "x": 113.1,
+                        "y": 173.73
+                    },
+                    "uuid": "25f29d9c-8fba-4e96-a4c7-70efc0ff53fd"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of TP2",
+                    "pos": {
+                        "x": 113.1,
+                        "y": 173.73
+                    },
+                    "uuid": "25f29d9c-8fba-4e96-a4c7-70efc0ff53fd"
+                },
+                {
+                    "description": "Segment of Q102 on F.Silkscreen",
+                    "pos": {
+                        "x": 112.34,
+                        "y": 173.44
+                    },
+                    "uuid": "8fcea4f0-2aac-43f6-8cc7-bec697f1939e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of TP2",
+                    "pos": {
+                        "x": 113.1,
+                        "y": 173.73
+                    },
+                    "uuid": "25f29d9c-8fba-4e96-a4c7-70efc0ff53fd"
+                },
+                {
+                    "description": "Segment of Q102 on F.Silkscreen",
+                    "pos": {
+                        "x": 113.86,
+                        "y": 173.44
+                    },
+                    "uuid": "bcdf55dc-4aaf-4631-ab8d-906a7d3f67bb"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Segment of Q105 on F.Silkscreen",
+                    "pos": {
+                        "x": 131.54,
+                        "y": 173.44
+                    },
+                    "uuid": "6f298b25-e42d-4900-b9e0-2590a33de0c6"
+                },
+                {
+                    "description": "Reference field of TP5",
+                    "pos": {
+                        "x": 132.3,
+                        "y": 173.73
+                    },
+                    "uuid": "79afb2c9-e23e-47ae-ada0-34b784e3b678"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of TP5",
+                    "pos": {
+                        "x": 132.3,
+                        "y": 173.73
+                    },
+                    "uuid": "79afb2c9-e23e-47ae-ada0-34b784e3b678"
+                },
+                {
+                    "description": "Reference field of Q105",
+                    "pos": {
+                        "x": 132.3,
+                        "y": 172.6
+                    },
+                    "uuid": "fe278e02-e8df-4064-ac60-e8cd85486941"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of Q219",
+                    "pos": {
+                        "x": 163.0,
+                        "y": 245.4
+                    },
+                    "uuid": "428e7550-86a9-43d9-b9b1-92dca3a52aec"
+                },
+                {
+                    "description": "Reference field of MH4",
+                    "pos": {
+                        "x": 163.0,
+                        "y": 244.5
+                    },
+                    "uuid": "b4c92551-39b0-404f-9e73-ec68305e6755"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of R30",
+                    "pos": {
+                        "x": 158.5,
+                        "y": 241.33
+                    },
+                    "uuid": "040af298-9659-46ae-a46a-83c783609f18"
+                },
+                {
+                    "description": "Reference field of R29",
+                    "pos": {
+                        "x": 156.0,
+                        "y": 241.33
+                    },
+                    "uuid": "0e602076-5c17-4d28-8f73-4abe4572f73a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of R29",
+                    "pos": {
+                        "x": 156.0,
+                        "y": 241.33
+                    },
+                    "uuid": "0e602076-5c17-4d28-8f73-4abe4572f73a"
+                },
+                {
+                    "description": "Reference field of R28",
+                    "pos": {
+                        "x": 153.5,
+                        "y": 241.33
+                    },
+                    "uuid": "de9f996c-c905-4ef7-9b26-c8cf289b7f04"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of R28",
+                    "pos": {
+                        "x": 153.5,
+                        "y": 241.33
+                    },
+                    "uuid": "de9f996c-c905-4ef7-9b26-c8cf289b7f04"
+                },
+                {
+                    "description": "Reference field of R27",
+                    "pos": {
+                        "x": 151.0,
+                        "y": 241.33
+                    },
+                    "uuid": "f38a9927-3d70-403e-9782-36b63fe04587"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of R30",
+                    "pos": {
+                        "x": 158.5,
+                        "y": 241.33
+                    },
+                    "uuid": "040af298-9659-46ae-a46a-83c783609f18"
+                },
+                {
+                    "description": "Reference field of R31",
+                    "pos": {
+                        "x": 161.0,
+                        "y": 241.33
+                    },
+                    "uuid": "d1df4cf9-0800-43dd-a1fd-908cb2262c46"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of Q212",
+                    "pos": {
+                        "x": 108.0,
+                        "y": 245.4
+                    },
+                    "uuid": "befacae6-e0ae-4a83-af0f-9bae22614282"
+                },
+                {
+                    "description": "Reference field of MH2",
+                    "pos": {
+                        "x": 108.0,
+                        "y": 244.5
+                    },
+                    "uuid": "bfd5625e-e9b2-4f9f-a425-144e12e107ad"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of R22",
+                    "pos": {
+                        "x": 110.0,
+                        "y": 241.33
+                    },
+                    "uuid": "23257d4a-f8ae-417a-a059-994bfff8906b"
+                },
+                {
+                    "description": "Reference field of R23",
+                    "pos": {
+                        "x": 112.5,
+                        "y": 241.33
+                    },
+                    "uuid": "da9673eb-f8f6-45bd-ba5c-bc030fee2388"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of R26",
+                    "pos": {
+                        "x": 120.0,
+                        "y": 241.33
+                    },
+                    "uuid": "1016191c-9f8f-45e4-881e-79414399e8ff"
+                },
+                {
+                    "description": "Reference field of R25",
+                    "pos": {
+                        "x": 117.5,
+                        "y": 241.33
+                    },
+                    "uuid": "218d5e08-059b-42bd-9748-edc9a67f7e5d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of R25",
+                    "pos": {
+                        "x": 117.5,
+                        "y": 241.33
+                    },
+                    "uuid": "218d5e08-059b-42bd-9748-edc9a67f7e5d"
+                },
+                {
+                    "description": "Reference field of R24",
+                    "pos": {
+                        "x": 115.0,
+                        "y": 241.33
+                    },
+                    "uuid": "5d48b064-df22-4e5c-932c-84a223d6f4b0"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of R24",
+                    "pos": {
+                        "x": 115.0,
+                        "y": 241.33
+                    },
+                    "uuid": "5d48b064-df22-4e5c-932c-84a223d6f4b0"
+                },
+                {
+                    "description": "Reference field of R23",
+                    "pos": {
+                        "x": 112.5,
+                        "y": 241.33
+                    },
+                    "uuid": "da9673eb-f8f6-45bd-ba5c-bc030fee2388"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        }
+    ]
+}

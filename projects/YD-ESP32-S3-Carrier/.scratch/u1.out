@@ -1,0 +1,21 @@
+U1 SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.3mm_ThermalVias
+  pad    '' @( 66.645,  5.020) size 1.01x1.38 drill 0.00x0.00 PAD_ATTRIB_SMD         PAD_SHAPE_ROUNDRECT net=-
+  pad    '' @( 66.645,  6.670) size 1.01x1.38 drill 0.00x0.00 PAD_ATTRIB_SMD         PAD_SHAPE_ROUNDRECT net=-
+  pad    '' @( 67.845,  5.020) size 1.01x1.38 drill 0.00x0.00 PAD_ATTRIB_SMD         PAD_SHAPE_ROUNDRECT net=-
+  pad    '' @( 67.845,  6.670) size 1.01x1.38 drill 0.00x0.00 PAD_ATTRIB_SMD         PAD_SHAPE_ROUNDRECT net=-
+  pad   '1' @( 64.770,  3.940) size 1.95x0.60 drill 0.00x0.00 PAD_ATTRIB_SMD         PAD_SHAPE_ROUNDRECT net=GND
+  pad   '2' @( 64.770,  5.210) size 1.95x0.60 drill 0.00x0.00 PAD_ATTRIB_SMD         PAD_SHAPE_ROUNDRECT net=PROG
+  pad   '3' @( 64.770,  6.480) size 1.95x0.60 drill 0.00x0.00 PAD_ATTRIB_SMD         PAD_SHAPE_ROUNDRECT net=GND
+  pad   '4' @( 64.770,  7.750) size 1.95x0.60 drill 0.00x0.00 PAD_ATTRIB_SMD         PAD_SHAPE_ROUNDRECT net=+5V
+  pad   '5' @( 69.720,  7.750) size 1.95x0.60 drill 0.00x0.00 PAD_ATTRIB_SMD         PAD_SHAPE_ROUNDRECT net=VBAT
+  pad   '6' @( 69.720,  6.480) size 1.95x0.60 drill 0.00x0.00 PAD_ATTRIB_SMD         PAD_SHAPE_ROUNDRECT net=-
+  pad   '7' @( 69.720,  5.210) size 1.95x0.60 drill 0.00x0.00 PAD_ATTRIB_SMD         PAD_SHAPE_ROUNDRECT net=CHRG
+  pad   '8' @( 69.720,  3.940) size 1.95x0.60 drill 0.00x0.00 PAD_ATTRIB_SMD         PAD_SHAPE_ROUNDRECT net=+5V
+  pad   '9' @( 66.545,  4.645) size 0.50x0.50 drill 0.20x0.20 PAD_ATTRIB_PTH         PAD_SHAPE_CIRCLE net=GND
+  pad   '9' @( 66.545,  5.845) size 0.50x0.50 drill 0.20x0.20 PAD_ATTRIB_PTH         PAD_SHAPE_CIRCLE net=GND
+  pad   '9' @( 66.545,  7.045) size 0.50x0.50 drill 0.20x0.20 PAD_ATTRIB_PTH         PAD_SHAPE_CIRCLE net=GND
+  pad   '9' @( 67.245,  5.845) size 1.90x2.90 drill 0.00x0.00 PAD_ATTRIB_SMD         PAD_SHAPE_RECTANGLE net=GND
+  pad   '9' @( 67.245,  5.845) size 2.41x3.30 drill 0.00x0.00 PAD_ATTRIB_SMD         PAD_SHAPE_RECTANGLE net=GND
+  pad   '9' @( 67.945,  4.645) size 0.50x0.50 drill 0.20x0.20 PAD_ATTRIB_PTH         PAD_SHAPE_CIRCLE net=GND
+  pad   '9' @( 67.945,  5.845) size 0.50x0.50 drill 0.20x0.20 PAD_ATTRIB_PTH         PAD_SHAPE_CIRCLE net=GND
+  pad   '9' @( 67.945,  7.045) size 0.50x0.50 drill 0.20x0.20 PAD_ATTRIB_PTH         PAD_SHAPE_CIRCLE net=GND

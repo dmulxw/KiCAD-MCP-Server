@@ -256,6 +256,142 @@ def test_pass_schedule_wraps_when_attempts_exceeds_schedule_length(workdir, fake
 
 
 @pytest.mark.unit
+def test_single_attempt_omits_strategy_flags(workdir, fake_jar):
+    """Backward compatibility: no -is/-us unless the caller asks for them.
+
+    Varying -mp alone does not vary the result (the router is deterministic
+    once it converges), so best-of-N now cycles -is too -- but a plain
+    single-attempt call must still emit the command it always did, or every
+    existing caller silently changes routing behaviour.
+    """
+    cc = _make_cmds(workdir / "test.kicad_pcb")
+    _patch_exec_mode(cc)
+
+    seen_cmds = []
+
+    def fake_run(cmd, **kw):
+        seen_cmds.append(list(cmd))
+        _ses_from_cmd(cmd).write_text(_make_ses(num_nets=3))
+        return types.SimpleNamespace(returncode=0, stdout="", stderr="")
+
+    fake_pcb = _stub_pcbnew()
+
+    with patch.object(fr_mod, "subprocess") as sp, patch.dict(sys.modules, {"pcbnew": fake_pcb}):
+        sp.run.side_effect = fake_run
+        sp.TimeoutExpired = TimeoutError
+        cc.autoroute(
+            {
+                "boardPath": str(workdir / "test.kicad_pcb"),
+                "freeroutingJar": str(fake_jar),
+            }
+        )
+
+    assert len(seen_cmds) == 1
+    assert "-is" not in seen_cmds[0], seen_cmds[0]
+    assert "-us" not in seen_cmds[0], seen_cmds[0]
+
+
+@pytest.mark.unit
+def test_best_of_n_cycles_selection_strategy(workdir, fake_jar):
+    """attempts>1 must actually vary the search, not just the pass count."""
+    cc = _make_cmds(workdir / "test.kicad_pcb")
+    _patch_exec_mode(cc)
+
+    seen = []
+
+    def fake_run(cmd, **kw):
+        seen.append((int(cmd[cmd.index("-mp") + 1]), cmd[cmd.index("-is") + 1]))
+        _ses_from_cmd(cmd).write_text(_make_ses(num_nets=3))
+        return types.SimpleNamespace(returncode=0, stdout="", stderr="")
+
+    fake_pcb = _stub_pcbnew()
+
+    with patch.object(fr_mod, "subprocess") as sp, patch.dict(sys.modules, {"pcbnew": fake_pcb}):
+        sp.run.side_effect = fake_run
+        sp.TimeoutExpired = TimeoutError
+        out = cc.autoroute(
+            {
+                "boardPath": str(workdir / "test.kicad_pcb"),
+                "freeroutingJar": str(fake_jar),
+                "attempts": 4,
+                "passSchedule": [10, 20, 30, 40],
+                "strategySchedule": [
+                    ["prioritized", "greedy"],
+                    ["random", "greedy"],
+                ],
+            }
+        )
+
+    assert out["success"], out
+    # The schedule wraps: attempts 3 and 4 reuse entries 0 and 1.
+    assert seen == [
+        (10, "prioritized"),
+        (20, "random"),
+        (30, "prioritized"),
+        (40, "random"),
+    ]
+    assert [a["selection"] for a in out["attempts"]] == [
+        "prioritized",
+        "random",
+        "prioritized",
+        "random",
+    ]
+
+
+@pytest.mark.unit
+def test_pinned_strategy_applies_to_every_attempt(workdir, fake_jar):
+    """An explicit selectionStrategy overrides the cycling schedule."""
+    cc = _make_cmds(workdir / "test.kicad_pcb")
+    _patch_exec_mode(cc)
+
+    seen = []
+
+    def fake_run(cmd, **kw):
+        seen.append(cmd[cmd.index("-is") + 1])
+        _ses_from_cmd(cmd).write_text(_make_ses(num_nets=3))
+        return types.SimpleNamespace(returncode=0, stdout="", stderr="")
+
+    fake_pcb = _stub_pcbnew()
+
+    with patch.object(fr_mod, "subprocess") as sp, patch.dict(sys.modules, {"pcbnew": fake_pcb}):
+        sp.run.side_effect = fake_run
+        sp.TimeoutExpired = TimeoutError
+        out = cc.autoroute(
+            {
+                "boardPath": str(workdir / "test.kicad_pcb"),
+                "freeroutingJar": str(fake_jar),
+                "attempts": 3,
+                "selectionStrategy": "Sequential",
+            }
+        )
+
+    assert out["success"], out
+    assert seen == ["sequential", "sequential", "sequential"]
+
+
+@pytest.mark.unit
+def test_invalid_strategy_rejected_cleanly(workdir, fake_jar):
+    """A typo fails with the accepted values, not a router error."""
+    cc = _make_cmds(workdir / "test.kicad_pcb")
+    _patch_exec_mode(cc)
+
+    for param, value, flag in [
+        ("selectionStrategy", "parallel", "-is"),
+        ("updatingStrategy", "lazy", "-us"),
+    ]:
+        out = cc.autoroute(
+            {
+                "boardPath": str(workdir / "test.kicad_pcb"),
+                "freeroutingJar": str(fake_jar),
+                param: value,
+            }
+        )
+        assert out["success"] is False, out
+        assert flag in out["message"], out
+        assert str(value) in out["errorDetails"], out
+
+
+@pytest.mark.unit
 def test_target_nets_bonus_wins_against_more_nets_without_targets(workdir, fake_jar):
     """Attempt with all targets beats higher-net attempt missing one target."""
     cc = _make_cmds(workdir / "test.kicad_pcb")

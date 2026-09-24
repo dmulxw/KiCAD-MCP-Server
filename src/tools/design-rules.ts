@@ -77,13 +77,27 @@ export function registerDesignRuleTools(server: McpServer, callKicadScript: Comm
   // ------------------------------------------------------
   server.tool(
     "run_drc",
-    "Run the KiCAD Design Rule Check (DRC) on the current PCB and return violations. Optionally save the report to a file.",
+    "Run the KiCAD Design Rule Check (DRC) on the current PCB and return violations plus unconnected items. Optionally save the report to a file.",
     {
       reportPath: z.string().optional().describe("Optional path to save the DRC report"),
+      severityAll: z
+        .boolean()
+        .optional()
+        .describe(
+          "Also report checks the project marks as ignored, e.g. lib_footprint_issues. Raises the counts, so it is off by default.",
+        ),
+      timeoutSec: z
+        .number()
+        .optional()
+        .describe("kicad-cli timeout in seconds, clamped to [10, 1800]"),
     },
-    async ({ reportPath }) => {
+    async ({ reportPath, severityAll, timeoutSec }) => {
       logger.debug("Running DRC check");
-      const result = await callKicadScript("run_drc", { reportPath });
+      const result = await callKicadScript("run_drc", {
+        reportPath,
+        severityAll,
+        timeoutSec,
+      });
 
       return formatKicadResult(result);
     },
@@ -195,16 +209,23 @@ export function registerDesignRuleTools(server: McpServer, callKicadScript: Comm
   // ------------------------------------------------------
   server.tool(
     "get_drc_violations",
-    "Return the list of current DRC violations on the PCB, optionally filtered by severity (error, warning).",
+    "Return the list of current DRC violations on the PCB, including unconnected items, optionally filtered by severity (error, warning).",
     {
       severity: z
         .enum(["error", "warning", "all"])
         .optional()
         .describe("Filter violations by severity"),
+      includeUnconnected: z
+        .boolean()
+        .optional()
+        .describe("Include unconnected items alongside rule violations. Defaults to true."),
     },
-    async ({ severity }) => {
+    async ({ severity, includeUnconnected }) => {
       logger.debug("Getting DRC violations");
-      const result = await callKicadScript("get_drc_violations", { severity });
+      const result = await callKicadScript("get_drc_violations", {
+        severity,
+        includeUnconnected,
+      });
 
       return formatKicadResult(result);
     },

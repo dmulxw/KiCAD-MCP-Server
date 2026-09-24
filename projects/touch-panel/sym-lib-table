@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "touch-panel")(type "KiCad")(uri "/workspace/projects/touch-panel/libs/touch-panel.kicad_sym")(options "")(descr "Touch panel project symbols"))
+)

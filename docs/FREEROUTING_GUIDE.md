@@ -28,7 +28,7 @@ Download the Freerouting executable JAR:
 ```bash
 mkdir -p ~/.kicad-mcp
 curl -L -o ~/.kicad-mcp/freerouting.jar \
-  https://github.com/freerouting/freerouting/releases/download/v2.0.1/freerouting-2.0.1-executable.jar
+  https://github.com/freerouting/freerouting/releases/download/v2.4.1/freerouting-2.4.1.jar
 ```
 
 The default location is `~/.kicad-mcp/freerouting.jar`. You can override this with:

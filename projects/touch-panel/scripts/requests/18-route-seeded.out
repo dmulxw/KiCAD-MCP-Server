@@ -1,0 +1,58 @@
+[2026-09-11 15:11:27,077] [INFO] Using STDIO transport for local communication
+[2026-09-11 15:11:27,079] [INFO] Registering KiCAD tools, resources, and prompts...
+[2026-09-11 15:11:27,080] [INFO] Registering router tools
+[2026-09-11 15:11:27,081] [INFO] Router tools registered successfully
+[2026-09-11 15:11:27,082] [INFO] Registering board management tools
+[2026-09-11 15:11:27,083] [INFO] Board management tools registered
+[2026-09-11 15:11:27,084] [INFO] Registering component management tools
+[2026-09-11 15:11:27,085] [INFO] Component management tools registered
+[2026-09-11 15:11:27,087] [INFO] Registering design rule tools
+[2026-09-11 15:11:27,087] [INFO] Design rule tools registered
+[2026-09-11 15:11:27,088] [INFO] Registering export tools
+[2026-09-11 15:11:27,090] [INFO] Export tools registered
+[2026-09-11 15:11:27,098] [INFO] UI management tools registered
+[2026-09-11 15:11:27,098] [INFO] Registering project resources
+[2026-09-11 15:11:27,099] [INFO] Project resources registered
+[2026-09-11 15:11:27,099] [INFO] Registering board resources
+[2026-09-11 15:11:27,100] [INFO] Board resources registered
+[2026-09-11 15:11:27,100] [INFO] Registering component resources
+[2026-09-11 15:11:27,100] [INFO] Component resources registered
+[2026-09-11 15:11:27,100] [INFO] Registering library resources
+[2026-09-11 15:11:27,101] [INFO] Library resources registered
+[2026-09-11 15:11:27,101] [INFO] Registering component prompts
+[2026-09-11 15:11:27,101] [INFO] Component prompts registered
+[2026-09-11 15:11:27,102] [INFO] Registering routing prompts
+[2026-09-11 15:11:27,102] [INFO] Routing prompts registered
+[2026-09-11 15:11:27,102] [INFO] Registering design prompts
+[2026-09-11 15:11:27,102] [INFO] Design prompts registered
+[2026-09-11 15:11:27,102] [INFO] Registering footprint prompts
+[2026-09-11 15:11:27,103] [INFO] All KiCAD tools, resources, and prompts registered
+[2026-09-11 15:11:27,103] [INFO] Starting KiCAD MCP server...
+[2026-09-11 15:11:27,103] [INFO] Connecting MCP server to STDIO transport...
+[2026-09-11 15:11:27,103] [INFO] Successfully connected to STDIO transport
+[2026-09-11 15:11:27,103] [INFO] Starting Python process with script: /workspace/python/kicad_interface.py
+[2026-09-11 15:11:27,104] [INFO] Using KICAD_PYTHON environment variable: /opt/kicad-mcp-venv/bin/python
+[2026-09-11 15:11:27,104] [INFO] Using Python executable: /opt/kicad-mcp-venv/bin/python
+[2026-09-11 15:11:27,108] [INFO] Validating pcbnew module access...
+{"result":{"protocolVersion":"2024-11-05","capabilities":{"tools":{"listChanged":true},"resources":{"listChanged":true},"prompts":{"listChanged":true}},"serverInfo":{"name":"kicad-mcp-server","version":"2.7.0","description":"MCP server for KiCAD PCB design operations"}},"jsonrpc":"2.0","id":1}
+[2026-09-11 15:11:27,383] [INFO] ✓ pcbnew module validated successfully
+[2026-09-11 15:11:27,385] [INFO] Waiting for Python process to be ready...
+[2026-09-11 15:11:28,668] [INFO] Python process READY — stdin loop is live
+[2026-09-11 15:11:28,669] [INFO] Python process is ready.
+[2026-09-11 15:11:28,669] [INFO] Sending warm-up command (background)...
+[2026-09-11 15:11:28,709] [INFO] Warm-up succeeded: pcbnew 9.0.9 (0s)
+[2026-09-11 15:11:28,709] [INFO] Warm-up complete — pcbnew/wxApp initialised
+KiCAD MCP SERVER READY
+[2026-09-11 15:11:28,709] [INFO] KiCAD MCP server started and ready
+[2026-09-11 15:11:28,710] [INFO] KiCAD MCP server started with STDIO transport
+{"result":{"content":[{"type":"text","text":"{\n  \"success\": true,\n  \"message\": \"Opened board: touch-panel.kicad_pcb\",\n  \"boardPath\": \"/workspace/projects/touch-panel/touch-panel.kicad_pcb\",\n  \"sessionBackend\": \"swig\",\n  \"_backend\": \"swig\",\n  \"_realtime\": false\n}"}]},"jsonrpc":"2.0","id":2}
+[2026-09-11 15:11:38,846] [INFO] Using extended timeout (1920s) for command: autoroute
+{"result":{"content":[{"type":"text","text":"{\n  \"success\": true,\n  \"message\": \"Autoroute completed in 692.9s\",\n  \"mode\": \"direct\",\n  \"artifacts_kept\": true,\n  \"dsn_path\": \"/workspace/projects/touch-panel/touch-panel.dsn\",\n  \"ses_path\": \"/workspace/projects/touch-panel/touch-panel.ses\",\n  \"elapsed_seconds\": 692.9,\n  \"board_stats\": {\n    \"tracks\": 3411,\n    \"vias\": 506\n  },\n  \"netClasses\": {\n    \"applied\": [],\n    \"defaultUpdated\": true,\n    \"assignments\": 0,\n    \"projectFile\": \"/workspace/projects/touch-panel/touch-panel.kicad_pro\"\n  },\n  \"freerouting_stdout\": \"2026-09-11 15:11:39.844 INFO   Freerouting v2.4.1 (build-date: 2026-09-03)\\n2026-09-11 15:11:41.286 INFO   [8DABA0\\\\57CE3B] Loading board file 'touch-panel.dsn'...\\n2026-09-11 15:11:41.452 INFO   [8DABA0\\\\57CE3B] Job '8DABA0\\\\57CE3B' started at 2026-09-11T15:11:41.452079599Z.\\n2026-09-11 15:11:41.720 INFO   [8DABA0\\\\57CE3B] Fanout stage started on board 'c6b891f90cb748af782731b2775d11f4' with 972 of 974 SMD pins needing fanout (0 already connected, 2 netless).\\n2026-09-11 15:11:54.526 INFO   [8DABA0\\\\57CE3B] Fanout pass #1 on board 'ec485794b26e82052b1a1622044c9095' completed in 12.47 seconds with 961 SMD pins fanouted, 10 not routed, 0 insert errors, +382 extra vias (0 SMD pins still to check in pass, ripup costs=100).\\n2026-09-11 15:11:58.191 INFO   [8DABA0\\\\57CE3B] Fanout pass #2 on board 'b73edc7d6e9339d887f603be7435c4d6' completed in 3.55 seconds with 176 SMD pins fanouted, 2 not routed, 0 insert errors, +101 extra vias (0 SMD pins still to check in pass, ripup costs=200).\\n2026-09-11 15:11:5\",\n  \"_backend\": \"swig\",\n  \"_realtime\": false\n}"}]},"jsonrpc":"2.0","id":3}
+[2026-09-11 15:23:12,504] [INFO] Using extended timeout (600s) for command: run_drc
+{"result":{"content":[{"type":"text","text":"{\"success\":true,\"message\":\"Found 168 DRC violations\",\"summary\":{\"total\":168,\"by_severity\":{\"error\":110,\"warning\":58,\"info\":0},\"by_type\":{\"shorting_items\":5,\"clearance\":8,\"hole_clearance\":3,\"track_width\":90,\"solder_mask_bridge\":4,\"track_dangling\":5,\"silk_over_copper\":11,\"silk_overlap\":42}},\"violationsFile\":\"/workspace/projects/touch-panel/touch-panel_drc_violations.json\",\"reportPath\":null,\"_backend\":\"swig\",\"_realtime\":false}"}]},"jsonrpc":"2.0","id":4}
+[2026-09-11 15:23:14,041] [INFO] process.stdin closed. Shutting down...
+[2026-09-11 15:23:14,042] [INFO] Shutting down KiCAD MCP server...
+[2026-09-11 15:23:14,042] [INFO] Stopping KiCAD MCP server...
+[2026-09-11 15:23:14,042] [INFO] KiCAD MCP server stopped
+[2026-09-11 15:23:14,043] [INFO] Server shutdown complete. Exiting...
+EXIT=0

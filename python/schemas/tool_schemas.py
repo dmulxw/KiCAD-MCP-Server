@@ -2128,7 +2128,7 @@ DESIGN_RULE_TOOLS = [
     {
         "name": "run_drc",
         "title": "Run Design Rule Check",
-        "description": "Executes a design rule check (DRC) on the current board and reports violations.",
+        "description": "Executes a design rule check (DRC) on the current board and reports violations and unconnected items.",
         "inputSchema": {
             "type": "object",
             "properties": {
@@ -2136,15 +2136,39 @@ DESIGN_RULE_TOOLS = [
                     "type": "boolean",
                     "description": "Include warnings in addition to errors",
                     "default": True,
-                }
+                },
+                "severityAll": {
+                    "type": "boolean",
+                    "description": "Also report checks the project marks as ignored, e.g. lib_footprint_issues. Off by default because it raises the violation counts.",
+                    "default": False,
+                },
+                "timeoutSec": {
+                    "type": "number",
+                    "description": "kicad-cli timeout in seconds, clamped to [10, 1800]",
+                    "default": 600,
+                },
             },
         },
     },
     {
         "name": "get_drc_violations",
         "title": "Get DRC Violations",
-        "description": "Returns a list of design rule violations from the most recent DRC run.",
-        "inputSchema": {"type": "object", "properties": {}},
+        "description": "Returns a list of design rule violations from the most recent DRC run, including unconnected items.",
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "includeUnconnected": {
+                    "type": "boolean",
+                    "description": "Include unconnected items alongside rule violations. Defaults to true.",
+                    "default": True,
+                },
+                "severity": {
+                    "type": "string",
+                    "description": "Filter to one severity: error, warning, or all",
+                    "default": "all",
+                },
+            },
+        },
     },
     {
         "name": "assign_net_to_class",

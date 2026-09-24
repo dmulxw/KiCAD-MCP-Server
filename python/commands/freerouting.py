@@ -5,8 +5,12 @@ Exports the board to Specctra DSN format, runs Freerouting CLI,
 and imports the routed SES file back into the board.
 
 Supports two execution modes:
-  - Direct: java -jar freerouting.jar (requires Java 21+)
-  - Docker: docker run eclipse-temurin:21-jre (requires Docker)
+  - Direct: java -jar freerouting.jar (requires the Java its build targets)
+  - Docker: docker run eclipse-temurin:25-jre (requires Docker)
+
+The Java requirement is not a fixed 21: Freerouting compiles each release
+against a current JDK, and v2.4.1 is built for 25. It is read from the JAR's
+class-file version rather than assumed -- see ``_jar_required_java``.
 """
 
 import logging
@@ -16,6 +20,7 @@ import shutil
 import subprocess
 import tempfile
 import time
+import zipfile
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Tuple
 
@@ -30,13 +35,68 @@ DEFAULT_FREEROUTING_JAR = os.environ.get(
     os.path.join(os.path.expanduser("~"), ".kicad-mcp", "freerouting.jar"),
 )
 
-DOCKER_IMAGE = "eclipse-temurin:21-jre"
+DOCKER_IMAGE = "eclipse-temurin:25-jre"
+
+#: Java assumed when the JAR cannot be read. Freerouting 2.x has never needed
+#: less than this, so it is a safe floor for the "is a JRE present at all" test.
+_ASSUMED_MIN_JAVA = 21
 
 # Default schedule of `-mp` (max passes) values used when ``attempts`` > 1.
 # Cycles through a range that empirically produces enough variation between
 # runs to surface a better result than any single fixed value. Ported from
 # morningfire-pcb-automation/scripts/routing/freeroute_runner.py.
 DEFAULT_PASS_SCHEDULE = [50, 60, 65, 70, 75, 80, 85, 90, 55, 95]
+
+# Default `(-is, -us)` pairs used when ``attempts`` > 1, positionally matched
+# to DEFAULT_PASS_SCHEDULE.
+#
+# Varying `-mp` alone does NOT make best-of-N work. The autorouter is
+# deterministic, so once the pass count is high enough for it to converge,
+# every schedule value lands on the same solution -- five attempts returned
+# five byte-identical boards on the touch-panel build, including the same seven
+# unrouted nets, and best-of-N silently degraded to "run it five times". The
+# item-selection strategy (`-is`) is what decides which items each optimiser
+# round examines, so changing it moves the search off that fixed point; the
+# board-update strategy (`-us`) selects what a pass does with the result.
+#
+# The first pair is Freerouting's own default (prioritized/greedy), so a
+# single-attempt caller and attempt 0 of a best-of-N run behave exactly as they
+# did before. The rest diverge deliberately. Cycles every 6.
+DEFAULT_STRATEGY_SCHEDULE = [
+    ("prioritized", "greedy"),   # router defaults -- unchanged behaviour
+    ("random", "greedy"),        # same optimiser, different item order
+    ("sequential", "greedy"),
+    ("prioritized", "global"),
+    ("random", "global"),
+    ("sequential", "global"),
+]
+
+#: Accepted values for the router's `-is` and `-us`, as `--help` lists them.
+_SELECTION_STRATEGIES = ("sequential", "random", "prioritized")
+_UPDATING_STRATEGIES = ("greedy", "global", "hybrid")
+
+
+def _validate_strategy(
+    value: Any, allowed: Tuple[str, ...], flag: str
+) -> Optional[Any]:
+    """Normalise a user-supplied strategy name, or return an error dict.
+
+    Returns None when ``value`` is unset (leave the flag off the command line),
+    the lower-cased name when it is valid, or a ready-to-return error payload.
+    """
+    if value is None:
+        return None
+    name = str(value).strip().lower()
+    if name not in allowed:
+        return {
+            "success": False,
+            "message": f"Invalid {flag} strategy",
+            "errorDetails": (
+                f"{flag} accepts {'/'.join(s.capitalize() for s in allowed)}; "
+                f"got {value!r}"
+            ),
+        }
+    return name
 
 
 def _find_java() -> Optional[str]:
@@ -75,8 +135,8 @@ def _docker_available() -> bool:
         return False
 
 
-def _java_version_ok(java_exe: str) -> bool:
-    """Check if local Java is version 21+."""
+def _java_major(java_exe: str) -> Optional[int]:
+    """Feature version of ``java_exe`` (21 for "21.0.12"), or None."""
     try:
         proc = subprocess.run(
             [java_exe, "-version"],
@@ -89,11 +149,57 @@ def _java_version_ok(java_exe: str) -> bool:
         for line in output.split("\n"):
             if "version" in line:
                 ver = line.split('"')[1] if '"' in line else ""
-                major = int(ver.split(".")[0])
-                return major >= 21
+                return int(ver.split(".")[0])
     except Exception:
         pass
-    return False
+    return None
+
+
+def _jar_required_java(jar_path: str) -> Optional[int]:
+    """Java feature version a JAR's classes were compiled for, or None.
+
+    A class file's major version sits a fixed offset above the Java feature
+    version (major 69 is Java 25), so the class the JVM will load states the
+    minimum JRE outright. Freerouting cuts a new build per release and has
+    moved this requirement more than once, so the JAR -- not a constant in
+    this file -- is the only source that stays true.
+
+    Getting this wrong is not a soft failure: an under-versioned JVM refuses
+    the class with UnsupportedClassVersionError and every routing attempt dies
+    in 0.1s. That is how a Java 21 image ended up shipping a Java 25-only JAR
+    while the dependency check reported ``java_21_ok: true``.
+    """
+    entry = "app/freerouting/Freerouting.class"
+    try:
+        with zipfile.ZipFile(jar_path) as jar:
+            names = jar.namelist()
+            if entry not in names:
+                # Fall back to any top-level class rather than giving up: the
+                # whole archive is produced by one compiler invocation, so any
+                # class in it carries the same major version.
+                names = [n for n in names if n.endswith(".class") and "$" not in n]
+                if not names:
+                    return None
+                entry = names[0]
+            with jar.open(entry) as handle:
+                header = handle.read(8)
+    except Exception:
+        return None
+
+    if len(header) < 8 or header[:4] != b"\xca\xfe\xba\xbe":
+        return None
+    major = int.from_bytes(header[6:8], "big")
+    # Major 45 is Java 1.1, so the feature version is the major minus 44.
+    return major - 44 if major >= 45 else None
+
+
+def _java_version_ok(java_exe: str, jar_path: Optional[str] = None) -> bool:
+    """Whether ``java_exe`` can load ``jar_path`` (default: any 21+ JRE)."""
+    required = _jar_required_java(jar_path) if jar_path else None
+    if required is None:
+        required = _ASSUMED_MIN_JAVA
+    major = _java_major(java_exe)
+    return major is not None and major >= required
 
 
 def _build_freerouting_cmd(
@@ -103,6 +209,8 @@ def _build_freerouting_cmd(
     passes: int,
     use_docker: bool,
     single_thread: bool = False,
+    selection: Optional[str] = None,
+    updating: Optional[str] = None,
 ) -> List[str]:
     """Build the command to run Freerouting.
 
@@ -111,8 +219,17 @@ def _build_freerouting_cmd(
     clearance violations in some cases (the runtime even prints a warning);
     best-of-N callers should pass this so each attempt's score reflects a
     valid routed board, not an artefact of MT optimisation.
+
+    ``selection`` (``-is``) and ``updating`` (``-us``) are the two strategy
+    knobs the router exposes. Both are left off when None, so the JAR's own
+    defaults apply and the emitted command is byte-identical to what it was
+    before these parameters existed.
     """
     extra = ["-mt", "1"] if single_thread else []
+    if selection:
+        extra += ["-is", str(selection)]
+    if updating:
+        extra += ["-us", str(updating)]
     if use_docker:
         docker_exe = _find_docker()
         if docker_exe is None:
@@ -359,7 +476,8 @@ class FreeroutingCommands:
         Returns dict with 'mode', 'use_docker', or 'error'.
         """
         java_exe = _find_java()
-        if java_exe and _java_version_ok(java_exe):
+        required = _jar_required_java(jar_path) or _ASSUMED_MIN_JAVA
+        if java_exe and _java_version_ok(java_exe, jar_path):
             return {"mode": "direct", "use_docker": False}
 
         if _docker_available():
@@ -369,15 +487,15 @@ class FreeroutingCommands:
             return {
                 "mode": "error",
                 "error": (
-                    f"Java found at {java_exe} but version < 21. "
-                    "Freerouting 2.x requires Java 21+. "
-                    "Install Java 21+ or Docker."
+                    f"Java found at {java_exe} but this Freerouting build needs "
+                    f"Java {required}+. Install Java {required}+ or Docker."
                 ),
             }
         return {
             "mode": "error",
             "error": (
-                "Neither Java 21+ nor Docker found. " "Install one of them to use Freerouting."
+                f"Neither Java {required}+ nor Docker found. "
+                "Install one of them to use Freerouting."
             ),
         }
 
@@ -460,6 +578,24 @@ class FreeroutingCommands:
         pass_schedule = list(params.get("passSchedule") or DEFAULT_PASS_SCHEDULE)
         if not pass_schedule:
             pass_schedule = [passes]
+        strategy_schedule = list(
+            params.get("strategySchedule") or DEFAULT_STRATEGY_SCHEDULE
+        )
+        if not strategy_schedule:
+            strategy_schedule = [("prioritized", "greedy")]
+
+        # Pin one strategy for every attempt instead of cycling. Both are
+        # validated against the values the JAR documents, so a typo fails here
+        # with the accepted list rather than as an unhelpful router error.
+        selection_strategy = _validate_strategy(
+            params.get("selectionStrategy"), _SELECTION_STRATEGIES, "-is"
+        )
+        updating_strategy = _validate_strategy(
+            params.get("updatingStrategy"), _UPDATING_STRATEGIES, "-us"
+        )
+        for bad in (selection_strategy, updating_strategy):
+            if isinstance(bad, dict):
+                return bad
 
         # Validate Freerouting JAR
         if not os.path.isfile(jar_path):
@@ -517,6 +653,9 @@ class FreeroutingCommands:
                 attempts=attempts,
                 target_nets=target_nets,
                 pass_schedule=pass_schedule,
+                strategy_schedule=strategy_schedule,
+                selection_strategy=selection_strategy,
+                updating_strategy=updating_strategy,
                 use_docker=use_docker,
             )
         finally:
@@ -552,6 +691,9 @@ class FreeroutingCommands:
         attempts: int,
         target_nets: List[Any],
         pass_schedule: List[Any],
+        strategy_schedule: List[Any],
+        selection_strategy: Optional[str],
+        updating_strategy: Optional[str],
         use_docker: bool,
     ) -> Dict[str, Any]:
         """Body of autoroute, running against a staged artifact directory."""
@@ -603,13 +745,28 @@ class FreeroutingCommands:
         # passSchedule. Always run single-threaded when scoring multiple
         # attempts so the optimiser doesn't introduce clearance violations
         # that would distort the comparison.
+        #
+        # -is/-us are cycled alongside -mp: see DEFAULT_STRATEGY_SCHEDULE for
+        # why varying the pass count alone does not actually vary the result.
         for idx in range(attempts):
             if attempts == 1:
                 attempt_passes = passes
                 single_thread = False
+                # Only the caller's explicit choice reaches the command line:
+                # with neither parameter set this stays None/None and the
+                # emitted command is unchanged.
+                selection = selection_strategy
+                updating = updating_strategy
             else:
                 attempt_passes = pass_schedule[idx % len(pass_schedule)]
                 single_thread = True
+                if selection_strategy or updating_strategy:
+                    selection = selection_strategy
+                    updating = updating_strategy
+                else:
+                    selection, updating = strategy_schedule[
+                        idx % len(strategy_schedule)
+                    ]
 
             cmd = _build_freerouting_cmd(
                 jar_path,
@@ -618,10 +775,13 @@ class FreeroutingCommands:
                 attempt_passes,
                 use_docker,
                 single_thread=single_thread,
+                selection=selection,
+                updating=updating,
             )
             logger.info(
                 f"Freerouting attempt {idx + 1}/{attempts} "
-                f"(mp={attempt_passes}, mode={mode_label})"
+                f"(mp={attempt_passes}, is={selection}, us={updating}, "
+                f"mode={mode_label})"
             )
 
             # Remove the previous attempt's SES before launching: an attempt
@@ -710,6 +870,8 @@ class FreeroutingCommands:
                 {
                     "attempt": idx + 1,
                     "max_passes": attempt_passes,
+                    "selection": selection,
+                    "updating": updating,
                     "elapsed_seconds": attempt_elapsed,
                     "ok": True,
                     **score_info,
@@ -1010,7 +1172,7 @@ class FreeroutingCommands:
         # Check local Java
         java_exe = _find_java()
         java_version = None
-        java_21_ok = False
+        java_version_ok = False
         if java_exe:
             try:
                 proc = subprocess.run(
@@ -1020,7 +1182,7 @@ class FreeroutingCommands:
                     timeout=10,
                 )
                 java_version = (proc.stderr or proc.stdout).strip().split("\n")[0]
-                java_21_ok = _java_version_ok(java_exe)
+                java_version_ok = _java_version_ok(java_exe, jar_path)
             except Exception:
                 pass
 
@@ -1029,22 +1191,26 @@ class FreeroutingCommands:
         has_docker = _docker_available()
 
         jar_exists = os.path.isfile(jar_path)
-        ready = jar_exists and (java_21_ok or has_docker)
+        required_java = _jar_required_java(jar_path) if jar_exists else None
+        ready = jar_exists and (java_version_ok or has_docker)
 
         mode = "none"
-        if java_21_ok:
+        if java_version_ok:
             mode = "direct"
         elif has_docker:
             mode = "docker"
 
-        return {
+        result = {
             "success": True,
             "message": "Freerouting dependency check",
             "java": {
                 "found": java_exe is not None,
                 "path": java_exe,
                 "version": java_version,
-                "java_21_ok": java_21_ok,
+                # The JAR's own requirement, so a JRE that is present but too
+                # old to load it reads as not-ok rather than as ready.
+                "required_version": required_java,
+                "version_ok": java_version_ok,
             },
             "docker": {
                 "available": has_docker,
@@ -1054,7 +1220,15 @@ class FreeroutingCommands:
             "freerouting": {
                 "jar_found": jar_exists,
                 "jar_path": jar_path,
+                "required_java": required_java,
             },
             "execution_mode": mode,
             "ready": ready,
         }
+
+        if jar_exists and not java_version_ok and not has_docker:
+            result["message"] = (
+                f"Freerouting JAR needs Java {required_java}, but "
+                f"{java_version or 'no JRE'} is what is installed"
+            )
+        return result

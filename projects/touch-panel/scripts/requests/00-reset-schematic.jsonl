@@ -1,0 +1,4 @@
+{"method":"initialize","params":{"protocolVersion":"2024-11-05","capabilities":{},"clientInfo":{"name":"touch-panel-builder","version":"1.0"}}}
+{"method":"notifications/initialized"}
+{"method":"tools/call","params":{"name":"create_schematic","arguments":{"name":"touch-panel","path":"/workspace/projects/touch-panel/touch-panel.kicad_sch"}}}
+{"method":"tools/call","params":{"name":"get_schematic_metadata","arguments":{"schematicPath":"/workspace/projects/touch-panel/touch-panel.kicad_sch"}}}

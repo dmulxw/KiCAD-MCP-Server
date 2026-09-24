@@ -1,0 +1,6 @@
+{"method":"initialize","params":{"protocolVersion":"2024-11-05","capabilities":{},"clientInfo":{"name":"touch-panel-pcb","version":"1.0"}}}
+{"method":"notifications/initialized"}
+{"method":"tools/call","params":{"name":"open_board","arguments":{"boardPath":"/workspace/projects/touch-panel/touch-panel.kicad_pcb"}}}
+{"method":"tools/call","params":{"name":"sync_schematic_to_board","arguments":{"schematicPath":"/workspace/projects/touch-panel/touch-panel.kicad_sch","boardPath":"/workspace/projects/touch-panel/touch-panel.kicad_pcb"}}}
+{"method":"tools/call","params":{"name":"save_project","arguments":{}}}
+{"method":"tools/call","params":{"name":"get_board_info","arguments":{"boardPath":"/workspace/projects/touch-panel/touch-panel.kicad_pcb"}}}

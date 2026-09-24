@@ -1,0 +1,5 @@
+{"method":"initialize","params":{"protocolVersion":"2024-11-05","capabilities":{},"clientInfo":{"name":"diag","version":"1.0"}}}
+{"method":"notifications/initialized"}
+{"method":"tools/call","params":{"name":"open_board","arguments":{"boardPath":"/workspace/projects/touch-panel/touch-panel.kicad_pcb"}}}
+{"method":"tools/call","params":{"name":"autoroute","arguments":{"boardPath":"/workspace/projects/touch-panel/touch-panel.kicad_pcb","attempts":3,"timeout":300,"keepArtifacts":true}}}
+{"method":"tools/call","params":{"name":"save_project","arguments":{}}}

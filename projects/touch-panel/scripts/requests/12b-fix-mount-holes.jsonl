@@ -1,0 +1,9 @@
+{"method":"initialize","params":{"protocolVersion":"2024-11-05","capabilities":{},"clientInfo":{"name":"touch-panel-pcb","version":"1.0"}}}
+{"method":"notifications/initialized"}
+{"method":"tools/call","params":{"name":"open_board","arguments":{"boardPath":"/workspace/projects/touch-panel/touch-panel.kicad_pcb"}}}
+{"method":"tools/call","params":{"name":"delete_component","arguments":{"reference":"MH5"}}}
+{"method":"tools/call","params":{"name":"delete_component","arguments":{"reference":"MH6"}}}
+{"method":"tools/call","params":{"name":"delete_component","arguments":{"reference":"MH7"}}}
+{"method":"tools/call","params":{"name":"delete_component","arguments":{"reference":"MH8"}}}
+{"method":"tools/call","params":{"name":"save_project","arguments":{}}}
+{"method":"tools/call","params":{"name":"check_courtyard_overlaps","arguments":{}}}

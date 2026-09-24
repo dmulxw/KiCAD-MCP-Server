@@ -1,0 +1,11 @@
+{"method":"initialize","params":{"protocolVersion":"2024-11-05","capabilities":{},"clientInfo":{"name":"touch-panel-builder","version":"1.0"}}}
+{"method":"notifications/initialized"}
+{"method":"tools/call","params":{"name":"open_board","arguments":{"boardPath":"/workspace/projects/touch-panel/touch-panel.kicad_pcb"}}}
+{"method":"tools/call","params":{"name":"replace_board_outline","arguments":{"shape":"rectangle","params":{"x":100,"y":100,"width":71,"height":150,"unit":"mm"}}}}
+{"method":"tools/call","params":{"name":"add_mounting_hole","arguments":{"position":{"x":108,"y":105.5,"unit":"mm"},"diameter":2.7}}}
+{"method":"tools/call","params":{"name":"add_mounting_hole","arguments":{"position":{"x":108,"y":244.5,"unit":"mm"},"diameter":2.7}}}
+{"method":"tools/call","params":{"name":"add_mounting_hole","arguments":{"position":{"x":163,"y":105.5,"unit":"mm"},"diameter":2.7}}}
+{"method":"tools/call","params":{"name":"add_mounting_hole","arguments":{"position":{"x":163,"y":244.5,"unit":"mm"},"diameter":2.7}}}
+{"method":"tools/call","params":{"name":"save_project","arguments":{}}}
+{"method":"tools/call","params":{"name":"export_pcb_dxf","arguments":{"boardPath":"/workspace/projects/touch-panel/touch-panel.kicad_pcb","outputPath":"/workspace/projects/touch-panel/touch-panel-outline.dxf","layers":["Edge.Cuts"],"modeSingle":true,"outputUnits":"mm","excludeRefdes":true,"excludeValue":true,"includeBorderTitle":false}}}
+{"method":"tools/call","params":{"name":"get_board_info","arguments":{"boardPath":"/workspace/projects/touch-panel/touch-panel.kicad_pcb"}}}

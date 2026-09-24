@@ -1,0 +1,1571 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-11T17:20:29+0000",
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "9.0.9",
+    "schematic_parity": [],
+    "source": "probe.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [ROW3] of J1 on F.Cu",
+                    "pos": {
+                        "x": 127.25,
+                        "y": 243.15
+                    },
+                    "uuid": "708587b5-f1fa-440d-b2f5-9f19cc9a853e"
+                },
+                {
+                    "description": "Track [ROW3] on F.Cu, length 6.4000 mm",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 129.25
+                    },
+                    "uuid": "73ecbf4a-c0f3-4ab0-9080-ecf2b490685b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [ROW5] on F.Cu, length 6.4000 mm",
+                    "pos": {
+                        "x": 131.3625,
+                        "y": 142.05
+                    },
+                    "uuid": "3b678d78-b684-4a96-ab78-db3db451ae91"
+                },
+                {
+                    "description": "Pad 6 [ROW5] of J1 on F.Cu",
+                    "pos": {
+                        "x": 128.25,
+                        "y": 243.15
+                    },
+                    "uuid": "47312899-94dc-4f18-951c-3d2bafad9a5d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [ROW8] on F.Cu, length 6.4000 mm",
+                    "pos": {
+                        "x": 131.3625,
+                        "y": 161.25
+                    },
+                    "uuid": "440243aa-b6cd-4cc9-95ec-0aa95f8a0f55"
+                },
+                {
+                    "description": "Pad 9 [ROW8] of J1 on F.Cu",
+                    "pos": {
+                        "x": 129.75,
+                        "y": 243.15
+                    },
+                    "uuid": "63ca2468-3df8-4935-bb1c-81c597284503"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 22 [CSEL0] of J1 on F.Cu",
+                    "pos": {
+                        "x": 136.25,
+                        "y": 243.15
+                    },
+                    "uuid": "45edff26-4659-44e7-8e9b-97b71707234c"
+                },
+                {
+                    "description": "Track [CSEL0] on F.Cu, length 0.5176 mm",
+                    "pos": {
+                        "x": 109.49,
+                        "y": 242.5
+                    },
+                    "uuid": "5cbf6103-c612-44d5-ba80-5bbbc3b6e712"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 18 [ROW17] of J1 on F.Cu",
+                    "pos": {
+                        "x": 134.25,
+                        "y": 243.15
+                    },
+                    "uuid": "09c5c08c-3c92-43e8-ad6b-e56dcb39448c"
+                },
+                {
+                    "description": "Track [ROW17] on F.Cu, length 6.4000 mm",
+                    "pos": {
+                        "x": 131.3625,
+                        "y": 218.85
+                    },
+                    "uuid": "f08e9fb5-63f4-4685-a970-615828e32c66"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [ROW18] on F.Cu, length 6.4000 mm",
+                    "pos": {
+                        "x": 131.3625,
+                        "y": 225.25
+                    },
+                    "uuid": "1ff977b5-cd37-4b2a-b326-650e3ed3796b"
+                },
+                {
+                    "description": "Pad 19 [ROW18] of J1 on F.Cu",
+                    "pos": {
+                        "x": 134.75,
+                        "y": 243.15
+                    },
+                    "uuid": "b8d34fd3-24da-4170-a55c-60d1d92dbc7c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 8 [ROW7] of J1 on F.Cu",
+                    "pos": {
+                        "x": 129.25,
+                        "y": 243.15
+                    },
+                    "uuid": "06ae9f73-4894-4fb2-bcfd-b032db7ff130"
+                },
+                {
+                    "description": "Track [ROW7] on F.Cu, length 1.8372 mm",
+                    "pos": {
+                        "x": 147.6501,
+                        "y": 156.0616
+                    },
+                    "uuid": "5496a2f6-aacc-4cbf-8f58-36ca6e97671b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Footprint 'MountingHole_2.7mm' does not match copy in library 'MountingHole'.",
+            "items": [
+                {
+                    "description": "Footprint MH4",
+                    "pos": {
+                        "x": 163.0,
+                        "y": 244.5
+                    },
+                    "uuid": "126cb74f-1e57-4c24-a870-30ff17a5bc69"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'MountingHole_2.7mm' does not match copy in library 'MountingHole'.",
+            "items": [
+                {
+                    "description": "Footprint MH3",
+                    "pos": {
+                        "x": 163.0,
+                        "y": 105.5
+                    },
+                    "uuid": "1e95bbe5-0e2e-4b54-9673-da7d144ee89d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'touch-panel'.",
+            "items": [
+                {
+                    "description": "Footprint TP4",
+                    "pos": {
+                        "x": 125.9,
+                        "y": 175.0
+                    },
+                    "uuid": "1eb7c95a-ed2b-4d9e-b4b3-a8d003656c63"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'touch-panel'.",
+            "items": [
+                {
+                    "description": "Footprint TP5",
+                    "pos": {
+                        "x": 132.3,
+                        "y": 175.0
+                    },
+                    "uuid": "38eef59b-6439-4f1b-a033-86f1415049cf"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'touch-panel'.",
+            "items": [
+                {
+                    "description": "Footprint TP9",
+                    "pos": {
+                        "x": 157.9,
+                        "y": 175.0
+                    },
+                    "uuid": "424971d0-130b-4d78-ab8e-4997c4c4f438"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Footprint 'MountingHole_2.7mm' does not match copy in library 'MountingHole'.",
+            "items": [
+                {
+                    "description": "Footprint MH2",
+                    "pos": {
+                        "x": 108.0,
+                        "y": 244.5
+                    },
+                    "uuid": "5a5c77f1-5ba3-4d44-b2e4-17392dfc5db8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'touch-panel'.",
+            "items": [
+                {
+                    "description": "Footprint TP2",
+                    "pos": {
+                        "x": 113.1,
+                        "y": 175.0
+                    },
+                    "uuid": "82a7d8d9-b7b3-4d6d-bb5e-34664bcafc5f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'touch-panel'.",
+            "items": [
+                {
+                    "description": "Footprint TP1",
+                    "pos": {
+                        "x": 106.7,
+                        "y": 175.0
+                    },
+                    "uuid": "9cc06e79-b3ec-405c-96e6-f0acf59f99b4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'touch-panel'.",
+            "items": [
+                {
+                    "description": "Footprint TP10",
+                    "pos": {
+                        "x": 164.3,
+                        "y": 175.0
+                    },
+                    "uuid": "ac10b1a2-8d2f-4631-be49-d76c2dac08f5"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'touch-panel'.",
+            "items": [
+                {
+                    "description": "Footprint TP7",
+                    "pos": {
+                        "x": 145.1,
+                        "y": 175.0
+                    },
+                    "uuid": "b3f071da-b5f3-4c07-93ad-241aa4960ff7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'touch-panel'.",
+            "items": [
+                {
+                    "description": "Footprint TP6",
+                    "pos": {
+                        "x": 138.7,
+                        "y": 175.0
+                    },
+                    "uuid": "b5d478fc-bc47-4cbe-877b-80bd1e8f5272"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'touch-panel'.",
+            "items": [
+                {
+                    "description": "Footprint TP8",
+                    "pos": {
+                        "x": 151.5,
+                        "y": 175.0
+                    },
+                    "uuid": "d080f447-6359-4f9f-9c0f-3267157b86b7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Footprint 'MountingHole_2.7mm' does not match copy in library 'MountingHole'.",
+            "items": [
+                {
+                    "description": "Footprint MH1",
+                    "pos": {
+                        "x": 108.0,
+                        "y": 105.5
+                    },
+                    "uuid": "da021ba8-edd5-45ab-ae7f-869391d54543"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'touch-panel'.",
+            "items": [
+                {
+                    "description": "Footprint TP3",
+                    "pos": {
+                        "x": 119.5,
+                        "y": 175.0
+                    },
+                    "uuid": "f7dbd2e8-2f0f-46ed-9e26-e54485d62b71"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of MH4",
+                    "pos": {
+                        "x": 163.0,
+                        "y": 244.5
+                    },
+                    "uuid": "b4c92551-39b0-404f-9e73-ec68305e6755"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of MH3",
+                    "pos": {
+                        "x": 163.0,
+                        "y": 105.5
+                    },
+                    "uuid": "b0f80799-b0ed-4fd4-8225-f1e5d8232eef"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of TP4",
+                    "pos": {
+                        "x": 125.9,
+                        "y": 173.73
+                    },
+                    "uuid": "f53ecf5c-ec68-49ad-abd2-2abbe55a7b31"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of TP5",
+                    "pos": {
+                        "x": 132.3,
+                        "y": 173.73
+                    },
+                    "uuid": "79afb2c9-e23e-47ae-ada0-34b784e3b678"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of TP9",
+                    "pos": {
+                        "x": 157.9,
+                        "y": 173.73
+                    },
+                    "uuid": "f62fda94-6b97-4b6c-8d39-4a1386922f33"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of MH2",
+                    "pos": {
+                        "x": 108.0,
+                        "y": 244.5
+                    },
+                    "uuid": "bfd5625e-e9b2-4f9f-a425-144e12e107ad"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of TP2",
+                    "pos": {
+                        "x": 113.1,
+                        "y": 173.73
+                    },
+                    "uuid": "25f29d9c-8fba-4e96-a4c7-70efc0ff53fd"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of TP1",
+                    "pos": {
+                        "x": 106.7,
+                        "y": 173.73
+                    },
+                    "uuid": "87bc6481-e19e-44d3-8af2-1ddeea01f901"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of TP10",
+                    "pos": {
+                        "x": 164.3,
+                        "y": 173.73
+                    },
+                    "uuid": "3e7b6147-f692-426b-9b37-a2046c0449a3"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of TP7",
+                    "pos": {
+                        "x": 145.1,
+                        "y": 173.73
+                    },
+                    "uuid": "ac99c347-4a32-4050-9782-9aca4c5a2497"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of TP6",
+                    "pos": {
+                        "x": 138.7,
+                        "y": 173.73
+                    },
+                    "uuid": "e10448c2-8afe-492a-948e-49154c05e837"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of TP8",
+                    "pos": {
+                        "x": 151.5,
+                        "y": 173.73
+                    },
+                    "uuid": "51caf50c-f7cb-4066-b574-b943810f95ea"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of MH1",
+                    "pos": {
+                        "x": 108.0,
+                        "y": 105.5
+                    },
+                    "uuid": "b06db283-7146-409b-abcd-2db03e706166"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of Q219",
+                    "pos": {
+                        "x": 163.0,
+                        "y": 245.4
+                    },
+                    "uuid": "428e7550-86a9-43d9-b9b1-92dca3a52aec"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of Q212",
+                    "pos": {
+                        "x": 108.0,
+                        "y": 245.4
+                    },
+                    "uuid": "befacae6-e0ae-4a83-af0f-9bae22614282"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of TP3",
+                    "pos": {
+                        "x": 119.5,
+                        "y": 173.73
+                    },
+                    "uuid": "d595c5fa-cfec-4ca6-b7e6-3ffbe47bb36a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Segment of Q109 on F.Silkscreen",
+                    "pos": {
+                        "x": 157.14,
+                        "y": 173.44
+                    },
+                    "uuid": "ada96552-7d55-4655-8dad-63f9aec6fe8f"
+                },
+                {
+                    "description": "Reference field of TP9",
+                    "pos": {
+                        "x": 157.9,
+                        "y": 173.73
+                    },
+                    "uuid": "f62fda94-6b97-4b6c-8d39-4a1386922f33"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of TP10",
+                    "pos": {
+                        "x": 164.3,
+                        "y": 173.73
+                    },
+                    "uuid": "3e7b6147-f692-426b-9b37-a2046c0449a3"
+                },
+                {
+                    "description": "Reference field of Q110",
+                    "pos": {
+                        "x": 164.3,
+                        "y": 172.6
+                    },
+                    "uuid": "ecdb8e86-f5c2-4a21-9b98-3585317a8bda"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of TP10",
+                    "pos": {
+                        "x": 164.3,
+                        "y": 173.73
+                    },
+                    "uuid": "3e7b6147-f692-426b-9b37-a2046c0449a3"
+                },
+                {
+                    "description": "Segment of Q110 on F.Silkscreen",
+                    "pos": {
+                        "x": 163.54,
+                        "y": 173.44
+                    },
+                    "uuid": "b1e409d4-f976-4ced-ab44-e37773b4e3aa"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of TP10",
+                    "pos": {
+                        "x": 164.3,
+                        "y": 173.73
+                    },
+                    "uuid": "3e7b6147-f692-426b-9b37-a2046c0449a3"
+                },
+                {
+                    "description": "Segment of Q110 on F.Silkscreen",
+                    "pos": {
+                        "x": 163.54,
+                        "y": 173.49
+                    },
+                    "uuid": "ac35cc8c-9e1a-4c14-a7a0-e408d29b9f76"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of Q109",
+                    "pos": {
+                        "x": 157.9,
+                        "y": 172.6
+                    },
+                    "uuid": "74de7a11-8eba-4c98-aaac-7f30823645da"
+                },
+                {
+                    "description": "Reference field of TP9",
+                    "pos": {
+                        "x": 157.9,
+                        "y": 173.73
+                    },
+                    "uuid": "f62fda94-6b97-4b6c-8d39-4a1386922f33"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of TP10",
+                    "pos": {
+                        "x": 164.3,
+                        "y": 173.73
+                    },
+                    "uuid": "3e7b6147-f692-426b-9b37-a2046c0449a3"
+                },
+                {
+                    "description": "Segment of Q110 on F.Silkscreen",
+                    "pos": {
+                        "x": 165.06,
+                        "y": 173.44
+                    },
+                    "uuid": "9aedb813-2568-4cf3-baf2-17c5816384d5"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Segment of Q109 on F.Silkscreen",
+                    "pos": {
+                        "x": 158.66,
+                        "y": 173.44
+                    },
+                    "uuid": "920408e8-6ce8-48f6-9f06-86ee851341b6"
+                },
+                {
+                    "description": "Reference field of TP9",
+                    "pos": {
+                        "x": 157.9,
+                        "y": 173.73
+                    },
+                    "uuid": "f62fda94-6b97-4b6c-8d39-4a1386922f33"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of TP8",
+                    "pos": {
+                        "x": 151.5,
+                        "y": 173.73
+                    },
+                    "uuid": "51caf50c-f7cb-4066-b574-b943810f95ea"
+                },
+                {
+                    "description": "Reference field of Q108",
+                    "pos": {
+                        "x": 151.5,
+                        "y": 172.6
+                    },
+                    "uuid": "8ee1e3ae-92f9-4360-b944-bba0d45229f4"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Segment of Q108 on F.Silkscreen",
+                    "pos": {
+                        "x": 150.74,
+                        "y": 173.44
+                    },
+                    "uuid": "40df9089-12d1-4101-b439-97a310bbb722"
+                },
+                {
+                    "description": "Reference field of TP8",
+                    "pos": {
+                        "x": 151.5,
+                        "y": 173.73
+                    },
+                    "uuid": "51caf50c-f7cb-4066-b574-b943810f95ea"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of TP8",
+                    "pos": {
+                        "x": 151.5,
+                        "y": 173.73
+                    },
+                    "uuid": "51caf50c-f7cb-4066-b574-b943810f95ea"
+                },
+                {
+                    "description": "Segment of Q108 on F.Silkscreen",
+                    "pos": {
+                        "x": 152.26,
+                        "y": 173.44
+                    },
+                    "uuid": "78c2e9f7-0d74-40ed-a453-673daf01699d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Segment of Q107 on F.Silkscreen",
+                    "pos": {
+                        "x": 144.34,
+                        "y": 173.44
+                    },
+                    "uuid": "15a2735a-60b1-4662-a5f7-259530934939"
+                },
+                {
+                    "description": "Reference field of TP7",
+                    "pos": {
+                        "x": 145.1,
+                        "y": 173.73
+                    },
+                    "uuid": "ac99c347-4a32-4050-9782-9aca4c5a2497"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of Q107",
+                    "pos": {
+                        "x": 145.1,
+                        "y": 172.6
+                    },
+                    "uuid": "0da08a0d-ba84-4d4e-8a6f-8367a0d72551"
+                },
+                {
+                    "description": "Reference field of TP7",
+                    "pos": {
+                        "x": 145.1,
+                        "y": 173.73
+                    },
+                    "uuid": "ac99c347-4a32-4050-9782-9aca4c5a2497"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Segment of Q107 on F.Silkscreen",
+                    "pos": {
+                        "x": 145.86,
+                        "y": 173.44
+                    },
+                    "uuid": "97e3dc55-2338-4f8f-af32-53836bbb2a0e"
+                },
+                {
+                    "description": "Reference field of TP7",
+                    "pos": {
+                        "x": 145.1,
+                        "y": 173.73
+                    },
+                    "uuid": "ac99c347-4a32-4050-9782-9aca4c5a2497"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of TP1",
+                    "pos": {
+                        "x": 106.7,
+                        "y": 173.73
+                    },
+                    "uuid": "87bc6481-e19e-44d3-8af2-1ddeea01f901"
+                },
+                {
+                    "description": "Reference field of Q101",
+                    "pos": {
+                        "x": 106.7,
+                        "y": 172.6
+                    },
+                    "uuid": "baabc486-be77-4fa1-9c7b-76a4653591e1"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of TP1",
+                    "pos": {
+                        "x": 106.7,
+                        "y": 173.73
+                    },
+                    "uuid": "87bc6481-e19e-44d3-8af2-1ddeea01f901"
+                },
+                {
+                    "description": "Segment of Q101 on F.Silkscreen",
+                    "pos": {
+                        "x": 105.94,
+                        "y": 173.44
+                    },
+                    "uuid": "c2399f84-9aab-4aae-ae99-a4b46e48f4bf"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Segment of Q101 on F.Silkscreen",
+                    "pos": {
+                        "x": 107.46,
+                        "y": 173.44
+                    },
+                    "uuid": "4f11d819-2db8-4115-962d-569e59b44b05"
+                },
+                {
+                    "description": "Reference field of TP1",
+                    "pos": {
+                        "x": 106.7,
+                        "y": 173.73
+                    },
+                    "uuid": "87bc6481-e19e-44d3-8af2-1ddeea01f901"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of Q103",
+                    "pos": {
+                        "x": 119.5,
+                        "y": 172.6
+                    },
+                    "uuid": "8f8744c1-653e-4e14-8e1d-77f48173047c"
+                },
+                {
+                    "description": "Reference field of TP3",
+                    "pos": {
+                        "x": 119.5,
+                        "y": 173.73
+                    },
+                    "uuid": "d595c5fa-cfec-4ca6-b7e6-3ffbe47bb36a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of TP3",
+                    "pos": {
+                        "x": 119.5,
+                        "y": 173.73
+                    },
+                    "uuid": "d595c5fa-cfec-4ca6-b7e6-3ffbe47bb36a"
+                },
+                {
+                    "description": "Segment of Q103 on F.Silkscreen",
+                    "pos": {
+                        "x": 120.26,
+                        "y": 173.44
+                    },
+                    "uuid": "e8a1bca5-9b47-4c34-98c4-252e3dd3ef32"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of Q104",
+                    "pos": {
+                        "x": 125.9,
+                        "y": 172.6
+                    },
+                    "uuid": "6bc86956-c3c7-4e89-84c9-004c5113ce38"
+                },
+                {
+                    "description": "Reference field of TP4",
+                    "pos": {
+                        "x": 125.9,
+                        "y": 173.73
+                    },
+                    "uuid": "f53ecf5c-ec68-49ad-abd2-2abbe55a7b31"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Segment of Q104 on F.Silkscreen",
+                    "pos": {
+                        "x": 125.14,
+                        "y": 173.44
+                    },
+                    "uuid": "467db705-1d5c-460a-9931-41d252447ed9"
+                },
+                {
+                    "description": "Reference field of TP4",
+                    "pos": {
+                        "x": 125.9,
+                        "y": 173.73
+                    },
+                    "uuid": "f53ecf5c-ec68-49ad-abd2-2abbe55a7b31"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Segment of Q104 on F.Silkscreen",
+                    "pos": {
+                        "x": 126.66,
+                        "y": 173.44
+                    },
+                    "uuid": "4abcbdba-70a9-41e4-81e7-d3dd1d867d48"
+                },
+                {
+                    "description": "Reference field of TP4",
+                    "pos": {
+                        "x": 125.9,
+                        "y": 173.73
+                    },
+                    "uuid": "f53ecf5c-ec68-49ad-abd2-2abbe55a7b31"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of Q106",
+                    "pos": {
+                        "x": 138.7,
+                        "y": 172.6
+                    },
+                    "uuid": "1d486a2a-6a39-47d7-a14c-14faa1c08713"
+                },
+                {
+                    "description": "Reference field of TP6",
+                    "pos": {
+                        "x": 138.7,
+                        "y": 173.73
+                    },
+                    "uuid": "e10448c2-8afe-492a-948e-49154c05e837"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of TP5",
+                    "pos": {
+                        "x": 132.3,
+                        "y": 173.73
+                    },
+                    "uuid": "79afb2c9-e23e-47ae-ada0-34b784e3b678"
+                },
+                {
+                    "description": "Segment of Q105 on F.Silkscreen",
+                    "pos": {
+                        "x": 133.06,
+                        "y": 173.44
+                    },
+                    "uuid": "898bd56a-9020-4dd1-8a76-4d7991e7c0ac"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Segment of Q106 on F.Silkscreen",
+                    "pos": {
+                        "x": 139.46,
+                        "y": 173.44
+                    },
+                    "uuid": "5b4bba47-f592-40f5-baa5-de9199310f0e"
+                },
+                {
+                    "description": "Reference field of TP6",
+                    "pos": {
+                        "x": 138.7,
+                        "y": 173.73
+                    },
+                    "uuid": "e10448c2-8afe-492a-948e-49154c05e837"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Segment of Q106 on F.Silkscreen",
+                    "pos": {
+                        "x": 137.94,
+                        "y": 173.44
+                    },
+                    "uuid": "6f5650bd-c0ca-4ae7-9edf-ee83fb55b4bb"
+                },
+                {
+                    "description": "Reference field of TP6",
+                    "pos": {
+                        "x": 138.7,
+                        "y": 173.73
+                    },
+                    "uuid": "e10448c2-8afe-492a-948e-49154c05e837"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Segment of Q103 on F.Silkscreen",
+                    "pos": {
+                        "x": 118.74,
+                        "y": 173.44
+                    },
+                    "uuid": "a14c9943-7fe9-4e72-b6d9-714cc13cc6ac"
+                },
+                {
+                    "description": "Reference field of TP3",
+                    "pos": {
+                        "x": 119.5,
+                        "y": 173.73
+                    },
+                    "uuid": "d595c5fa-cfec-4ca6-b7e6-3ffbe47bb36a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of Q102",
+                    "pos": {
+                        "x": 113.1,
+                        "y": 172.6
+                    },
+                    "uuid": "23b8643e-9ade-4525-836e-3c44856cb14f"
+                },
+                {
+                    "description": "Reference field of TP2",
+                    "pos": {
+                        "x": 113.1,
+                        "y": 173.73
+                    },
+                    "uuid": "25f29d9c-8fba-4e96-a4c7-70efc0ff53fd"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of TP2",
+                    "pos": {
+                        "x": 113.1,
+                        "y": 173.73
+                    },
+                    "uuid": "25f29d9c-8fba-4e96-a4c7-70efc0ff53fd"
+                },
+                {
+                    "description": "Segment of Q102 on F.Silkscreen",
+                    "pos": {
+                        "x": 112.34,
+                        "y": 173.44
+                    },
+                    "uuid": "8fcea4f0-2aac-43f6-8cc7-bec697f1939e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of TP2",
+                    "pos": {
+                        "x": 113.1,
+                        "y": 173.73
+                    },
+                    "uuid": "25f29d9c-8fba-4e96-a4c7-70efc0ff53fd"
+                },
+                {
+                    "description": "Segment of Q102 on F.Silkscreen",
+                    "pos": {
+                        "x": 113.86,
+                        "y": 173.44
+                    },
+                    "uuid": "bcdf55dc-4aaf-4631-ab8d-906a7d3f67bb"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Segment of Q105 on F.Silkscreen",
+                    "pos": {
+                        "x": 131.54,
+                        "y": 173.44
+                    },
+                    "uuid": "6f298b25-e42d-4900-b9e0-2590a33de0c6"
+                },
+                {
+                    "description": "Reference field of TP5",
+                    "pos": {
+                        "x": 132.3,
+                        "y": 173.73
+                    },
+                    "uuid": "79afb2c9-e23e-47ae-ada0-34b784e3b678"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of TP5",
+                    "pos": {
+                        "x": 132.3,
+                        "y": 173.73
+                    },
+                    "uuid": "79afb2c9-e23e-47ae-ada0-34b784e3b678"
+                },
+                {
+                    "description": "Reference field of Q105",
+                    "pos": {
+                        "x": 132.3,
+                        "y": 172.6
+                    },
+                    "uuid": "fe278e02-e8df-4064-ac60-e8cd85486941"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of Q219",
+                    "pos": {
+                        "x": 163.0,
+                        "y": 245.4
+                    },
+                    "uuid": "428e7550-86a9-43d9-b9b1-92dca3a52aec"
+                },
+                {
+                    "description": "Reference field of MH4",
+                    "pos": {
+                        "x": 163.0,
+                        "y": 244.5
+                    },
+                    "uuid": "b4c92551-39b0-404f-9e73-ec68305e6755"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of R30",
+                    "pos": {
+                        "x": 158.5,
+                        "y": 241.33
+                    },
+                    "uuid": "040af298-9659-46ae-a46a-83c783609f18"
+                },
+                {
+                    "description": "Reference field of R29",
+                    "pos": {
+                        "x": 156.0,
+                        "y": 241.33
+                    },
+                    "uuid": "0e602076-5c17-4d28-8f73-4abe4572f73a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of R29",
+                    "pos": {
+                        "x": 156.0,
+                        "y": 241.33
+                    },
+                    "uuid": "0e602076-5c17-4d28-8f73-4abe4572f73a"
+                },
+                {
+                    "description": "Reference field of R28",
+                    "pos": {
+                        "x": 153.5,
+                        "y": 241.33
+                    },
+                    "uuid": "de9f996c-c905-4ef7-9b26-c8cf289b7f04"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of R28",
+                    "pos": {
+                        "x": 153.5,
+                        "y": 241.33
+                    },
+                    "uuid": "de9f996c-c905-4ef7-9b26-c8cf289b7f04"
+                },
+                {
+                    "description": "Reference field of R27",
+                    "pos": {
+                        "x": 151.0,
+                        "y": 241.33
+                    },
+                    "uuid": "f38a9927-3d70-403e-9782-36b63fe04587"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of R30",
+                    "pos": {
+                        "x": 158.5,
+                        "y": 241.33
+                    },
+                    "uuid": "040af298-9659-46ae-a46a-83c783609f18"
+                },
+                {
+                    "description": "Reference field of R31",
+                    "pos": {
+                        "x": 161.0,
+                        "y": 241.33
+                    },
+                    "uuid": "d1df4cf9-0800-43dd-a1fd-908cb2262c46"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of Q212",
+                    "pos": {
+                        "x": 108.0,
+                        "y": 245.4
+                    },
+                    "uuid": "befacae6-e0ae-4a83-af0f-9bae22614282"
+                },
+                {
+                    "description": "Reference field of MH2",
+                    "pos": {
+                        "x": 108.0,
+                        "y": 244.5
+                    },
+                    "uuid": "bfd5625e-e9b2-4f9f-a425-144e12e107ad"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of R22",
+                    "pos": {
+                        "x": 110.0,
+                        "y": 241.33
+                    },
+                    "uuid": "23257d4a-f8ae-417a-a059-994bfff8906b"
+                },
+                {
+                    "description": "Reference field of R23",
+                    "pos": {
+                        "x": 112.5,
+                        "y": 241.33
+                    },
+                    "uuid": "da9673eb-f8f6-45bd-ba5c-bc030fee2388"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of R26",
+                    "pos": {
+                        "x": 120.0,
+                        "y": 241.33
+                    },
+                    "uuid": "1016191c-9f8f-45e4-881e-79414399e8ff"
+                },
+                {
+                    "description": "Reference field of R25",
+                    "pos": {
+                        "x": 117.5,
+                        "y": 241.33
+                    },
+                    "uuid": "218d5e08-059b-42bd-9748-edc9a67f7e5d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of R25",
+                    "pos": {
+                        "x": 117.5,
+                        "y": 241.33
+                    },
+                    "uuid": "218d5e08-059b-42bd-9748-edc9a67f7e5d"
+                },
+                {
+                    "description": "Reference field of R24",
+                    "pos": {
+                        "x": 115.0,
+                        "y": 241.33
+                    },
+                    "uuid": "5d48b064-df22-4e5c-932c-84a223d6f4b0"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of R24",
+                    "pos": {
+                        "x": 115.0,
+                        "y": 241.33
+                    },
+                    "uuid": "5d48b064-df22-4e5c-932c-84a223d6f4b0"
+                },
+                {
+                    "description": "Reference field of R23",
+                    "pos": {
+                        "x": 112.5,
+                        "y": 241.33
+                    },
+                    "uuid": "da9673eb-f8f6-45bd-ba5c-bc030fee2388"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        }
+    ]
+}

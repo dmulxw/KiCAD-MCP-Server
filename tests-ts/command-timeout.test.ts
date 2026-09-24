@@ -19,6 +19,22 @@ describe("computeCommandTimeout", () => {
     }
   });
 
+  describe("batch_add_and_connect", () => {
+    it("is never left on the 30s default, however large the sheet", () => {
+      // The regression: every call re-parses and re-serialises the whole
+      // schematic, so a 42-component batch that fit inside 30s against an
+      // empty sheet blew the limit once the sheet held 42 symbols. The
+      // abandon then landed mid-save and truncated the .kicad_sch to zero
+      // bytes, losing every symbol placed so far.
+      const timeout = computeCommandTimeout("batch_add_and_connect", {
+        schematicPath: "/workspace/projects/touch-panel/touch-panel.kicad_sch",
+        components: new Array(210).fill({}),
+      });
+      expect(timeout).toBeGreaterThan(DEFAULT_COMMAND_TIMEOUT_MS);
+      expect(timeout).toBe(LONG_COMMAND_TIMEOUT_MS);
+    });
+  });
+
   describe("autoroute (issue #251)", () => {
     it("is never left on the 30s default", () => {
       // The regression itself: autoroute was absent from the long-running list,

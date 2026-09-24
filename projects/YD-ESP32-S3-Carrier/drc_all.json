@@ -1,0 +1,406 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-22T23:08:01",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "YD-ESP32-S3-Carrier.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "F.Silkscreen 上的 线段",
+                    "pos": {
+                        "x": 37.67,
+                        "y": 6.09
+                    },
+                    "uuid": "3d9bee98-6a16-4daa-8e9d-88bdce5b627e"
+                },
+                {
+                    "description": "J2 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 35.07,
+                        "y": 62.67
+                    },
+                    "uuid": "4f79744a-099e-42f6-8311-6d1efcbb81f4"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "F.Silkscreen 上的 PCB 文本 'IO38'",
+                    "pos": {
+                        "x": 38.199999,
+                        "y": 30.86
+                    },
+                    "uuid": "12d0518f-d626-4d28-95bb-da49b2f27ba5"
+                },
+                {
+                    "description": "J3 的参考字段",
+                    "pos": {
+                        "x": 41.3,
+                        "y": 32.0
+                    },
+                    "uuid": "f0e8cb32-400f-420b-a659-35ad4376aaa1"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "J5 的参考字段",
+                    "pos": {
+                        "x": 39.62,
+                        "y": 6.0
+                    },
+                    "uuid": "79bd8bbb-60a4-4c4a-948d-a9683e198496"
+                },
+                {
+                    "description": "F.Silkscreen 上的 PCB 文本 'BAT'",
+                    "pos": {
+                        "x": 39.8,
+                        "y": 6.0
+                    },
+                    "uuid": "d351c55a-7f51-446b-b2d0-e947ec941ce7"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "F.Silkscreen 上的 线段",
+                    "pos": {
+                        "x": 9.73,
+                        "y": 6.09
+                    },
+                    "uuid": "9e01371e-4107-496a-b5c2-01eee425655c"
+                },
+                {
+                    "description": "F.Silkscreen 上的 PCB 文本 'BAT'",
+                    "pos": {
+                        "x": 39.8,
+                        "y": 6.0
+                    },
+                    "uuid": "d351c55a-7f51-446b-b2d0-e947ec941ce7"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "F.Silkscreen 上的 线段",
+                    "pos": {
+                        "x": 9.73,
+                        "y": 63.25
+                    },
+                    "uuid": "4aa9c203-12fc-41a4-b008-110e34497a54"
+                },
+                {
+                    "description": "J1 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 9.67,
+                        "y": 9.27
+                    },
+                    "uuid": "ec8dc23c-71f7-461a-a835-c0af63521d44"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "F.Silkscreen 上的 线段",
+                    "pos": {
+                        "x": 9.73,
+                        "y": 63.25
+                    },
+                    "uuid": "4aa9c203-12fc-41a4-b008-110e34497a54"
+                },
+                {
+                    "description": "J1 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 9.67,
+                        "y": 62.67
+                    },
+                    "uuid": "da7eb0a6-528f-4b19-ba1d-4ef9a586c0fe"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "F.Silkscreen 上的 线段",
+                    "pos": {
+                        "x": 9.73,
+                        "y": 63.25
+                    },
+                    "uuid": "4aa9c203-12fc-41a4-b008-110e34497a54"
+                },
+                {
+                    "description": "J1 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 9.67,
+                        "y": 9.27
+                    },
+                    "uuid": "7aa8b277-6bf2-4bfd-a73b-72d1a4839810"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "F.Silkscreen 上的 线段",
+                    "pos": {
+                        "x": 37.67,
+                        "y": 6.09
+                    },
+                    "uuid": "3d9bee98-6a16-4daa-8e9d-88bdce5b627e"
+                },
+                {
+                    "description": "J2 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 37.73,
+                        "y": 9.27
+                    },
+                    "uuid": "7a6cd965-bbbe-47cf-9bcd-2775473eb6a8"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "J2 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 35.07,
+                        "y": 9.27
+                    },
+                    "uuid": "3b7a8f7d-ef0f-4390-a217-56732139c8ab"
+                },
+                {
+                    "description": "F.Silkscreen 上的 线段",
+                    "pos": {
+                        "x": 37.67,
+                        "y": 6.09
+                    },
+                    "uuid": "3d9bee98-6a16-4daa-8e9d-88bdce5b627e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "J2 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 36.4,
+                        "y": 6.67
+                    },
+                    "uuid": "1942005d-74a4-4433-989f-d89672f7a87e"
+                },
+                {
+                    "description": "F.Silkscreen 上的 线段",
+                    "pos": {
+                        "x": 37.67,
+                        "y": 6.09
+                    },
+                    "uuid": "3d9bee98-6a16-4daa-8e9d-88bdce5b627e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "J2 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 37.73,
+                        "y": 6.67
+                    },
+                    "uuid": "1e9c53b5-a02d-4dd8-8384-ee5d6a3406ad"
+                },
+                {
+                    "description": "F.Silkscreen 上的 线段",
+                    "pos": {
+                        "x": 37.67,
+                        "y": 6.09
+                    },
+                    "uuid": "3d9bee98-6a16-4daa-8e9d-88bdce5b627e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "F.Silkscreen 上的 线段",
+                    "pos": {
+                        "x": 37.67,
+                        "y": 6.09
+                    },
+                    "uuid": "3d9bee98-6a16-4daa-8e9d-88bdce5b627e"
+                },
+                {
+                    "description": "F.Silkscreen 上的 PCB 文本 'BAT'",
+                    "pos": {
+                        "x": 39.8,
+                        "y": 6.0
+                    },
+                    "uuid": "d351c55a-7f51-446b-b2d0-e947ec941ce7"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "J2 的参考字段",
+                    "pos": {
+                        "x": 36.4,
+                        "y": 5.23
+                    },
+                    "uuid": "54272a09-cb7f-47fc-b9d4-9f96d5f4a01d"
+                },
+                {
+                    "description": "F.Silkscreen 上的 多边形",
+                    "pos": {
+                        "x": 35.699999,
+                        "y": 4.9
+                    },
+                    "uuid": "96b4c0db-7f51-4a59-8d0a-a952107bd3af"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "J1 的参考字段",
+                    "pos": {
+                        "x": 11.0,
+                        "y": 5.23
+                    },
+                    "uuid": "934d17b6-badc-4017-ad35-fec6299ae114"
+                },
+                {
+                    "description": "F.Silkscreen 上的 多边形",
+                    "pos": {
+                        "x": 10.3,
+                        "y": 4.9
+                    },
+                    "uuid": "b752bad8-b671-4913-b8aa-47d81e323932"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "F.Silkscreen 上的 PCB 文本 'TFT'",
+                    "pos": {
+                        "x": 72.2,
+                        "y": 45.6
+                    },
+                    "uuid": "d76f712c-22a6-4f33-9c92-8f6e1d7e35ca"
+                },
+                {
+                    "description": "J4 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 72.38,
+                        "y": 39.27
+                    },
+                    "uuid": "f1e58168-4d39-40ac-b844-de9a910b939a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "F.Silkscreen 上的 PCB 文本 'TFT'",
+                    "pos": {
+                        "x": 72.2,
+                        "y": 45.6
+                    },
+                    "uuid": "d76f712c-22a6-4f33-9c92-8f6e1d7e35ca"
+                },
+                {
+                    "description": "J4 的PTH 焊盘 4 [LCD_SDA]",
+                    "pos": {
+                        "x": 71.0,
+                        "y": 45.62
+                    },
+                    "uuid": "411d48ea-8dc2-4be1-99e2-c1fddd12df3f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

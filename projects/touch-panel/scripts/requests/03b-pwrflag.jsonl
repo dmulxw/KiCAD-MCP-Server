@@ -1,0 +1,3 @@
+{"method":"initialize","params":{"protocolVersion":"2024-11-05","capabilities":{},"clientInfo":{"name":"touch-panel-builder","version":"1.0"}}}
+{"method":"notifications/initialized"}
+{"method":"tools/call","params":{"name":"batch_add_and_connect","arguments":{"schematicPath":"/workspace/projects/touch-panel/touch-panel.kicad_sch","components":[{"symbol":"power:PWR_FLAG","reference":"#FLG01","value":"PWR_FLAG","position":{"x":520,"y":100},"nets":{"1":"GND"}},{"symbol":"power:PWR_FLAG","reference":"#FLG02","value":"PWR_FLAG","position":{"x":520,"y":115},"nets":{"1":"+3V3"}}]}}}

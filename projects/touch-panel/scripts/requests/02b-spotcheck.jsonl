@@ -1,0 +1,6 @@
+{"method":"initialize","params":{"protocolVersion":"2024-11-05","capabilities":{},"clientInfo":{"name":"touch-panel-builder","version":"1.0"}}}
+{"method":"notifications/initialized"}
+{"method":"tools/call","params":{"name":"get_net_connections","arguments":{"schematicPath":"/workspace/projects/touch-panel/touch-panel.kicad_sch","netName":"PAD1"}}}
+{"method":"tools/call","params":{"name":"get_net_connections","arguments":{"schematicPath":"/workspace/projects/touch-panel/touch-panel.kicad_sch","netName":"PAD2"}}}
+{"method":"tools/call","params":{"name":"get_net_connections","arguments":{"schematicPath":"/workspace/projects/touch-panel/touch-panel.kicad_sch","netName":"ROW0"}}}
+{"method":"tools/call","params":{"name":"get_net_connections","arguments":{"schematicPath":"/workspace/projects/touch-panel/touch-panel.kicad_sch","netName":"COL0"}}}

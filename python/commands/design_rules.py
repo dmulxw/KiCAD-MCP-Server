@@ -523,6 +523,33 @@ class DesignRuleCommands:
         dy = max(0, max(box1.GetTop() - box2.GetBottom(), box2.GetTop() - box1.GetBottom()))
         return math.hypot(dx, dy)
 
+    @staticmethod
+    def _flatten_drc_entry(entry: Dict[str, Any], fallback_type: str) -> Dict[str, Any]:
+        """One kicad-cli DRC JSON entry as the flat shape this tool returns.
+
+        ``violations`` and ``unconnected_items`` share this shape but not all
+        of their keys: an unconnected entry carries no ``type`` and its
+        ``items`` are the two disconnected ends rather than the objects in
+        conflict. Both still describe a problem at a location, which is all a
+        caller needs to act on it.
+        """
+        items = entry.get("items", [])
+        loc_x, loc_y = 0, 0
+        if items and "pos" in items[0]:
+            loc_x = items[0]["pos"].get("x", 0)
+            loc_y = items[0]["pos"].get("y", 0)
+
+        return {
+            "type": entry.get("type", fallback_type),
+            "severity": entry.get("severity", "error"),
+            "message": entry.get("description", ""),
+            "location": {
+                "x": loc_x,
+                "y": loc_y,
+                "unit": "mm",
+            },
+        }
+
     def run_drc(self, params: Dict[str, Any]) -> Dict[str, Any]:
         """Run Design Rule Check using kicad-cli"""
         import json
@@ -570,6 +597,11 @@ class DesignRuleCommands:
                 json_output = tmp.name
 
             try:
+                # `--severity-all` also reports the checks the project marks as
+                # ignored (lib_footprint_issues is the common one). Opt-in,
+                # because it changes the counts a caller already relies on.
+                severity_all = bool(params.get("severityAll"))
+
                 # Build command
                 cmd = [
                     kicad_cli,
@@ -581,8 +613,10 @@ class DesignRuleCommands:
                     json_output,
                     "--units",
                     "mm",
-                    board_file,
                 ]
+                if severity_all:
+                    cmd.append("--severity-all")
+                cmd.append(board_file)
 
                 logger.info(f"Running DRC command (timeout={timeout_sec}s): {' '.join(cmd)}")
 
@@ -606,57 +640,56 @@ class DesignRuleCommands:
                 with open(json_output, "r", encoding="utf-8") as f:
                     drc_data = json.load(f)
 
-                # Parse violations from kicad-cli output
+                # Parse violations from kicad-cli output. Unconnected items are
+                # reported under their own top-level key rather than in
+                # `violations`, so reading only the latter makes an unrouted
+                # board look clean -- the count that matters most for
+                # "is this board finished" was the one silently dropped.
                 violations = []
+                unconnected = []
                 violation_counts: dict[str, int] = {}
                 severity_counts = {"error": 0, "warning": 0, "info": 0}
 
                 for violation in drc_data.get("violations", []):
-                    vtype = violation.get("type", "unknown")
-                    vseverity = violation.get("severity", "error")
-
-                    # Extract location from first item's pos (kicad-cli JSON format)
-                    items = violation.get("items", [])
-                    loc_x, loc_y = 0, 0
-                    if items and "pos" in items[0]:
-                        loc_x = items[0]["pos"].get("x", 0)
-                        loc_y = items[0]["pos"].get("y", 0)
-
-                    violations.append(
-                        {
-                            "type": vtype,
-                            "severity": vseverity,
-                            "message": violation.get("description", ""),
-                            "location": {
-                                "x": loc_x,
-                                "y": loc_y,
-                                "unit": "mm",
-                            },
-                        }
-                    )
+                    flat = self._flatten_drc_entry(violation, "unknown")
+                    violations.append(flat)
 
                     # Count violations by type
+                    vtype = flat["type"]
                     violation_counts[vtype] = violation_counts.get(vtype, 0) + 1
 
                     # Count by severity
-                    if vseverity in severity_counts:
-                        severity_counts[vseverity] += 1
+                    if flat["severity"] in severity_counts:
+                        severity_counts[flat["severity"]] += 1
+
+                for open_item in drc_data.get("unconnected_items", []):
+                    flat = self._flatten_drc_entry(open_item, "unconnected_items")
+                    unconnected.append(flat)
+
+                    if flat["severity"] in severity_counts:
+                        severity_counts[flat["severity"]] += 1
 
                 # Determine where to save the violations file
                 board_dir = os.path.dirname(board_file)
                 board_name = os.path.splitext(os.path.basename(board_file))[0]
                 violations_file = os.path.join(board_dir, f"{board_name}_drc_violations.json")
 
-                # Always save violations to JSON file (for large result sets)
+                # Always save violations to JSON file (for large result sets).
+                # `unconnected_items` is a separate list rather than appended to
+                # `violations`, matching kicad-cli's own report layout: a
+                # clearance error and an unrouted pad are different problems and
+                # a caller filtering one usually wants the other kept apart.
                 with open(violations_file, "w", encoding="utf-8") as f:
                     json.dump(
                         {
                             "board": board_file,
                             "timestamp": drc_data.get("date", "unknown"),
                             "total_violations": len(violations),
+                            "total_unconnected": len(unconnected),
                             "violation_counts": violation_counts,
                             "severity_counts": severity_counts,
                             "violations": violations,
+                            "unconnected_items": unconnected,
                         },
                         f,
                         indent=2,
@@ -675,19 +708,30 @@ class DesignRuleCommands:
                         report_path,
                         "--units",
                         "mm",
-                        board_file,
                     ]
+                    if severity_all:
+                        cmd_report.append("--severity-all")
+                    cmd_report.append(board_file)
                     subprocess.run(cmd_report, capture_output=True, timeout=timeout_sec)
 
-                # Return summary only (not full violations list)
+                # Return summary only (not full violations list). The
+                # unconnected count rides in the message as well as the summary:
+                # an agent that reads only `message` is exactly the caller that
+                # used to conclude an unrouted board was finished.
+                summary = {
+                    "total": len(violations),
+                    "by_severity": severity_counts,
+                    "by_type": violation_counts,
+                }
+                message = f"Found {len(violations)} DRC violations"
+                if unconnected:
+                    summary["total_unconnected"] = len(unconnected)
+                    message += f" and {len(unconnected)} unconnected items"
+
                 return {
                     "success": True,
-                    "message": f"Found {len(violations)} DRC violations",
-                    "summary": {
-                        "total": len(violations),
-                        "by_severity": severity_counts,
-                        "by_type": violation_counts,
-                    },
+                    "message": message,
+                    "summary": summary,
                     "violationsFile": violations_file,
                     "reportPath": report_path if report_path else None,
                 }
@@ -741,7 +785,15 @@ class DesignRuleCommands:
                     "errorDetails": "Load or create a board first",
                 }
 
-            severity = params.get("severity", "all")
+            severity = params.get("severity") or "all"
+            # Unconnected items default in: they are the errors a caller is
+            # least able to discover otherwise, and run_drc used to drop them.
+            # `or True`-style defaulting, not dict.get(k, True): a caller that
+            # sends an explicit null would otherwise switch the unconnected
+            # report off by accident, which is the bug this exists to fix.
+            include_unconnected = params.get("includeUnconnected")
+            if include_unconnected is None:
+                include_unconnected = True
 
             # Run DRC using kicad-cli (this saves violations to JSON file)
             drc_result = self.run_drc({})
@@ -762,7 +814,14 @@ class DesignRuleCommands:
             with open(violations_file, "r", encoding="utf-8") as f:
                 data = json.load(f)
 
-            all_violations = data.get("violations", [])
+            all_violations = list(data.get("violations", []))
+            if include_unconnected:
+                # Tagged so a caller can tell an unrouted pad from a rule
+                # breach after the two lists have been merged.
+                all_violations.extend(
+                    {**item, "type": item.get("type", "unconnected_items")}
+                    for item in data.get("unconnected_items", [])
+                )
 
             # Filter by severity if specified
             if severity != "all":

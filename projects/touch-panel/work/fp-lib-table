@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "touch-panel")(type "KiCad")(uri "/workspace/projects/touch-panel/libs/touch-panel.pretty")(options "")(descr "Touch panel project footprints"))
+)

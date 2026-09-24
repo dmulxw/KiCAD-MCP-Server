@@ -1,0 +1,14 @@
+167 pads, 505 silk items as obstacles
+
+C5   NO CLEAN SPOT (best below +0.010 mm)
+C6   NO CLEAN SPOT (best below +0.150 mm)
+C8   right (  92.22,  10.09)  box x   92.22..94.42   y   9.25..10.94   clear 0.66 mm
+R3   NO CLEAN SPOT (best above +0.032 mm)
+R4   left  (  81.22,  12.79)  box x   80.37..82.07   y  11.69..13.90   clear 0.27 mm
+R5   right (  91.48,  12.79)  box x   90.63..92.33   y  11.69..13.90   clear 0.44 mm
+SW1  NO CLEAN SPOT (best above +0.019 mm)
+SW2  NO CLEAN SPOT (best above +0.195 mm)
+SW3  NO CLEAN SPOT (best below +0.075 mm)
+SW4  right (  84.73,  55.75)  box x   84.72..88.88   y  54.69..56.81   clear 0.27 mm
+
+saved -- now re-run silk.py's neighbours / DRC to confirm

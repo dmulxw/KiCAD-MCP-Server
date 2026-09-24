@@ -442,9 +442,17 @@ class BoardOutlineCommands:
             x_nm = int(position["x"] * scale)
             y_nm = int(position["y"] * scale)
             diameter_nm = int(diameter * scale)
+            # An unplated hole paints no copper: its pad exists only to open
+            # the solder mask. Defaulting that opening 1mm wider than the hole
+            # leaves a 0.5mm ring of bare laminate around every hole, which
+            # shorts across any track passing through it -- on a 210-pad board
+            # it bridged a ROW line whose centre was 1.83mm from a 2.7mm hole.
+            # The library footprints set size == drill, so a plated hole still
+            # gets its annular ring while an unplated one gets only the hole.
+            default_pad_nm = diameter_nm + scale if plated else diameter_nm
             pad_diameter_nm = (
-                int(pad_diameter * scale) if pad_diameter else diameter_nm + scale
-            )  # 1mm larger by default
+                int(pad_diameter * scale) if pad_diameter else default_pad_nm
+            )
 
             # Create footprint for mounting hole with unique reference
             existing_mh = [
@@ -460,17 +468,31 @@ class BoardOutlineCommands:
             module.SetReference(f"MH{next_num}")
             module.SetValue(f"MountingHole_{diameter}mm")
 
-            # Set a real library:name FPID. Without this, the footprint is
-            # written as `(footprint "" ...)` and KiCad's GUI Move tool refuses
-            # to select it (no library link → not draggable in the editor).
+            # The footprint is built here rather than loaded from a library, so
+            # it must not claim to be one -- but it must not carry a blank id
+            # either, because KiCad's GUI Move tool refuses to select a
+            # footprint whose FPID is empty. A bare board-local name satisfies
+            # both.
+            #
+            # This used to default to `MountingHole:MountingHole_{diameter}mm`.
+            # That link made library parity compare the board footprint against
+            # a library file it was not built from, which reports
+            # lib_footprint_mismatch on every board using this call. It also
+            # only resolves for the diameters published bare (2.1, 2.5, 2.7);
+            # 2.2 and 3.2 exist only as `_M2`/`_M2.5` variants, so for those
+            # the link reported the part as missing from the library instead.
+            #
+            # A caller that does want a library part can still ask for one:
+            # pass `footprintLibId` with a nickname and it is used verbatim, on
+            # the understanding that matching the geometry is then the
+            # caller's to reconcile.
             if not footprint_lib_id:
                 # Strip trailing zeros so 3.2 → "3.2" not "3.20"
-                footprint_lib_id = f"MountingHole:MountingHole_{diameter:g}mm"
+                footprint_lib_id = f"MountingHole_{diameter:g}mm"
             if ":" in footprint_lib_id:
                 lib_name, fp_name = footprint_lib_id.split(":", 1)
             else:
-                lib_name = "MountingHole"
-                fp_name = footprint_lib_id
+                lib_name, fp_name = "", footprint_lib_id
             module.SetFPID(pcbnew.LIB_ID(lib_name, fp_name))
 
             # Create the pad for the hole
@@ -495,6 +517,38 @@ class BoardOutlineCommands:
 
             module.Add(pad)
 
+            # The two circles every MountingHole_*mm footprint carries: the
+            # hole on Cmts.User, and the screw head's keep-out on F.CrtYd. The
+            # courtyard is not decoration -- DRC skips the courtyard check
+            # entirely for a footprint that has none, so without it a part can
+            # sit under a screw head with nothing reporting it.
+            #
+            # Both radii are measured from the published footprints, not
+            # derived: Cmts.User is the drill *diameter* (not its radius), and
+            # the courtyard clears it by a flat 0.25mm at every size.
+            #
+            #     2.1mm -> Cmts 2.1  CrtYd 2.35
+            #     2.5mm -> Cmts 2.5  CrtYd 2.75
+            #     2.7mm -> Cmts 2.7  CrtYd 2.95
+            for layer, radius, width in (
+                (pcbnew.Cmts_User, diameter, 0.15),
+                (pcbnew.F_CrtYd, diameter + 0.25, 0.05),
+            ):
+                circle = pcbnew.PCB_SHAPE(module)
+                circle.SetShape(pcbnew.SHAPE_T_CIRCLE)
+                circle.SetLayer(layer)
+                circle.SetWidth(int(width * scale))
+                circle.SetFilled(False)
+                circle.SetStart(pcbnew.VECTOR2I(0, 0))
+                circle.SetEnd(pcbnew.VECTOR2I(int(radius * scale), 0))
+                module.Add(circle)
+
+            # A mounting hole is hardware, not a component: it belongs in
+            # neither the BOM nor the pick-and-place file.
+            module.SetAttributes(
+                pcbnew.FP_EXCLUDE_FROM_POS_FILES | pcbnew.FP_EXCLUDE_FROM_BOM
+            )
+
             # Position the mounting hole
             module.SetPosition(pcbnew.VECTOR2I(x_nm, y_nm))
 
@@ -507,9 +561,11 @@ class BoardOutlineCommands:
                 "mountingHole": {
                     "position": position,
                     "diameter": diameter,
-                    "padDiameter": pad_diameter or diameter + 1,
+                    "padDiameter": pad_diameter or (default_pad_nm / scale),
                     "plated": plated,
-                    "footprintLibId": f"{lib_name}:{fp_name}",
+                    # Bare name, not ":name", when the caller did not ask for a
+                    # library part.
+                    "footprintLibId": f"{lib_name}:{fp_name}" if lib_name else fp_name,
                 },
             }
 

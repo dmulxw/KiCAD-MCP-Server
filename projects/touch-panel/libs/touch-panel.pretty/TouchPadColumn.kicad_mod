@@ -1,0 +1,172 @@
+(footprint "TouchPadColumn"
+  (version 20241229)
+  (generator "kicad-mcp")
+  (generator_version "9.0")
+  (layer "F.Cu")
+  (descr "Column of 21 capacitive touch pads, 5mm, 6.4mm pitch, exposed on B.Cu")
+  (tags "touch pad capacitive custom")
+
+  (property "Reference" "REF**" (at 0 -1.27 0)
+    (layer "F.SilkS")
+    (uuid "f5e880fd-3f6c-4215-a102-9e5bffa10d67")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (property "Value" "TouchPadColumn" (at 0 1.27 0)
+    (layer "F.Fab")
+    (uuid "01185221-c8da-473e-84de-e62e061eed94")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (property "Datasheet" "" (at 0 0 0)
+    (layer "F.Fab")
+    (uuid "1860c8c5-aa7a-4c5f-a283-6990fe405190")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+
+  (pad "1" smd circle
+    (at 0 -64)
+    (size 5 5)
+    (layers "B.Cu" "B.Mask")
+    (uuid "725fd43d-4fdc-4311-a398-70a07b5aaf6c")
+  )
+
+  (pad "2" smd circle
+    (at 0 -57.6)
+    (size 5 5)
+    (layers "B.Cu" "B.Mask")
+    (uuid "0b68f3b7-a018-4f77-9be8-e4142cd7d808")
+  )
+
+  (pad "3" smd circle
+    (at 0 -51.2)
+    (size 5 5)
+    (layers "B.Cu" "B.Mask")
+    (uuid "5f01ee22-aa3a-4d62-9b75-c133659cb78f")
+  )
+
+  (pad "4" smd circle
+    (at 0 -44.8)
+    (size 5 5)
+    (layers "B.Cu" "B.Mask")
+    (uuid "69d18d29-715f-4a56-9a51-8805b2c2164a")
+  )
+
+  (pad "5" smd circle
+    (at 0 -38.4)
+    (size 5 5)
+    (layers "B.Cu" "B.Mask")
+    (uuid "a646468b-58c4-47bf-af66-6e6e6f991a7a")
+  )
+
+  (pad "6" smd circle
+    (at 0 -32)
+    (size 5 5)
+    (layers "B.Cu" "B.Mask")
+    (uuid "d572fb60-8193-4ae6-b271-65867cf30248")
+  )
+
+  (pad "7" smd circle
+    (at 0 -25.6)
+    (size 5 5)
+    (layers "B.Cu" "B.Mask")
+    (uuid "9424da41-3d78-41dc-899f-b0c35b8b7afd")
+  )
+
+  (pad "8" smd circle
+    (at 0 -19.2)
+    (size 5 5)
+    (layers "B.Cu" "B.Mask")
+    (uuid "44e28fd4-3503-4de2-8749-1e6588a440f1")
+  )
+
+  (pad "9" smd circle
+    (at 0 -12.8)
+    (size 5 5)
+    (layers "B.Cu" "B.Mask")
+    (uuid "c3202c63-1223-4e40-aca1-ab4017df0ae6")
+  )
+
+  (pad "10" smd circle
+    (at 0 -6.4)
+    (size 5 5)
+    (layers "B.Cu" "B.Mask")
+    (uuid "5d738514-062c-4415-9deb-55b7b297421e")
+  )
+
+  (pad "11" smd circle
+    (at 0 0)
+    (size 5 5)
+    (layers "B.Cu" "B.Mask")
+    (uuid "ee6560cd-e9db-495f-a64a-c9b003f9e10b")
+  )
+
+  (pad "12" smd circle
+    (at 0 6.4)
+    (size 5 5)
+    (layers "B.Cu" "B.Mask")
+    (uuid "2df0c076-f156-4e96-82d9-a7b7e175f8ad")
+  )
+
+  (pad "13" smd circle
+    (at 0 12.8)
+    (size 5 5)
+    (layers "B.Cu" "B.Mask")
+    (uuid "74521f2a-a62e-4684-b717-dbd5b67ad994")
+  )
+
+  (pad "14" smd circle
+    (at 0 19.2)
+    (size 5 5)
+    (layers "B.Cu" "B.Mask")
+    (uuid "905100bf-6bc1-4b2c-a148-854cd16edce6")
+  )
+
+  (pad "15" smd circle
+    (at 0 25.6)
+    (size 5 5)
+    (layers "B.Cu" "B.Mask")
+    (uuid "76ea526a-54ac-4153-bd12-9171a3e4a9fb")
+  )
+
+  (pad "16" smd circle
+    (at 0 32)
+    (size 5 5)
+    (layers "B.Cu" "B.Mask")
+    (uuid "7bb8ae5c-a232-46d1-8ad5-bf80b2fecd97")
+  )
+
+  (pad "17" smd circle
+    (at 0 38.4)
+    (size 5 5)
+    (layers "B.Cu" "B.Mask")
+    (uuid "fe26aaca-54f6-4ca4-85d8-8d01a0becca3")
+  )
+
+  (pad "18" smd circle
+    (at 0 44.8)
+    (size 5 5)
+    (layers "B.Cu" "B.Mask")
+    (uuid "23fceb51-e00e-43bd-96a7-1b315b5bc631")
+  )
+
+  (pad "19" smd circle
+    (at 0 51.2)
+    (size 5 5)
+    (layers "B.Cu" "B.Mask")
+    (uuid "1f7856fd-920b-4653-b5d6-7d1743a9096f")
+  )
+
+  (pad "20" smd circle
+    (at 0 57.6)
+    (size 5 5)
+    (layers "B.Cu" "B.Mask")
+    (uuid "6a338220-ac8f-493d-8d32-5cc58bf9143d")
+  )
+
+  (pad "21" smd circle
+    (at 0 64)
+    (size 5 5)
+    (layers "B.Cu" "B.Mask")
+    (uuid "36687c48-a864-4133-a123-ef5f200291e0")
+  )
+
+)

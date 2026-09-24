@@ -1,0 +1,9 @@
+['ISLAND_REMOVAL_MODE_ALWAYS', 'ISLAND_REMOVAL_MODE_AREA', 'ISLAND_REMOVAL_MODE_NEVER', 'ISOLATED_ISLANDS']
+island removal mode: 0
+min island area: 10.0
+  as found on disk
+    F.Cu: 0/5 probes filled  area=4148.5
+    B.Cu: 0/5 probes filled  area=3780.8
+  after refill with island removal = NEVER
+    F.Cu: 5/5 probes filled  area=4770.1
+    B.Cu: 5/5 probes filled  area=4641.9

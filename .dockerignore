@@ -1,0 +1,4 @@
+# The image only COPYs requirements.txt, so keep the build context tiny --
+# without this, every build ships node_modules/.git to the daemon first.
+*
+!requirements.txt

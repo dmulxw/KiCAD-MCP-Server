@@ -1,0 +1,1854 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-23T01:58:16",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "YD-ESP32-S3-Carrier.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 13.2,
+                        "y": 41.2
+                    },
+                    "uuid": "a579b407-c5a1-4c4b-a2ac-1dfd4742a5f7"
+                },
+                {
+                    "description": "填充区[GND]在 F.Cu 上, 优先级 0",
+                    "pos": {
+                        "x": 0.5,
+                        "y": 0.5
+                    },
+                    "uuid": "4d455925-b8aa-4aeb-b583-0675872cdbde"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 17.2,
+                        "y": 17.2
+                    },
+                    "uuid": "95549c82-7548-4c3a-ae2b-67fb0b9c64fe"
+                },
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 17.2,
+                        "y": 21.2
+                    },
+                    "uuid": "2db2765b-97a1-437a-a27e-13d3043fe470"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 17.2,
+                        "y": 21.2
+                    },
+                    "uuid": "2db2765b-97a1-437a-a27e-13d3043fe470"
+                },
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 17.2,
+                        "y": 25.2
+                    },
+                    "uuid": "e3f3f372-04a1-4930-9483-3cfedbf76506"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 17.2,
+                        "y": 25.2
+                    },
+                    "uuid": "e3f3f372-04a1-4930-9483-3cfedbf76506"
+                },
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 17.2,
+                        "y": 29.2
+                    },
+                    "uuid": "de1c76ff-b77f-4147-ac2d-3584d0afcd7d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 21.2,
+                        "y": 25.2
+                    },
+                    "uuid": "bb4b75e5-adf9-46cc-a277-1d2b213c4574"
+                },
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 21.2,
+                        "y": 29.2
+                    },
+                    "uuid": "8c370598-189f-4cf2-a81b-6d64d529a708"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 21.2,
+                        "y": 29.2
+                    },
+                    "uuid": "8c370598-189f-4cf2-a81b-6d64d529a708"
+                },
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 21.2,
+                        "y": 33.2
+                    },
+                    "uuid": "d9a4bc4f-ed1d-42c0-b7f5-b0ffbca93b48"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 21.2,
+                        "y": 29.2
+                    },
+                    "uuid": "8c370598-189f-4cf2-a81b-6d64d529a708"
+                },
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 17.2,
+                        "y": 29.2
+                    },
+                    "uuid": "de1c76ff-b77f-4147-ac2d-3584d0afcd7d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 25.2,
+                        "y": 21.2
+                    },
+                    "uuid": "ce4daf69-973b-43a8-b7ae-0e56c891d6b6"
+                },
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 21.2,
+                        "y": 21.2
+                    },
+                    "uuid": "fe4e03db-a6fe-46b4-9919-e2ce0e204b37"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 25.2,
+                        "y": 29.2
+                    },
+                    "uuid": "4880441b-ba89-4bba-9265-a30f9fc96e57"
+                },
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 25.2,
+                        "y": 33.2
+                    },
+                    "uuid": "d585fce1-3bbb-4ec9-a261-10718540316c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 25.2,
+                        "y": 33.2
+                    },
+                    "uuid": "d585fce1-3bbb-4ec9-a261-10718540316c"
+                },
+                {
+                    "description": "填充区[GND]在 B.Cu 上, 优先级 0",
+                    "pos": {
+                        "x": 0.5,
+                        "y": 0.5
+                    },
+                    "uuid": "acd79720-fd2c-4066-87eb-ae11faac7ca9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 25.2,
+                        "y": 33.2
+                    },
+                    "uuid": "d585fce1-3bbb-4ec9-a261-10718540316c"
+                },
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 21.2,
+                        "y": 33.2
+                    },
+                    "uuid": "d9a4bc4f-ed1d-42c0-b7f5-b0ffbca93b48"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 29.2,
+                        "y": 21.2
+                    },
+                    "uuid": "736f4a45-8567-4658-8ec2-e13d854cb886"
+                },
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 25.2,
+                        "y": 21.2
+                    },
+                    "uuid": "ce4daf69-973b-43a8-b7ae-0e56c891d6b6"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 29.2,
+                        "y": 25.2
+                    },
+                    "uuid": "8f7ab893-60e1-406d-904d-3b9aa1a3251b"
+                },
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 25.2,
+                        "y": 25.2
+                    },
+                    "uuid": "b93a13cd-72c7-4d34-93db-1de2a040045b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 29.2,
+                        "y": 29.2
+                    },
+                    "uuid": "74e150ad-09c9-46f6-a9ce-9d347efbcf77"
+                },
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 29.2,
+                        "y": 33.2
+                    },
+                    "uuid": "232a074d-373a-447f-b65d-0c604415870d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 29.2,
+                        "y": 33.2
+                    },
+                    "uuid": "232a074d-373a-447f-b65d-0c604415870d"
+                },
+                {
+                    "description": "填充区[GND]在 B.Cu 上, 优先级 0",
+                    "pos": {
+                        "x": 0.5,
+                        "y": 0.5
+                    },
+                    "uuid": "acd79720-fd2c-4066-87eb-ae11faac7ca9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 33.2,
+                        "y": 21.2
+                    },
+                    "uuid": "25a461ed-6574-43eb-80dd-0dd7f99173e1"
+                },
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 33.2,
+                        "y": 25.2
+                    },
+                    "uuid": "6f6615a6-d997-487b-8741-5c8052106d36"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 33.2,
+                        "y": 21.2
+                    },
+                    "uuid": "25a461ed-6574-43eb-80dd-0dd7f99173e1"
+                },
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 29.2,
+                        "y": 21.2
+                    },
+                    "uuid": "736f4a45-8567-4658-8ec2-e13d854cb886"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 33.2,
+                        "y": 25.2
+                    },
+                    "uuid": "6f6615a6-d997-487b-8741-5c8052106d36"
+                },
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 33.2,
+                        "y": 29.2
+                    },
+                    "uuid": "2e8964fa-27bb-4cb0-8b5b-449e42cf1a92"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 33.2,
+                        "y": 25.2
+                    },
+                    "uuid": "6f6615a6-d997-487b-8741-5c8052106d36"
+                },
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 29.2,
+                        "y": 25.2
+                    },
+                    "uuid": "8f7ab893-60e1-406d-904d-3b9aa1a3251b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 33.2,
+                        "y": 29.2
+                    },
+                    "uuid": "2e8964fa-27bb-4cb0-8b5b-449e42cf1a92"
+                },
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 33.2,
+                        "y": 33.2
+                    },
+                    "uuid": "9839779b-efc2-4204-ad29-d3c03bb43fd9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 33.2,
+                        "y": 33.2
+                    },
+                    "uuid": "9839779b-efc2-4204-ad29-d3c03bb43fd9"
+                },
+                {
+                    "description": "填充区[GND]在 F.Cu 上, 优先级 0",
+                    "pos": {
+                        "x": 0.5,
+                        "y": 0.5
+                    },
+                    "uuid": "4d455925-b8aa-4aeb-b583-0675872cdbde"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 41.2,
+                        "y": 29.2
+                    },
+                    "uuid": "b08542ba-f4d0-4a71-a123-7aef427dfb78"
+                },
+                {
+                    "description": "填充区[GND]在 F.Cu 上, 优先级 0",
+                    "pos": {
+                        "x": 0.5,
+                        "y": 0.5
+                    },
+                    "uuid": "4d455925-b8aa-4aeb-b583-0675872cdbde"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 93.2,
+                        "y": 57.2
+                    },
+                    "uuid": "7d108bf4-c9cf-4ea4-ae5e-f85edc7beafd"
+                },
+                {
+                    "description": "填充区[GND]在 F.Cu 上, 优先级 0",
+                    "pos": {
+                        "x": 0.5,
+                        "y": 0.5
+                    },
+                    "uuid": "4d455925-b8aa-4aeb-b583-0675872cdbde"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "间距违规 ( 间距 0.2000 mm; 实际 0.1950 mm)",
+            "items": [
+                {
+                    "description": "F.Cu 上 C8 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 87.87,
+                        "y": 10.095
+                    },
+                    "uuid": "6548e665-81bb-410b-9dbd-76f65117c25f"
+                },
+                {
+                    "description": "走线 [VBAT_SW] (F.Cu), 长度: 0.8000 mm",
+                    "pos": {
+                        "x": 86.0,
+                        "y": 9.6
+                    },
+                    "uuid": "b6ff7d05-d87d-4a70-84e7-71634ae21aab"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "间距违规 ( 间距 0.2000 mm; 实际 0.1950 mm)",
+            "items": [
+                {
+                    "description": "走线 [VBAT_SW] (F.Cu), 长度: 1.6000 mm",
+                    "pos": {
+                        "x": 86.8,
+                        "y": 9.6
+                    },
+                    "uuid": "1e75426f-0d0c-4a1f-a77d-83dfa0d024f0"
+                },
+                {
+                    "description": "F.Cu 上 C8 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 87.87,
+                        "y": 10.095
+                    },
+                    "uuid": "6548e665-81bb-410b-9dbd-76f65117c25f"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "间距违规 ( 间距 0.2000 mm; 实际 0.1900 mm)",
+            "items": [
+                {
+                    "description": "走线 [+3V3] (F.Cu), 长度: 5.4000 mm",
+                    "pos": {
+                        "x": 82.8,
+                        "y": 42.6
+                    },
+                    "uuid": "5dfa9776-05f8-4955-ad3c-313a1dc62185"
+                },
+                {
+                    "description": "J4 的PTH 焊盘 5 [LCD_SCK]",
+                    "pos": {
+                        "x": 82.0,
+                        "y": 41.16
+                    },
+                    "uuid": "fe6782b5-6b70-440d-b9fa-5d412d25ba6b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "间距违规 ( 间距 0.2000 mm; 实际 0.1600 mm)",
+            "items": [
+                {
+                    "description": "走线 [I2S_DI] (F.Cu), 长度: 17.6000 mm",
+                    "pos": {
+                        "x": 37.2,
+                        "y": 17.0
+                    },
+                    "uuid": "b27fc86e-8357-4acf-bcbb-7acb600b5574"
+                },
+                {
+                    "description": "J2 的PTH 焊盘 5 [I2C_SCL]",
+                    "pos": {
+                        "x": 36.4,
+                        "y": 18.16
+                    },
+                    "uuid": "fd3d0b0e-26ad-4478-94a9-05c48a69b52e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "间距违规 ( 间距 0.2000 mm; 实际 0.1600 mm)",
+            "items": [
+                {
+                    "description": "走线 [IO14] (B.Cu), 长度: 3.2000 mm",
+                    "pos": {
+                        "x": 37.2,
+                        "y": 49.8
+                    },
+                    "uuid": "5551b59d-82d7-4729-a640-42d601c84b1f"
+                },
+                {
+                    "description": "J2 的PTH 焊盘 17 [LCD_SDA]",
+                    "pos": {
+                        "x": 36.4,
+                        "y": 48.64
+                    },
+                    "uuid": "5d578c96-ff32-46ba-be6a-0d482cafea59"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "间距违规 ( 间距 0.2000 mm; 实际 0.1899 mm)",
+            "items": [
+                {
+                    "description": "走线 [+5V] (F.Cu), 长度: 9.0510 mm",
+                    "pos": {
+                        "x": 44.6,
+                        "y": 38.8
+                    },
+                    "uuid": "110573d5-98ef-4508-acf4-10deb6420824"
+                },
+                {
+                    "description": "过孔 [IO48] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 40.2,
+                        "y": 44.6
+                    },
+                    "uuid": "73f0912c-1890-490e-909e-7a20c5419fcb"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "间距违规 ( 间距 0.2000 mm; 实际 0.1825 mm)",
+            "items": [
+                {
+                    "description": "过孔 [IO13] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 66.4,
+                        "y": 36.6
+                    },
+                    "uuid": "d7e9355c-8444-4a01-b8e0-feba523d7587"
+                },
+                {
+                    "description": "走线 [LCD_DC] (B.Cu), 长度: 2.2627 mm",
+                    "pos": {
+                        "x": 67.8,
+                        "y": 38.8
+                    },
+                    "uuid": "e9de26fd-7328-46e5-a577-6304b0569454"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "间距违规 ( 间距 0.2000 mm; 实际 0.1825 mm)",
+            "items": [
+                {
+                    "description": "走线 [IO43] (B.Cu), 长度: 0.8485 mm",
+                    "pos": {
+                        "x": 43.0,
+                        "y": 15.4
+                    },
+                    "uuid": "3eb97535-ccdb-4465-9133-525189ed5081"
+                },
+                {
+                    "description": "过孔 [IO44] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 42.6,
+                        "y": 14.2
+                    },
+                    "uuid": "e4b17747-63eb-4073-8070-3e825a0313d9"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "间距违规 ( 间距 0.2000 mm; 实际 0.1825 mm)",
+            "items": [
+                {
+                    "description": "走线 [IO43] (B.Cu), 长度: 0.2000 mm",
+                    "pos": {
+                        "x": 42.4,
+                        "y": 14.8
+                    },
+                    "uuid": "db27a7f7-e2d0-4dc4-b479-68f8a39ad632"
+                },
+                {
+                    "description": "过孔 [IO44] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 42.6,
+                        "y": 14.2
+                    },
+                    "uuid": "e4b17747-63eb-4073-8070-3e825a0313d9"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "间距违规 ( 间距 0.2000 mm; 实际 0.1825 mm)",
+            "items": [
+                {
+                    "description": "走线 [I2S_BCK] (B.Cu), 长度: 13.6000 mm",
+                    "pos": {
+                        "x": 51.8,
+                        "y": 33.2
+                    },
+                    "uuid": "2284e9b3-aeda-414c-9926-a2a8e9f09bd0"
+                },
+                {
+                    "description": "过孔 [LCD_DC] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 38.0,
+                        "y": 33.8
+                    },
+                    "uuid": "cc114058-b350-4608-bc8d-62a57456d463"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "间距违规 ( 间距 0.2000 mm; 实际 0.1750 mm)",
+            "items": [
+                {
+                    "description": "F.Cu 上 R3 的焊盘 2 [CHG_A]",
+                    "pos": {
+                        "x": 69.9875,
+                        "y": 1.795
+                    },
+                    "uuid": "1c082f12-3fb2-4a2c-b8a0-5ad101e1b300"
+                },
+                {
+                    "description": "走线 [+5V] (F.Cu), 长度: 0.4000 mm",
+                    "pos": {
+                        "x": 68.4,
+                        "y": 2.2
+                    },
+                    "uuid": "954bb48f-263a-4f0c-a2a4-267cfdd10624"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "间距违规 ( 间距 0.2000 mm; 实际 0.1778 mm)",
+            "items": [
+                {
+                    "description": "R1 的PTH 焊盘 1 [+5V]",
+                    "pos": {
+                        "x": 70.195,
+                        "y": 37.575
+                    },
+                    "uuid": "1fa25b30-5f5c-4751-8a43-1a616c3d3385"
+                },
+                {
+                    "description": "过孔 [IO13] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 71.4,
+                        "y": 38.0
+                    },
+                    "uuid": "6616b8a1-7f57-472f-9ece-2708b4a63b85"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "间距违规 ( 间距 0.2000 mm; 实际 0.1825 mm)",
+            "items": [
+                {
+                    "description": "走线 [LCD_DC] (B.Cu), 长度: 0.2000 mm",
+                    "pos": {
+                        "x": 50.6,
+                        "y": 36.0
+                    },
+                    "uuid": "1b6bdd02-e62d-4aeb-9ce8-89994a30bc4e"
+                },
+                {
+                    "description": "过孔 [IO13] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 50.8,
+                        "y": 35.4
+                    },
+                    "uuid": "45050dbb-6351-4ba3-8a40-133f1e8a658f"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "间距违规 ( 间距 0.2000 mm; 实际 0.1778 mm)",
+            "items": [
+                {
+                    "description": "R1 的PTH 焊盘 1 [+5V]",
+                    "pos": {
+                        "x": 70.195,
+                        "y": 37.575
+                    },
+                    "uuid": "1fa25b30-5f5c-4751-8a43-1a616c3d3385"
+                },
+                {
+                    "description": "过孔 [IO13] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 71.4,
+                        "y": 38.0
+                    },
+                    "uuid": "6616b8a1-7f57-472f-9ece-2708b4a63b85"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "间距违规 ( 间距 0.2000 mm; 实际 0.1800 mm)",
+            "items": [
+                {
+                    "description": "走线 [IO13] (F.Cu), 长度: 10.4000 mm",
+                    "pos": {
+                        "x": 37.2,
+                        "y": 42.2
+                    },
+                    "uuid": "69e95aca-d572-4c0f-8e47-6cf820c8ee94"
+                },
+                {
+                    "description": "J2 的PTH 焊盘 14 [<no net>]",
+                    "pos": {
+                        "x": 36.4,
+                        "y": 41.02
+                    },
+                    "uuid": "bdeafc47-3c71-4536-899f-4b6dcac8909b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "间距违规 ( 间距 0.2000 mm; 实际 0.1600 mm)",
+            "items": [
+                {
+                    "description": "J1 的PTH 焊盘 5 [BTN_VOL_DN]",
+                    "pos": {
+                        "x": 11.0,
+                        "y": 18.16
+                    },
+                    "uuid": "cded291b-8e28-470c-b5ac-dbd4ed4ed90c"
+                },
+                {
+                    "description": "走线 [IO11] (F.Cu), 长度: 4.8000 mm",
+                    "pos": {
+                        "x": 15.0,
+                        "y": 17.0
+                    },
+                    "uuid": "d5ef68a6-7584-46f6-a663-8fffeaa72d86"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "间距违规 ( 间距 0.2000 mm; 实际 0.1825 mm)",
+            "items": [
+                {
+                    "description": "过孔 [IO11] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 41.6,
+                        "y": 12.6
+                    },
+                    "uuid": "69e67719-1027-453f-a4ae-26f3b5403c9b"
+                },
+                {
+                    "description": "走线 [IO9] (B.Cu), 长度: 0.2828 mm",
+                    "pos": {
+                        "x": 41.6,
+                        "y": 13.4
+                    },
+                    "uuid": "c09c160a-dcbd-4e39-9e6e-2181221c994d"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "间距违规 ( 间距 0.2000 mm; 实际 0.1800 mm)",
+            "items": [
+                {
+                    "description": "J2 的PTH 焊盘 14 [<no net>]",
+                    "pos": {
+                        "x": 36.4,
+                        "y": 41.02
+                    },
+                    "uuid": "bdeafc47-3c71-4536-899f-4b6dcac8909b"
+                },
+                {
+                    "description": "走线 [BTN_VOL_DN] (B.Cu), 长度: 11.2000 mm",
+                    "pos": {
+                        "x": 44.2,
+                        "y": 42.2
+                    },
+                    "uuid": "d7c4acad-0841-4770-8fa6-81e640ea49e5"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "间距违规 ( 间距 0.2000 mm; 实际 0.1600 mm)",
+            "items": [
+                {
+                    "description": "J1 的PTH 焊盘 7 [I2S_DI]",
+                    "pos": {
+                        "x": 11.0,
+                        "y": 23.24
+                    },
+                    "uuid": "212a3eb8-16c2-4e2b-ba40-a5d69bb7a9da"
+                },
+                {
+                    "description": "走线 [BTN_VOL_DN] (F.Cu), 长度: 1.4000 mm",
+                    "pos": {
+                        "x": 11.6,
+                        "y": 24.4
+                    },
+                    "uuid": "671adbba-cbc3-42a8-8ca8-2e725643ccec"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "间距违规 ( 间距 0.2000 mm; 实际 0.1750 mm)",
+            "items": [
+                {
+                    "description": "R1 的PTH 焊盘 1 [+5V]",
+                    "pos": {
+                        "x": 70.195,
+                        "y": 37.575
+                    },
+                    "uuid": "1fa25b30-5f5c-4751-8a43-1a616c3d3385"
+                },
+                {
+                    "description": "走线 [+3V3] (F.Cu), 长度: 2.8000 mm",
+                    "pos": {
+                        "x": 71.0,
+                        "y": 36.2
+                    },
+                    "uuid": "7c861953-9a9b-4aa7-8d4d-10444df3fb29"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "孔径超出范围 (电路板配置约束 最小孔径 0.3000 mm; 实际 0.2000 mm)",
+            "items": [
+                {
+                    "description": "U1 的PTH 焊盘 9 [GND]",
+                    "pos": {
+                        "x": 66.544999,
+                        "y": 4.645
+                    },
+                    "uuid": "17e2b903-3355-40bf-beed-6038c309a24a"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "孔径超出范围 (电路板配置约束 最小孔径 0.3000 mm; 实际 0.2000 mm)",
+            "items": [
+                {
+                    "description": "U1 的PTH 焊盘 9 [GND]",
+                    "pos": {
+                        "x": 66.544999,
+                        "y": 5.845
+                    },
+                    "uuid": "a47804b3-d6b6-43be-9902-4c1512bf11ab"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "孔径超出范围 (电路板配置约束 最小孔径 0.3000 mm; 实际 0.2000 mm)",
+            "items": [
+                {
+                    "description": "U1 的PTH 焊盘 9 [GND]",
+                    "pos": {
+                        "x": 66.544999,
+                        "y": 7.045
+                    },
+                    "uuid": "b778fae6-5bd0-4409-b2bd-88450f3443d3"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "孔径超出范围 (电路板配置约束 最小孔径 0.3000 mm; 实际 0.2000 mm)",
+            "items": [
+                {
+                    "description": "U1 的PTH 焊盘 9 [GND]",
+                    "pos": {
+                        "x": 67.944999,
+                        "y": 4.645
+                    },
+                    "uuid": "b2f3f338-4b1f-4764-9a41-1458bbafba9d"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "孔径超出范围 (电路板配置约束 最小孔径 0.3000 mm; 实际 0.2000 mm)",
+            "items": [
+                {
+                    "description": "U1 的PTH 焊盘 9 [GND]",
+                    "pos": {
+                        "x": 67.944999,
+                        "y": 5.845
+                    },
+                    "uuid": "d207d4f3-1c16-48f1-8000-09722b6e5266"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "孔径超出范围 (电路板配置约束 最小孔径 0.3000 mm; 实际 0.2000 mm)",
+            "items": [
+                {
+                    "description": "U1 的PTH 焊盘 9 [GND]",
+                    "pos": {
+                        "x": 67.944999,
+                        "y": 7.045
+                    },
+                    "uuid": "e17da04c-e37a-41f7-b238-2bc10ae67993"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "缓释热焊盘 (花焊盘) 与填充区的连接不完整 (层 F.Cu; 填充区 最小引线数量 2; 实际 1)",
+            "items": [
+                {
+                    "description": "填充区[GND]在 F.Cu 上, 优先级 0",
+                    "pos": {
+                        "x": 0.5,
+                        "y": 0.5
+                    },
+                    "uuid": "4d455925-b8aa-4aeb-b583-0675872cdbde"
+                },
+                {
+                    "description": "F.Cu 上 U1 的焊盘 1 [GND]",
+                    "pos": {
+                        "x": 64.769999,
+                        "y": 3.94
+                    },
+                    "uuid": "807ebc49-d39d-45ae-bc0a-13ade03d8c45"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "缓释热焊盘 (花焊盘) 与填充区的连接不完整 (层 B.Cu; 填充区 最小引线数量 2; 实际 1)",
+            "items": [
+                {
+                    "description": "填充区[GND]在 B.Cu 上, 优先级 0",
+                    "pos": {
+                        "x": 0.5,
+                        "y": 0.5
+                    },
+                    "uuid": "acd79720-fd2c-4066-87eb-ae11faac7ca9"
+                },
+                {
+                    "description": "J7 的PTH 焊盘 2 [GND]",
+                    "pos": {
+                        "x": 79.04,
+                        "y": 26.0
+                    },
+                    "uuid": "2262d2e2-2cf7-437c-a17e-98ad8f8ccd27"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 29.2,
+                        "y": 33.2
+                    },
+                    "uuid": "232a074d-373a-447f-b65d-0c604415870d"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 33.2,
+                        "y": 21.2
+                    },
+                    "uuid": "25a461ed-6574-43eb-80dd-0dd7f99173e1"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 17.2,
+                        "y": 21.2
+                    },
+                    "uuid": "2db2765b-97a1-437a-a27e-13d3043fe470"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 33.2,
+                        "y": 29.2
+                    },
+                    "uuid": "2e8964fa-27bb-4cb0-8b5b-449e42cf1a92"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 25.2,
+                        "y": 29.2
+                    },
+                    "uuid": "4880441b-ba89-4bba-9265-a30f9fc96e57"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 33.2,
+                        "y": 25.2
+                    },
+                    "uuid": "6f6615a6-d997-487b-8741-5c8052106d36"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 29.2,
+                        "y": 21.2
+                    },
+                    "uuid": "736f4a45-8567-4658-8ec2-e13d854cb886"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 29.2,
+                        "y": 29.2
+                    },
+                    "uuid": "74e150ad-09c9-46f6-a9ce-9d347efbcf77"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 93.2,
+                        "y": 57.2
+                    },
+                    "uuid": "7d108bf4-c9cf-4ea4-ae5e-f85edc7beafd"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 21.2,
+                        "y": 29.2
+                    },
+                    "uuid": "8c370598-189f-4cf2-a81b-6d64d529a708"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 29.2,
+                        "y": 25.2
+                    },
+                    "uuid": "8f7ab893-60e1-406d-904d-3b9aa1a3251b"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 17.2,
+                        "y": 17.2
+                    },
+                    "uuid": "95549c82-7548-4c3a-ae2b-67fb0b9c64fe"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 33.2,
+                        "y": 33.2
+                    },
+                    "uuid": "9839779b-efc2-4204-ad29-d3c03bb43fd9"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 13.2,
+                        "y": 41.2
+                    },
+                    "uuid": "a579b407-c5a1-4c4b-a2ac-1dfd4742a5f7"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 41.2,
+                        "y": 29.2
+                    },
+                    "uuid": "b08542ba-f4d0-4a71-a123-7aef427dfb78"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 25.2,
+                        "y": 25.2
+                    },
+                    "uuid": "b93a13cd-72c7-4d34-93db-1de2a040045b"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 21.2,
+                        "y": 25.2
+                    },
+                    "uuid": "bb4b75e5-adf9-46cc-a277-1d2b213c4574"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 25.2,
+                        "y": 21.2
+                    },
+                    "uuid": "ce4daf69-973b-43a8-b7ae-0e56c891d6b6"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 25.2,
+                        "y": 33.2
+                    },
+                    "uuid": "d585fce1-3bbb-4ec9-a261-10718540316c"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 21.2,
+                        "y": 33.2
+                    },
+                    "uuid": "d9a4bc4f-ed1d-42c0-b7f5-b0ffbca93b48"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 17.2,
+                        "y": 29.2
+                    },
+                    "uuid": "de1c76ff-b77f-4147-ac2d-3584d0afcd7d"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 17.2,
+                        "y": 25.2
+                    },
+                    "uuid": "e3f3f372-04a1-4930-9483-3cfedbf76506"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 21.2,
+                        "y": 21.2
+                    },
+                    "uuid": "fe4e03db-a6fe-46b4-9919-e2ce0e204b37"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "SW1 的参考字段",
+                    "pos": {
+                        "x": 43.44,
+                        "y": 51.0
+                    },
+                    "uuid": "9b0cfc80-ae64-4629-b526-8b905c13d924"
+                },
+                {
+                    "description": "SW1 的PTH 焊盘 1 [BTN_VOL_UP]",
+                    "pos": {
+                        "x": 44.5,
+                        "y": 52.5
+                    },
+                    "uuid": "e3c9abac-312c-425f-9009-6913c7eefffd"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "F.Silkscreen 上的 PCB 文本 'VOL+'",
+                    "pos": {
+                        "x": 46.72,
+                        "y": 60.4
+                    },
+                    "uuid": "e7dc86e1-30de-472c-babc-dd244f7f067d"
+                },
+                {
+                    "description": "SW1 的PTH 焊盘 1 [BTN_VOL_UP]",
+                    "pos": {
+                        "x": 44.5,
+                        "y": 59.0
+                    },
+                    "uuid": "0fda5495-d289-4dd9-9471-718a291dc0dd"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "F.Silkscreen 上的 PCB 文本 'VOL-'",
+                    "pos": {
+                        "x": 57.72,
+                        "y": 60.4
+                    },
+                    "uuid": "ef0cdae8-23b4-4575-b24b-485b4adbcbcd"
+                },
+                {
+                    "description": "SW2 的PTH 焊盘 1 [BTN_VOL_DN]",
+                    "pos": {
+                        "x": 55.5,
+                        "y": 59.0
+                    },
+                    "uuid": "3b3eaff3-58d2-4040-bef3-d43b1fa8d283"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "SW2 的参考字段",
+                    "pos": {
+                        "x": 54.44,
+                        "y": 51.0
+                    },
+                    "uuid": "c7388215-b66c-4df5-a870-cd6230b18976"
+                },
+                {
+                    "description": "SW2 的PTH 焊盘 1 [BTN_VOL_DN]",
+                    "pos": {
+                        "x": 55.5,
+                        "y": 52.5
+                    },
+                    "uuid": "d28488e0-9c79-4eb0-9c11-5689a74b326d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "C8 的参考字段",
+                    "pos": {
+                        "x": 91.0,
+                        "y": 10.1
+                    },
+                    "uuid": "e7961887-3fb1-4ef2-bc93-ab993137c770"
+                },
+                {
+                    "description": "F.Cu 上 C8 的焊盘 1 [+5V]",
+                    "pos": {
+                        "x": 90.82,
+                        "y": 10.095
+                    },
+                    "uuid": "d02d5d39-6022-482b-a46f-17070e267333"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "F.Silkscreen 上的 PCB 文本 'RESET'",
+                    "pos": {
+                        "x": 79.72,
+                        "y": 60.4
+                    },
+                    "uuid": "21e42fe8-2a81-494d-89d8-20415c438fdb"
+                },
+                {
+                    "description": "SW4 的PTH 焊盘 2 [GND]",
+                    "pos": {
+                        "x": 82.0,
+                        "y": 59.0
+                    },
+                    "uuid": "301392c2-e317-4744-a435-ba1397664988"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "F.Silkscreen 上的 PCB 文本 'RESET'",
+                    "pos": {
+                        "x": 79.72,
+                        "y": 60.4
+                    },
+                    "uuid": "21e42fe8-2a81-494d-89d8-20415c438fdb"
+                },
+                {
+                    "description": "SW4 的PTH 焊盘 1 [BTN_RST]",
+                    "pos": {
+                        "x": 77.5,
+                        "y": 59.0
+                    },
+                    "uuid": "154b2792-5404-46e0-94a2-af28c42b8170"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "SW4 的参考字段",
+                    "pos": {
+                        "x": 76.44,
+                        "y": 51.0
+                    },
+                    "uuid": "76e312ef-15da-4a04-b359-dc7709f555e8"
+                },
+                {
+                    "description": "SW4 的PTH 焊盘 1 [BTN_RST]",
+                    "pos": {
+                        "x": 77.5,
+                        "y": 52.5
+                    },
+                    "uuid": "019cc069-eeee-4861-a4b0-2d6a2f578180"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "SW3 的参考字段",
+                    "pos": {
+                        "x": 65.44,
+                        "y": 51.0
+                    },
+                    "uuid": "72e2a87d-0bd6-4057-8201-537acd3012a1"
+                },
+                {
+                    "description": "SW3 的PTH 焊盘 1 [BTN_ACT]",
+                    "pos": {
+                        "x": 66.5,
+                        "y": 52.5
+                    },
+                    "uuid": "28e9c595-b297-4be6-83a0-443faddfc7dc"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "R4 的参考字段",
+                    "pos": {
+                        "x": 82.8,
+                        "y": 12.8
+                    },
+                    "uuid": "d1843c3e-43e9-410c-88fe-8e0ac5c0a5dc"
+                },
+                {
+                    "description": "F.Cu 上 R4 的焊盘 1 [+5V]",
+                    "pos": {
+                        "x": 83.2125,
+                        "y": 12.795
+                    },
+                    "uuid": "21fdd8de-d8a5-452a-b9e8-3991f8da6686"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "R5 的参考字段",
+                    "pos": {
+                        "x": 89.35,
+                        "y": 12.8
+                    },
+                    "uuid": "034e1c27-2894-4e0b-85a9-e2005af4f31b"
+                },
+                {
+                    "description": "F.Cu 上 R5 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 88.7875,
+                        "y": 12.795
+                    },
+                    "uuid": "281202ec-77c8-4c78-88a7-0da783eab3ae"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "C5 的参考字段",
+                    "pos": {
+                        "x": 67.0,
+                        "y": 10.0
+                    },
+                    "uuid": "cad9c2a0-eda9-4895-8c29-98e4c056c552"
+                },
+                {
+                    "description": "F.Cu 上 C5 的焊盘 1 [+5V]",
+                    "pos": {
+                        "x": 67.32,
+                        "y": 9.995
+                    },
+                    "uuid": "b2b6978f-0658-4768-be4c-40510650d698"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "R3 的参考字段",
+                    "pos": {
+                        "x": 67.7,
+                        "y": 1.6
+                    },
+                    "uuid": "d5266c02-4a51-4198-a3a1-cc3de3f46fbd"
+                },
+                {
+                    "description": "F.Cu 上 R3 的焊盘 1 [+5V]",
+                    "pos": {
+                        "x": 68.1625,
+                        "y": 1.795
+                    },
+                    "uuid": "b490e816-42a9-4981-a465-65e1c087b5b4"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "C6 的参考字段",
+                    "pos": {
+                        "x": 72.0,
+                        "y": 10.0
+                    },
+                    "uuid": "a1719bec-42ee-4911-aa0a-5a854962f8e6"
+                },
+                {
+                    "description": "F.Cu 上 C6 的焊盘 1 [VBAT]",
+                    "pos": {
+                        "x": 72.32,
+                        "y": 9.995
+                    },
+                    "uuid": "b878bbeb-500f-448a-a642-4586212bf15a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "C5 的参考字段",
+                    "pos": {
+                        "x": 67.0,
+                        "y": 10.0
+                    },
+                    "uuid": "cad9c2a0-eda9-4895-8c29-98e4c056c552"
+                },
+                {
+                    "description": "F.Cu 上 C6 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 69.37,
+                        "y": 9.995
+                    },
+                    "uuid": "5ff0d6d8-c1bf-4aa9-8d5b-7f204e887db9"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

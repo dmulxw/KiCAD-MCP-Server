@@ -16,6 +16,13 @@ export const LONG_COMMAND_TIMEOUT_MS = 600_000;
  * Commands whose cost scales with the size of the thing being worked on rather
  * than with a parameter the caller can reason about up front.
  *
+ * `batch_add_and_connect` is here because it re-parses and re-serialises the
+ * whole schematic on every call, so a batch that was comfortably inside 30 s
+ * against an empty sheet stops fitting once the sheet is large. The caller
+ * cannot size the batch up front, and unlike a slow read, a timeout here is
+ * destructive: the Python worker is mid-save when the abandon fires, and a
+ * kill in that window used to truncate the .kicad_sch to zero bytes.
+ *
  * `digikey_check_library_availability` is here for a different reason to the
  * rest: it issues one or two rate-limited HTTP requests per symbol and
  * self-throttles between them, so even its reduced default of 25 symbols cannot
@@ -30,6 +37,7 @@ export const LONG_RUNNING_COMMANDS = [
   "export_gerber",
   "export_pdf",
   "export_3d",
+  "batch_add_and_connect",
   "sync_schematic_to_board",
   "list_schematic_nets",
   "list_schematic_labels",

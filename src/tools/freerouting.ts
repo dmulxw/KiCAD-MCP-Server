@@ -55,6 +55,24 @@ export function registerFreeroutingTools(server: McpServer, callKicadScript: Fun
         .describe(
           "Per-attempt `--max-passes` values to cycle through (default: [50, 60, 65, 70, 75, 80, 85, 90, 55, 95]). The list wraps if `attempts` exceeds its length.",
         ),
+      selectionStrategy: z
+        .enum(["sequential", "random", "prioritized"])
+        .optional()
+        .describe(
+          "Pin Freerouting's `-is` item-selection strategy for every attempt. Leave unset to cycle a built-in schedule across attempts.",
+        ),
+      updatingStrategy: z
+        .enum(["greedy", "global", "hybrid"])
+        .optional()
+        .describe(
+          "Pin Freerouting's `-us` board-update strategy for every attempt. Leave unset to cycle a built-in schedule across attempts.",
+        ),
+      strategySchedule: z
+        .array(z.tuple([z.string(), z.string()]))
+        .optional()
+        .describe(
+          "Per-attempt [selection, updating] strategy pairs to cycle through, positionally matched to `passSchedule` (default: the router's own defaults followed by random/sequential item selection, then global updates). The list wraps if `attempts` exceeds its length.",
+        ),
       keepArtifacts: z
         .boolean()
         .optional()

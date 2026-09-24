@@ -1,0 +1,19 @@
+swig/python detected a memory leak of type 'PCB_SHAPE *', no destructor found.
+swig/python detected a memory leak of type 'PCB_SHAPE *', no destructor found.
+swig/python detected a memory leak of type 'VECTOR2< int > *', no destructor found.
+swig/python detected a memory leak of type 'VECTOR2< int > *', no destructor found.
+swig/python detected a memory leak of type 'VECTOR2< int > *', no destructor found.
+swig/python detected a memory leak of type 'VECTOR2< int > *', no destructor found.
+swig/python detected a memory leak of type 'VECTOR2< int > *', no destructor found.
+swig/python detected a memory leak of type 'VECTOR2< int > *', no destructor found.
+swig/python detected a memory leak of type 'VECTOR2< int > *', no destructor found.
+swig/python detected a memory leak of type 'VECTOR2< int > *', no destructor found.
+swig/python detected a memory leak of type 'VECTOR2< int > *', no destructor found.
+Windows fatal exception: access violation
+
+Current thread 0x0000a438 (most recent call first):
+  File "C:\Program Files\KiCad\10.0\bin\Lib\site-packages\pcbnew.py", line 21838 in Footprints
+  File "C:\Program Files\KiCad\10.0\bin\Lib\site-packages\pcbnew.py", line 22614 in GetFootprints
+  File "D:\source\repos\KiCAD-MCP-Server\projects\YD-ESP32-S3-Carrier\scripts\place.py", line 175 in fix_thermal_vias
+  File "D:\source\repos\KiCAD-MCP-Server\projects\YD-ESP32-S3-Carrier\scripts\place.py", line 270 in main
+  File "D:\source\repos\KiCAD-MCP-Server\projects\YD-ESP32-S3-Carrier\scripts\place.py", line 277 in <module>
