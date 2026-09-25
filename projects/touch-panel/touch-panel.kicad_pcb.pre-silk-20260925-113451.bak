@@ -85682,28 +85682,6 @@
 		(layer "Edge.Cuts")
 		(uuid "1746bb2d-ae52-4fc4-9c9a-3954a244cfa4")
 	)
-	(gr_text "LANFENG.COM"
-		(at 150.5 101.05 0)
-		(layer "F.SilkS")
-		(uuid "20a54891-ee78-49f4-a795-01ad5eff389a")
-		(effects
-			(font
-				(size 0.8 0.8)
-				(thickness 0.15)
-			)
-		)
-	)
-	(gr_text "Touch-Panel 2026"
-		(at 150.5 102.75 0)
-		(layer "F.SilkS")
-		(uuid "8dce175e-6895-400b-9ee7-bbad851b40de")
-		(effects
-			(font
-				(size 0.8 0.8)
-				(thickness 0.15)
-			)
-		)
-	)
 	(segment
 		(start 133.25 244.1017)
 		(end 133.25 244.2068)
