@@ -1,0 +1,4587 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-25T13:52:31",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "key": "pth_inside_courtyard"
+        },
+        {
+            "description": "NPTH inside courtyard",
+            "key": "npth_inside_courtyard"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "drc_p8.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R16 的焊盘 1 [ROW15]",
+                    "pos": {
+                        "x": 101.59,
+                        "y": 203.8
+                    },
+                    "uuid": "639e43c3-c660-4c2e-a195-13c6b591bd54"
+                },
+                {
+                    "description": "F.Cu 上 Q151 的焊盘 1 [ROW15]",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 206.05
+                    },
+                    "uuid": "126998d0-f491-45c3-bb69-b8237a556932"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q151 的焊盘 1 [ROW15]",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 206.05
+                    },
+                    "uuid": "126998d0-f491-45c3-bb69-b8237a556932"
+                },
+                {
+                    "description": "F.Cu 上 Q152 的焊盘 1 [ROW15]",
+                    "pos": {
+                        "x": 112.1625,
+                        "y": 206.05
+                    },
+                    "uuid": "af4687a1-5135-4a72-8d08-d983bd883fbb"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q152 的焊盘 1 [ROW15]",
+                    "pos": {
+                        "x": 112.1625,
+                        "y": 206.05
+                    },
+                    "uuid": "af4687a1-5135-4a72-8d08-d983bd883fbb"
+                },
+                {
+                    "description": "F.Cu 上 Q153 的焊盘 1 [ROW15]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 206.05
+                    },
+                    "uuid": "5c0dce4a-c87d-410a-ae89-3008ce525245"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q154 的焊盘 1 [ROW15]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 206.05
+                    },
+                    "uuid": "6ffb8970-e8f8-4758-9c09-525958a6ef81"
+                },
+                {
+                    "description": "F.Cu 上 Q153 的焊盘 1 [ROW15]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 206.05
+                    },
+                    "uuid": "5c0dce4a-c87d-410a-ae89-3008ce525245"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [ROW15] (F.Cu), 长度: 6.4000 mm",
+                    "pos": {
+                        "x": 131.3625,
+                        "y": 206.05
+                    },
+                    "uuid": "6e652ee3-721a-4ec8-ab6a-bff3cf23c7e0"
+                },
+                {
+                    "description": "F.Cu 上 Q154 的焊盘 1 [ROW15]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 206.05
+                    },
+                    "uuid": "6ffb8970-e8f8-4758-9c09-525958a6ef81"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R9 的焊盘 1 [ROW8]",
+                    "pos": {
+                        "x": 101.59,
+                        "y": 159.0
+                    },
+                    "uuid": "38ad6665-b4a0-4ef8-9f58-bfbc6372b200"
+                },
+                {
+                    "description": "F.Cu 上 Q81 的焊盘 1 [ROW8]",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 161.25
+                    },
+                    "uuid": "c0665a3c-afd2-4f39-8199-ca91f4dacf68"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q81 的焊盘 1 [ROW8]",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 161.25
+                    },
+                    "uuid": "c0665a3c-afd2-4f39-8199-ca91f4dacf68"
+                },
+                {
+                    "description": "走线 [ROW8] (F.Cu), 长度: 58.6000 mm",
+                    "pos": {
+                        "x": 109.25,
+                        "y": 220.3
+                    },
+                    "uuid": "796f1af9-b903-40a1-91a8-4c02c647669d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q82 的焊盘 1 [ROW8]",
+                    "pos": {
+                        "x": 112.1625,
+                        "y": 161.25
+                    },
+                    "uuid": "d0866ba8-b861-43ff-8e92-c840b7ee72ac"
+                },
+                {
+                    "description": "F.Cu 上 Q83 的焊盘 1 [ROW8]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 161.25
+                    },
+                    "uuid": "4cc96194-fa71-40eb-b3c3-3ee737b644c3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q83 的焊盘 1 [ROW8]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 161.25
+                    },
+                    "uuid": "4cc96194-fa71-40eb-b3c3-3ee737b644c3"
+                },
+                {
+                    "description": "F.Cu 上 Q84 的焊盘 1 [ROW8]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 161.25
+                    },
+                    "uuid": "00969d4c-bc03-4100-89b1-3b080019a7ef"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q84 的焊盘 1 [ROW8]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 161.25
+                    },
+                    "uuid": "00969d4c-bc03-4100-89b1-3b080019a7ef"
+                },
+                {
+                    "description": "走线 [ROW8] (F.Cu), 长度: 6.4000 mm",
+                    "pos": {
+                        "x": 131.3625,
+                        "y": 161.25
+                    },
+                    "uuid": "cb2fbfa0-b12a-4651-a4a2-e63dbd50f548"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R5 的焊盘 1 [ROW4]",
+                    "pos": {
+                        "x": 101.59,
+                        "y": 133.4
+                    },
+                    "uuid": "440aa463-50b0-41a7-aaed-0692e335546e"
+                },
+                {
+                    "description": "F.Cu 上 Q41 的焊盘 1 [ROW4]",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 135.65
+                    },
+                    "uuid": "e8d0fa66-4463-4e1e-bedc-ea74ddcb1b10"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q41 的焊盘 1 [ROW4]",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 135.65
+                    },
+                    "uuid": "e8d0fa66-4463-4e1e-bedc-ea74ddcb1b10"
+                },
+                {
+                    "description": "F.Cu 上 Q42 的焊盘 1 [ROW4]",
+                    "pos": {
+                        "x": 112.1625,
+                        "y": 135.65
+                    },
+                    "uuid": "0f5e4c28-f6e2-4ae2-9bec-37a1a4d769a2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q42 的焊盘 1 [ROW4]",
+                    "pos": {
+                        "x": 112.1625,
+                        "y": 135.65
+                    },
+                    "uuid": "0f5e4c28-f6e2-4ae2-9bec-37a1a4d769a2"
+                },
+                {
+                    "description": "F.Cu 上 Q43 的焊盘 1 [ROW4]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 135.65
+                    },
+                    "uuid": "aa97c1bb-c4d1-41fb-bb23-0afb2816ebe7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q44 的焊盘 1 [ROW4]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 135.65
+                    },
+                    "uuid": "63e82b2b-9ec3-4666-98db-07bcf17b36bf"
+                },
+                {
+                    "description": "走线 [ROW4] (F.Cu), 长度: 4.9322 mm",
+                    "pos": {
+                        "x": 131.3625,
+                        "y": 135.65
+                    },
+                    "uuid": "ced8a3a7-a1d0-46c5-a36a-911e543c029a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q44 的焊盘 1 [ROW4]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 135.65
+                    },
+                    "uuid": "63e82b2b-9ec3-4666-98db-07bcf17b36bf"
+                },
+                {
+                    "description": "F.Cu 上 Q43 的焊盘 1 [ROW4]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 135.65
+                    },
+                    "uuid": "aa97c1bb-c4d1-41fb-bb23-0afb2816ebe7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 J1 的焊盘 5 [ROW4]",
+                    "pos": {
+                        "x": 127.75,
+                        "y": 243.15
+                    },
+                    "uuid": "43e1ac4a-5467-43cc-ad06-49db0296d8d0"
+                },
+                {
+                    "description": "走线 [ROW4] (F.Cu), 长度: 0.7879 mm",
+                    "pos": {
+                        "x": 132.1707,
+                        "y": 247.7125
+                    },
+                    "uuid": "eb58b7b3-793a-4bae-8a44-d9cfb6b68c82"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q131 的焊盘 1 [ROW13]",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 193.25
+                    },
+                    "uuid": "6904d941-1504-4073-8566-d80179a8f97d"
+                },
+                {
+                    "description": "F.Cu 上 R14 的焊盘 1 [ROW13]",
+                    "pos": {
+                        "x": 101.59,
+                        "y": 191.0
+                    },
+                    "uuid": "944eced0-69e8-499a-81d1-b4660e21bccb"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q132 的焊盘 1 [ROW13]",
+                    "pos": {
+                        "x": 112.1625,
+                        "y": 193.25
+                    },
+                    "uuid": "991ee899-0bab-488d-bc76-72952798a08c"
+                },
+                {
+                    "description": "F.Cu 上 Q131 的焊盘 1 [ROW13]",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 193.25
+                    },
+                    "uuid": "6904d941-1504-4073-8566-d80179a8f97d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q133 的焊盘 1 [ROW13]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 193.25
+                    },
+                    "uuid": "d897a589-42fc-4fe5-be46-52cf601c67f5"
+                },
+                {
+                    "description": "F.Cu 上 Q132 的焊盘 1 [ROW13]",
+                    "pos": {
+                        "x": 112.1625,
+                        "y": 193.25
+                    },
+                    "uuid": "991ee899-0bab-488d-bc76-72952798a08c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q134 的焊盘 1 [ROW13]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 193.25
+                    },
+                    "uuid": "78ef14e7-f660-4eac-b5eb-51ef270565e5"
+                },
+                {
+                    "description": "F.Cu 上 Q133 的焊盘 1 [ROW13]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 193.25
+                    },
+                    "uuid": "d897a589-42fc-4fe5-be46-52cf601c67f5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [ROW13] (F.Cu), 长度: 6.4000 mm",
+                    "pos": {
+                        "x": 131.3625,
+                        "y": 193.25
+                    },
+                    "uuid": "4e650d35-b5df-47c1-b2b5-e71abeb2daf3"
+                },
+                {
+                    "description": "F.Cu 上 Q134 的焊盘 1 [ROW13]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 193.25
+                    },
+                    "uuid": "78ef14e7-f660-4eac-b5eb-51ef270565e5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [ROW2] (B.Cu), 长度: 25.3000 mm",
+                    "pos": {
+                        "x": 102.85,
+                        "y": 148.6
+                    },
+                    "uuid": "2942ab71-7dc6-49a4-b407-53e09a81e256"
+                },
+                {
+                    "description": "走线 [ROW2] (B.Cu), 长度: 1.2418 mm",
+                    "pos": {
+                        "x": 103.0834,
+                        "y": 122.2153
+                    },
+                    "uuid": "5f7502c7-ac9a-4fb5-a89f-82496828cd6c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q34 的焊盘 2 [COL3]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 131.15
+                    },
+                    "uuid": "f2252748-4e8a-496d-ae52-6c327a3c4984"
+                },
+                {
+                    "description": "走线 [COL3] (F.Cu), 长度: 1.3435 mm",
+                    "pos": {
+                        "x": 124.0125,
+                        "y": 123.8
+                    },
+                    "uuid": "71700415-8580-43cb-8155-f1f65d43ef5c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q44 的焊盘 2 [COL3]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 137.55
+                    },
+                    "uuid": "7c167f0b-8ab3-458a-a722-8b8efd762a32"
+                },
+                {
+                    "description": "F.Cu 上 Q34 的焊盘 2 [COL3]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 131.15
+                    },
+                    "uuid": "f2252748-4e8a-496d-ae52-6c327a3c4984"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q54 的焊盘 2 [COL3]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 143.95
+                    },
+                    "uuid": "2091e6cd-78b7-413e-9165-be84f68c5ada"
+                },
+                {
+                    "description": "F.Cu 上 Q44 的焊盘 2 [COL3]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 137.55
+                    },
+                    "uuid": "7c167f0b-8ab3-458a-a722-8b8efd762a32"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q64 的焊盘 2 [COL3]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 150.35
+                    },
+                    "uuid": "0cba637e-42a5-4e9d-a36e-ced9f7ce844b"
+                },
+                {
+                    "description": "F.Cu 上 Q54 的焊盘 2 [COL3]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 143.95
+                    },
+                    "uuid": "2091e6cd-78b7-413e-9165-be84f68c5ada"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q74 的焊盘 2 [COL3]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 156.75
+                    },
+                    "uuid": "f6eddc35-13cb-4b56-a9a1-edbf75dfd00f"
+                },
+                {
+                    "description": "F.Cu 上 Q64 的焊盘 2 [COL3]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 150.35
+                    },
+                    "uuid": "0cba637e-42a5-4e9d-a36e-ced9f7ce844b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q84 的焊盘 2 [COL3]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 163.15
+                    },
+                    "uuid": "530ea2d0-7aa4-482c-b0cc-abcdfe3c82a1"
+                },
+                {
+                    "description": "F.Cu 上 Q74 的焊盘 2 [COL3]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 156.75
+                    },
+                    "uuid": "f6eddc35-13cb-4b56-a9a1-edbf75dfd00f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q94 的焊盘 2 [COL3]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 169.55
+                    },
+                    "uuid": "6b19162a-cf56-423d-b6e1-a2fbb2852a05"
+                },
+                {
+                    "description": "F.Cu 上 Q84 的焊盘 2 [COL3]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 163.15
+                    },
+                    "uuid": "530ea2d0-7aa4-482c-b0cc-abcdfe3c82a1"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q104 的焊盘 2 [COL3]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 175.95
+                    },
+                    "uuid": "3c7eef77-097f-4c8c-a8e5-a4efe996d1d9"
+                },
+                {
+                    "description": "F.Cu 上 Q94 的焊盘 2 [COL3]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 169.55
+                    },
+                    "uuid": "6b19162a-cf56-423d-b6e1-a2fbb2852a05"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q114 的焊盘 2 [COL3]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 182.35
+                    },
+                    "uuid": "86c66c8a-2ca7-4785-bcff-374451687a4d"
+                },
+                {
+                    "description": "F.Cu 上 Q104 的焊盘 2 [COL3]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 175.95
+                    },
+                    "uuid": "3c7eef77-097f-4c8c-a8e5-a4efe996d1d9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q124 的焊盘 2 [COL3]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 188.75
+                    },
+                    "uuid": "08ffce7e-c18f-4287-8fd2-617d19060bde"
+                },
+                {
+                    "description": "F.Cu 上 Q114 的焊盘 2 [COL3]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 182.35
+                    },
+                    "uuid": "86c66c8a-2ca7-4785-bcff-374451687a4d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q134 的焊盘 2 [COL3]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 195.15
+                    },
+                    "uuid": "a633f66e-23ee-498f-83b6-fcbed97ee612"
+                },
+                {
+                    "description": "F.Cu 上 Q124 的焊盘 2 [COL3]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 188.75
+                    },
+                    "uuid": "08ffce7e-c18f-4287-8fd2-617d19060bde"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q144 的焊盘 2 [COL3]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 201.55
+                    },
+                    "uuid": "cdd0f384-91ea-403e-9418-34d7af32d5e9"
+                },
+                {
+                    "description": "F.Cu 上 Q134 的焊盘 2 [COL3]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 195.15
+                    },
+                    "uuid": "a633f66e-23ee-498f-83b6-fcbed97ee612"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q154 的焊盘 2 [COL3]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 207.95
+                    },
+                    "uuid": "20807a7c-1ee4-4105-9b33-cbd38020cb31"
+                },
+                {
+                    "description": "F.Cu 上 Q144 的焊盘 2 [COL3]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 201.55
+                    },
+                    "uuid": "cdd0f384-91ea-403e-9418-34d7af32d5e9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q164 的焊盘 2 [COL3]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 214.35
+                    },
+                    "uuid": "7466c2da-8cff-4331-b0fa-5f4bc5392584"
+                },
+                {
+                    "description": "F.Cu 上 Q154 的焊盘 2 [COL3]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 207.95
+                    },
+                    "uuid": "20807a7c-1ee4-4105-9b33-cbd38020cb31"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q174 的焊盘 2 [COL3]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 220.75
+                    },
+                    "uuid": "2a3f3457-7f4d-41be-bc5b-967d6f30b317"
+                },
+                {
+                    "description": "F.Cu 上 Q164 的焊盘 2 [COL3]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 214.35
+                    },
+                    "uuid": "7466c2da-8cff-4331-b0fa-5f4bc5392584"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q184 的焊盘 2 [COL3]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 227.15
+                    },
+                    "uuid": "988b6564-be24-4e68-a5c4-e7c1665447a9"
+                },
+                {
+                    "description": "F.Cu 上 Q174 的焊盘 2 [COL3]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 220.75
+                    },
+                    "uuid": "2a3f3457-7f4d-41be-bc5b-967d6f30b317"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q194 的焊盘 2 [COL3]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 233.55
+                    },
+                    "uuid": "1acc5966-b348-41b7-b47b-e1ac2988d73d"
+                },
+                {
+                    "description": "F.Cu 上 Q184 的焊盘 2 [COL3]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 227.15
+                    },
+                    "uuid": "988b6564-be24-4e68-a5c4-e7c1665447a9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q204 的焊盘 2 [COL3]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 239.95
+                    },
+                    "uuid": "01f5e696-2b15-46ab-b29e-bf137cda2af8"
+                },
+                {
+                    "description": "F.Cu 上 Q194 的焊盘 2 [COL3]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 233.55
+                    },
+                    "uuid": "1acc5966-b348-41b7-b47b-e1ac2988d73d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R19 的焊盘 1 [ROW18]",
+                    "pos": {
+                        "x": 101.59,
+                        "y": 223.0
+                    },
+                    "uuid": "146d1c5a-4385-4e73-a0a7-84227e4a688c"
+                },
+                {
+                    "description": "F.Cu 上 Q181 的焊盘 1 [ROW18]",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 225.25
+                    },
+                    "uuid": "d7ae3c2e-a503-40fd-89c6-c4d2eb7f3512"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q181 的焊盘 1 [ROW18]",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 225.25
+                    },
+                    "uuid": "d7ae3c2e-a503-40fd-89c6-c4d2eb7f3512"
+                },
+                {
+                    "description": "F.Cu 上 Q182 的焊盘 1 [ROW18]",
+                    "pos": {
+                        "x": 112.1625,
+                        "y": 225.25
+                    },
+                    "uuid": "bc93fda2-ab43-4529-91ff-b49ee1c01838"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q183 的焊盘 1 [ROW18]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 225.25
+                    },
+                    "uuid": "656ba201-3a50-4600-89e8-7ae14da69df0"
+                },
+                {
+                    "description": "F.Cu 上 Q182 的焊盘 1 [ROW18]",
+                    "pos": {
+                        "x": 112.1625,
+                        "y": 225.25
+                    },
+                    "uuid": "bc93fda2-ab43-4529-91ff-b49ee1c01838"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q184 的焊盘 1 [ROW18]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 225.25
+                    },
+                    "uuid": "efa66b09-6524-4f50-bc3d-7c383d24a8aa"
+                },
+                {
+                    "description": "F.Cu 上 Q183 的焊盘 1 [ROW18]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 225.25
+                    },
+                    "uuid": "656ba201-3a50-4600-89e8-7ae14da69df0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [ROW18] (F.Cu), 长度: 6.4000 mm",
+                    "pos": {
+                        "x": 131.3625,
+                        "y": 225.25
+                    },
+                    "uuid": "58285cb6-d958-4a9e-a043-c2269578ae0b"
+                },
+                {
+                    "description": "F.Cu 上 Q184 的焊盘 1 [ROW18]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 225.25
+                    },
+                    "uuid": "efa66b09-6524-4f50-bc3d-7c383d24a8aa"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R18 的焊盘 1 [ROW17]",
+                    "pos": {
+                        "x": 101.59,
+                        "y": 216.6
+                    },
+                    "uuid": "c5998645-19a8-4b0c-a5bd-a5c587e1c92a"
+                },
+                {
+                    "description": "F.Cu 上 Q171 的焊盘 1 [ROW17]",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 218.85
+                    },
+                    "uuid": "6c7ced3b-250f-4d58-82ee-af40a0734c64"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q172 的焊盘 1 [ROW17]",
+                    "pos": {
+                        "x": 112.1625,
+                        "y": 218.85
+                    },
+                    "uuid": "3e7c1a25-6451-425e-b4b5-af97892a1870"
+                },
+                {
+                    "description": "F.Cu 上 Q171 的焊盘 1 [ROW17]",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 218.85
+                    },
+                    "uuid": "6c7ced3b-250f-4d58-82ee-af40a0734c64"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q173 的焊盘 1 [ROW17]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 218.85
+                    },
+                    "uuid": "500a76c6-2877-42dd-8744-a43c651d95a8"
+                },
+                {
+                    "description": "F.Cu 上 Q172 的焊盘 1 [ROW17]",
+                    "pos": {
+                        "x": 112.1625,
+                        "y": 218.85
+                    },
+                    "uuid": "3e7c1a25-6451-425e-b4b5-af97892a1870"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q174 的焊盘 1 [ROW17]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 218.85
+                    },
+                    "uuid": "a46b629f-a9ac-4d40-91c7-ce2a454efa5f"
+                },
+                {
+                    "description": "F.Cu 上 Q173 的焊盘 1 [ROW17]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 218.85
+                    },
+                    "uuid": "500a76c6-2877-42dd-8744-a43c651d95a8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [ROW17] (F.Cu), 长度: 6.4000 mm",
+                    "pos": {
+                        "x": 137.7625,
+                        "y": 218.85
+                    },
+                    "uuid": "0f44905f-1c16-4933-9258-df844593032c"
+                },
+                {
+                    "description": "F.Cu 上 Q174 的焊盘 1 [ROW17]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 218.85
+                    },
+                    "uuid": "a46b629f-a9ac-4d40-91c7-ce2a454efa5f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [ROW17] (F.Cu), 长度: 1.0967 mm",
+                    "pos": {
+                        "x": 131.6586,
+                        "y": 226.0584
+                    },
+                    "uuid": "18cda29b-f132-4319-bbc5-20341e9f83c3"
+                },
+                {
+                    "description": "走线 [ROW17] (F.Cu), 长度: 6.4000 mm",
+                    "pos": {
+                        "x": 137.7625,
+                        "y": 218.85
+                    },
+                    "uuid": "0f44905f-1c16-4933-9258-df844593032c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q71 的焊盘 1 [ROW7]",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 154.85
+                    },
+                    "uuid": "d132ec28-3332-4e58-b9f5-c0f7c01c7cd0"
+                },
+                {
+                    "description": "F.Cu 上 R8 的焊盘 1 [ROW7]",
+                    "pos": {
+                        "x": 101.59,
+                        "y": 152.6
+                    },
+                    "uuid": "1dd81b89-8069-4c35-abd1-1291018ec6e3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q72 的焊盘 1 [ROW7]",
+                    "pos": {
+                        "x": 112.1625,
+                        "y": 154.85
+                    },
+                    "uuid": "b320aa41-1791-44e1-b776-4baffb289c65"
+                },
+                {
+                    "description": "F.Cu 上 Q71 的焊盘 1 [ROW7]",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 154.85
+                    },
+                    "uuid": "d132ec28-3332-4e58-b9f5-c0f7c01c7cd0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q73 的焊盘 1 [ROW7]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 154.85
+                    },
+                    "uuid": "c76f9398-a12f-4cfd-b696-227fc7ab0155"
+                },
+                {
+                    "description": "F.Cu 上 Q72 的焊盘 1 [ROW7]",
+                    "pos": {
+                        "x": 112.1625,
+                        "y": 154.85
+                    },
+                    "uuid": "b320aa41-1791-44e1-b776-4baffb289c65"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q73 的焊盘 1 [ROW7]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 154.85
+                    },
+                    "uuid": "c76f9398-a12f-4cfd-b696-227fc7ab0155"
+                },
+                {
+                    "description": "F.Cu 上 Q74 的焊盘 1 [ROW7]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 154.85
+                    },
+                    "uuid": "7dd2f2ad-6b52-4476-93a4-0eb923925cec"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q74 的焊盘 1 [ROW7]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 154.85
+                    },
+                    "uuid": "7dd2f2ad-6b52-4476-93a4-0eb923925cec"
+                },
+                {
+                    "description": "走线 [ROW7] (F.Cu), 长度: 6.4000 mm",
+                    "pos": {
+                        "x": 131.3625,
+                        "y": 154.85
+                    },
+                    "uuid": "975e47f3-9661-426e-8b0d-67d5b5c2a588"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 J1 的焊盘 8 [ROW7]",
+                    "pos": {
+                        "x": 129.25,
+                        "y": 243.15
+                    },
+                    "uuid": "06ae9f73-4894-4fb2-bcfd-b032db7ff130"
+                },
+                {
+                    "description": "走线 [ROW7] (B.Cu), 长度: 30.7826 mm",
+                    "pos": {
+                        "x": 133.2309,
+                        "y": 248.5613
+                    },
+                    "uuid": "45414504-be44-4539-a580-f0c00b5583bf"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q121 的焊盘 1 [ROW12]",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 186.85
+                    },
+                    "uuid": "bf6ed36e-9594-4e33-ab2e-6e3fb2b888b6"
+                },
+                {
+                    "description": "F.Cu 上 R13 的焊盘 1 [ROW12]",
+                    "pos": {
+                        "x": 101.59,
+                        "y": 184.6
+                    },
+                    "uuid": "efb08372-c22b-45a2-96e7-9858db26ec9e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q121 的焊盘 1 [ROW12]",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 186.85
+                    },
+                    "uuid": "bf6ed36e-9594-4e33-ab2e-6e3fb2b888b6"
+                },
+                {
+                    "description": "F.Cu 上 Q122 的焊盘 1 [ROW12]",
+                    "pos": {
+                        "x": 112.1625,
+                        "y": 186.85
+                    },
+                    "uuid": "e967b0fd-ecce-48fc-a992-a03aa3ec0c48"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q122 的焊盘 1 [ROW12]",
+                    "pos": {
+                        "x": 112.1625,
+                        "y": 186.85
+                    },
+                    "uuid": "e967b0fd-ecce-48fc-a992-a03aa3ec0c48"
+                },
+                {
+                    "description": "F.Cu 上 Q123 的焊盘 1 [ROW12]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 186.85
+                    },
+                    "uuid": "a16e0a07-c194-4b8c-b17e-6e16764eeb2f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q124 的焊盘 1 [ROW12]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 186.85
+                    },
+                    "uuid": "4c6a8117-6e23-4d36-8c7f-05753999a2ad"
+                },
+                {
+                    "description": "F.Cu 上 Q123 的焊盘 1 [ROW12]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 186.85
+                    },
+                    "uuid": "a16e0a07-c194-4b8c-b17e-6e16764eeb2f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q124 的焊盘 1 [ROW12]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 186.85
+                    },
+                    "uuid": "4c6a8117-6e23-4d36-8c7f-05753999a2ad"
+                },
+                {
+                    "description": "走线 [ROW12] (F.Cu), 长度: 6.4000 mm",
+                    "pos": {
+                        "x": 131.3625,
+                        "y": 186.85
+                    },
+                    "uuid": "de642185-599f-4fc8-8756-8d3d63deb9e1"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [ROW12] (F.Cu), 长度: 1.4580 mm",
+                    "pos": {
+                        "x": 131.75,
+                        "y": 243.15
+                    },
+                    "uuid": "ab32f3ea-9b8c-4350-9596-20bdb7e33458"
+                },
+                {
+                    "description": "走线 [ROW12] (F.Cu), 长度: 6.4000 mm",
+                    "pos": {
+                        "x": 131.3625,
+                        "y": 186.85
+                    },
+                    "uuid": "de642185-599f-4fc8-8756-8d3d63deb9e1"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R21 的焊盘 1 [ROW20]",
+                    "pos": {
+                        "x": 101.59,
+                        "y": 235.8
+                    },
+                    "uuid": "39d314fc-5731-4f0b-b218-e923551c1b83"
+                },
+                {
+                    "description": "F.Cu 上 Q201 的焊盘 1 [ROW20]",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 238.05
+                    },
+                    "uuid": "073e0b91-c223-4115-9983-b8663c97f80e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q202 的焊盘 1 [ROW20]",
+                    "pos": {
+                        "x": 112.1625,
+                        "y": 238.05
+                    },
+                    "uuid": "88f30091-48fc-4ea7-98a8-ff7bf108fd02"
+                },
+                {
+                    "description": "F.Cu 上 Q201 的焊盘 1 [ROW20]",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 238.05
+                    },
+                    "uuid": "073e0b91-c223-4115-9983-b8663c97f80e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q202 的焊盘 1 [ROW20]",
+                    "pos": {
+                        "x": 112.1625,
+                        "y": 238.05
+                    },
+                    "uuid": "88f30091-48fc-4ea7-98a8-ff7bf108fd02"
+                },
+                {
+                    "description": "F.Cu 上 Q203 的焊盘 1 [ROW20]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 238.05
+                    },
+                    "uuid": "ed49b35b-98da-4c2e-be53-568e81370fb5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q203 的焊盘 1 [ROW20]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 238.05
+                    },
+                    "uuid": "ed49b35b-98da-4c2e-be53-568e81370fb5"
+                },
+                {
+                    "description": "F.Cu 上 Q204 的焊盘 1 [ROW20]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 238.05
+                    },
+                    "uuid": "43ae5e68-13be-4190-a174-4c5bc3ea6687"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [ROW20] (F.Cu), 长度: 2.0697 mm",
+                    "pos": {
+                        "x": 131.3625,
+                        "y": 238.05
+                    },
+                    "uuid": "7c7ed4b3-b1fc-4768-8d3c-79dbdf0667e1"
+                },
+                {
+                    "description": "F.Cu 上 Q204 的焊盘 1 [ROW20]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 238.05
+                    },
+                    "uuid": "43ae5e68-13be-4190-a174-4c5bc3ea6687"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q91 的焊盘 1 [ROW9]",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 167.65
+                    },
+                    "uuid": "65db7389-ef8b-48da-ba1f-e8687abba4ae"
+                },
+                {
+                    "description": "F.Cu 上 R10 的焊盘 1 [ROW9]",
+                    "pos": {
+                        "x": 101.59,
+                        "y": 165.4
+                    },
+                    "uuid": "4ef75c5e-82ca-4239-93cf-618d76919678"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q92 的焊盘 1 [ROW9]",
+                    "pos": {
+                        "x": 112.1625,
+                        "y": 167.65
+                    },
+                    "uuid": "38822e8d-816c-4cdc-8a7f-106bd17fc11b"
+                },
+                {
+                    "description": "F.Cu 上 Q91 的焊盘 1 [ROW9]",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 167.65
+                    },
+                    "uuid": "65db7389-ef8b-48da-ba1f-e8687abba4ae"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q93 的焊盘 1 [ROW9]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 167.65
+                    },
+                    "uuid": "9d549182-e88e-4eb0-b79f-9a22e402757a"
+                },
+                {
+                    "description": "F.Cu 上 Q92 的焊盘 1 [ROW9]",
+                    "pos": {
+                        "x": 112.1625,
+                        "y": 167.65
+                    },
+                    "uuid": "38822e8d-816c-4cdc-8a7f-106bd17fc11b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q94 的焊盘 1 [ROW9]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 167.65
+                    },
+                    "uuid": "e10f1460-1edb-4814-9285-ab1bfd1580a1"
+                },
+                {
+                    "description": "F.Cu 上 Q93 的焊盘 1 [ROW9]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 167.65
+                    },
+                    "uuid": "9d549182-e88e-4eb0-b79f-9a22e402757a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q94 的焊盘 1 [ROW9]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 167.65
+                    },
+                    "uuid": "e10f1460-1edb-4814-9285-ab1bfd1580a1"
+                },
+                {
+                    "description": "走线 [ROW9] (F.Cu), 长度: 6.4000 mm",
+                    "pos": {
+                        "x": 137.7625,
+                        "y": 167.65
+                    },
+                    "uuid": "254b14ed-7c7a-4a6e-95ad-b8f176d2fafa"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [ROW9] (F.Cu), 长度: 0.4243 mm",
+                    "pos": {
+                        "x": 131.4,
+                        "y": 245.85
+                    },
+                    "uuid": "a6574444-d6cc-4bad-9696-9930d35613f3"
+                },
+                {
+                    "description": "走线 [ROW9] (F.Cu), 长度: 0.0003 mm",
+                    "pos": {
+                        "x": 131.9816,
+                        "y": 246.4609
+                    },
+                    "uuid": "7471f91f-5082-4b32-8d4d-ba4c6cb3418e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R20 的焊盘 1 [ROW19]",
+                    "pos": {
+                        "x": 101.59,
+                        "y": 229.4
+                    },
+                    "uuid": "ab8d2dab-7ecb-49d0-98c8-b0048eb70375"
+                },
+                {
+                    "description": "F.Cu 上 Q191 的焊盘 1 [ROW19]",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 231.65
+                    },
+                    "uuid": "f4f4d1a8-64eb-411b-8e8d-96aa0c78d70c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q192 的焊盘 1 [ROW19]",
+                    "pos": {
+                        "x": 112.1625,
+                        "y": 231.65
+                    },
+                    "uuid": "28d4fde3-c735-4f9d-93bc-eb20853c89f1"
+                },
+                {
+                    "description": "F.Cu 上 Q193 的焊盘 1 [ROW19]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 231.65
+                    },
+                    "uuid": "a5e25f3f-4f0b-4617-aa7b-d08cc92b58f6"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q192 的焊盘 1 [ROW19]",
+                    "pos": {
+                        "x": 112.1625,
+                        "y": 231.65
+                    },
+                    "uuid": "28d4fde3-c735-4f9d-93bc-eb20853c89f1"
+                },
+                {
+                    "description": "F.Cu 上 Q191 的焊盘 1 [ROW19]",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 231.65
+                    },
+                    "uuid": "f4f4d1a8-64eb-411b-8e8d-96aa0c78d70c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q193 的焊盘 1 [ROW19]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 231.65
+                    },
+                    "uuid": "a5e25f3f-4f0b-4617-aa7b-d08cc92b58f6"
+                },
+                {
+                    "description": "F.Cu 上 Q194 的焊盘 1 [ROW19]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 231.65
+                    },
+                    "uuid": "9a84175d-6c96-4a5b-9522-28a55c8fd1b8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q194 的焊盘 1 [ROW19]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 231.65
+                    },
+                    "uuid": "9a84175d-6c96-4a5b-9522-28a55c8fd1b8"
+                },
+                {
+                    "description": "F.Cu 上 Q195 的焊盘 1 [ROW19]",
+                    "pos": {
+                        "x": 131.3625,
+                        "y": 231.65
+                    },
+                    "uuid": "34ed80f3-4fd6-43d9-9101-f77b510cd2ba"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q195 的焊盘 1 [ROW19]",
+                    "pos": {
+                        "x": 131.3625,
+                        "y": 231.65
+                    },
+                    "uuid": "34ed80f3-4fd6-43d9-9101-f77b510cd2ba"
+                },
+                {
+                    "description": "走线 [ROW19] (F.Cu), 长度: 0.7524 mm",
+                    "pos": {
+                        "x": 135.4055,
+                        "y": 230.7939
+                    },
+                    "uuid": "34324bf7-c7e4-47a3-b0f6-9912d52dc324"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R12 的焊盘 1 [ROW11]",
+                    "pos": {
+                        "x": 101.59,
+                        "y": 178.2
+                    },
+                    "uuid": "10453f7a-8cb7-4bba-81e2-833487d6b277"
+                },
+                {
+                    "description": "F.Cu 上 Q111 的焊盘 1 [ROW11]",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 180.45
+                    },
+                    "uuid": "d6fbb2bb-e4cb-4882-a6e1-0b25452a8350"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q111 的焊盘 1 [ROW11]",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 180.45
+                    },
+                    "uuid": "d6fbb2bb-e4cb-4882-a6e1-0b25452a8350"
+                },
+                {
+                    "description": "F.Cu 上 Q112 的焊盘 1 [ROW11]",
+                    "pos": {
+                        "x": 112.1625,
+                        "y": 180.45
+                    },
+                    "uuid": "72049971-c0c8-46fd-af2a-3ee6233a9bc2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q113 的焊盘 1 [ROW11]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 180.45
+                    },
+                    "uuid": "f79ef4a9-46b6-4550-a2ac-31f0417366c3"
+                },
+                {
+                    "description": "F.Cu 上 Q112 的焊盘 1 [ROW11]",
+                    "pos": {
+                        "x": 112.1625,
+                        "y": 180.45
+                    },
+                    "uuid": "72049971-c0c8-46fd-af2a-3ee6233a9bc2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q114 的焊盘 1 [ROW11]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 180.45
+                    },
+                    "uuid": "5c3f7444-f65e-4043-b134-cb91394ade6c"
+                },
+                {
+                    "description": "F.Cu 上 Q113 的焊盘 1 [ROW11]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 180.45
+                    },
+                    "uuid": "f79ef4a9-46b6-4550-a2ac-31f0417366c3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [ROW11] (F.Cu), 长度: 0.9517 mm",
+                    "pos": {
+                        "x": 131.25,
+                        "y": 243.15
+                    },
+                    "uuid": "04b76f0d-e8b8-4103-b1ae-29dfc875dfa4"
+                },
+                {
+                    "description": "走线 [ROW11] (B.Cu), 长度: 0.2865 mm",
+                    "pos": {
+                        "x": 131.3666,
+                        "y": 244.0062
+                    },
+                    "uuid": "84330cfd-48f2-4640-a034-6f45ccc31a3b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [ROW11] (F.Cu), 长度: 6.4000 mm",
+                    "pos": {
+                        "x": 131.3625,
+                        "y": 180.45
+                    },
+                    "uuid": "49508ff9-3cb7-4ca8-839f-843a13366846"
+                },
+                {
+                    "description": "F.Cu 上 Q114 的焊盘 1 [ROW11]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 180.45
+                    },
+                    "uuid": "5c3f7444-f65e-4043-b134-cb91394ade6c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q33 的焊盘 2 [COL2]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 131.15
+                    },
+                    "uuid": "a02daee1-da4f-4a79-935b-62ed42cfc1ab"
+                },
+                {
+                    "description": "走线 [COL2] (F.Cu), 长度: 1.3435 mm",
+                    "pos": {
+                        "x": 117.6125,
+                        "y": 123.8
+                    },
+                    "uuid": "76890923-ed2d-40f1-8aff-1d37c168f8b4"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q43 的焊盘 2 [COL2]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 137.55
+                    },
+                    "uuid": "71aec8cd-95ec-4e30-9ad9-7a26e5a8d877"
+                },
+                {
+                    "description": "F.Cu 上 Q33 的焊盘 2 [COL2]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 131.15
+                    },
+                    "uuid": "a02daee1-da4f-4a79-935b-62ed42cfc1ab"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q53 的焊盘 2 [COL2]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 143.95
+                    },
+                    "uuid": "871e7526-9fa2-4a3f-bcff-89b6021740cc"
+                },
+                {
+                    "description": "F.Cu 上 Q43 的焊盘 2 [COL2]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 137.55
+                    },
+                    "uuid": "71aec8cd-95ec-4e30-9ad9-7a26e5a8d877"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q63 的焊盘 2 [COL2]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 150.35
+                    },
+                    "uuid": "1ed5e00f-c4e9-4501-9229-ce4506ad66b8"
+                },
+                {
+                    "description": "F.Cu 上 Q53 的焊盘 2 [COL2]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 143.95
+                    },
+                    "uuid": "871e7526-9fa2-4a3f-bcff-89b6021740cc"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q73 的焊盘 2 [COL2]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 156.75
+                    },
+                    "uuid": "e19b0b71-e1b1-4f2e-b817-212c2aa6b07c"
+                },
+                {
+                    "description": "F.Cu 上 Q63 的焊盘 2 [COL2]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 150.35
+                    },
+                    "uuid": "1ed5e00f-c4e9-4501-9229-ce4506ad66b8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q83 的焊盘 2 [COL2]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 163.15
+                    },
+                    "uuid": "3bed719c-31de-4f3a-942c-2aebe67704db"
+                },
+                {
+                    "description": "F.Cu 上 Q73 的焊盘 2 [COL2]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 156.75
+                    },
+                    "uuid": "e19b0b71-e1b1-4f2e-b817-212c2aa6b07c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q93 的焊盘 2 [COL2]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 169.55
+                    },
+                    "uuid": "32ca41e3-c418-49a0-addd-1f80482346cd"
+                },
+                {
+                    "description": "F.Cu 上 Q83 的焊盘 2 [COL2]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 163.15
+                    },
+                    "uuid": "3bed719c-31de-4f3a-942c-2aebe67704db"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q103 的焊盘 2 [COL2]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 175.95
+                    },
+                    "uuid": "182c92b5-ca31-4618-a0f6-69629a8e7942"
+                },
+                {
+                    "description": "F.Cu 上 Q93 的焊盘 2 [COL2]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 169.55
+                    },
+                    "uuid": "32ca41e3-c418-49a0-addd-1f80482346cd"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q103 的焊盘 2 [COL2]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 175.95
+                    },
+                    "uuid": "182c92b5-ca31-4618-a0f6-69629a8e7942"
+                },
+                {
+                    "description": "F.Cu 上 Q113 的焊盘 2 [COL2]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 182.35
+                    },
+                    "uuid": "8290c700-f986-4742-9770-fc284b67e1ee"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q123 的焊盘 2 [COL2]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 188.75
+                    },
+                    "uuid": "00a53722-3cbc-4111-b5a4-18e0293d7512"
+                },
+                {
+                    "description": "F.Cu 上 Q113 的焊盘 2 [COL2]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 182.35
+                    },
+                    "uuid": "8290c700-f986-4742-9770-fc284b67e1ee"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q133 的焊盘 2 [COL2]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 195.15
+                    },
+                    "uuid": "5966a9ae-669f-482e-b1e5-77e1d8d52fee"
+                },
+                {
+                    "description": "F.Cu 上 Q123 的焊盘 2 [COL2]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 188.75
+                    },
+                    "uuid": "00a53722-3cbc-4111-b5a4-18e0293d7512"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q143 的焊盘 2 [COL2]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 201.55
+                    },
+                    "uuid": "514c930e-a97c-484f-a81a-c77ab12fe3e8"
+                },
+                {
+                    "description": "F.Cu 上 Q133 的焊盘 2 [COL2]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 195.15
+                    },
+                    "uuid": "5966a9ae-669f-482e-b1e5-77e1d8d52fee"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q143 的焊盘 2 [COL2]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 201.55
+                    },
+                    "uuid": "514c930e-a97c-484f-a81a-c77ab12fe3e8"
+                },
+                {
+                    "description": "F.Cu 上 Q153 的焊盘 2 [COL2]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 207.95
+                    },
+                    "uuid": "ee12a580-da4f-4055-8198-354501a6ea58"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q153 的焊盘 2 [COL2]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 207.95
+                    },
+                    "uuid": "ee12a580-da4f-4055-8198-354501a6ea58"
+                },
+                {
+                    "description": "F.Cu 上 Q163 的焊盘 2 [COL2]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 214.35
+                    },
+                    "uuid": "7ea52adb-1bdc-4ba5-88a9-3da28a545307"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q173 的焊盘 2 [COL2]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 220.75
+                    },
+                    "uuid": "97a787de-4036-45f7-9917-c1a87c9c85de"
+                },
+                {
+                    "description": "F.Cu 上 Q163 的焊盘 2 [COL2]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 214.35
+                    },
+                    "uuid": "7ea52adb-1bdc-4ba5-88a9-3da28a545307"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q183 的焊盘 2 [COL2]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 227.15
+                    },
+                    "uuid": "5bb021db-055e-4182-883f-1eb95d54d623"
+                },
+                {
+                    "description": "F.Cu 上 Q173 的焊盘 2 [COL2]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 220.75
+                    },
+                    "uuid": "97a787de-4036-45f7-9917-c1a87c9c85de"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q193 的焊盘 2 [COL2]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 233.55
+                    },
+                    "uuid": "570d740b-52de-4430-a2b1-80448d693b95"
+                },
+                {
+                    "description": "F.Cu 上 Q183 的焊盘 2 [COL2]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 227.15
+                    },
+                    "uuid": "5bb021db-055e-4182-883f-1eb95d54d623"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q203 的焊盘 2 [COL2]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 239.95
+                    },
+                    "uuid": "8065f513-809a-4b80-af86-b6a6a58d3023"
+                },
+                {
+                    "description": "F.Cu 上 Q193 的焊盘 2 [COL2]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 233.55
+                    },
+                    "uuid": "570d740b-52de-4430-a2b1-80448d693b95"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q203 的焊盘 2 [COL2]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 239.95
+                    },
+                    "uuid": "8065f513-809a-4b80-af86-b6a6a58d3023"
+                },
+                {
+                    "description": "F.Cu 上 Q213 的焊盘 3 [COL2]",
+                    "pos": {
+                        "x": 121.3595,
+                        "y": 247.8
+                    },
+                    "uuid": "8df1103a-c27f-4450-a061-d4c687d6cadc"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q141 的焊盘 1 [ROW14]",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 199.65
+                    },
+                    "uuid": "50f6c5c6-e673-49c6-a6b8-47ba6f41aaae"
+                },
+                {
+                    "description": "F.Cu 上 R15 的焊盘 1 [ROW14]",
+                    "pos": {
+                        "x": 101.59,
+                        "y": 197.4
+                    },
+                    "uuid": "53efaeb0-6fe9-4235-81a2-82148f52721d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q141 的焊盘 1 [ROW14]",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 199.65
+                    },
+                    "uuid": "50f6c5c6-e673-49c6-a6b8-47ba6f41aaae"
+                },
+                {
+                    "description": "F.Cu 上 Q142 的焊盘 1 [ROW14]",
+                    "pos": {
+                        "x": 112.1625,
+                        "y": 199.65
+                    },
+                    "uuid": "f2bc98c0-7298-4e38-85ae-9921a0c11696"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q143 的焊盘 1 [ROW14]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 199.65
+                    },
+                    "uuid": "bf495caa-e036-4819-bc48-9c9e9cfb6b3f"
+                },
+                {
+                    "description": "F.Cu 上 Q142 的焊盘 1 [ROW14]",
+                    "pos": {
+                        "x": 112.1625,
+                        "y": 199.65
+                    },
+                    "uuid": "f2bc98c0-7298-4e38-85ae-9921a0c11696"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q143 的焊盘 1 [ROW14]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 199.65
+                    },
+                    "uuid": "bf495caa-e036-4819-bc48-9c9e9cfb6b3f"
+                },
+                {
+                    "description": "F.Cu 上 Q144 的焊盘 1 [ROW14]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 199.65
+                    },
+                    "uuid": "92183e70-38fb-4605-9028-ab5593306f5b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q144 的焊盘 1 [ROW14]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 199.65
+                    },
+                    "uuid": "92183e70-38fb-4605-9028-ab5593306f5b"
+                },
+                {
+                    "description": "走线 [ROW14] (F.Cu), 长度: 6.4000 mm",
+                    "pos": {
+                        "x": 131.3625,
+                        "y": 199.65
+                    },
+                    "uuid": "bded3c28-1ac3-4601-9d16-6ad8849f8157"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [ROW14] (F.Cu), 长度: 2.7002 mm",
+                    "pos": {
+                        "x": 135.0283,
+                        "y": 247.0999
+                    },
+                    "uuid": "cf22cb20-8922-479c-b127-fc27c7495f5d"
+                },
+                {
+                    "description": "走线 [ROW14] (F.Cu), 长度: 0.9517 mm",
+                    "pos": {
+                        "x": 132.75,
+                        "y": 243.15
+                    },
+                    "uuid": "59a28ebe-fdbd-4790-b74e-bbaf5f9a58bc"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q101 的焊盘 1 [ROW10]",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 174.05
+                    },
+                    "uuid": "9d3da785-4613-4047-9612-a34e9a725660"
+                },
+                {
+                    "description": "F.Cu 上 R11 的焊盘 1 [ROW10]",
+                    "pos": {
+                        "x": 101.59,
+                        "y": 171.8
+                    },
+                    "uuid": "f9184086-a074-4817-940b-a9d2fe2396f0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q102 的焊盘 1 [ROW10]",
+                    "pos": {
+                        "x": 112.1625,
+                        "y": 174.05
+                    },
+                    "uuid": "eda981e4-b88b-458d-9c7f-3d75c18f99dd"
+                },
+                {
+                    "description": "F.Cu 上 Q101 的焊盘 1 [ROW10]",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 174.05
+                    },
+                    "uuid": "9d3da785-4613-4047-9612-a34e9a725660"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q103 的焊盘 1 [ROW10]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 174.05
+                    },
+                    "uuid": "5087bf38-00e0-485c-abaa-0ee84e8b43a2"
+                },
+                {
+                    "description": "F.Cu 上 Q102 的焊盘 1 [ROW10]",
+                    "pos": {
+                        "x": 112.1625,
+                        "y": 174.05
+                    },
+                    "uuid": "eda981e4-b88b-458d-9c7f-3d75c18f99dd"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q103 的焊盘 1 [ROW10]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 174.05
+                    },
+                    "uuid": "5087bf38-00e0-485c-abaa-0ee84e8b43a2"
+                },
+                {
+                    "description": "F.Cu 上 Q104 的焊盘 1 [ROW10]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 174.05
+                    },
+                    "uuid": "2c87b87c-746c-46ac-a9c3-f591fe236deb"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q104 的焊盘 1 [ROW10]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 174.05
+                    },
+                    "uuid": "2c87b87c-746c-46ac-a9c3-f591fe236deb"
+                },
+                {
+                    "description": "走线 [ROW10] (F.Cu), 长度: 6.4000 mm",
+                    "pos": {
+                        "x": 137.7625,
+                        "y": 174.05
+                    },
+                    "uuid": "501044f1-8ec7-4a10-be5c-16e63ead19b6"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 J1 的焊盘 11 [ROW10]",
+                    "pos": {
+                        "x": 130.75,
+                        "y": 243.15
+                    },
+                    "uuid": "86e296f2-f43b-4fb4-9412-08e0d9d99e59"
+                },
+                {
+                    "description": "走线 [ROW10] (B.Cu), 长度: 6.4856 mm",
+                    "pos": {
+                        "x": 164.3461,
+                        "y": 249.3647
+                    },
+                    "uuid": "e405f7e2-78ca-4099-aeaa-5c39402fd9e8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [ROW1] (B.Cu), 长度: 0.8170 mm",
+                    "pos": {
+                        "x": 101.6279,
+                        "y": 118.7378
+                    },
+                    "uuid": "4f8c2cd2-c95f-4408-a38c-f5fe345b07f3"
+                },
+                {
+                    "description": "F.Cu 上 J1 的焊盘 2 [ROW1]",
+                    "pos": {
+                        "x": 126.25,
+                        "y": 243.15
+                    },
+                    "uuid": "e16b9a85-7480-49a3-9396-5b867946dbc0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R7 的焊盘 1 [ROW6]",
+                    "pos": {
+                        "x": 101.59,
+                        "y": 146.2
+                    },
+                    "uuid": "7551ae11-2574-4d38-b695-55aafa039670"
+                },
+                {
+                    "description": "F.Cu 上 Q61 的焊盘 1 [ROW6]",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 148.45
+                    },
+                    "uuid": "360fba30-09eb-40f7-9a06-6cf51a0c74ea"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q62 的焊盘 1 [ROW6]",
+                    "pos": {
+                        "x": 112.1625,
+                        "y": 148.45
+                    },
+                    "uuid": "68631efd-aa82-44e5-b010-440823012917"
+                },
+                {
+                    "description": "F.Cu 上 Q61 的焊盘 1 [ROW6]",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 148.45
+                    },
+                    "uuid": "360fba30-09eb-40f7-9a06-6cf51a0c74ea"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q63 的焊盘 1 [ROW6]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 148.45
+                    },
+                    "uuid": "4aecddcc-77f1-485e-bccf-b808171fe221"
+                },
+                {
+                    "description": "F.Cu 上 Q62 的焊盘 1 [ROW6]",
+                    "pos": {
+                        "x": 112.1625,
+                        "y": 148.45
+                    },
+                    "uuid": "68631efd-aa82-44e5-b010-440823012917"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q64 的焊盘 1 [ROW6]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 148.45
+                    },
+                    "uuid": "88994806-f235-484e-8053-4bff84a7f088"
+                },
+                {
+                    "description": "F.Cu 上 Q63 的焊盘 1 [ROW6]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 148.45
+                    },
+                    "uuid": "4aecddcc-77f1-485e-bccf-b808171fe221"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [ROW6] (F.Cu), 长度: 6.4000 mm",
+                    "pos": {
+                        "x": 131.3625,
+                        "y": 148.45
+                    },
+                    "uuid": "d830c723-9c38-4ac7-8394-58c6b8abceff"
+                },
+                {
+                    "description": "F.Cu 上 Q64 的焊盘 1 [ROW6]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 148.45
+                    },
+                    "uuid": "88994806-f235-484e-8053-4bff84a7f088"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q161 的焊盘 1 [ROW16]",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 212.45
+                    },
+                    "uuid": "61f467ef-eef6-4a70-aa46-9fcfd5031422"
+                },
+                {
+                    "description": "F.Cu 上 R17 的焊盘 1 [ROW16]",
+                    "pos": {
+                        "x": 101.59,
+                        "y": 210.2
+                    },
+                    "uuid": "c2818bff-1494-4c70-97ed-145c7a5f5253"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q162 的焊盘 1 [ROW16]",
+                    "pos": {
+                        "x": 112.1625,
+                        "y": 212.45
+                    },
+                    "uuid": "5a01d8da-ae5e-4e60-b041-ca932fe58a94"
+                },
+                {
+                    "description": "F.Cu 上 Q161 的焊盘 1 [ROW16]",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 212.45
+                    },
+                    "uuid": "61f467ef-eef6-4a70-aa46-9fcfd5031422"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q163 的焊盘 1 [ROW16]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 212.45
+                    },
+                    "uuid": "e0522965-beba-4b8c-a01e-6d0f0ae6af0a"
+                },
+                {
+                    "description": "F.Cu 上 Q162 的焊盘 1 [ROW16]",
+                    "pos": {
+                        "x": 112.1625,
+                        "y": 212.45
+                    },
+                    "uuid": "5a01d8da-ae5e-4e60-b041-ca932fe58a94"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q164 的焊盘 1 [ROW16]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 212.45
+                    },
+                    "uuid": "540c8b94-6341-4392-a77f-eb564c79fc93"
+                },
+                {
+                    "description": "F.Cu 上 Q163 的焊盘 1 [ROW16]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 212.45
+                    },
+                    "uuid": "e0522965-beba-4b8c-a01e-6d0f0ae6af0a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q164 的焊盘 1 [ROW16]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 212.45
+                    },
+                    "uuid": "540c8b94-6341-4392-a77f-eb564c79fc93"
+                },
+                {
+                    "description": "走线 [ROW16] (F.Cu), 长度: 6.4000 mm",
+                    "pos": {
+                        "x": 131.3625,
+                        "y": 212.45
+                    },
+                    "uuid": "1d12f2d7-d0c5-4eb1-a691-d71601bf6843"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [ROW16] (F.Cu), 长度: 6.4000 mm",
+                    "pos": {
+                        "x": 131.3625,
+                        "y": 212.45
+                    },
+                    "uuid": "1d12f2d7-d0c5-4eb1-a691-d71601bf6843"
+                },
+                {
+                    "description": "走线 [ROW16] (F.Cu), 长度: 2.3278 mm",
+                    "pos": {
+                        "x": 133.75,
+                        "y": 242.1983
+                    },
+                    "uuid": "32081ac3-33bc-4357-a7af-94f5faafa4fd"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R6 的焊盘 1 [ROW5]",
+                    "pos": {
+                        "x": 101.59,
+                        "y": 139.8
+                    },
+                    "uuid": "2168e5f2-14e9-42dc-9d54-14c97265c09e"
+                },
+                {
+                    "description": "F.Cu 上 Q51 的焊盘 1 [ROW5]",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 142.05
+                    },
+                    "uuid": "83688212-9f8f-4454-8cf4-d2bce4cdfc01"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q51 的焊盘 1 [ROW5]",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 142.05
+                    },
+                    "uuid": "83688212-9f8f-4454-8cf4-d2bce4cdfc01"
+                },
+                {
+                    "description": "F.Cu 上 Q52 的焊盘 1 [ROW5]",
+                    "pos": {
+                        "x": 112.1625,
+                        "y": 142.05
+                    },
+                    "uuid": "7e8c1076-fe55-433a-9221-4a37e77c327a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [ROW5] (F.Cu), 长度: 77.7000 mm",
+                    "pos": {
+                        "x": 115.65,
+                        "y": 220.25
+                    },
+                    "uuid": "283f2da5-ec41-40d0-8a8a-7b4a10f64a08"
+                },
+                {
+                    "description": "F.Cu 上 Q52 的焊盘 1 [ROW5]",
+                    "pos": {
+                        "x": 112.1625,
+                        "y": 142.05
+                    },
+                    "uuid": "7e8c1076-fe55-433a-9221-4a37e77c327a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q53 的焊盘 1 [ROW5]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 142.05
+                    },
+                    "uuid": "652b3210-8bcb-48e7-bf66-b0834e68c2b9"
+                },
+                {
+                    "description": "F.Cu 上 Q54 的焊盘 1 [ROW5]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 142.05
+                    },
+                    "uuid": "79b21fbc-05c5-4a61-af02-236d1edeb303"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q54 的焊盘 1 [ROW5]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 142.05
+                    },
+                    "uuid": "79b21fbc-05c5-4a61-af02-236d1edeb303"
+                },
+                {
+                    "description": "走线 [ROW5] (F.Cu), 长度: 6.4000 mm",
+                    "pos": {
+                        "x": 131.3625,
+                        "y": 142.05
+                    },
+                    "uuid": "472226ee-b9c0-4ce5-ba85-46e78aa506cc"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW4] (F.Cu), 长度: 0.7879 mm",
+                    "pos": {
+                        "x": 132.1707,
+                        "y": 247.7125
+                    },
+                    "uuid": "eb58b7b3-793a-4bae-8a44-d9cfb6b68c82"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW2] (B.Cu), 长度: 0.0500 mm",
+                    "pos": {
+                        "x": 103.05,
+                        "y": 123.1
+                    },
+                    "uuid": "448080c3-b644-4430-859f-4d5cd25dd435"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW2] (B.Cu), 长度: 1.2418 mm",
+                    "pos": {
+                        "x": 103.0834,
+                        "y": 122.2153
+                    },
+                    "uuid": "5f7502c7-ac9a-4fb5-a89f-82496828cd6c"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "过孔 [ROW18] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 131.3625,
+                        "y": 223.1948
+                    },
+                    "uuid": "f7b9bd77-75d4-413b-8e4a-1c6e9d001fc5"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW17] (F.Cu), 长度: 1.0967 mm",
+                    "pos": {
+                        "x": 131.6586,
+                        "y": 226.0584
+                    },
+                    "uuid": "18cda29b-f132-4319-bbc5-20341e9f83c3"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW7] (B.Cu), 长度: 30.7826 mm",
+                    "pos": {
+                        "x": 133.2309,
+                        "y": 248.5613
+                    },
+                    "uuid": "45414504-be44-4539-a580-f0c00b5583bf"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW12] (B.Cu), 长度: 0.6036 mm",
+                    "pos": {
+                        "x": 131.75,
+                        "y": 244.608
+                    },
+                    "uuid": "be82d4d2-e3df-43a5-89fb-94ea80235d1b"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW9] (F.Cu), 长度: 0.4243 mm",
+                    "pos": {
+                        "x": 131.4,
+                        "y": 245.85
+                    },
+                    "uuid": "a6574444-d6cc-4bad-9696-9930d35613f3"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW19] (B.Cu), 长度: 1.4080 mm",
+                    "pos": {
+                        "x": 134.4099,
+                        "y": 229.7983
+                    },
+                    "uuid": "0a691ec9-53c1-4579-8ad3-772ae02bb7f0"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW11] (F.Cu), 长度: 0.9517 mm",
+                    "pos": {
+                        "x": 131.25,
+                        "y": 243.15
+                    },
+                    "uuid": "04b76f0d-e8b8-4103-b1ae-29dfc875dfa4"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW11] (B.Cu), 长度: 0.2865 mm",
+                    "pos": {
+                        "x": 131.3666,
+                        "y": 244.0062
+                    },
+                    "uuid": "84330cfd-48f2-4640-a034-6f45ccc31a3b"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW14] (F.Cu), 长度: 1.3535 mm",
+                    "pos": {
+                        "x": 131.7929,
+                        "y": 241.2412
+                    },
+                    "uuid": "bb5d66c4-ab27-4300-81df-539c4cd31480"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW14] (F.Cu), 长度: 0.5066 mm",
+                    "pos": {
+                        "x": 134.0129,
+                        "y": 248.1153
+                    },
+                    "uuid": "fe110c1d-09fd-4f93-965c-dc13d4818d9f"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW10] (B.Cu), 长度: 6.4856 mm",
+                    "pos": {
+                        "x": 164.3461,
+                        "y": 249.3647
+                    },
+                    "uuid": "e405f7e2-78ca-4099-aeaa-5c39402fd9e8"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW1] (B.Cu), 长度: 0.8170 mm",
+                    "pos": {
+                        "x": 101.6279,
+                        "y": 118.7378
+                    },
+                    "uuid": "4f8c2cd2-c95f-4408-a38c-f5fe345b07f3"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW16] (F.Cu), 长度: 2.3278 mm",
+                    "pos": {
+                        "x": 133.75,
+                        "y": 242.1983
+                    },
+                    "uuid": "32081ac3-33bc-4357-a7af-94f5faafa4fd"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "R30 的参考字段",
+                    "pos": {
+                        "x": 156.5,
+                        "y": 241.33
+                    },
+                    "uuid": "040af298-9659-46ae-a46a-83c783609f18"
+                },
+                {
+                    "description": "R31 的参考字段",
+                    "pos": {
+                        "x": 158.5,
+                        "y": 241.33
+                    },
+                    "uuid": "d1df4cf9-0800-43dd-a1fd-908cb2262c46"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Q210 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 165.06,
+                        "y": 240.56
+                    },
+                    "uuid": "27852e75-4e7c-48e9-bcd6-f787172cd8e3"
+                },
+                {
+                    "description": "MH4 的参考字段",
+                    "pos": {
+                        "x": 163.0,
+                        "y": 240.85
+                    },
+                    "uuid": "b4c92551-39b0-404f-9e73-ec68305e6755"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "R29 的参考字段",
+                    "pos": {
+                        "x": 154.5,
+                        "y": 241.33
+                    },
+                    "uuid": "0e602076-5c17-4d28-8f73-4abe4572f73a"
+                },
+                {
+                    "description": "R28 的参考字段",
+                    "pos": {
+                        "x": 152.5,
+                        "y": 241.33
+                    },
+                    "uuid": "de9f996c-c905-4ef7-9b26-c8cf289b7f04"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "R28 的参考字段",
+                    "pos": {
+                        "x": 152.5,
+                        "y": 241.33
+                    },
+                    "uuid": "de9f996c-c905-4ef7-9b26-c8cf289b7f04"
+                },
+                {
+                    "description": "R27 的参考字段",
+                    "pos": {
+                        "x": 150.5,
+                        "y": 241.33
+                    },
+                    "uuid": "f38a9927-3d70-403e-9782-36b63fe04587"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "R30 的参考字段",
+                    "pos": {
+                        "x": 156.5,
+                        "y": 241.33
+                    },
+                    "uuid": "040af298-9659-46ae-a46a-83c783609f18"
+                },
+                {
+                    "description": "R29 的参考字段",
+                    "pos": {
+                        "x": 154.5,
+                        "y": 241.33
+                    },
+                    "uuid": "0e602076-5c17-4d28-8f73-4abe4572f73a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "MH2 的参考字段",
+                    "pos": {
+                        "x": 108.0,
+                        "y": 240.85
+                    },
+                    "uuid": "bfd5625e-e9b2-4f9f-a425-144e12e107ad"
+                },
+                {
+                    "description": "Q201 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 107.46,
+                        "y": 240.56
+                    },
+                    "uuid": "d8e26d37-316b-42bc-9026-12ac9cb49dc9"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "MH2 的参考字段",
+                    "pos": {
+                        "x": 108.0,
+                        "y": 240.85
+                    },
+                    "uuid": "bfd5625e-e9b2-4f9f-a425-144e12e107ad"
+                },
+                {
+                    "description": "Q201 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 107.46,
+                        "y": 239.56
+                    },
+                    "uuid": "bfe78973-509f-4027-874f-311ab0b2157d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "R22 的参考字段",
+                    "pos": {
+                        "x": 112.5,
+                        "y": 241.33
+                    },
+                    "uuid": "23257d4a-f8ae-417a-a059-994bfff8906b"
+                },
+                {
+                    "description": "R23 的参考字段",
+                    "pos": {
+                        "x": 114.5,
+                        "y": 241.33
+                    },
+                    "uuid": "da9673eb-f8f6-45bd-ba5c-bc030fee2388"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "R24 的参考字段",
+                    "pos": {
+                        "x": 116.5,
+                        "y": 241.33
+                    },
+                    "uuid": "5d48b064-df22-4e5c-932c-84a223d6f4b0"
+                },
+                {
+                    "description": "R23 的参考字段",
+                    "pos": {
+                        "x": 114.5,
+                        "y": 241.33
+                    },
+                    "uuid": "da9673eb-f8f6-45bd-ba5c-bc030fee2388"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "R26 的参考字段",
+                    "pos": {
+                        "x": 120.5,
+                        "y": 241.33
+                    },
+                    "uuid": "1016191c-9f8f-45e4-881e-79414399e8ff"
+                },
+                {
+                    "description": "R25 的参考字段",
+                    "pos": {
+                        "x": 118.5,
+                        "y": 241.33
+                    },
+                    "uuid": "218d5e08-059b-42bd-9748-edc9a67f7e5d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "R25 的参考字段",
+                    "pos": {
+                        "x": 118.5,
+                        "y": 241.33
+                    },
+                    "uuid": "218d5e08-059b-42bd-9748-edc9a67f7e5d"
+                },
+                {
+                    "description": "R24 的参考字段",
+                    "pos": {
+                        "x": 116.5,
+                        "y": 241.33
+                    },
+                    "uuid": "5d48b064-df22-4e5c-932c-84a223d6f4b0"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Q106 的参考字段",
+                    "pos": {
+                        "x": 138.7,
+                        "y": 172.6
+                    },
+                    "uuid": "1d486a2a-6a39-47d7-a14c-14faa1c08713"
+                },
+                {
+                    "description": "TP6 的参考字段",
+                    "pos": {
+                        "x": 138.7,
+                        "y": 173.73
+                    },
+                    "uuid": "e10448c2-8afe-492a-948e-49154c05e837"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Q106 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 139.46,
+                        "y": 173.44
+                    },
+                    "uuid": "5b4bba47-f592-40f5-baa5-de9199310f0e"
+                },
+                {
+                    "description": "TP6 的参考字段",
+                    "pos": {
+                        "x": 138.7,
+                        "y": 173.73
+                    },
+                    "uuid": "e10448c2-8afe-492a-948e-49154c05e837"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Q106 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 137.94,
+                        "y": 173.44
+                    },
+                    "uuid": "6f5650bd-c0ca-4ae7-9edf-ee83fb55b4bb"
+                },
+                {
+                    "description": "TP6 的参考字段",
+                    "pos": {
+                        "x": 138.7,
+                        "y": 173.73
+                    },
+                    "uuid": "e10448c2-8afe-492a-948e-49154c05e837"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Q109 的参考字段",
+                    "pos": {
+                        "x": 157.9,
+                        "y": 172.6
+                    },
+                    "uuid": "74de7a11-8eba-4c98-aaac-7f30823645da"
+                },
+                {
+                    "description": "TP9 的参考字段",
+                    "pos": {
+                        "x": 157.9,
+                        "y": 173.73
+                    },
+                    "uuid": "f62fda94-6b97-4b6c-8d39-4a1386922f33"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Q109 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 157.14,
+                        "y": 173.44
+                    },
+                    "uuid": "ada96552-7d55-4655-8dad-63f9aec6fe8f"
+                },
+                {
+                    "description": "TP9 的参考字段",
+                    "pos": {
+                        "x": 157.9,
+                        "y": 173.73
+                    },
+                    "uuid": "f62fda94-6b97-4b6c-8d39-4a1386922f33"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Q109 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 158.66,
+                        "y": 173.44
+                    },
+                    "uuid": "920408e8-6ce8-48f6-9f06-86ee851341b6"
+                },
+                {
+                    "description": "TP9 的参考字段",
+                    "pos": {
+                        "x": 157.9,
+                        "y": 173.73
+                    },
+                    "uuid": "f62fda94-6b97-4b6c-8d39-4a1386922f33"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "TP10 的参考字段",
+                    "pos": {
+                        "x": 164.3,
+                        "y": 173.73
+                    },
+                    "uuid": "3e7b6147-f692-426b-9b37-a2046c0449a3"
+                },
+                {
+                    "description": "Q110 的参考字段",
+                    "pos": {
+                        "x": 164.3,
+                        "y": 172.6
+                    },
+                    "uuid": "ecdb8e86-f5c2-4a21-9b98-3585317a8bda"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "TP8 的参考字段",
+                    "pos": {
+                        "x": 151.5,
+                        "y": 173.73
+                    },
+                    "uuid": "51caf50c-f7cb-4066-b574-b943810f95ea"
+                },
+                {
+                    "description": "Q108 的参考字段",
+                    "pos": {
+                        "x": 151.5,
+                        "y": 172.6
+                    },
+                    "uuid": "8ee1e3ae-92f9-4360-b944-bba0d45229f4"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Q108 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 150.74,
+                        "y": 173.44
+                    },
+                    "uuid": "40df9089-12d1-4101-b439-97a310bbb722"
+                },
+                {
+                    "description": "TP8 的参考字段",
+                    "pos": {
+                        "x": 151.5,
+                        "y": 173.73
+                    },
+                    "uuid": "51caf50c-f7cb-4066-b574-b943810f95ea"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "TP8 的参考字段",
+                    "pos": {
+                        "x": 151.5,
+                        "y": 173.73
+                    },
+                    "uuid": "51caf50c-f7cb-4066-b574-b943810f95ea"
+                },
+                {
+                    "description": "Q108 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 152.26,
+                        "y": 173.44
+                    },
+                    "uuid": "78c2e9f7-0d74-40ed-a453-673daf01699d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "TP10 的参考字段",
+                    "pos": {
+                        "x": 164.3,
+                        "y": 173.73
+                    },
+                    "uuid": "3e7b6147-f692-426b-9b37-a2046c0449a3"
+                },
+                {
+                    "description": "Q110 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 163.54,
+                        "y": 173.44
+                    },
+                    "uuid": "b1e409d4-f976-4ced-ab44-e37773b4e3aa"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "TP10 的参考字段",
+                    "pos": {
+                        "x": 164.3,
+                        "y": 173.73
+                    },
+                    "uuid": "3e7b6147-f692-426b-9b37-a2046c0449a3"
+                },
+                {
+                    "description": "Q110 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 163.54,
+                        "y": 173.49
+                    },
+                    "uuid": "ac35cc8c-9e1a-4c14-a7a0-e408d29b9f76"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "TP10 的参考字段",
+                    "pos": {
+                        "x": 164.3,
+                        "y": 173.73
+                    },
+                    "uuid": "3e7b6147-f692-426b-9b37-a2046c0449a3"
+                },
+                {
+                    "description": "Q110 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 165.06,
+                        "y": 173.44
+                    },
+                    "uuid": "9aedb813-2568-4cf3-baf2-17c5816384d5"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Q107 的参考字段",
+                    "pos": {
+                        "x": 145.1,
+                        "y": 172.6
+                    },
+                    "uuid": "0da08a0d-ba84-4d4e-8a6f-8367a0d72551"
+                },
+                {
+                    "description": "TP7 的参考字段",
+                    "pos": {
+                        "x": 145.1,
+                        "y": 173.73
+                    },
+                    "uuid": "ac99c347-4a32-4050-9782-9aca4c5a2497"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Q107 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 144.34,
+                        "y": 173.44
+                    },
+                    "uuid": "15a2735a-60b1-4662-a5f7-259530934939"
+                },
+                {
+                    "description": "TP7 的参考字段",
+                    "pos": {
+                        "x": 145.1,
+                        "y": 173.73
+                    },
+                    "uuid": "ac99c347-4a32-4050-9782-9aca4c5a2497"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Q107 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 145.86,
+                        "y": 173.44
+                    },
+                    "uuid": "97e3dc55-2338-4f8f-af32-53836bbb2a0e"
+                },
+                {
+                    "description": "TP7 的参考字段",
+                    "pos": {
+                        "x": 145.1,
+                        "y": 173.73
+                    },
+                    "uuid": "ac99c347-4a32-4050-9782-9aca4c5a2497"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Q103 的参考字段",
+                    "pos": {
+                        "x": 119.5,
+                        "y": 172.6
+                    },
+                    "uuid": "8f8744c1-653e-4e14-8e1d-77f48173047c"
+                },
+                {
+                    "description": "TP3 的参考字段",
+                    "pos": {
+                        "x": 119.5,
+                        "y": 173.73
+                    },
+                    "uuid": "d595c5fa-cfec-4ca6-b7e6-3ffbe47bb36a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "TP3 的参考字段",
+                    "pos": {
+                        "x": 119.5,
+                        "y": 173.73
+                    },
+                    "uuid": "d595c5fa-cfec-4ca6-b7e6-3ffbe47bb36a"
+                },
+                {
+                    "description": "Q103 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 120.26,
+                        "y": 173.44
+                    },
+                    "uuid": "e8a1bca5-9b47-4c34-98c4-252e3dd3ef32"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Q103 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 118.74,
+                        "y": 173.44
+                    },
+                    "uuid": "a14c9943-7fe9-4e72-b6d9-714cc13cc6ac"
+                },
+                {
+                    "description": "TP3 的参考字段",
+                    "pos": {
+                        "x": 119.5,
+                        "y": 173.73
+                    },
+                    "uuid": "d595c5fa-cfec-4ca6-b7e6-3ffbe47bb36a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Q104 的参考字段",
+                    "pos": {
+                        "x": 125.9,
+                        "y": 172.6
+                    },
+                    "uuid": "6bc86956-c3c7-4e89-84c9-004c5113ce38"
+                },
+                {
+                    "description": "TP4 的参考字段",
+                    "pos": {
+                        "x": 125.9,
+                        "y": 173.73
+                    },
+                    "uuid": "f53ecf5c-ec68-49ad-abd2-2abbe55a7b31"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Q104 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 125.14,
+                        "y": 173.44
+                    },
+                    "uuid": "467db705-1d5c-460a-9931-41d252447ed9"
+                },
+                {
+                    "description": "TP4 的参考字段",
+                    "pos": {
+                        "x": 125.9,
+                        "y": 173.73
+                    },
+                    "uuid": "f53ecf5c-ec68-49ad-abd2-2abbe55a7b31"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Q104 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 126.66,
+                        "y": 173.44
+                    },
+                    "uuid": "4abcbdba-70a9-41e4-81e7-d3dd1d867d48"
+                },
+                {
+                    "description": "TP4 的参考字段",
+                    "pos": {
+                        "x": 125.9,
+                        "y": 173.73
+                    },
+                    "uuid": "f53ecf5c-ec68-49ad-abd2-2abbe55a7b31"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "TP5 的参考字段",
+                    "pos": {
+                        "x": 132.3,
+                        "y": 173.73
+                    },
+                    "uuid": "79afb2c9-e23e-47ae-ada0-34b784e3b678"
+                },
+                {
+                    "description": "Q105 的参考字段",
+                    "pos": {
+                        "x": 132.3,
+                        "y": 172.6
+                    },
+                    "uuid": "fe278e02-e8df-4064-ac60-e8cd85486941"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Q105 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 131.54,
+                        "y": 173.44
+                    },
+                    "uuid": "6f298b25-e42d-4900-b9e0-2590a33de0c6"
+                },
+                {
+                    "description": "TP5 的参考字段",
+                    "pos": {
+                        "x": 132.3,
+                        "y": 173.73
+                    },
+                    "uuid": "79afb2c9-e23e-47ae-ada0-34b784e3b678"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "TP5 的参考字段",
+                    "pos": {
+                        "x": 132.3,
+                        "y": 173.73
+                    },
+                    "uuid": "79afb2c9-e23e-47ae-ada0-34b784e3b678"
+                },
+                {
+                    "description": "Q105 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 133.06,
+                        "y": 173.44
+                    },
+                    "uuid": "898bd56a-9020-4dd1-8a76-4d7991e7c0ac"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Q102 的参考字段",
+                    "pos": {
+                        "x": 113.1,
+                        "y": 172.6
+                    },
+                    "uuid": "23b8643e-9ade-4525-836e-3c44856cb14f"
+                },
+                {
+                    "description": "TP2 的参考字段",
+                    "pos": {
+                        "x": 113.1,
+                        "y": 173.73
+                    },
+                    "uuid": "25f29d9c-8fba-4e96-a4c7-70efc0ff53fd"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "TP2 的参考字段",
+                    "pos": {
+                        "x": 113.1,
+                        "y": 173.73
+                    },
+                    "uuid": "25f29d9c-8fba-4e96-a4c7-70efc0ff53fd"
+                },
+                {
+                    "description": "Q102 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 112.34,
+                        "y": 173.44
+                    },
+                    "uuid": "8fcea4f0-2aac-43f6-8cc7-bec697f1939e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "TP2 的参考字段",
+                    "pos": {
+                        "x": 113.1,
+                        "y": 173.73
+                    },
+                    "uuid": "25f29d9c-8fba-4e96-a4c7-70efc0ff53fd"
+                },
+                {
+                    "description": "Q102 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 113.86,
+                        "y": 173.44
+                    },
+                    "uuid": "bcdf55dc-4aaf-4631-ab8d-906a7d3f67bb"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "TP1 的参考字段",
+                    "pos": {
+                        "x": 106.7,
+                        "y": 173.73
+                    },
+                    "uuid": "87bc6481-e19e-44d3-8af2-1ddeea01f901"
+                },
+                {
+                    "description": "Q101 的参考字段",
+                    "pos": {
+                        "x": 106.7,
+                        "y": 172.6
+                    },
+                    "uuid": "baabc486-be77-4fa1-9c7b-76a4653591e1"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "TP1 的参考字段",
+                    "pos": {
+                        "x": 106.7,
+                        "y": 173.73
+                    },
+                    "uuid": "87bc6481-e19e-44d3-8af2-1ddeea01f901"
+                },
+                {
+                    "description": "Q101 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 105.94,
+                        "y": 173.44
+                    },
+                    "uuid": "c2399f84-9aab-4aae-ae99-a4b46e48f4bf"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Q101 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 107.46,
+                        "y": 173.44
+                    },
+                    "uuid": "4f11d819-2db8-4115-962d-569e59b44b05"
+                },
+                {
+                    "description": "TP1 的参考字段",
+                    "pos": {
+                        "x": 106.7,
+                        "y": 173.73
+                    },
+                    "uuid": "87bc6481-e19e-44d3-8af2-1ddeea01f901"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "MH4 的参考字段",
+                    "pos": {
+                        "x": 163.0,
+                        "y": 240.85
+                    },
+                    "uuid": "b4c92551-39b0-404f-9e73-ec68305e6755"
+                },
+                {
+                    "description": "F.Cu 上 Q210 的焊盘 2 [COL9]",
+                    "pos": {
+                        "x": 163.3625,
+                        "y": 239.95
+                    },
+                    "uuid": "578ac00f-5801-459e-9a88-3c94f52fc178"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "TP6 的参考字段",
+                    "pos": {
+                        "x": 138.7,
+                        "y": 173.73
+                    },
+                    "uuid": "e10448c2-8afe-492a-948e-49154c05e837"
+                },
+                {
+                    "description": "F.Cu 上 Q106 的焊盘 1 [ROW10]",
+                    "pos": {
+                        "x": 137.7625,
+                        "y": 174.05
+                    },
+                    "uuid": "4ef5849f-1d03-4478-9615-6f21c122f6f3"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "TP9 的参考字段",
+                    "pos": {
+                        "x": 157.9,
+                        "y": 173.73
+                    },
+                    "uuid": "f62fda94-6b97-4b6c-8d39-4a1386922f33"
+                },
+                {
+                    "description": "F.Cu 上 Q109 的焊盘 1 [ROW10]",
+                    "pos": {
+                        "x": 156.9625,
+                        "y": 174.05
+                    },
+                    "uuid": "7b4d581c-c4d3-4122-a03c-b2bd4f89eb36"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "TP8 的参考字段",
+                    "pos": {
+                        "x": 151.5,
+                        "y": 173.73
+                    },
+                    "uuid": "51caf50c-f7cb-4066-b574-b943810f95ea"
+                },
+                {
+                    "description": "F.Cu 上 Q108 的焊盘 1 [ROW10]",
+                    "pos": {
+                        "x": 150.5625,
+                        "y": 174.05
+                    },
+                    "uuid": "3b6e6f30-fa61-440c-9722-afb26aa719b3"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "TP10 的参考字段",
+                    "pos": {
+                        "x": 164.3,
+                        "y": 173.73
+                    },
+                    "uuid": "3e7b6147-f692-426b-9b37-a2046c0449a3"
+                },
+                {
+                    "description": "F.Cu 上 Q110 的焊盘 1 [ROW10]",
+                    "pos": {
+                        "x": 163.3625,
+                        "y": 174.05
+                    },
+                    "uuid": "6dcb8690-4c87-4c2f-bdf1-c1e54a759b7f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "TP7 的参考字段",
+                    "pos": {
+                        "x": 145.1,
+                        "y": 173.73
+                    },
+                    "uuid": "ac99c347-4a32-4050-9782-9aca4c5a2497"
+                },
+                {
+                    "description": "F.Cu 上 Q107 的焊盘 1 [ROW10]",
+                    "pos": {
+                        "x": 144.1625,
+                        "y": 174.05
+                    },
+                    "uuid": "195f911e-b1fe-4cf5-ac43-382389ef8db3"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "TP3 的参考字段",
+                    "pos": {
+                        "x": 119.5,
+                        "y": 173.73
+                    },
+                    "uuid": "d595c5fa-cfec-4ca6-b7e6-3ffbe47bb36a"
+                },
+                {
+                    "description": "F.Cu 上 Q103 的焊盘 1 [ROW10]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 174.05
+                    },
+                    "uuid": "5087bf38-00e0-485c-abaa-0ee84e8b43a2"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "TP4 的参考字段",
+                    "pos": {
+                        "x": 125.9,
+                        "y": 173.73
+                    },
+                    "uuid": "f53ecf5c-ec68-49ad-abd2-2abbe55a7b31"
+                },
+                {
+                    "description": "F.Cu 上 Q104 的焊盘 1 [ROW10]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 174.05
+                    },
+                    "uuid": "2c87b87c-746c-46ac-a9c3-f591fe236deb"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "TP5 的参考字段",
+                    "pos": {
+                        "x": 132.3,
+                        "y": 173.73
+                    },
+                    "uuid": "79afb2c9-e23e-47ae-ada0-34b784e3b678"
+                },
+                {
+                    "description": "F.Cu 上 Q105 的焊盘 1 [ROW10]",
+                    "pos": {
+                        "x": 131.3625,
+                        "y": 174.05
+                    },
+                    "uuid": "3b6b04d9-8112-4d3b-a7a3-ff212e307716"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "TP2 的参考字段",
+                    "pos": {
+                        "x": 113.1,
+                        "y": 173.73
+                    },
+                    "uuid": "25f29d9c-8fba-4e96-a4c7-70efc0ff53fd"
+                },
+                {
+                    "description": "F.Cu 上 Q102 的焊盘 1 [ROW10]",
+                    "pos": {
+                        "x": 112.1625,
+                        "y": 174.05
+                    },
+                    "uuid": "eda981e4-b88b-458d-9c7f-3d75c18f99dd"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "TP1 的参考字段",
+                    "pos": {
+                        "x": 106.7,
+                        "y": 173.73
+                    },
+                    "uuid": "87bc6481-e19e-44d3-8af2-1ddeea01f901"
+                },
+                {
+                    "description": "F.Cu 上 Q101 的焊盘 1 [ROW10]",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 174.05
+                    },
+                    "uuid": "9d3da785-4613-4047-9612-a34e9a725660"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

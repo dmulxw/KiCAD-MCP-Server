@@ -58472,7 +58472,7 @@
 				)
 			)
 		)
-		(attr smd)
+		(attr smd dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -11.65 -1.3)
@@ -58761,7 +58761,6 @@
 			(at -8.25 -1.85)
 			(size 0.3 1.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "ROW3")
 			(uuid "708587b5-f1fa-440d-b2f5-9f19cc9a853e")
 		)
 		(pad "5" smd rect
@@ -58775,7 +58774,6 @@
 			(at -7.25 -1.85)
 			(size 0.3 1.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "ROW5")
 			(uuid "47312899-94dc-4f18-951c-3d2bafad9a5d")
 		)
 		(pad "7" smd rect

@@ -1,0 +1,260 @@
+outline before: x 99.950..171.050  y 99.950..250.050
+placed J1A @(95.4,115.67)  J1B @(175.6,180.97)
+widened 4 vertical edge(s)
+outline after : x 89.950..181.050  y 99.950..250.050
+
+surviving copper per net (the rip must NOT have eaten the trunks):
+  ROW0      60 seg  y  107.80.. 243.60  x  101.59.. 168.12
+  ROW3      14 seg  y  127.00.. 129.25  x  101.59.. 163.36
+  ROW5      13 seg  y  139.80.. 142.05  x  101.59.. 163.36
+  ROW20     29 seg  y  235.80.. 243.15  x  101.59.. 163.36
+  GND      252 seg  y  104.45.. 249.37  x  100.87.. 159.01
+  +3V3      11 seg  y  242.20.. 243.15  x  143.75.. 145.25
+  CSEL4     29 seg  y  101.74.. 248.89  x  100.65.. 138.25
+
+grid: step 0.1, keep 0.34 (track), 0.54 (via), edge 0.64
+  grid 922 x 1512, x0 89.45 y0 99.45, legal cells: F.Cu 917,096, B.Cu 457,206
+
+J1A @(95.40,115.67)
+    pin 1   @(  95.40, 115.67)  -> ROW3   162 seed cell(s)
+      reach: 997,760 cells on 2 layer(s)
+        F.Cu    602,627 cells  x   90.65.. 180.35  y  100.65.. 249.35
+        B.Cu    395,133 cells  x   90.65.. 180.35  y  100.65.. 249.35
+      frontier owners: GND 2823, CSEL4 2439, CSEL3 1950, ROW6 1841, ROW0 1658, ROW2 1472, COL0 1215, ROW1 1139, ROW4 1050
+    pin 2   @(  95.40, 118.21)  -> ROW0   162 seed cell(s)
+      reach: 997,760 cells on 2 layer(s)
+        F.Cu    602,627 cells  x   90.65.. 180.35  y  100.65.. 249.35
+        B.Cu    395,133 cells  x   90.65.. 180.35  y  100.65.. 249.35
+      frontier owners: GND 2823, CSEL4 2439, CSEL3 1950, ROW6 1841, ROW0 1658, ROW2 1472, COL0 1215, ROW1 1139, ROW4 1050
+    pin 3   @(  95.40, 120.75)  -> ROW1   162 seed cell(s)
+      reach: 997,760 cells on 2 layer(s)
+        F.Cu    602,627 cells  x   90.65.. 180.35  y  100.65.. 249.35
+        B.Cu    395,133 cells  x   90.65.. 180.35  y  100.65.. 249.35
+      frontier owners: GND 2823, CSEL4 2439, CSEL3 1950, ROW6 1841, ROW0 1658, ROW2 1472, COL0 1215, ROW1 1139, ROW4 1050
+    pin 4   @(  95.40, 123.29)  -> ROW2   162 seed cell(s)
+      reach: 997,760 cells on 2 layer(s)
+        F.Cu    602,627 cells  x   90.65.. 180.35  y  100.65.. 249.35
+        B.Cu    395,133 cells  x   90.65.. 180.35  y  100.65.. 249.35
+      frontier owners: GND 2823, CSEL4 2439, CSEL3 1950, ROW6 1841, ROW0 1658, ROW2 1472, COL0 1215, ROW1 1139, ROW4 1050
+    pin 5   @(  95.40, 125.83)  -> ROW4   162 seed cell(s)
+      reach: 997,760 cells on 2 layer(s)
+        F.Cu    602,627 cells  x   90.65.. 180.35  y  100.65.. 249.35
+        B.Cu    395,133 cells  x   90.65.. 180.35  y  100.65.. 249.35
+      frontier owners: GND 2823, CSEL4 2439, CSEL3 1950, ROW6 1841, ROW0 1658, ROW2 1472, COL0 1215, ROW1 1139, ROW4 1050
+    pin 6   @(  95.40, 128.37)  -> ROW6   162 seed cell(s)
+      reach: 997,760 cells on 2 layer(s)
+        F.Cu    602,627 cells  x   90.65.. 180.35  y  100.65.. 249.35
+        B.Cu    395,133 cells  x   90.65.. 180.35  y  100.65.. 249.35
+      frontier owners: GND 2823, CSEL4 2439, CSEL3 1950, ROW6 1841, ROW0 1658, ROW2 1472, COL0 1215, ROW1 1139, ROW4 1050
+    pin 7   @(  95.40, 130.91)  -> ROW7   162 seed cell(s)
+      reach: 997,760 cells on 2 layer(s)
+        F.Cu    602,627 cells  x   90.65.. 180.35  y  100.65.. 249.35
+        B.Cu    395,133 cells  x   90.65.. 180.35  y  100.65.. 249.35
+      frontier owners: GND 2823, CSEL4 2439, CSEL3 1950, ROW6 1841, ROW0 1658, ROW2 1472, COL0 1215, ROW1 1139, ROW4 1050
+    pin 8   @(  95.40, 133.45)  -> ROW8   162 seed cell(s)
+      reach: 997,760 cells on 2 layer(s)
+        F.Cu    602,627 cells  x   90.65.. 180.35  y  100.65.. 249.35
+        B.Cu    395,133 cells  x   90.65.. 180.35  y  100.65.. 249.35
+      frontier owners: GND 2823, CSEL4 2439, CSEL3 1950, ROW6 1841, ROW0 1658, ROW2 1472, COL0 1215, ROW1 1139, ROW4 1050
+    pin 9   @(  95.40, 135.99)  -> ROW9   162 seed cell(s)
+      reach: 997,760 cells on 2 layer(s)
+        F.Cu    602,627 cells  x   90.65.. 180.35  y  100.65.. 249.35
+        B.Cu    395,133 cells  x   90.65.. 180.35  y  100.65.. 249.35
+      frontier owners: GND 2823, CSEL4 2439, CSEL3 1950, ROW6 1841, ROW0 1658, ROW2 1472, COL0 1215, ROW1 1139, ROW4 1050
+    pin 10  @(  95.40, 138.53)  -> ROW10  162 seed cell(s)
+      reach: 997,760 cells on 2 layer(s)
+        F.Cu    602,627 cells  x   90.65.. 180.35  y  100.65.. 249.35
+        B.Cu    395,133 cells  x   90.65.. 180.35  y  100.65.. 249.35
+      frontier owners: GND 2823, CSEL4 2439, CSEL3 1950, ROW6 1841, ROW0 1658, ROW2 1472, COL0 1215, ROW1 1139, ROW4 1050
+    pin 11  @(  95.40, 141.07)  -> CSEL0  162 seed cell(s)
+      reach: 997,760 cells on 2 layer(s)
+        F.Cu    602,627 cells  x   90.65.. 180.35  y  100.65.. 249.35
+        B.Cu    395,133 cells  x   90.65.. 180.35  y  100.65.. 249.35
+      frontier owners: GND 2823, CSEL4 2439, CSEL3 1950, ROW6 1841, ROW0 1658, ROW2 1472, COL0 1215, ROW1 1139, ROW4 1050
+    pin 12  @(  95.40, 143.61)  -> CSEL1  162 seed cell(s)
+      reach: 997,760 cells on 2 layer(s)
+        F.Cu    602,627 cells  x   90.65.. 180.35  y  100.65.. 249.35
+        B.Cu    395,133 cells  x   90.65.. 180.35  y  100.65.. 249.35
+      frontier owners: GND 2823, CSEL4 2439, CSEL3 1950, ROW6 1841, ROW0 1658, ROW2 1472, COL0 1215, ROW1 1139, ROW4 1050
+    pin 13  @(  95.40, 146.15)  -> CSEL2  162 seed cell(s)
+      reach: 997,760 cells on 2 layer(s)
+        F.Cu    602,627 cells  x   90.65.. 180.35  y  100.65.. 249.35
+        B.Cu    395,133 cells  x   90.65.. 180.35  y  100.65.. 249.35
+      frontier owners: GND 2823, CSEL4 2439, CSEL3 1950, ROW6 1841, ROW0 1658, ROW2 1472, COL0 1215, ROW1 1139, ROW4 1050
+    pin 14  @(  95.40, 148.69)  -> CSEL3  162 seed cell(s)
+      reach: 997,760 cells on 2 layer(s)
+        F.Cu    602,627 cells  x   90.65.. 180.35  y  100.65.. 249.35
+        B.Cu    395,133 cells  x   90.65.. 180.35  y  100.65.. 249.35
+      frontier owners: GND 2823, CSEL4 2439, CSEL3 1950, ROW6 1841, ROW0 1658, ROW2 1472, COL0 1215, ROW1 1139, ROW4 1050
+    pin 15  @(  95.40, 151.23)  -> CSEL4  162 seed cell(s)
+      reach: 997,760 cells on 2 layer(s)
+        F.Cu    602,627 cells  x   90.65.. 180.35  y  100.65.. 249.35
+        B.Cu    395,133 cells  x   90.65.. 180.35  y  100.65.. 249.35
+      frontier owners: GND 2823, CSEL4 2439, CSEL3 1950, ROW6 1841, ROW0 1658, ROW2 1472, COL0 1215, ROW1 1139, ROW4 1050
+    pin 16  @(  95.40, 153.77)  -> GND    162 seed cell(s)
+      reach: 997,760 cells on 2 layer(s)
+        F.Cu    602,627 cells  x   90.65.. 180.35  y  100.65.. 249.35
+        B.Cu    395,133 cells  x   90.65.. 180.35  y  100.65.. 249.35
+      frontier owners: GND 2823, CSEL4 2439, CSEL3 1950, ROW6 1841, ROW0 1658, ROW2 1472, COL0 1215, ROW1 1139, ROW4 1050
+    pin 17  @(  95.40, 156.31)  -> GND    162 seed cell(s)
+      reach: 997,760 cells on 2 layer(s)
+        F.Cu    602,627 cells  x   90.65.. 180.35  y  100.65.. 249.35
+        B.Cu    395,133 cells  x   90.65.. 180.35  y  100.65.. 249.35
+      frontier owners: GND 2823, CSEL4 2439, CSEL3 1950, ROW6 1841, ROW0 1658, ROW2 1472, COL0 1215, ROW1 1139, ROW4 1050
+    pin 18  @(  95.40, 158.85)  -> +3V3   162 seed cell(s)
+      reach: 997,760 cells on 2 layer(s)
+        F.Cu    602,627 cells  x   90.65.. 180.35  y  100.65.. 249.35
+        B.Cu    395,133 cells  x   90.65.. 180.35  y  100.65.. 249.35
+      frontier owners: GND 2823, CSEL4 2439, CSEL3 1950, ROW6 1841, ROW0 1658, ROW2 1472, COL0 1215, ROW1 1139, ROW4 1050
+    pin 19  @(  95.40, 161.39)  -> +3V3   162 seed cell(s)
+      reach: 997,760 cells on 2 layer(s)
+        F.Cu    602,627 cells  x   90.65.. 180.35  y  100.65.. 249.35
+        B.Cu    395,133 cells  x   90.65.. 180.35  y  100.65.. 249.35
+      frontier owners: GND 2823, CSEL4 2439, CSEL3 1950, ROW6 1841, ROW0 1658, ROW2 1472, COL0 1215, ROW1 1139, ROW4 1050
+    pin 20  @(  95.40, 163.93)  -> ROW5   162 seed cell(s)
+      reach: 997,760 cells on 2 layer(s)
+        F.Cu    602,627 cells  x   90.65.. 180.35  y  100.65.. 249.35
+        B.Cu    395,133 cells  x   90.65.. 180.35  y  100.65.. 249.35
+      frontier owners: GND 2823, CSEL4 2439, CSEL3 1950, ROW6 1841, ROW0 1658, ROW2 1472, COL0 1215, ROW1 1139, ROW4 1050
+
+J1B @(175.60,180.97)
+    pin 1   @( 175.60, 180.97)  -> ROW11  162 seed cell(s)
+      reach: 997,760 cells on 2 layer(s)
+        F.Cu    602,627 cells  x   90.65.. 180.35  y  100.65.. 249.35
+        B.Cu    395,133 cells  x   90.65.. 180.35  y  100.65.. 249.35
+      frontier owners: GND 2823, CSEL4 2439, CSEL3 1950, ROW6 1841, ROW0 1658, ROW2 1472, COL0 1215, ROW1 1139, ROW4 1050
+    pin 2   @( 175.60, 183.51)  -> ROW12  162 seed cell(s)
+      reach: 997,760 cells on 2 layer(s)
+        F.Cu    602,627 cells  x   90.65.. 180.35  y  100.65.. 249.35
+        B.Cu    395,133 cells  x   90.65.. 180.35  y  100.65.. 249.35
+      frontier owners: GND 2823, CSEL4 2439, CSEL3 1950, ROW6 1841, ROW0 1658, ROW2 1472, COL0 1215, ROW1 1139, ROW4 1050
+    pin 3   @( 175.60, 186.05)  -> ROW13  162 seed cell(s)
+      reach: 997,760 cells on 2 layer(s)
+        F.Cu    602,627 cells  x   90.65.. 180.35  y  100.65.. 249.35
+        B.Cu    395,133 cells  x   90.65.. 180.35  y  100.65.. 249.35
+      frontier owners: GND 2823, CSEL4 2439, CSEL3 1950, ROW6 1841, ROW0 1658, ROW2 1472, COL0 1215, ROW1 1139, ROW4 1050
+    pin 4   @( 175.60, 188.59)  -> ROW14  162 seed cell(s)
+      reach: 997,760 cells on 2 layer(s)
+        F.Cu    602,627 cells  x   90.65.. 180.35  y  100.65.. 249.35
+        B.Cu    395,133 cells  x   90.65.. 180.35  y  100.65.. 249.35
+      frontier owners: GND 2823, CSEL4 2439, CSEL3 1950, ROW6 1841, ROW0 1658, ROW2 1472, COL0 1215, ROW1 1139, ROW4 1050
+    pin 5   @( 175.60, 191.13)  -> ROW15  162 seed cell(s)
+      reach: 997,760 cells on 2 layer(s)
+        F.Cu    602,627 cells  x   90.65.. 180.35  y  100.65.. 249.35
+        B.Cu    395,133 cells  x   90.65.. 180.35  y  100.65.. 249.35
+      frontier owners: GND 2823, CSEL4 2439, CSEL3 1950, ROW6 1841, ROW0 1658, ROW2 1472, COL0 1215, ROW1 1139, ROW4 1050
+    pin 6   @( 175.60, 193.67)  -> ROW16  162 seed cell(s)
+      reach: 997,760 cells on 2 layer(s)
+        F.Cu    602,627 cells  x   90.65.. 180.35  y  100.65.. 249.35
+        B.Cu    395,133 cells  x   90.65.. 180.35  y  100.65.. 249.35
+      frontier owners: GND 2823, CSEL4 2439, CSEL3 1950, ROW6 1841, ROW0 1658, ROW2 1472, COL0 1215, ROW1 1139, ROW4 1050
+    pin 7   @( 175.60, 196.21)  -> ROW17  162 seed cell(s)
+      reach: 997,760 cells on 2 layer(s)
+        F.Cu    602,627 cells  x   90.65.. 180.35  y  100.65.. 249.35
+        B.Cu    395,133 cells  x   90.65.. 180.35  y  100.65.. 249.35
+      frontier owners: GND 2823, CSEL4 2439, CSEL3 1950, ROW6 1841, ROW0 1658, ROW2 1472, COL0 1215, ROW1 1139, ROW4 1050
+    pin 8   @( 175.60, 198.75)  -> ROW18  162 seed cell(s)
+      reach: 997,760 cells on 2 layer(s)
+        F.Cu    602,627 cells  x   90.65.. 180.35  y  100.65.. 249.35
+        B.Cu    395,133 cells  x   90.65.. 180.35  y  100.65.. 249.35
+      frontier owners: GND 2823, CSEL4 2439, CSEL3 1950, ROW6 1841, ROW0 1658, ROW2 1472, COL0 1215, ROW1 1139, ROW4 1050
+    pin 9   @( 175.60, 201.29)  -> ROW19  162 seed cell(s)
+      reach: 997,760 cells on 2 layer(s)
+        F.Cu    602,627 cells  x   90.65.. 180.35  y  100.65.. 249.35
+        B.Cu    395,133 cells  x   90.65.. 180.35  y  100.65.. 249.35
+      frontier owners: GND 2823, CSEL4 2439, CSEL3 1950, ROW6 1841, ROW0 1658, ROW2 1472, COL0 1215, ROW1 1139, ROW4 1050
+    pin 10  @( 175.60, 203.83)  -> ROW20  162 seed cell(s)
+      reach: 997,760 cells on 2 layer(s)
+        F.Cu    602,627 cells  x   90.65.. 180.35  y  100.65.. 249.35
+        B.Cu    395,133 cells  x   90.65.. 180.35  y  100.65.. 249.35
+      frontier owners: GND 2823, CSEL4 2439, CSEL3 1950, ROW6 1841, ROW0 1658, ROW2 1472, COL0 1215, ROW1 1139, ROW4 1050
+    pin 11  @( 175.60, 206.37)  -> CSEL5  162 seed cell(s)
+      reach: 997,760 cells on 2 layer(s)
+        F.Cu    602,627 cells  x   90.65.. 180.35  y  100.65.. 249.35
+        B.Cu    395,133 cells  x   90.65.. 180.35  y  100.65.. 249.35
+      frontier owners: GND 2823, CSEL4 2439, CSEL3 1950, ROW6 1841, ROW0 1658, ROW2 1472, COL0 1215, ROW1 1139, ROW4 1050
+    pin 12  @( 175.60, 208.91)  -> CSEL6  162 seed cell(s)
+      reach: 997,760 cells on 2 layer(s)
+        F.Cu    602,627 cells  x   90.65.. 180.35  y  100.65.. 249.35
+        B.Cu    395,133 cells  x   90.65.. 180.35  y  100.65.. 249.35
+      frontier owners: GND 2823, CSEL4 2439, CSEL3 1950, ROW6 1841, ROW0 1658, ROW2 1472, COL0 1215, ROW1 1139, ROW4 1050
+    pin 13  @( 175.60, 211.45)  -> CSEL7  162 seed cell(s)
+      reach: 997,760 cells on 2 layer(s)
+        F.Cu    602,627 cells  x   90.65.. 180.35  y  100.65.. 249.35
+        B.Cu    395,133 cells  x   90.65.. 180.35  y  100.65.. 249.35
+      frontier owners: GND 2823, CSEL4 2439, CSEL3 1950, ROW6 1841, ROW0 1658, ROW2 1472, COL0 1215, ROW1 1139, ROW4 1050
+    pin 14  @( 175.60, 213.99)  -> CSEL8  162 seed cell(s)
+      reach: 997,760 cells on 2 layer(s)
+        F.Cu    602,627 cells  x   90.65.. 180.35  y  100.65.. 249.35
+        B.Cu    395,133 cells  x   90.65.. 180.35  y  100.65.. 249.35
+      frontier owners: GND 2823, CSEL4 2439, CSEL3 1950, ROW6 1841, ROW0 1658, ROW2 1472, COL0 1215, ROW1 1139, ROW4 1050
+    pin 15  @( 175.60, 216.53)  -> CSEL9  162 seed cell(s)
+      reach: 997,760 cells on 2 layer(s)
+        F.Cu    602,627 cells  x   90.65.. 180.35  y  100.65.. 249.35
+        B.Cu    395,133 cells  x   90.65.. 180.35  y  100.65.. 249.35
+      frontier owners: GND 2823, CSEL4 2439, CSEL3 1950, ROW6 1841, ROW0 1658, ROW2 1472, COL0 1215, ROW1 1139, ROW4 1050
+    pin 16  @( 175.60, 219.07)  -> GND    162 seed cell(s)
+      reach: 997,760 cells on 2 layer(s)
+        F.Cu    602,627 cells  x   90.65.. 180.35  y  100.65.. 249.35
+        B.Cu    395,133 cells  x   90.65.. 180.35  y  100.65.. 249.35
+      frontier owners: GND 2823, CSEL4 2439, CSEL3 1950, ROW6 1841, ROW0 1658, ROW2 1472, COL0 1215, ROW1 1139, ROW4 1050
+    pin 17  @( 175.60, 221.61)  -> GND    162 seed cell(s)
+      reach: 997,760 cells on 2 layer(s)
+        F.Cu    602,627 cells  x   90.65.. 180.35  y  100.65.. 249.35
+        B.Cu    395,133 cells  x   90.65.. 180.35  y  100.65.. 249.35
+      frontier owners: GND 2823, CSEL4 2439, CSEL3 1950, ROW6 1841, ROW0 1658, ROW2 1472, COL0 1215, ROW1 1139, ROW4 1050
+    pin 18  @( 175.60, 224.15)  -> GND    162 seed cell(s)
+      reach: 997,760 cells on 2 layer(s)
+        F.Cu    602,627 cells  x   90.65.. 180.35  y  100.65.. 249.35
+        B.Cu    395,133 cells  x   90.65.. 180.35  y  100.65.. 249.35
+      frontier owners: GND 2823, CSEL4 2439, CSEL3 1950, ROW6 1841, ROW0 1658, ROW2 1472, COL0 1215, ROW1 1139, ROW4 1050
+    pin 19  @( 175.60, 226.69)  -> +3V3   162 seed cell(s)
+      reach: 997,760 cells on 2 layer(s)
+        F.Cu    602,627 cells  x   90.65.. 180.35  y  100.65.. 249.35
+        B.Cu    395,133 cells  x   90.65.. 180.35  y  100.65.. 249.35
+      frontier owners: GND 2823, CSEL4 2439, CSEL3 1950, ROW6 1841, ROW0 1658, ROW2 1472, COL0 1215, ROW1 1139, ROW4 1050
+    pin 20  @( 175.60, 229.23)  -> +3V3   162 seed cell(s)
+      reach: 997,760 cells on 2 layer(s)
+        F.Cu    602,627 cells  x   90.65.. 180.35  y  100.65.. 249.35
+        B.Cu    395,133 cells  x   90.65.. 180.35  y  100.65.. 249.35
+      frontier owners: GND 2823, CSEL4 2439, CSEL3 1950, ROW6 1841, ROW0 1658, ROW2 1472, COL0 1215, ROW1 1139, ROW4 1050
+  J1A.1   -> ROW3   PATH       95.82mm  (883 cells) ends at ( 163.75, 129.35) -> track 156.96,129.25->163.36,129.25
+  J1A.2   -> ROW0   PATH       32.40mm  (303 cells) ends at ( 117.95, 109.75) -> track 124.96,110.05->118.56,110.05
+  J1A.3   -> ROW1   PATH       15.96mm  (142 cells) ends at ( 101.35, 118.45) -> track 101.59,118.70->101.63,118.74
+  J1A.4   -> ROW2   PATH       22.54mm  (202 cells) ends at ( 102.75, 121.95) -> track 103.08,122.22->103.14,122.15
+  J1A.5   -> ROW4   PATH      100.08mm  (964 cells) ends at ( 165.55, 133.75) -> track 165.51,133.77->167.10,135.36
+  J1A.6   -> ROW6   PATH      127.72mm  (1202 cells) ends at ( 163.75, 148.55) -> track 163.36,148.45->156.96,148.45
+  J1A.7   -> ROW7   PATH       77.58mm  (748 cells) ends at ( 103.55, 154.55) -> track 103.84,154.85->105.76,154.85
+  J1A.8   -> ROW8   PATH       74.31mm  (718 cells) ends at ( 101.55, 163.45) -> track 102.84,163.39->102.84,162.00
+  J1A.9   -> ROW9   PATH      151.77mm  (1465 cells) ends at ( 163.75, 167.75) -> track 156.96,167.65->163.36,167.65
+  J1A.10  -> ROW10  PATH      163.90mm  (1595 cells) ends at ( 166.95, 178.15) -> track 169.33,180.54->169.33,240.54
+  J1A.11  -> CSEL0  NO PATH  closest   1.20mm
+  J1A.12  -> CSEL1  NO PATH  closest   5.26mm
+  J1A.13  -> CSEL2  NO PATH  closest   3.00mm
+  J1A.14  -> CSEL3  PATH       64.25mm  (607 cells) ends at ( 120.05, 102.25) -> track 120.83,102.55->122.15,101.22
+  J1A.15  -> CSEL4  PATH       33.18mm  (315 cells) ends at ( 100.65, 119.05) -> track 100.65,112.95->100.65,242.04
+  J1A.16  -> GND    PATH        4.80mm  (49 cells) ends at ( 101.05, 153.15) -> track 101.02,158.13->101.02,152.18
+  J1A.17  -> GND    PATH        4.80mm  (49 cells) ends at ( 101.05, 155.45) -> track 101.02,158.13->101.02,152.18
+  J1A.18  -> +3V3   NO PATH  closest  20.42mm
+  J1A.19  -> +3V3   NO PATH  closest  20.42mm
+  J1A.20  -> ROW5   PATH      156.82mm  (1493 cells) ends at ( 163.75, 142.15) -> track 156.96,142.05->163.36,142.05
+  J1B.1   -> ROW11  PATH       70.12mm  (679 cells) ends at ( 166.05, 244.35) -> track 166.15,244.43->165.56,243.84
+  J1B.2   -> ROW12  NO PATH  closest   0.80mm
+  J1B.3   -> ROW13  NO PATH  closest   0.10mm
+  J1B.4   -> ROW14  PATH       61.30mm  (590 cells) ends at ( 166.55, 244.95) -> track 166.55,244.91->166.55,244.04
+  J1B.5   -> ROW15  NO PATH  closest   0.80mm
+  J1B.6   -> ROW16  NO PATH  closest   0.94mm
+  J1B.7   -> ROW17  NO PATH  closest   0.80mm
+  J1B.8   -> ROW18  PATH       52.16mm  (499 cells) ends at ( 165.65, 244.95) -> track 165.38,244.85->165.38,244.63
+  J1B.9   -> ROW19  NO PATH  closest   0.80mm
+  J1B.10  -> ROW20  NO PATH  closest   0.82mm
+  J1B.11  -> CSEL5  PATH       96.69mm  (942 cells) ends at ( 168.85, 111.55) -> track 168.92,111.63->165.01,107.72
+  J1B.12  -> CSEL6  PATH       98.35mm  (954 cells) ends at ( 167.15, 116.25) -> track 168.52,117.62->165.10,114.20
+  J1B.13  -> CSEL7  NO PATH  closest  12.04mm
+  J1B.14  -> CSEL8  NO PATH  closest   9.83mm
+  J1B.15  -> CSEL9  NO PATH  closest   7.70mm
+  J1B.16  -> GND    PATH      144.98mm  (1380 cells) ends at ( 139.25, 104.15) -> track 140.03,104.45->137.40,104.45
+  J1B.17  -> GND    PATH      147.48mm  (1405 cells) ends at ( 139.25, 104.15) -> track 140.03,104.45->137.40,104.45
+  J1B.18  -> GND    PATH      149.98mm  (1430 cells) ends at ( 139.25, 104.15) -> track 140.03,104.45->137.40,104.45
+  J1B.19  -> +3V3   NO PATH  closest  20.42mm
+  J1B.20  -> +3V3   NO PATH  closest  20.42mm

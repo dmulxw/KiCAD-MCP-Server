@@ -1,0 +1,5337 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-25T21:34:44",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "key": "pth_inside_courtyard"
+        },
+        {
+            "description": "NPTH inside courtyard",
+            "key": "npth_inside_courtyard"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "_r1.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R16 的焊盘 1 [ROW15]",
+                    "pos": {
+                        "x": 101.59,
+                        "y": 203.8
+                    },
+                    "uuid": "639e43c3-c660-4c2e-a195-13c6b591bd54"
+                },
+                {
+                    "description": "走线 [ROW15] (F.Cu), 长度: 1.9225 mm",
+                    "pos": {
+                        "x": 103.84,
+                        "y": 206.05
+                    },
+                    "uuid": "c34e3fe4-94a9-4205-8c79-23ae4829b9a0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R11 的焊盘 1 [ROW10]",
+                    "pos": {
+                        "x": 101.59,
+                        "y": 171.8
+                    },
+                    "uuid": "f9184086-a074-4817-940b-a9d2fe2396f0"
+                },
+                {
+                    "description": "走线 [ROW10] (F.Cu), 长度: 1.9225 mm",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 174.05
+                    },
+                    "uuid": "4922a52a-44e2-46e4-a842-5574547132e1"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R12 的焊盘 1 [ROW11]",
+                    "pos": {
+                        "x": 101.59,
+                        "y": 178.2
+                    },
+                    "uuid": "10453f7a-8cb7-4bba-81e2-833487d6b277"
+                },
+                {
+                    "description": "走线 [ROW11] (F.Cu), 长度: 1.9225 mm",
+                    "pos": {
+                        "x": 103.84,
+                        "y": 180.45
+                    },
+                    "uuid": "bfcdf1d4-db08-4c69-a788-95496f68e17a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [ROW11] (B.Cu), 长度: 2.8550 mm",
+                    "pos": {
+                        "x": 165.5582,
+                        "y": 243.0772
+                    },
+                    "uuid": "3255a909-e901-4634-b294-e5d5e68242f8"
+                },
+                {
+                    "description": "走线 [ROW11] (F.Cu), 长度: 3.6770 mm",
+                    "pos": {
+                        "x": 171.65,
+                        "y": 183.55
+                    },
+                    "uuid": "2ef94166-91ad-46d7-bc17-c23a3216d29b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [ROW12] (F.Cu), 长度: 2.9202 mm",
+                    "pos": {
+                        "x": 102.8423,
+                        "y": 186.85
+                    },
+                    "uuid": "c584c6f6-1d3b-4957-8d89-ada4c9eb61d9"
+                },
+                {
+                    "description": "F.Cu 上 R13 的焊盘 1 [ROW12]",
+                    "pos": {
+                        "x": 101.59,
+                        "y": 184.6
+                    },
+                    "uuid": "efb08372-c22b-45a2-96e7-9858db26ec9e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [ROW12] (B.Cu), 长度: 4.1284 mm",
+                    "pos": {
+                        "x": 105.8,
+                        "y": 242.7636
+                    },
+                    "uuid": "7e562b6f-f0ea-4610-906c-482a8381a2ee"
+                },
+                {
+                    "description": "走线 [ROW12] (F.Cu), 长度: 2.9202 mm",
+                    "pos": {
+                        "x": 102.8423,
+                        "y": 186.85
+                    },
+                    "uuid": "c584c6f6-1d3b-4957-8d89-ada4c9eb61d9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R19 的焊盘 1 [ROW18]",
+                    "pos": {
+                        "x": 101.59,
+                        "y": 223.0
+                    },
+                    "uuid": "146d1c5a-4385-4e73-a0a7-84227e4a688c"
+                },
+                {
+                    "description": "走线 [ROW18] (F.Cu), 长度: 1.9225 mm",
+                    "pos": {
+                        "x": 103.84,
+                        "y": 225.25
+                    },
+                    "uuid": "52700764-3bd9-4a65-b77e-6fb2795b1f57"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R20 的焊盘 1 [ROW19]",
+                    "pos": {
+                        "x": 101.59,
+                        "y": 229.4
+                    },
+                    "uuid": "ab8d2dab-7ecb-49d0-98c8-b0048eb70375"
+                },
+                {
+                    "description": "走线 [ROW19] (F.Cu), 长度: 1.9225 mm",
+                    "pos": {
+                        "x": 103.84,
+                        "y": 231.65
+                    },
+                    "uuid": "612e5299-82d6-4795-b7a2-f1384ffc064a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [ROW20] (F.Cu), 长度: 0.2052 mm",
+                    "pos": {
+                        "x": 101.45,
+                        "y": 235.65
+                    },
+                    "uuid": "7fb2eee5-e0b8-4642-823c-d8b6728ffdb9"
+                },
+                {
+                    "description": "走线 [ROW20] (F.Cu), 长度: 1.9225 mm",
+                    "pos": {
+                        "x": 105.214,
+                        "y": 237.5015
+                    },
+                    "uuid": "dde9eceb-f08e-4bd5-9f6e-90e6eba22024"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R27 的焊盘 1 [CSEL5]",
+                    "pos": {
+                        "x": 149.99,
+                        "y": 242.5
+                    },
+                    "uuid": "fc47e6aa-2a23-4cf9-b2e2-67cc6cc8caf9"
+                },
+                {
+                    "description": "走线 [CSEL5] (B.Cu), 长度: 4.5556 mm",
+                    "pos": {
+                        "x": 165.6983,
+                        "y": 242.2045
+                    },
+                    "uuid": "ade33a3f-65a1-43d4-b7ba-876c583323e0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [CSEL5] (B.Cu), 长度: 4.5556 mm",
+                    "pos": {
+                        "x": 165.6983,
+                        "y": 242.2045
+                    },
+                    "uuid": "ade33a3f-65a1-43d4-b7ba-876c583323e0"
+                },
+                {
+                    "description": "走线 [CSEL5] (B.Cu), 长度: 0.1300 mm",
+                    "pos": {
+                        "x": 175.6,
+                        "y": 206.37
+                    },
+                    "uuid": "967c7bb1-2332-48b8-bcd9-56a425dff33b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [CSEL6] (B.Cu), 长度: 0.6378 mm",
+                    "pos": {
+                        "x": 149.1255,
+                        "y": 241.8028
+                    },
+                    "uuid": "37fc2391-31ec-4e75-92fe-9e69c65b2ac1"
+                },
+                {
+                    "description": "走线 [CSEL6] (B.Cu), 长度: 1.3886 mm",
+                    "pos": {
+                        "x": 141.1332,
+                        "y": 240.8209
+                    },
+                    "uuid": "8bd564b7-bfc1-4813-9476-02f43ab5933e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [CSEL6] (B.Cu), 长度: 4.2793 mm",
+                    "pos": {
+                        "x": 165.492,
+                        "y": 241.8028
+                    },
+                    "uuid": "8778abd8-fe08-44ee-aafb-b3752a8d3d85"
+                },
+                {
+                    "description": "走线 [CSEL6] (B.Cu), 长度: 0.8610 mm",
+                    "pos": {
+                        "x": 159.9984,
+                        "y": 241.194
+                    },
+                    "uuid": "ec958e71-a576-4544-8806-3e5bc983e604"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [CSEL6] (B.Cu), 长度: 4.8383 mm",
+                    "pos": {
+                        "x": 168.5179,
+                        "y": 117.6212
+                    },
+                    "uuid": "16c03409-a344-4dda-bc58-150db4bc2339"
+                },
+                {
+                    "description": "走线 [CSEL6] (B.Cu), 长度: 0.0640 mm",
+                    "pos": {
+                        "x": 175.6,
+                        "y": 208.91
+                    },
+                    "uuid": "ef024d98-97c8-4b78-af6f-c6c6413c6fd9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [CSEL9] (B.Cu), 长度: 0.0065 mm",
+                    "pos": {
+                        "x": 157.55,
+                        "y": 245.05
+                    },
+                    "uuid": "1972a76b-9c80-469b-b3d1-7b5ce81fbfea"
+                },
+                {
+                    "description": "走线 [CSEL9] (F.Cu), 长度: 0.4084 mm",
+                    "pos": {
+                        "x": 157.5565,
+                        "y": 244.9985
+                    },
+                    "uuid": "ce21ad71-87e4-4851-a4f2-2d6f41d545ff"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [GND] (F.Cu), 长度: 0.1414 mm",
+                    "pos": {
+                        "x": 101.95,
+                        "y": 164.65
+                    },
+                    "uuid": "39ebdfbc-da40-4ff6-b233-4b5bc5500975"
+                },
+                {
+                    "description": "F.Cu 上 R9 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 102.61,
+                        "y": 159.0
+                    },
+                    "uuid": "bfad9672-4b42-414c-809a-1a97ef3c698b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R2 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 102.61,
+                        "y": 114.2
+                    },
+                    "uuid": "b736a853-f8d9-49e0-822e-d667d9b1f84c"
+                },
+                {
+                    "description": "走线 [GND] (F.Cu), 长度: 14.8650 mm",
+                    "pos": {
+                        "x": 117.475,
+                        "y": 107.8
+                    },
+                    "uuid": "dcd7f7b6-17b9-4856-a9dc-2e76170c65d7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R3 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 102.61,
+                        "y": 120.6
+                    },
+                    "uuid": "5eb220ad-c49e-4e44-9aa7-a67aa5f891c4"
+                },
+                {
+                    "description": "F.Cu 上 R2 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 102.61,
+                        "y": 114.2
+                    },
+                    "uuid": "b736a853-f8d9-49e0-822e-d667d9b1f84c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R4 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 102.61,
+                        "y": 127.0
+                    },
+                    "uuid": "11f5ca7f-3199-4103-b98c-db2965e70c93"
+                },
+                {
+                    "description": "F.Cu 上 R3 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 102.61,
+                        "y": 120.6
+                    },
+                    "uuid": "5eb220ad-c49e-4e44-9aa7-a67aa5f891c4"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R5 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 102.61,
+                        "y": 133.4
+                    },
+                    "uuid": "30ae1f78-9d18-498c-9ee3-d90ae3d5b9b3"
+                },
+                {
+                    "description": "F.Cu 上 R4 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 102.61,
+                        "y": 127.0
+                    },
+                    "uuid": "11f5ca7f-3199-4103-b98c-db2965e70c93"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R6 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 102.61,
+                        "y": 139.8
+                    },
+                    "uuid": "8c51bdac-9d08-44ae-95d4-031d194fc07c"
+                },
+                {
+                    "description": "F.Cu 上 R5 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 102.61,
+                        "y": 133.4
+                    },
+                    "uuid": "30ae1f78-9d18-498c-9ee3-d90ae3d5b9b3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R7 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 102.61,
+                        "y": 146.2
+                    },
+                    "uuid": "42c37f43-17d3-4c36-a9f0-50a8255dc4df"
+                },
+                {
+                    "description": "F.Cu 上 R8 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 102.61,
+                        "y": 152.6
+                    },
+                    "uuid": "107ba7d0-307f-4b4f-b5b0-52e43f084744"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R7 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 102.61,
+                        "y": 146.2
+                    },
+                    "uuid": "42c37f43-17d3-4c36-a9f0-50a8255dc4df"
+                },
+                {
+                    "description": "F.Cu 上 R6 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 102.61,
+                        "y": 139.8
+                    },
+                    "uuid": "8c51bdac-9d08-44ae-95d4-031d194fc07c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R9 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 102.61,
+                        "y": 159.0
+                    },
+                    "uuid": "bfad9672-4b42-414c-809a-1a97ef3c698b"
+                },
+                {
+                    "description": "F.Cu 上 R8 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 102.61,
+                        "y": 152.6
+                    },
+                    "uuid": "107ba7d0-307f-4b4f-b5b0-52e43f084744"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R11 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 102.61,
+                        "y": 171.8
+                    },
+                    "uuid": "e905f30d-1ddf-46e5-8015-56f6862dcc6c"
+                },
+                {
+                    "description": "走线 [GND] (F.Cu), 长度: 0.4360 mm",
+                    "pos": {
+                        "x": 102.35,
+                        "y": 165.05
+                    },
+                    "uuid": "deeb7aa0-48fd-40e2-b27c-8df90f377069"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R12 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 102.61,
+                        "y": 178.2
+                    },
+                    "uuid": "9dd27add-2292-4799-a905-e662bfba9b7f"
+                },
+                {
+                    "description": "F.Cu 上 R11 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 102.61,
+                        "y": 171.8
+                    },
+                    "uuid": "e905f30d-1ddf-46e5-8015-56f6862dcc6c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R13 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 102.61,
+                        "y": 184.6
+                    },
+                    "uuid": "8206a2b4-4833-41e8-8c6f-07f7026e8242"
+                },
+                {
+                    "description": "F.Cu 上 R12 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 102.61,
+                        "y": 178.2
+                    },
+                    "uuid": "9dd27add-2292-4799-a905-e662bfba9b7f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R14 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 102.61,
+                        "y": 191.0
+                    },
+                    "uuid": "e5385649-394f-44e4-9550-d8f7e06dabe6"
+                },
+                {
+                    "description": "F.Cu 上 R13 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 102.61,
+                        "y": 184.6
+                    },
+                    "uuid": "8206a2b4-4833-41e8-8c6f-07f7026e8242"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R15 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 102.61,
+                        "y": 197.4
+                    },
+                    "uuid": "1900c1af-538f-4bb9-aef3-7f14cd404039"
+                },
+                {
+                    "description": "F.Cu 上 R14 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 102.61,
+                        "y": 191.0
+                    },
+                    "uuid": "e5385649-394f-44e4-9550-d8f7e06dabe6"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R16 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 102.61,
+                        "y": 203.8
+                    },
+                    "uuid": "c67f8896-1404-4bda-ad7a-b3a5ada606bb"
+                },
+                {
+                    "description": "F.Cu 上 R15 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 102.61,
+                        "y": 197.4
+                    },
+                    "uuid": "1900c1af-538f-4bb9-aef3-7f14cd404039"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R17 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 102.61,
+                        "y": 210.2
+                    },
+                    "uuid": "a2d3b865-b76c-4fd3-bafc-abc45e8f3e46"
+                },
+                {
+                    "description": "F.Cu 上 R16 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 102.61,
+                        "y": 203.8
+                    },
+                    "uuid": "c67f8896-1404-4bda-ad7a-b3a5ada606bb"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R18 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 102.61,
+                        "y": 216.6
+                    },
+                    "uuid": "af240b2c-1ab2-484f-b9d7-78fbe447fde0"
+                },
+                {
+                    "description": "F.Cu 上 R17 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 102.61,
+                        "y": 210.2
+                    },
+                    "uuid": "a2d3b865-b76c-4fd3-bafc-abc45e8f3e46"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R19 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 102.61,
+                        "y": 223.0
+                    },
+                    "uuid": "7936c4e6-e28e-4307-bcfc-84fa9e00e561"
+                },
+                {
+                    "description": "F.Cu 上 R18 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 102.61,
+                        "y": 216.6
+                    },
+                    "uuid": "af240b2c-1ab2-484f-b9d7-78fbe447fde0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R20 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 102.61,
+                        "y": 229.4
+                    },
+                    "uuid": "ab0d0568-74ee-4a14-a1bd-ad0b24638d54"
+                },
+                {
+                    "description": "F.Cu 上 R19 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 102.61,
+                        "y": 223.0
+                    },
+                    "uuid": "7936c4e6-e28e-4307-bcfc-84fa9e00e561"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R21 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 102.61,
+                        "y": 235.8
+                    },
+                    "uuid": "92224b49-83f1-4f08-b736-492d4faca334"
+                },
+                {
+                    "description": "F.Cu 上 R20 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 102.61,
+                        "y": 229.4
+                    },
+                    "uuid": "ab0d0568-74ee-4a14-a1bd-ad0b24638d54"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R21 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 102.61,
+                        "y": 235.8
+                    },
+                    "uuid": "92224b49-83f1-4f08-b736-492d4faca334"
+                },
+                {
+                    "description": "F.Cu 上 R22 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 113.01,
+                        "y": 242.5
+                    },
+                    "uuid": "cd062fc0-ca20-4adb-bf34-fbbb9c22085a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q211 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 111.5685,
+                        "y": 248.75
+                    },
+                    "uuid": "8a95cc50-58f5-419e-a23a-1167abb647d0"
+                },
+                {
+                    "description": "F.Cu 上 Q212 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 115.5265,
+                        "y": 248.75
+                    },
+                    "uuid": "b19ddf39-c427-41a2-bec9-fa11a1554bb5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R23 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 115.01,
+                        "y": 242.5
+                    },
+                    "uuid": "2dc15688-c75d-43b0-9fe4-3e3266bad8cd"
+                },
+                {
+                    "description": "F.Cu 上 R22 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 113.01,
+                        "y": 242.5
+                    },
+                    "uuid": "cd062fc0-ca20-4adb-bf34-fbbb9c22085a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R23 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 115.01,
+                        "y": 242.5
+                    },
+                    "uuid": "2dc15688-c75d-43b0-9fe4-3e3266bad8cd"
+                },
+                {
+                    "description": "F.Cu 上 R24 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 117.01,
+                        "y": 242.5
+                    },
+                    "uuid": "28d33d8a-641f-4d73-bbb2-f4c83c0052b7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q212 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 115.5265,
+                        "y": 248.75
+                    },
+                    "uuid": "b19ddf39-c427-41a2-bec9-fa11a1554bb5"
+                },
+                {
+                    "description": "F.Cu 上 Q213 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 119.4845,
+                        "y": 248.75
+                    },
+                    "uuid": "e3dc2d26-24a4-4b2e-a1bb-f76b7d53e84a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R25 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 119.01,
+                        "y": 242.5
+                    },
+                    "uuid": "f9b42513-bb27-4ab8-b8ec-52d5c93d0780"
+                },
+                {
+                    "description": "F.Cu 上 R24 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 117.01,
+                        "y": 242.5
+                    },
+                    "uuid": "28d33d8a-641f-4d73-bbb2-f4c83c0052b7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R25 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 119.01,
+                        "y": 242.5
+                    },
+                    "uuid": "f9b42513-bb27-4ab8-b8ec-52d5c93d0780"
+                },
+                {
+                    "description": "F.Cu 上 Q213 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 119.4845,
+                        "y": 248.75
+                    },
+                    "uuid": "e3dc2d26-24a4-4b2e-a1bb-f76b7d53e84a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R26 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 121.01,
+                        "y": 242.5
+                    },
+                    "uuid": "32a61b58-c2ba-41e7-ad30-b9db459e15b6"
+                },
+                {
+                    "description": "F.Cu 上 R25 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 119.01,
+                        "y": 242.5
+                    },
+                    "uuid": "f9b42513-bb27-4ab8-b8ec-52d5c93d0780"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R26 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 121.01,
+                        "y": 242.5
+                    },
+                    "uuid": "32a61b58-c2ba-41e7-ad30-b9db459e15b6"
+                },
+                {
+                    "description": "F.Cu 上 Q218 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 149.6405,
+                        "y": 248.75
+                    },
+                    "uuid": "ddd5dc7f-889e-4bad-acfe-d4e7b6ad068a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q218 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 149.6405,
+                        "y": 248.75
+                    },
+                    "uuid": "ddd5dc7f-889e-4bad-acfe-d4e7b6ad068a"
+                },
+                {
+                    "description": "F.Cu 上 Q219 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 153.5985,
+                        "y": 248.75
+                    },
+                    "uuid": "809d44be-2e15-4a48-81a7-7f3b049eb036"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R27 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 151.01,
+                        "y": 242.5
+                    },
+                    "uuid": "9edfe98c-fe38-4fa0-85b5-0f3ab464adc3"
+                },
+                {
+                    "description": "F.Cu 上 R28 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 153.01,
+                        "y": 242.5
+                    },
+                    "uuid": "82ede505-26aa-4fa0-a875-d76a5eeeb514"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q219 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 153.5985,
+                        "y": 248.75
+                    },
+                    "uuid": "809d44be-2e15-4a48-81a7-7f3b049eb036"
+                },
+                {
+                    "description": "F.Cu 上 Q220 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 157.5565,
+                        "y": 248.75
+                    },
+                    "uuid": "3fc34816-843a-4229-9223-cea36a1dc7c1"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R29 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 155.01,
+                        "y": 242.5
+                    },
+                    "uuid": "48a6a42a-9245-4a33-bf3b-5e5e9a7c1bb1"
+                },
+                {
+                    "description": "F.Cu 上 R30 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 157.01,
+                        "y": 242.5
+                    },
+                    "uuid": "f498c3c7-d506-42ac-bf53-83e86e05174a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R29 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 155.01,
+                        "y": 242.5
+                    },
+                    "uuid": "48a6a42a-9245-4a33-bf3b-5e5e9a7c1bb1"
+                },
+                {
+                    "description": "F.Cu 上 R28 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 153.01,
+                        "y": 242.5
+                    },
+                    "uuid": "82ede505-26aa-4fa0-a875-d76a5eeeb514"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q220 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 157.5565,
+                        "y": 248.75
+                    },
+                    "uuid": "3fc34816-843a-4229-9223-cea36a1dc7c1"
+                },
+                {
+                    "description": "走线 [GND] (F.Cu), 长度: 0.2828 mm",
+                    "pos": {
+                        "x": 161.45,
+                        "y": 246.25
+                    },
+                    "uuid": "e62bba7f-97a4-4894-9a06-e30c747c3844"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [GND] (F.Cu), 长度: 0.4244 mm",
+                    "pos": {
+                        "x": 159.25,
+                        "y": 242.85
+                    },
+                    "uuid": "1f1a74b7-24c5-451f-bd7e-666ae3943f65"
+                },
+                {
+                    "description": "F.Cu 上 R30 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 157.01,
+                        "y": 242.5
+                    },
+                    "uuid": "f498c3c7-d506-42ac-bf53-83e86e05174a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J1B 的PTH 焊盘 18 [+3V3]",
+                    "pos": {
+                        "x": 175.6,
+                        "y": 224.15
+                    },
+                    "uuid": "fddc1d8c-7cc6-4d5d-8318-0d7099db3a14"
+                },
+                {
+                    "description": "J1B 的PTH 焊盘 17 [+3V3]",
+                    "pos": {
+                        "x": 175.6,
+                        "y": 221.61
+                    },
+                    "uuid": "b4269266-87aa-455e-b655-ac6322f3003e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J1B 的PTH 焊盘 19 [+3V3]",
+                    "pos": {
+                        "x": 175.6,
+                        "y": 226.69
+                    },
+                    "uuid": "60182f04-35e6-4a5a-bcab-2c382e391bbc"
+                },
+                {
+                    "description": "J1B 的PTH 焊盘 18 [+3V3]",
+                    "pos": {
+                        "x": 175.6,
+                        "y": 224.15
+                    },
+                    "uuid": "fddc1d8c-7cc6-4d5d-8318-0d7099db3a14"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [+3V3] (B.Cu), 长度: 0.1513 mm",
+                    "pos": {
+                        "x": 175.6,
+                        "y": 229.23
+                    },
+                    "uuid": "c57a3bb3-0804-4a3d-a632-d45ca9e95ec8"
+                },
+                {
+                    "description": "J1B 的PTH 焊盘 19 [+3V3]",
+                    "pos": {
+                        "x": 175.6,
+                        "y": 226.69
+                    },
+                    "uuid": "60182f04-35e6-4a5a-bcab-2c382e391bbc"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R9 的焊盘 1 [ROW8]",
+                    "pos": {
+                        "x": 101.59,
+                        "y": 159.0
+                    },
+                    "uuid": "38ad6665-b4a0-4ef8-9f58-bfbc6372b200"
+                },
+                {
+                    "description": "走线 [ROW8] (F.Cu), 长度: 1.9225 mm",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 161.25
+                    },
+                    "uuid": "a70b2fc5-37a7-44e1-af34-e1b1e695007a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R9 的焊盘 1 [ROW8]",
+                    "pos": {
+                        "x": 101.59,
+                        "y": 159.0
+                    },
+                    "uuid": "38ad6665-b4a0-4ef8-9f58-bfbc6372b200"
+                },
+                {
+                    "description": "走线 [ROW8] (B.Cu), 长度: 0.1414 mm",
+                    "pos": {
+                        "x": 93.75,
+                        "y": 141.55
+                    },
+                    "uuid": "65be58cd-3875-45d0-a947-f0a0170127a2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [ROW8] (B.Cu), 长度: 5.2982 mm",
+                    "pos": {
+                        "x": 101.4519,
+                        "y": 239.2916
+                    },
+                    "uuid": "18a6e596-80d7-4881-9ff3-538d68a054f9"
+                },
+                {
+                    "description": "走线 [ROW8] (F.Cu), 长度: 2.8485 mm",
+                    "pos": {
+                        "x": 107.2125,
+                        "y": 241.0238
+                    },
+                    "uuid": "39e027ae-a18d-4571-aadf-0b4545ce22d3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [ROW4] (F.Cu), 长度: 7.7782 mm",
+                    "pos": {
+                        "x": 97.05,
+                        "y": 127.15
+                    },
+                    "uuid": "fcac962e-31b4-4c0d-b035-45247cfd13df"
+                },
+                {
+                    "description": "F.Cu 上 R5 的焊盘 1 [ROW4]",
+                    "pos": {
+                        "x": 101.59,
+                        "y": 133.4
+                    },
+                    "uuid": "440aa463-50b0-41a7-aaed-0692e335546e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "过孔 [ROW4] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 167.0908,
+                        "y": 204.7475
+                    },
+                    "uuid": "a32ea6c6-4439-409f-a16f-4f3b51f259ac"
+                },
+                {
+                    "description": "走线 [ROW4] (F.Cu), 长度: 3.8204 mm",
+                    "pos": {
+                        "x": 167.2565,
+                        "y": 239.577
+                    },
+                    "uuid": "59ea7037-4009-416b-b5cc-29ad3aef8fd1"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "过孔 [ROW4] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 167.0908,
+                        "y": 204.7475
+                    },
+                    "uuid": "a32ea6c6-4439-409f-a16f-4f3b51f259ac"
+                },
+                {
+                    "description": "走线 [ROW4] (F.Cu), 长度: 2.4568 mm",
+                    "pos": {
+                        "x": 163.3625,
+                        "y": 135.65
+                    },
+                    "uuid": "0d30e9ea-89ad-4014-8dfc-2f9f18055dd2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R14 的焊盘 1 [ROW13]",
+                    "pos": {
+                        "x": 101.59,
+                        "y": 191.0
+                    },
+                    "uuid": "944eced0-69e8-499a-81d1-b4660e21bccb"
+                },
+                {
+                    "description": "走线 [ROW13] (F.Cu), 长度: 1.9263 mm",
+                    "pos": {
+                        "x": 103.8362,
+                        "y": 193.25
+                    },
+                    "uuid": "81c4f8b6-191a-465c-869b-a608a4300426"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [ROW0] (F.Cu), 长度: 0.6000 mm",
+                    "pos": {
+                        "x": 103.25,
+                        "y": 110.05
+                    },
+                    "uuid": "7c9c98da-7649-407c-a7c5-6ddeb6ce9d7f"
+                },
+                {
+                    "description": "F.Cu 上 R1 的焊盘 1 [ROW0]",
+                    "pos": {
+                        "x": 101.59,
+                        "y": 107.8
+                    },
+                    "uuid": "a5ac438d-4693-49cf-8ecb-50140bab641c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R4 的焊盘 1 [ROW3]",
+                    "pos": {
+                        "x": 101.59,
+                        "y": 127.0
+                    },
+                    "uuid": "bf9b97ef-9585-4926-a5cd-5181256078a5"
+                },
+                {
+                    "description": "走线 [ROW3] (F.Cu), 长度: 1.9225 mm",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 129.25
+                    },
+                    "uuid": "b3d1feb1-6f41-4a43-9bf5-01807806ada5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [ROW2] (F.Cu), 长度: 2.7764 mm",
+                    "pos": {
+                        "x": 104.2423,
+                        "y": 240.857
+                    },
+                    "uuid": "15696753-3719-46d4-a1d0-ab11a2de6075"
+                },
+                {
+                    "description": "走线 [ROW2] (F.Cu), 长度: 0.4000 mm",
+                    "pos": {
+                        "x": 103.05,
+                        "y": 128.05
+                    },
+                    "uuid": "f66a157f-9ea1-42f5-920d-c9007fae9dbc"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [ROW2] (F.Cu), 长度: 1.9225 mm",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 122.85
+                    },
+                    "uuid": "6a771dbe-c242-475b-b266-0030c32f6af6"
+                },
+                {
+                    "description": "F.Cu 上 R3 的焊盘 1 [ROW2]",
+                    "pos": {
+                        "x": 101.59,
+                        "y": 120.6
+                    },
+                    "uuid": "81014c1d-47f3-4d52-b913-18987d0fbaad"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [ROW2] (F.Cu), 长度: 2.0800 mm",
+                    "pos": {
+                        "x": 104.2423,
+                        "y": 242.937
+                    },
+                    "uuid": "5ba897a7-8dc4-455e-b88a-a95209bbbc85"
+                },
+                {
+                    "description": "走线 [ROW2] (F.Cu), 长度: 3.1523 mm",
+                    "pos": {
+                        "x": 108.1564,
+                        "y": 241.4255
+                    },
+                    "uuid": "a2172a90-54ec-41dc-8689-c4d50eecc566"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R18 的焊盘 1 [ROW17]",
+                    "pos": {
+                        "x": 101.59,
+                        "y": 216.6
+                    },
+                    "uuid": "c5998645-19a8-4b0c-a5bd-a5c587e1c92a"
+                },
+                {
+                    "description": "走线 [ROW17] (F.Cu), 长度: 1.9225 mm",
+                    "pos": {
+                        "x": 103.84,
+                        "y": 218.85
+                    },
+                    "uuid": "c58b646d-0278-4992-ad4c-a89f24343213"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R8 的焊盘 1 [ROW7]",
+                    "pos": {
+                        "x": 101.59,
+                        "y": 152.6
+                    },
+                    "uuid": "1dd81b89-8069-4c35-abd1-1291018ec6e3"
+                },
+                {
+                    "description": "走线 [ROW7] (F.Cu), 长度: 1.9225 mm",
+                    "pos": {
+                        "x": 103.84,
+                        "y": 154.85
+                    },
+                    "uuid": "c360d686-e916-46ad-8f6e-bf67518d41e1"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [ROW9] (F.Cu), 长度: 1.1000 mm",
+                    "pos": {
+                        "x": 103.75,
+                        "y": 164.65
+                    },
+                    "uuid": "363c80c2-97e2-41e4-8938-c2846eb61aac"
+                },
+                {
+                    "description": "F.Cu 上 R10 的焊盘 1 [ROW9]",
+                    "pos": {
+                        "x": 101.59,
+                        "y": 165.4
+                    },
+                    "uuid": "4ef75c5e-82ca-4239-93cf-618d76919678"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [ROW14] (F.Cu), 长度: 1.9225 mm",
+                    "pos": {
+                        "x": 103.84,
+                        "y": 199.65
+                    },
+                    "uuid": "4b56081e-67b6-4e0e-a436-fa0aa3a82891"
+                },
+                {
+                    "description": "F.Cu 上 R15 的焊盘 1 [ROW14]",
+                    "pos": {
+                        "x": 101.59,
+                        "y": 197.4
+                    },
+                    "uuid": "53efaeb0-6fe9-4235-81a2-82148f52721d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [ROW14] (F.Cu), 长度: 1.3535 mm",
+                    "pos": {
+                        "x": 131.7929,
+                        "y": 241.2412
+                    },
+                    "uuid": "bb5d66c4-ab27-4300-81df-539c4cd31480"
+                },
+                {
+                    "description": "走线 [ROW14] (F.Cu), 长度: 2.5926 mm",
+                    "pos": {
+                        "x": 166.3535,
+                        "y": 243.8406
+                    },
+                    "uuid": "5f4af83d-c85b-4ca9-b09f-53bd7f129fa0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [ROW14] (F.Cu), 长度: 1.9424 mm",
+                    "pos": {
+                        "x": 166.3535,
+                        "y": 241.248
+                    },
+                    "uuid": "9318e561-26b7-4806-8601-2b869157f52f"
+                },
+                {
+                    "description": "走线 [ROW14] (F.Cu), 长度: 6.1723 mm",
+                    "pos": {
+                        "x": 167.727,
+                        "y": 204.502
+                    },
+                    "uuid": "85facfec-b675-4eb3-970f-839579050a37"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [ROW1] (B.Cu), 长度: 9.7900 mm",
+                    "pos": {
+                        "x": 101.0502,
+                        "y": 241.5531
+                    },
+                    "uuid": "f0e95b78-1ebd-4f2b-b643-a8cf60c23563"
+                },
+                {
+                    "description": "走线 [ROW1] (F.Cu), 长度: 0.9000 mm",
+                    "pos": {
+                        "x": 102.85,
+                        "y": 128.55
+                    },
+                    "uuid": "87d76ef0-c959-4235-852f-ee81b137b6d2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R2 的焊盘 1 [ROW1]",
+                    "pos": {
+                        "x": 101.59,
+                        "y": 114.2
+                    },
+                    "uuid": "93be16f8-2823-4e47-b067-8a067365128f"
+                },
+                {
+                    "description": "走线 [ROW1] (F.Cu), 长度: 1.9225 mm",
+                    "pos": {
+                        "x": 103.84,
+                        "y": 116.45
+                    },
+                    "uuid": "908ddc31-1077-47e6-afeb-5894af6c6550"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R7 的焊盘 1 [ROW6]",
+                    "pos": {
+                        "x": 101.59,
+                        "y": 146.2
+                    },
+                    "uuid": "7551ae11-2574-4d38-b695-55aafa039670"
+                },
+                {
+                    "description": "走线 [ROW6] (F.Cu), 长度: 1.9225 mm",
+                    "pos": {
+                        "x": 103.84,
+                        "y": 148.45
+                    },
+                    "uuid": "ef695679-3ed9-446c-abf1-1f41e0527707"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [ROW16] (F.Cu), 长度: 0.2052 mm",
+                    "pos": {
+                        "x": 101.45,
+                        "y": 210.05
+                    },
+                    "uuid": "f1d784e6-cfbb-49fc-aad8-d03d0dc446d7"
+                },
+                {
+                    "description": "走线 [ROW16] (F.Cu), 长度: 2.8888 mm",
+                    "pos": {
+                        "x": 102.8737,
+                        "y": 212.45
+                    },
+                    "uuid": "bc30196d-e308-4f66-81a8-7779ee725382"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [ROW16] (F.Cu), 长度: 2.8888 mm",
+                    "pos": {
+                        "x": 102.8737,
+                        "y": 212.45
+                    },
+                    "uuid": "bc30196d-e308-4f66-81a8-7779ee725382"
+                },
+                {
+                    "description": "走线 [ROW16] (F.Cu), 长度: 1.4057 mm",
+                    "pos": {
+                        "x": 104.3029,
+                        "y": 238.0761
+                    },
+                    "uuid": "fe6c869c-69e9-49ee-b4ba-1c9251370da7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R6 的焊盘 1 [ROW5]",
+                    "pos": {
+                        "x": 101.59,
+                        "y": 139.8
+                    },
+                    "uuid": "2168e5f2-14e9-42dc-9d54-14c97265c09e"
+                },
+                {
+                    "description": "走线 [ROW5] (F.Cu), 长度: 2.2114 mm",
+                    "pos": {
+                        "x": 104.7636,
+                        "y": 142.05
+                    },
+                    "uuid": "b87a41b5-6520-4f8b-a63b-6d7dd199c9a7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [CSEL3] (F.Cu), 长度: 0.0943 mm",
+                    "pos": {
+                        "x": 95.4,
+                        "y": 151.23
+                    },
+                    "uuid": "962854d6-d9e3-4f17-adde-eb68a95e8898"
+                },
+                {
+                    "description": "F.Cu 上 R25 的焊盘 1 [CSEL3]",
+                    "pos": {
+                        "x": 117.99,
+                        "y": 242.5
+                    },
+                    "uuid": "f398e7cc-6b3a-4349-9cc3-88af27135814"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [CSEL4] (B.Cu), 长度: 0.1487 mm",
+                    "pos": {
+                        "x": 95.4,
+                        "y": 148.69
+                    },
+                    "uuid": "440d9fa0-8949-48bd-9e5e-b132e0172f18"
+                },
+                {
+                    "description": "F.Cu 上 R26 的焊盘 1 [CSEL4]",
+                    "pos": {
+                        "x": 119.99,
+                        "y": 242.5
+                    },
+                    "uuid": "01d9744d-91f3-4d7e-bb42-572b5538d550"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "走线 [ROW15] (F.Cu), 长度: 7.0711 mm",
+                    "pos": {
+                        "x": 173.25,
+                        "y": 231.85
+                    },
+                    "uuid": "4485f0b5-c312-4008-89ce-6a95d9567241"
+                },
+                {
+                    "description": "走线 [GND] (F.Cu), 长度: 8.6267 mm",
+                    "pos": {
+                        "x": 174.35,
+                        "y": 227.65
+                    },
+                    "uuid": "ea99240a-abd3-4f96-8d27-2c446912f15e"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "走线 [ROW15] (F.Cu), 长度: 1.8385 mm",
+                    "pos": {
+                        "x": 176.55,
+                        "y": 233.25
+                    },
+                    "uuid": "5fac89f7-1796-4884-8119-ba6b4d04635c"
+                },
+                {
+                    "description": "走线 [CSEL7] (F.Cu), 长度: 2.6870 mm",
+                    "pos": {
+                        "x": 176.75,
+                        "y": 230.45
+                    },
+                    "uuid": "d212db82-78d3-4dc5-92e5-2158e54987d8"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "间距违规 ( 间距 0.2000 mm; 实际 0.0121 mm)",
+            "items": [
+                {
+                    "description": "走线 [ROW15] (F.Cu), 长度: 1.2000 mm",
+                    "pos": {
+                        "x": 168.05,
+                        "y": 226.75
+                    },
+                    "uuid": "04fbd755-978e-4696-9ed3-20df378f0011"
+                },
+                {
+                    "description": "走线 [CSEL8] (F.Cu), 长度: 8.4853 mm",
+                    "pos": {
+                        "x": 173.85,
+                        "y": 221.25
+                    },
+                    "uuid": "e8bcd885-ded6-4931-82f2-dad281a91c5c"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "间距违规 ( 间距 0.2000 mm; 实际 0.0321 mm)",
+            "items": [
+                {
+                    "description": "走线 [CSEL6] (B.Cu), 长度: 4.2793 mm",
+                    "pos": {
+                        "x": 165.492,
+                        "y": 241.8028
+                    },
+                    "uuid": "8778abd8-fe08-44ee-aafb-b3752a8d3d85"
+                },
+                {
+                    "description": "走线 [CSEL9] (B.Cu), 长度: 7.4000 mm",
+                    "pos": {
+                        "x": 168.75,
+                        "y": 233.85
+                    },
+                    "uuid": "e5ef9b16-179f-4c2e-9b8e-f54e0e2e1f13"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "间距违规 ( 间距 0.2000 mm; 实际 0.0121 mm)",
+            "items": [
+                {
+                    "description": "走线 [CSEL8] (F.Cu), 长度: 8.6000 mm",
+                    "pos": {
+                        "x": 168.75,
+                        "y": 233.55
+                    },
+                    "uuid": "3a851566-497f-43b0-905a-42b6584f08e1"
+                },
+                {
+                    "description": "走线 [GND] (F.Cu), 长度: 8.6267 mm",
+                    "pos": {
+                        "x": 174.35,
+                        "y": 227.65
+                    },
+                    "uuid": "ea99240a-abd3-4f96-8d27-2c446912f15e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "走线 [CSEL8] (F.Cu), 长度: 0.1000 mm",
+                    "pos": {
+                        "x": 168.65,
+                        "y": 233.35
+                    },
+                    "uuid": "7dffbcf3-c04f-4bcb-ad8b-e13e9525ab99"
+                },
+                {
+                    "description": "走线 [GND] (F.Cu), 长度: 8.6267 mm",
+                    "pos": {
+                        "x": 174.35,
+                        "y": 227.65
+                    },
+                    "uuid": "ea99240a-abd3-4f96-8d27-2c446912f15e"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "走线 [CSEL8] (F.Cu), 长度: 1.9799 mm",
+                    "pos": {
+                        "x": 166.15,
+                        "y": 244.85
+                    },
+                    "uuid": "87ed39c1-b5a4-404c-afc5-13e335fb7a0f"
+                },
+                {
+                    "description": "走线 [GND] (F.Cu), 长度: 2.6870 mm",
+                    "pos": {
+                        "x": 166.45,
+                        "y": 244.35
+                    },
+                    "uuid": "9f4c987f-30b2-4106-9a63-943939194918"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "走线 [CSEL8] (F.Cu), 长度: 1.2728 mm",
+                    "pos": {
+                        "x": 167.75,
+                        "y": 232.45
+                    },
+                    "uuid": "44b21cbe-ff56-4856-bb60-a04efa9575ec"
+                },
+                {
+                    "description": "走线 [GND] (F.Cu), 长度: 8.6267 mm",
+                    "pos": {
+                        "x": 174.35,
+                        "y": 227.65
+                    },
+                    "uuid": "ea99240a-abd3-4f96-8d27-2c446912f15e"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "短路了两个不同网络的项目 (网络 CSEL8 和 GND)",
+            "items": [
+                {
+                    "description": "走线 [CSEL8] (F.Cu), 长度: 0.7000 mm",
+                    "pos": {
+                        "x": 166.85,
+                        "y": 244.85
+                    },
+                    "uuid": "5ae44eb2-8eea-44a2-949f-bd3dd50e2972"
+                },
+                {
+                    "description": "走线 [GND] (F.Cu), 长度: 2.6870 mm",
+                    "pos": {
+                        "x": 166.45,
+                        "y": 244.35
+                    },
+                    "uuid": "9f4c987f-30b2-4106-9a63-943939194918"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "短路了两个不同网络的项目 (网络 CSEL8 和 GND)",
+            "items": [
+                {
+                    "description": "走线 [CSEL8] (F.Cu), 长度: 0.1414 mm",
+                    "pos": {
+                        "x": 168.65,
+                        "y": 233.45
+                    },
+                    "uuid": "0eeb8716-fad3-4bc9-a42b-ec75dfcb2ccf"
+                },
+                {
+                    "description": "走线 [GND] (F.Cu), 长度: 8.6267 mm",
+                    "pos": {
+                        "x": 174.35,
+                        "y": 227.65
+                    },
+                    "uuid": "ea99240a-abd3-4f96-8d27-2c446912f15e"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "走线 [CSEL9] (B.Cu), 长度: 0.4243 mm",
+                    "pos": {
+                        "x": 169.35,
+                        "y": 241.95
+                    },
+                    "uuid": "2e6b50d5-869d-482d-bf32-af0f8faada48"
+                },
+                {
+                    "description": "走线 [+3V3] (B.Cu), 长度: 8.7681 mm",
+                    "pos": {
+                        "x": 175.45,
+                        "y": 236.45
+                    },
+                    "uuid": "6914f0fd-5ac7-4ade-a644-c9942a15f882"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "走线 [CSEL9] (B.Cu), 长度: 0.1000 mm",
+                    "pos": {
+                        "x": 169.65,
+                        "y": 242.25
+                    },
+                    "uuid": "254d23a4-59e6-488b-a926-edeb9e83d497"
+                },
+                {
+                    "description": "走线 [+3V3] (B.Cu), 长度: 8.7681 mm",
+                    "pos": {
+                        "x": 175.45,
+                        "y": 236.45
+                    },
+                    "uuid": "6914f0fd-5ac7-4ade-a644-c9942a15f882"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "走线 [CSEL9] (B.Cu), 长度: 3.1000 mm",
+                    "pos": {
+                        "x": 168.95,
+                        "y": 244.05
+                    },
+                    "uuid": "71d41d91-4ad7-486d-8a61-7cea82d21b07"
+                },
+                {
+                    "description": "走线 [+3V3] (B.Cu), 长度: 3.8184 mm",
+                    "pos": {
+                        "x": 167.25,
+                        "y": 243.55
+                    },
+                    "uuid": "b5a49855-907e-4a96-b73a-af87f035ee42"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "间距违规 ( 间距 0.2000 mm; 实际 0.0121 mm)",
+            "items": [
+                {
+                    "description": "走线 [+3V3] (B.Cu), 长度: 8.7681 mm",
+                    "pos": {
+                        "x": 175.45,
+                        "y": 236.45
+                    },
+                    "uuid": "6914f0fd-5ac7-4ade-a644-c9942a15f882"
+                },
+                {
+                    "description": "走线 [CSEL9] (B.Cu), 长度: 0.4000 mm",
+                    "pos": {
+                        "x": 169.75,
+                        "y": 242.45
+                    },
+                    "uuid": "7fd6ad07-c155-4912-ba20-7338211d51da"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "走线 [GND] (F.Cu), 长度: 4.6669 mm",
+                    "pos": {
+                        "x": 95.55,
+                        "y": 161.35
+                    },
+                    "uuid": "0c9ddd98-2af8-4bf6-a03e-5821bbc3e2f7"
+                },
+                {
+                    "description": "走线 [ROW5] (F.Cu), 长度: 7.7782 mm",
+                    "pos": {
+                        "x": 95.45,
+                        "y": 163.85
+                    },
+                    "uuid": "88ffa0f0-601f-4a52-ac4f-3b9403038838"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "间距违规 ( 间距 0.2000 mm; 实际 0.1440 mm)",
+            "items": [
+                {
+                    "description": "走线 [GND] (F.Cu), 长度: 0.4244 mm",
+                    "pos": {
+                        "x": 159.25,
+                        "y": 242.85
+                    },
+                    "uuid": "1f1a74b7-24c5-451f-bd7e-666ae3943f65"
+                },
+                {
+                    "description": "走线 [COL9] (F.Cu), 长度: 4.4006 mm",
+                    "pos": {
+                        "x": 162.2316,
+                        "y": 240.3549
+                    },
+                    "uuid": "61f974e5-2b33-42c2-90d5-6b7d83cea839"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "走线 [COL9] (F.Cu), 长度: 4.4006 mm",
+                    "pos": {
+                        "x": 162.2316,
+                        "y": 240.3549
+                    },
+                    "uuid": "61f974e5-2b33-42c2-90d5-6b7d83cea839"
+                },
+                {
+                    "description": "走线 [GND] (F.Cu), 长度: 2.8284 mm",
+                    "pos": {
+                        "x": 161.25,
+                        "y": 244.85
+                    },
+                    "uuid": "8de7ff28-952f-4216-80fc-2a50920c6dde"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "短路了两个不同网络的项目 (网络 CSEL9 和 +3V3)",
+            "items": [
+                {
+                    "description": "走线 [CSEL9] (B.Cu), 长度: 0.1414 mm",
+                    "pos": {
+                        "x": 169.65,
+                        "y": 242.35
+                    },
+                    "uuid": "4fd47e18-0344-49f3-a366-a441376d4a95"
+                },
+                {
+                    "description": "走线 [+3V3] (B.Cu), 长度: 8.7681 mm",
+                    "pos": {
+                        "x": 175.45,
+                        "y": 236.45
+                    },
+                    "uuid": "6914f0fd-5ac7-4ade-a644-c9942a15f882"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "走线 [CSEL5] (B.Cu), 长度: 4.5556 mm",
+                    "pos": {
+                        "x": 165.6983,
+                        "y": 242.2045
+                    },
+                    "uuid": "ade33a3f-65a1-43d4-b7ba-876c583323e0"
+                },
+                {
+                    "description": "走线 [CSEL9] (B.Cu), 长度: 7.4000 mm",
+                    "pos": {
+                        "x": 168.75,
+                        "y": 233.85
+                    },
+                    "uuid": "e5ef9b16-179f-4c2e-9b8e-f54e0e2e1f13"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "间距违规 ( 间距 0.2000 mm; 实际 0.1657 mm)",
+            "items": [
+                {
+                    "description": "过孔 [CSEL2] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 168.85,
+                        "y": 246.25
+                    },
+                    "uuid": "55029863-6a84-4c58-8d46-689e2beb03ea"
+                },
+                {
+                    "description": "走线 [CSEL6] (B.Cu), 长度: 4.9497 mm",
+                    "pos": {
+                        "x": 171.15,
+                        "y": 243.15
+                    },
+                    "uuid": "75d1f6ca-e312-469e-bf3e-d3026106d73b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "走线 [ROW16] (F.Cu), 长度: 1.0000 mm",
+                    "pos": {
+                        "x": 101.45,
+                        "y": 209.05
+                    },
+                    "uuid": "9797ac1b-aa11-425d-9bea-c754085eb501"
+                },
+                {
+                    "description": "走线 [CSEL0] (F.Cu), 长度: 2.6870 mm",
+                    "pos": {
+                        "x": 102.85,
+                        "y": 207.75
+                    },
+                    "uuid": "99d27e1d-003f-406a-b1b6-1431efcd6d0e"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "走线 [ROW16] (F.Cu), 长度: 9.3338 mm",
+                    "pos": {
+                        "x": 96.65,
+                        "y": 134.15
+                    },
+                    "uuid": "43e7c1f7-4574-46f8-b476-c39f94c100da"
+                },
+                {
+                    "description": "走线 [ROW2] (F.Cu), 长度: 0.1000 mm",
+                    "pos": {
+                        "x": 102.85,
+                        "y": 127.95
+                    },
+                    "uuid": "50cbb201-b1c3-43aa-8481-813144339d7a"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "间距违规 ( 间距 0.2000 mm; 实际 0.0828 mm)",
+            "items": [
+                {
+                    "description": "走线 [ROW16] (F.Cu), 长度: 9.3338 mm",
+                    "pos": {
+                        "x": 96.65,
+                        "y": 134.15
+                    },
+                    "uuid": "43e7c1f7-4574-46f8-b476-c39f94c100da"
+                },
+                {
+                    "description": "走线 [ROW2] (F.Cu), 长度: 1.5000 mm",
+                    "pos": {
+                        "x": 101.15,
+                        "y": 127.75
+                    },
+                    "uuid": "4ffab621-8c28-466b-a209-683ed52406a7"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "走线 [ROW17] (F.Cu), 长度: 9.3338 mm",
+                    "pos": {
+                        "x": 96.65,
+                        "y": 158.25
+                    },
+                    "uuid": "0d8aa1a3-1655-49b1-b358-8dce424ff360"
+                },
+                {
+                    "description": "走线 [ROW5] (F.Cu), 长度: 7.7782 mm",
+                    "pos": {
+                        "x": 95.45,
+                        "y": 163.85
+                    },
+                    "uuid": "88ffa0f0-601f-4a52-ac4f-3b9403038838"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "走线 [ROW9] (F.Cu), 长度: 0.1000 mm",
+                    "pos": {
+                        "x": 100.55,
+                        "y": 158.65
+                    },
+                    "uuid": "05883979-29ca-4758-89cf-95d9f25344d8"
+                },
+                {
+                    "description": "走线 [ROW5] (F.Cu), 长度: 7.7782 mm",
+                    "pos": {
+                        "x": 95.45,
+                        "y": 163.85
+                    },
+                    "uuid": "88ffa0f0-601f-4a52-ac4f-3b9403038838"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "短路了两个不同网络的项目 (网络 ROW9 和 ROW5)",
+            "items": [
+                {
+                    "description": "走线 [ROW9] (F.Cu), 长度: 0.1414 mm",
+                    "pos": {
+                        "x": 100.45,
+                        "y": 158.55
+                    },
+                    "uuid": "32d3be09-c8e3-4703-b14c-a0c04e29a268"
+                },
+                {
+                    "description": "走线 [ROW5] (F.Cu), 长度: 7.7782 mm",
+                    "pos": {
+                        "x": 95.45,
+                        "y": 163.85
+                    },
+                    "uuid": "88ffa0f0-601f-4a52-ac4f-3b9403038838"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "走线 [ROW9] (F.Cu), 长度: 0.5657 mm",
+                    "pos": {
+                        "x": 100.55,
+                        "y": 158.75
+                    },
+                    "uuid": "678110c2-6394-46bb-9466-bf6601fdf2ca"
+                },
+                {
+                    "description": "走线 [ROW5] (F.Cu), 长度: 7.7782 mm",
+                    "pos": {
+                        "x": 95.45,
+                        "y": 163.85
+                    },
+                    "uuid": "88ffa0f0-601f-4a52-ac4f-3b9403038838"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "间距违规 ( 间距 0.2000 mm; 实际 0.0121 mm)",
+            "items": [
+                {
+                    "description": "走线 [ROW5] (F.Cu), 长度: 7.7782 mm",
+                    "pos": {
+                        "x": 95.45,
+                        "y": 163.85
+                    },
+                    "uuid": "88ffa0f0-601f-4a52-ac4f-3b9403038838"
+                },
+                {
+                    "description": "走线 [ROW9] (F.Cu), 长度: 15.1000 mm",
+                    "pos": {
+                        "x": 100.45,
+                        "y": 143.45
+                    },
+                    "uuid": "da11b904-5169-436e-afc1-139b4c9db314"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "走线 [ROW16] (F.Cu), 长度: 9.3338 mm",
+                    "pos": {
+                        "x": 96.65,
+                        "y": 134.15
+                    },
+                    "uuid": "43e7c1f7-4574-46f8-b476-c39f94c100da"
+                },
+                {
+                    "description": "走线 [ROW7] (F.Cu), 长度: 14.7078 mm",
+                    "pos": {
+                        "x": 95.55,
+                        "y": 130.95
+                    },
+                    "uuid": "73663cac-01ed-41eb-bf09-730d0eb42b01"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "短路了两个不同网络的项目 (网络 ROW7 和 ROW6)",
+            "items": [
+                {
+                    "description": "走线 [ROW7] (F.Cu), 长度: 2.8284 mm",
+                    "pos": {
+                        "x": 166.05,
+                        "y": 153.15
+                    },
+                    "uuid": "11588344-3320-493d-afd5-4d74f0860856"
+                },
+                {
+                    "description": "走线 [ROW6] (F.Cu), 长度: 2.0000 mm",
+                    "pos": {
+                        "x": 167.75,
+                        "y": 153.65
+                    },
+                    "uuid": "2be173c6-02ed-4b81-819f-a1ee224f2587"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "走线 [ROW1] (F.Cu), 长度: 0.1414 mm",
+                    "pos": {
+                        "x": 102.35,
+                        "y": 128.25
+                    },
+                    "uuid": "24b4e7d8-2efb-4b2e-82ba-531d713c5408"
+                },
+                {
+                    "description": "走线 [ROW16] (F.Cu), 长度: 9.3338 mm",
+                    "pos": {
+                        "x": 96.65,
+                        "y": 134.15
+                    },
+                    "uuid": "43e7c1f7-4574-46f8-b476-c39f94c100da"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "间距违规 ( 间距 0.2000 mm; 实际 0.0828 mm)",
+            "items": [
+                {
+                    "description": "走线 [ROW1] (F.Cu), 长度: 0.1414 mm",
+                    "pos": {
+                        "x": 102.75,
+                        "y": 128.45
+                    },
+                    "uuid": "22ca1319-84cf-4c1e-96b2-5eeb24c325af"
+                },
+                {
+                    "description": "走线 [ROW16] (F.Cu), 长度: 9.3338 mm",
+                    "pos": {
+                        "x": 96.65,
+                        "y": 134.15
+                    },
+                    "uuid": "43e7c1f7-4574-46f8-b476-c39f94c100da"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "短路了两个不同网络的项目 (网络 ROW16 和 ROW1)",
+            "items": [
+                {
+                    "description": "走线 [ROW16] (F.Cu), 长度: 9.3338 mm",
+                    "pos": {
+                        "x": 96.65,
+                        "y": 134.15
+                    },
+                    "uuid": "43e7c1f7-4574-46f8-b476-c39f94c100da"
+                },
+                {
+                    "description": "走线 [ROW1] (F.Cu), 长度: 1.4000 mm",
+                    "pos": {
+                        "x": 100.95,
+                        "y": 128.25
+                    },
+                    "uuid": "fd1e9d65-8307-4231-8c4f-a784212326ae"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "间距违规 ( 间距 0.2000 mm; 实际 0.0121 mm)",
+            "items": [
+                {
+                    "description": "走线 [ROW16] (F.Cu), 长度: 9.3338 mm",
+                    "pos": {
+                        "x": 96.65,
+                        "y": 134.15
+                    },
+                    "uuid": "43e7c1f7-4574-46f8-b476-c39f94c100da"
+                },
+                {
+                    "description": "走线 [ROW1] (F.Cu), 长度: 0.1000 mm",
+                    "pos": {
+                        "x": 102.65,
+                        "y": 128.45
+                    },
+                    "uuid": "dcb03076-3421-4cc9-9859-16e255345122"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "走线 [ROW16] (F.Cu), 长度: 9.3338 mm",
+                    "pos": {
+                        "x": 96.65,
+                        "y": 134.15
+                    },
+                    "uuid": "43e7c1f7-4574-46f8-b476-c39f94c100da"
+                },
+                {
+                    "description": "走线 [ROW1] (F.Cu), 长度: 0.1000 mm",
+                    "pos": {
+                        "x": 102.45,
+                        "y": 128.35
+                    },
+                    "uuid": "cd09dea3-dc8f-45b0-91bf-bd4ad1fad748"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "短路了两个不同网络的项目 (网络 ROW16 和 ROW1)",
+            "items": [
+                {
+                    "description": "走线 [ROW16] (F.Cu), 长度: 9.3338 mm",
+                    "pos": {
+                        "x": 96.65,
+                        "y": 134.15
+                    },
+                    "uuid": "43e7c1f7-4574-46f8-b476-c39f94c100da"
+                },
+                {
+                    "description": "走线 [ROW1] (F.Cu), 长度: 0.1414 mm",
+                    "pos": {
+                        "x": 102.55,
+                        "y": 128.35
+                    },
+                    "uuid": "826ae9af-e0ef-4c8e-b843-6f1f1e2b5662"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "走线 [ROW16] (F.Cu), 长度: 9.3338 mm",
+                    "pos": {
+                        "x": 96.65,
+                        "y": 134.15
+                    },
+                    "uuid": "43e7c1f7-4574-46f8-b476-c39f94c100da"
+                },
+                {
+                    "description": "走线 [ROW6] (F.Cu), 长度: 8.4853 mm",
+                    "pos": {
+                        "x": 95.45,
+                        "y": 128.45
+                    },
+                    "uuid": "6aa93e16-85aa-47f7-9b93-387631bd7609"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "走线 [ROW16] (F.Cu), 长度: 0.1000 mm",
+                    "pos": {
+                        "x": 94.65,
+                        "y": 114.05
+                    },
+                    "uuid": "c7538688-8c3b-4bd1-b4f9-44d29f0c0211"
+                },
+                {
+                    "description": "走线 [CSEL3] (F.Cu), 长度: 9.4752 mm",
+                    "pos": {
+                        "x": 94.25,
+                        "y": 114.45
+                    },
+                    "uuid": "de9025a4-79bc-4f17-aac0-acc3df11f0c5"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "走线 [ROW16] (F.Cu), 长度: 0.5657 mm",
+                    "pos": {
+                        "x": 95.05,
+                        "y": 114.45
+                    },
+                    "uuid": "730d5d2a-7aa8-4e87-9e77-4f810c9f7d9c"
+                },
+                {
+                    "description": "走线 [CSEL3] (F.Cu), 长度: 9.4752 mm",
+                    "pos": {
+                        "x": 94.25,
+                        "y": 114.45
+                    },
+                    "uuid": "de9025a4-79bc-4f17-aac0-acc3df11f0c5"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "短路了两个不同网络的项目 (网络 ROW16 和 CSEL3)",
+            "items": [
+                {
+                    "description": "走线 [ROW16] (F.Cu), 长度: 0.1414 mm",
+                    "pos": {
+                        "x": 94.55,
+                        "y": 114.05
+                    },
+                    "uuid": "516dfccc-6a80-4f55-a4fb-d9ff68e451bf"
+                },
+                {
+                    "description": "走线 [CSEL3] (F.Cu), 长度: 9.4752 mm",
+                    "pos": {
+                        "x": 94.25,
+                        "y": 114.45
+                    },
+                    "uuid": "de9025a4-79bc-4f17-aac0-acc3df11f0c5"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "间距违规 ( 间距 0.2000 mm; 实际 0.0121 mm)",
+            "items": [
+                {
+                    "description": "走线 [ROW16] (F.Cu), 长度: 0.4000 mm",
+                    "pos": {
+                        "x": 94.45,
+                        "y": 113.95
+                    },
+                    "uuid": "9fbe7e9a-3845-420f-a763-8268b391ad68"
+                },
+                {
+                    "description": "走线 [CSEL3] (F.Cu), 长度: 9.4752 mm",
+                    "pos": {
+                        "x": 94.25,
+                        "y": 114.45
+                    },
+                    "uuid": "de9025a4-79bc-4f17-aac0-acc3df11f0c5"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "间距违规 ( 间距 0.2000 mm; 实际 0.0121 mm)",
+            "items": [
+                {
+                    "description": "走线 [ROW16] (F.Cu), 长度: 9.3338 mm",
+                    "pos": {
+                        "x": 96.65,
+                        "y": 134.15
+                    },
+                    "uuid": "43e7c1f7-4574-46f8-b476-c39f94c100da"
+                },
+                {
+                    "description": "走线 [ROW2] (F.Cu), 长度: 0.4000 mm",
+                    "pos": {
+                        "x": 103.05,
+                        "y": 128.05
+                    },
+                    "uuid": "f66a157f-9ea1-42f5-920d-c9007fae9dbc"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "短路了两个不同网络的项目 (网络 ROW2 和 ROW16)",
+            "items": [
+                {
+                    "description": "走线 [ROW2] (F.Cu), 长度: 0.1414 mm",
+                    "pos": {
+                        "x": 102.95,
+                        "y": 127.95
+                    },
+                    "uuid": "41825ed3-3caf-4604-8519-7b7017647d54"
+                },
+                {
+                    "description": "走线 [ROW16] (F.Cu), 长度: 9.3338 mm",
+                    "pos": {
+                        "x": 96.65,
+                        "y": 134.15
+                    },
+                    "uuid": "43e7c1f7-4574-46f8-b476-c39f94c100da"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "走线 [ROW2] (F.Cu), 长度: 0.2828 mm",
+                    "pos": {
+                        "x": 102.65,
+                        "y": 127.75
+                    },
+                    "uuid": "27b68bc2-449b-4c1a-82c9-8facecbb64e6"
+                },
+                {
+                    "description": "走线 [ROW16] (F.Cu), 长度: 9.3338 mm",
+                    "pos": {
+                        "x": 96.65,
+                        "y": 134.15
+                    },
+                    "uuid": "43e7c1f7-4574-46f8-b476-c39f94c100da"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "走线 [ROW13] (F.Cu), 长度: 8.3439 mm",
+                    "pos": {
+                        "x": 97.35,
+                        "y": 139.35
+                    },
+                    "uuid": "14561e1c-a66d-4602-9f5a-e48449fd5b96"
+                },
+                {
+                    "description": "走线 [ROW5] (F.Cu), 长度: 2.6870 mm",
+                    "pos": {
+                        "x": 100.95,
+                        "y": 145.65
+                    },
+                    "uuid": "f47c79f4-8999-4909-a00b-b27ad0dc011a"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "走线 [ROW16] (F.Cu), 长度: 9.3338 mm",
+                    "pos": {
+                        "x": 96.65,
+                        "y": 134.15
+                    },
+                    "uuid": "43e7c1f7-4574-46f8-b476-c39f94c100da"
+                },
+                {
+                    "description": "走线 [ROW4] (F.Cu), 长度: 7.7782 mm",
+                    "pos": {
+                        "x": 97.05,
+                        "y": 127.15
+                    },
+                    "uuid": "fcac962e-31b4-4c0d-b035-45247cfd13df"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "走线 [CSEL7] (F.Cu), 长度: 2.6870 mm",
+                    "pos": {
+                        "x": 176.75,
+                        "y": 230.45
+                    },
+                    "uuid": "d212db82-78d3-4dc5-92e5-2158e54987d8"
+                },
+                {
+                    "description": "走线 [ROW15] (F.Cu), 长度: 0.1000 mm",
+                    "pos": {
+                        "x": 175.25,
+                        "y": 231.95
+                    },
+                    "uuid": "dcffea26-1145-4b89-9161-9d43c5e79d2a"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "走线 [ROW15] (F.Cu), 长度: 0.1000 mm",
+                    "pos": {
+                        "x": 168.25,
+                        "y": 226.85
+                    },
+                    "uuid": "b7aae206-6661-4b0a-878c-e4ac957d6841"
+                },
+                {
+                    "description": "走线 [CSEL8] (F.Cu), 长度: 8.4853 mm",
+                    "pos": {
+                        "x": 173.85,
+                        "y": 221.25
+                    },
+                    "uuid": "e8bcd885-ded6-4931-82f2-dad281a91c5c"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "间距违规 ( 间距 0.2000 mm; 实际 0.0121 mm)",
+            "items": [
+                {
+                    "description": "走线 [ROW15] (F.Cu), 长度: 1.8000 mm",
+                    "pos": {
+                        "x": 175.05,
+                        "y": 231.85
+                    },
+                    "uuid": "bbfcdae6-40bc-49db-b28b-5eff4050113c"
+                },
+                {
+                    "description": "走线 [CSEL7] (F.Cu), 长度: 2.6870 mm",
+                    "pos": {
+                        "x": 176.75,
+                        "y": 230.45
+                    },
+                    "uuid": "d212db82-78d3-4dc5-92e5-2158e54987d8"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "走线 [ROW15] (F.Cu), 长度: 0.8000 mm",
+                    "pos": {
+                        "x": 177.35,
+                        "y": 233.25
+                    },
+                    "uuid": "0d6007c4-071b-4e15-bdf5-b8c44e709972"
+                },
+                {
+                    "description": "走线 [CSEL2] (F.Cu), 长度: 2.6870 mm",
+                    "pos": {
+                        "x": 177.15,
+                        "y": 232.75
+                    },
+                    "uuid": "bf53b077-4cc4-4a44-a311-842bcc6cc9b2"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "短路了两个不同网络的项目 (网络 ROW15 和 CSEL7)",
+            "items": [
+                {
+                    "description": "走线 [ROW15] (F.Cu), 长度: 0.1414 mm",
+                    "pos": {
+                        "x": 175.15,
+                        "y": 231.95
+                    },
+                    "uuid": "164cd5b7-1918-42cf-a973-965251cfd0fd"
+                },
+                {
+                    "description": "走线 [CSEL7] (F.Cu), 长度: 2.6870 mm",
+                    "pos": {
+                        "x": 176.75,
+                        "y": 230.45
+                    },
+                    "uuid": "d212db82-78d3-4dc5-92e5-2158e54987d8"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "短路了两个不同网络的项目 (网络 ROW15 和 CSEL8)",
+            "items": [
+                {
+                    "description": "走线 [ROW15] (F.Cu), 长度: 0.1414 mm",
+                    "pos": {
+                        "x": 168.15,
+                        "y": 226.85
+                    },
+                    "uuid": "3389a186-0d41-4d9a-ab6d-532d1edd828a"
+                },
+                {
+                    "description": "走线 [CSEL8] (F.Cu), 长度: 8.4853 mm",
+                    "pos": {
+                        "x": 173.85,
+                        "y": 221.25
+                    },
+                    "uuid": "e8bcd885-ded6-4931-82f2-dad281a91c5c"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW15] (F.Cu), 长度: 3.4032 mm",
+                    "pos": {
+                        "x": 166.8094,
+                        "y": 239.2446
+                    },
+                    "uuid": "90230f4b-00ea-4c16-8dd8-cdbabf711b20"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW15] (F.Cu), 长度: 1.9225 mm",
+                    "pos": {
+                        "x": 103.84,
+                        "y": 206.05
+                    },
+                    "uuid": "c34e3fe4-94a9-4205-8c79-23ae4829b9a0"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW10] (F.Cu), 长度: 1.9225 mm",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 174.05
+                    },
+                    "uuid": "4922a52a-44e2-46e4-a842-5574547132e1"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW11] (F.Cu), 长度: 1.9225 mm",
+                    "pos": {
+                        "x": 103.84,
+                        "y": 180.45
+                    },
+                    "uuid": "bfcdf1d4-db08-4c69-a788-95496f68e17a"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW11] (B.Cu), 长度: 2.8550 mm",
+                    "pos": {
+                        "x": 165.5582,
+                        "y": 243.0772
+                    },
+                    "uuid": "3255a909-e901-4634-b294-e5d5e68242f8"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW12] (F.Cu), 长度: 2.9202 mm",
+                    "pos": {
+                        "x": 102.8423,
+                        "y": 186.85
+                    },
+                    "uuid": "c584c6f6-1d3b-4957-8d89-ada4c9eb61d9"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW12] (B.Cu), 长度: 4.1284 mm",
+                    "pos": {
+                        "x": 105.8,
+                        "y": 242.7636
+                    },
+                    "uuid": "7e562b6f-f0ea-4610-906c-482a8381a2ee"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW18] (F.Cu), 长度: 1.9225 mm",
+                    "pos": {
+                        "x": 103.84,
+                        "y": 225.25
+                    },
+                    "uuid": "52700764-3bd9-4a65-b77e-6fb2795b1f57"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW18] (F.Cu), 长度: 2.1442 mm",
+                    "pos": {
+                        "x": 162.428,
+                        "y": 241.085
+                    },
+                    "uuid": "671fd9dd-b3e2-456a-9653-83db8ef1323c"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW18] (B.Cu), 长度: 4.4483 mm",
+                    "pos": {
+                        "x": 164.9708,
+                        "y": 235.9415
+                    },
+                    "uuid": "0860233a-1b8d-443d-94cb-2d362a250b87"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW18] (B.Cu), 长度: 1.8615 mm",
+                    "pos": {
+                        "x": 135.9847,
+                        "y": 240.5866
+                    },
+                    "uuid": "3ec1abd0-f233-4421-8e29-fce512e0c142"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW19] (F.Cu), 长度: 1.9225 mm",
+                    "pos": {
+                        "x": 103.84,
+                        "y": 231.65
+                    },
+                    "uuid": "612e5299-82d6-4795-b7a2-f1384ffc064a"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW19] (F.Cu), 长度: 0.5325 mm",
+                    "pos": {
+                        "x": 134.8735,
+                        "y": 241.3451
+                    },
+                    "uuid": "93cccd9e-cd3d-48d8-ad9e-796048fdaf2e"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW20] (F.Cu), 长度: 1.6903 mm",
+                    "pos": {
+                        "x": 136.9452,
+                        "y": 240.5805
+                    },
+                    "uuid": "47cea71d-59ca-4a32-9f10-e93f64d45f79"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW20] (F.Cu), 长度: 1.9225 mm",
+                    "pos": {
+                        "x": 105.214,
+                        "y": 237.5015
+                    },
+                    "uuid": "dde9eceb-f08e-4bd5-9f6e-90e6eba22024"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [CSEL0] (F.Cu), 长度: 0.9517 mm",
+                    "pos": {
+                        "x": 136.25,
+                        "y": 243.15
+                    },
+                    "uuid": "6b50bf1b-ced2-4754-98fd-57feed3f503f"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [CSEL1] (F.Cu), 长度: 1.0943 mm",
+                    "pos": {
+                        "x": 136.75,
+                        "y": 243.15
+                    },
+                    "uuid": "89769aa0-031b-4d09-9d6f-44ff391ba3aa"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [CSEL2] (F.Cu), 长度: 0.9517 mm",
+                    "pos": {
+                        "x": 137.25,
+                        "y": 243.15
+                    },
+                    "uuid": "55835681-d204-4f3c-aae5-c4c326a24a52"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [CSEL5] (B.Cu), 长度: 4.5556 mm",
+                    "pos": {
+                        "x": 165.6983,
+                        "y": 242.2045
+                    },
+                    "uuid": "ade33a3f-65a1-43d4-b7ba-876c583323e0"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [CSEL6] (F.Cu), 长度: 1.4234 mm",
+                    "pos": {
+                        "x": 139.25,
+                        "y": 241.8274
+                    },
+                    "uuid": "746a34a3-09af-4b00-ba75-50be61c21980"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [CSEL6] (B.Cu), 长度: 4.8383 mm",
+                    "pos": {
+                        "x": 168.5179,
+                        "y": 117.6212
+                    },
+                    "uuid": "16c03409-a344-4dda-bc58-150db4bc2339"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [CSEL6] (B.Cu), 长度: 0.6378 mm",
+                    "pos": {
+                        "x": 149.1255,
+                        "y": 241.8028
+                    },
+                    "uuid": "37fc2391-31ec-4e75-92fe-9e69c65b2ac1"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [CSEL6] (B.Cu), 长度: 4.2793 mm",
+                    "pos": {
+                        "x": 165.492,
+                        "y": 241.8028
+                    },
+                    "uuid": "8778abd8-fe08-44ee-aafb-b3752a8d3d85"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [CSEL6] (B.Cu), 长度: 1.3886 mm",
+                    "pos": {
+                        "x": 141.1332,
+                        "y": 240.8209
+                    },
+                    "uuid": "8bd564b7-bfc1-4813-9476-02f43ab5933e"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [CSEL6] (B.Cu), 长度: 0.8610 mm",
+                    "pos": {
+                        "x": 159.9984,
+                        "y": 241.194
+                    },
+                    "uuid": "ec958e71-a576-4544-8806-3e5bc983e604"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [CSEL7] (F.Cu), 长度: 0.9517 mm",
+                    "pos": {
+                        "x": 139.75,
+                        "y": 243.15
+                    },
+                    "uuid": "c3370d0c-e76b-4c47-b7ef-39c72c34d6ee"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [CSEL8] (F.Cu), 长度: 0.9517 mm",
+                    "pos": {
+                        "x": 140.25,
+                        "y": 243.15
+                    },
+                    "uuid": "182d00e8-cec6-44c1-a153-7a8acde1f6c5"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [CSEL9] (F.Cu), 长度: 1.4522 mm",
+                    "pos": {
+                        "x": 140.75,
+                        "y": 243.15
+                    },
+                    "uuid": "14eacabe-8dd0-414e-af6e-5d90be504911"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [CSEL9] (B.Cu), 长度: 0.0065 mm",
+                    "pos": {
+                        "x": 157.55,
+                        "y": 245.05
+                    },
+                    "uuid": "1972a76b-9c80-469b-b3d1-7b5ce81fbfea"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [+3V3] (F.Cu), 长度: 0.7329 mm",
+                    "pos": {
+                        "x": 144.25,
+                        "y": 242.4171
+                    },
+                    "uuid": "6f586c5b-2f87-48c6-aa7a-0029fdb396fc"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [+3V3] (F.Cu), 长度: 0.7329 mm",
+                    "pos": {
+                        "x": 144.75,
+                        "y": 242.4171
+                    },
+                    "uuid": "746423ee-a832-45c5-bac6-04cba980520b"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [+3V3] (F.Cu), 长度: 0.9517 mm",
+                    "pos": {
+                        "x": 143.75,
+                        "y": 243.15
+                    },
+                    "uuid": "e365ce58-9dda-4dbe-8ea0-7ca3c483645b"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW8] (F.Cu), 长度: 2.8485 mm",
+                    "pos": {
+                        "x": 107.2125,
+                        "y": 241.0238
+                    },
+                    "uuid": "39e027ae-a18d-4571-aadf-0b4545ce22d3"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW8] (F.Cu), 长度: 1.9225 mm",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 161.25
+                    },
+                    "uuid": "a70b2fc5-37a7-44e1-af34-e1b1e695007a"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW8] (F.Cu), 长度: 0.9225 mm",
+                    "pos": {
+                        "x": 129.0875,
+                        "y": 242.1983
+                    },
+                    "uuid": "fd841456-2fba-4684-9fb4-2924a0b4d585"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW8] (B.Cu), 长度: 5.2982 mm",
+                    "pos": {
+                        "x": 101.4519,
+                        "y": 239.2916
+                    },
+                    "uuid": "18a6e596-80d7-4881-9ff3-538d68a054f9"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW4] (F.Cu), 长度: 3.8204 mm",
+                    "pos": {
+                        "x": 167.2565,
+                        "y": 239.577
+                    },
+                    "uuid": "59ea7037-4009-416b-b5cc-29ad3aef8fd1"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "过孔 [ROW4] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 167.0908,
+                        "y": 204.7475
+                    },
+                    "uuid": "a32ea6c6-4439-409f-a16f-4f3b51f259ac"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW4] (B.Cu), 长度: 2.2523 mm",
+                    "pos": {
+                        "x": 165.5092,
+                        "y": 133.7675
+                    },
+                    "uuid": "a175f0dc-cd22-456f-803c-9b5c947815c7"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW13] (F.Cu), 长度: 6.7404 mm",
+                    "pos": {
+                        "x": 168.1287,
+                        "y": 198.4788
+                    },
+                    "uuid": "7e8a4c39-c903-4c8d-86ec-3583f8b18e4a"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW13] (F.Cu), 长度: 1.9263 mm",
+                    "pos": {
+                        "x": 103.8362,
+                        "y": 193.25
+                    },
+                    "uuid": "81c4f8b6-191a-465c-869b-a608a4300426"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW0] (F.Cu), 长度: 6.1547 mm",
+                    "pos": {
+                        "x": 163.3625,
+                        "y": 110.5623
+                    },
+                    "uuid": "9c810fc0-c301-4bbc-a237-a25e085c5be9"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW3] (F.Cu), 长度: 1.9225 mm",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 129.25
+                    },
+                    "uuid": "b3d1feb1-6f41-4a43-9bf5-01807806ada5"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW2] (F.Cu), 长度: 2.7764 mm",
+                    "pos": {
+                        "x": 104.2423,
+                        "y": 240.857
+                    },
+                    "uuid": "15696753-3719-46d4-a1d0-ab11a2de6075"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW2] (F.Cu), 长度: 1.2840 mm",
+                    "pos": {
+                        "x": 126.75,
+                        "y": 242.3334
+                    },
+                    "uuid": "2e3ceedf-53a4-4ecf-99c5-b9f39a32898b"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW2] (F.Cu), 长度: 2.0800 mm",
+                    "pos": {
+                        "x": 104.2423,
+                        "y": 242.937
+                    },
+                    "uuid": "5ba897a7-8dc4-455e-b88a-a95209bbbc85"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW2] (F.Cu), 长度: 1.9225 mm",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 122.85
+                    },
+                    "uuid": "6a771dbe-c242-475b-b266-0030c32f6af6"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW2] (F.Cu), 长度: 3.1523 mm",
+                    "pos": {
+                        "x": 108.1564,
+                        "y": 241.4255
+                    },
+                    "uuid": "a2172a90-54ec-41dc-8689-c4d50eecc566"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW17] (F.Cu), 长度: 1.7000 mm",
+                    "pos": {
+                        "x": 134.25,
+                        "y": 241.45
+                    },
+                    "uuid": "a8fa72b9-823e-4eb6-bd52-c35ebc6e0f55"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW17] (F.Cu), 长度: 1.9225 mm",
+                    "pos": {
+                        "x": 103.84,
+                        "y": 218.85
+                    },
+                    "uuid": "c58b646d-0278-4992-ad4c-a89f24343213"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW7] (F.Cu), 长度: 9.0128 mm",
+                    "pos": {
+                        "x": 169.7355,
+                        "y": 161.6856
+                    },
+                    "uuid": "6884f178-20eb-450b-b71a-0df46da534ec"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW7] (F.Cu), 长度: 1.9225 mm",
+                    "pos": {
+                        "x": 103.84,
+                        "y": 154.85
+                    },
+                    "uuid": "c360d686-e916-46ad-8f6e-bf67518d41e1"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW9] (B.Cu), 长度: 0.4313 mm",
+                    "pos": {
+                        "x": 166.8017,
+                        "y": 179.5911
+                    },
+                    "uuid": "7481aadd-23c4-4e4e-a1c8-b9785a072f61"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW14] (F.Cu), 长度: 1.9225 mm",
+                    "pos": {
+                        "x": 103.84,
+                        "y": 199.65
+                    },
+                    "uuid": "4b56081e-67b6-4e0e-a436-fa0aa3a82891"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW14] (F.Cu), 长度: 2.5926 mm",
+                    "pos": {
+                        "x": 166.3535,
+                        "y": 243.8406
+                    },
+                    "uuid": "5f4af83d-c85b-4ca9-b09f-53bd7f129fa0"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW14] (F.Cu), 长度: 6.1723 mm",
+                    "pos": {
+                        "x": 167.727,
+                        "y": 204.502
+                    },
+                    "uuid": "85facfec-b675-4eb3-970f-839579050a37"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW14] (F.Cu), 长度: 1.9424 mm",
+                    "pos": {
+                        "x": 166.3535,
+                        "y": 241.248
+                    },
+                    "uuid": "9318e561-26b7-4806-8601-2b869157f52f"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW14] (F.Cu), 长度: 1.3535 mm",
+                    "pos": {
+                        "x": 131.7929,
+                        "y": 241.2412
+                    },
+                    "uuid": "bb5d66c4-ab27-4300-81df-539c4cd31480"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW14] (B.Cu), 长度: 1.3813 mm",
+                    "pos": {
+                        "x": 128.0541,
+                        "y": 240.8947
+                    },
+                    "uuid": "0ac93ada-be59-494a-a655-72897973f80f"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW1] (F.Cu), 长度: 1.9225 mm",
+                    "pos": {
+                        "x": 103.84,
+                        "y": 116.45
+                    },
+                    "uuid": "908ddc31-1077-47e6-afeb-5894af6c6550"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW1] (B.Cu), 长度: 9.7900 mm",
+                    "pos": {
+                        "x": 101.0502,
+                        "y": 241.5531
+                    },
+                    "uuid": "f0e95b78-1ebd-4f2b-b643-a8cf60c23563"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW6] (F.Cu), 长度: 5.3037 mm",
+                    "pos": {
+                        "x": 163.3625,
+                        "y": 148.9146
+                    },
+                    "uuid": "56ff079b-f0c9-41de-b3d7-0c664abea427"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW6] (F.Cu), 长度: 1.9225 mm",
+                    "pos": {
+                        "x": 103.84,
+                        "y": 148.45
+                    },
+                    "uuid": "ef695679-3ed9-446c-abf1-1f41e0527707"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW16] (F.Cu), 长度: 2.3278 mm",
+                    "pos": {
+                        "x": 133.75,
+                        "y": 242.1983
+                    },
+                    "uuid": "32081ac3-33bc-4357-a7af-94f5faafa4fd"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW16] (F.Cu), 长度: 2.8888 mm",
+                    "pos": {
+                        "x": 102.8737,
+                        "y": 212.45
+                    },
+                    "uuid": "bc30196d-e308-4f66-81a8-7779ee725382"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW16] (F.Cu), 长度: 1.4057 mm",
+                    "pos": {
+                        "x": 104.3029,
+                        "y": 238.0761
+                    },
+                    "uuid": "fe6c869c-69e9-49ee-b4ba-1c9251370da7"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [ROW5] (F.Cu), 长度: 2.2114 mm",
+                    "pos": {
+                        "x": 104.7636,
+                        "y": 142.05
+                    },
+                    "uuid": "b87a41b5-6520-4f8b-a63b-6d7dd199c9a7"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [CSEL3] (B.Cu), 长度: 11.5319 mm",
+                    "pos": {
+                        "x": 169.3213,
+                        "y": 109.1283
+                    },
+                    "uuid": "887da87a-e02a-4d0d-bf4f-b5dad2cc0b91"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [CSEL4] (B.Cu), 长度: 7.0815 mm",
+                    "pos": {
+                        "x": 105.6559,
+                        "y": 107.9419
+                    },
+                    "uuid": "5c52dfe3-884f-4643-b85d-788fe381c433"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Q103 的参考字段",
+                    "pos": {
+                        "x": 119.5,
+                        "y": 172.6
+                    },
+                    "uuid": "8f8744c1-653e-4e14-8e1d-77f48173047c"
+                },
+                {
+                    "description": "TP3 的参考字段",
+                    "pos": {
+                        "x": 119.5,
+                        "y": 173.73
+                    },
+                    "uuid": "d595c5fa-cfec-4ca6-b7e6-3ffbe47bb36a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "TP3 的参考字段",
+                    "pos": {
+                        "x": 119.5,
+                        "y": 173.73
+                    },
+                    "uuid": "d595c5fa-cfec-4ca6-b7e6-3ffbe47bb36a"
+                },
+                {
+                    "description": "Q103 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 120.26,
+                        "y": 173.44
+                    },
+                    "uuid": "e8a1bca5-9b47-4c34-98c4-252e3dd3ef32"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Q103 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 118.74,
+                        "y": 173.44
+                    },
+                    "uuid": "a14c9943-7fe9-4e72-b6d9-714cc13cc6ac"
+                },
+                {
+                    "description": "TP3 的参考字段",
+                    "pos": {
+                        "x": 119.5,
+                        "y": 173.73
+                    },
+                    "uuid": "d595c5fa-cfec-4ca6-b7e6-3ffbe47bb36a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Q104 的参考字段",
+                    "pos": {
+                        "x": 125.9,
+                        "y": 172.6
+                    },
+                    "uuid": "6bc86956-c3c7-4e89-84c9-004c5113ce38"
+                },
+                {
+                    "description": "TP4 的参考字段",
+                    "pos": {
+                        "x": 125.9,
+                        "y": 173.73
+                    },
+                    "uuid": "f53ecf5c-ec68-49ad-abd2-2abbe55a7b31"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Q104 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 125.14,
+                        "y": 173.44
+                    },
+                    "uuid": "467db705-1d5c-460a-9931-41d252447ed9"
+                },
+                {
+                    "description": "TP4 的参考字段",
+                    "pos": {
+                        "x": 125.9,
+                        "y": 173.73
+                    },
+                    "uuid": "f53ecf5c-ec68-49ad-abd2-2abbe55a7b31"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Q104 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 126.66,
+                        "y": 173.44
+                    },
+                    "uuid": "4abcbdba-70a9-41e4-81e7-d3dd1d867d48"
+                },
+                {
+                    "description": "TP4 的参考字段",
+                    "pos": {
+                        "x": 125.9,
+                        "y": 173.73
+                    },
+                    "uuid": "f53ecf5c-ec68-49ad-abd2-2abbe55a7b31"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "TP5 的参考字段",
+                    "pos": {
+                        "x": 132.3,
+                        "y": 173.73
+                    },
+                    "uuid": "79afb2c9-e23e-47ae-ada0-34b784e3b678"
+                },
+                {
+                    "description": "Q105 的参考字段",
+                    "pos": {
+                        "x": 132.3,
+                        "y": 172.6
+                    },
+                    "uuid": "fe278e02-e8df-4064-ac60-e8cd85486941"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Q105 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 131.54,
+                        "y": 173.44
+                    },
+                    "uuid": "6f298b25-e42d-4900-b9e0-2590a33de0c6"
+                },
+                {
+                    "description": "TP5 的参考字段",
+                    "pos": {
+                        "x": 132.3,
+                        "y": 173.73
+                    },
+                    "uuid": "79afb2c9-e23e-47ae-ada0-34b784e3b678"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "TP5 的参考字段",
+                    "pos": {
+                        "x": 132.3,
+                        "y": 173.73
+                    },
+                    "uuid": "79afb2c9-e23e-47ae-ada0-34b784e3b678"
+                },
+                {
+                    "description": "Q105 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 133.06,
+                        "y": 173.44
+                    },
+                    "uuid": "898bd56a-9020-4dd1-8a76-4d7991e7c0ac"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "TP10 的参考字段",
+                    "pos": {
+                        "x": 164.3,
+                        "y": 173.73
+                    },
+                    "uuid": "3e7b6147-f692-426b-9b37-a2046c0449a3"
+                },
+                {
+                    "description": "Q110 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 163.54,
+                        "y": 173.44
+                    },
+                    "uuid": "b1e409d4-f976-4ced-ab44-e37773b4e3aa"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "TP10 的参考字段",
+                    "pos": {
+                        "x": 164.3,
+                        "y": 173.73
+                    },
+                    "uuid": "3e7b6147-f692-426b-9b37-a2046c0449a3"
+                },
+                {
+                    "description": "Q110 的参考字段",
+                    "pos": {
+                        "x": 164.3,
+                        "y": 172.6
+                    },
+                    "uuid": "ecdb8e86-f5c2-4a21-9b98-3585317a8bda"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "TP10 的参考字段",
+                    "pos": {
+                        "x": 164.3,
+                        "y": 173.73
+                    },
+                    "uuid": "3e7b6147-f692-426b-9b37-a2046c0449a3"
+                },
+                {
+                    "description": "Q110 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 163.54,
+                        "y": 173.49
+                    },
+                    "uuid": "ac35cc8c-9e1a-4c14-a7a0-e408d29b9f76"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "TP10 的参考字段",
+                    "pos": {
+                        "x": 164.3,
+                        "y": 173.73
+                    },
+                    "uuid": "3e7b6147-f692-426b-9b37-a2046c0449a3"
+                },
+                {
+                    "description": "Q110 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 165.06,
+                        "y": 173.44
+                    },
+                    "uuid": "9aedb813-2568-4cf3-baf2-17c5816384d5"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Q109 的参考字段",
+                    "pos": {
+                        "x": 157.9,
+                        "y": 172.6
+                    },
+                    "uuid": "74de7a11-8eba-4c98-aaac-7f30823645da"
+                },
+                {
+                    "description": "TP9 的参考字段",
+                    "pos": {
+                        "x": 157.9,
+                        "y": 173.73
+                    },
+                    "uuid": "f62fda94-6b97-4b6c-8d39-4a1386922f33"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Q109 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 157.14,
+                        "y": 173.44
+                    },
+                    "uuid": "ada96552-7d55-4655-8dad-63f9aec6fe8f"
+                },
+                {
+                    "description": "TP9 的参考字段",
+                    "pos": {
+                        "x": 157.9,
+                        "y": 173.73
+                    },
+                    "uuid": "f62fda94-6b97-4b6c-8d39-4a1386922f33"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Q109 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 158.66,
+                        "y": 173.44
+                    },
+                    "uuid": "920408e8-6ce8-48f6-9f06-86ee851341b6"
+                },
+                {
+                    "description": "TP9 的参考字段",
+                    "pos": {
+                        "x": 157.9,
+                        "y": 173.73
+                    },
+                    "uuid": "f62fda94-6b97-4b6c-8d39-4a1386922f33"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Q108 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 150.74,
+                        "y": 173.44
+                    },
+                    "uuid": "40df9089-12d1-4101-b439-97a310bbb722"
+                },
+                {
+                    "description": "TP8 的参考字段",
+                    "pos": {
+                        "x": 151.5,
+                        "y": 173.73
+                    },
+                    "uuid": "51caf50c-f7cb-4066-b574-b943810f95ea"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "TP8 的参考字段",
+                    "pos": {
+                        "x": 151.5,
+                        "y": 173.73
+                    },
+                    "uuid": "51caf50c-f7cb-4066-b574-b943810f95ea"
+                },
+                {
+                    "description": "Q108 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 152.26,
+                        "y": 173.44
+                    },
+                    "uuid": "78c2e9f7-0d74-40ed-a453-673daf01699d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "TP8 的参考字段",
+                    "pos": {
+                        "x": 151.5,
+                        "y": 173.73
+                    },
+                    "uuid": "51caf50c-f7cb-4066-b574-b943810f95ea"
+                },
+                {
+                    "description": "Q108 的参考字段",
+                    "pos": {
+                        "x": 151.5,
+                        "y": 172.6
+                    },
+                    "uuid": "8ee1e3ae-92f9-4360-b944-bba0d45229f4"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Q107 的参考字段",
+                    "pos": {
+                        "x": 145.1,
+                        "y": 172.6
+                    },
+                    "uuid": "0da08a0d-ba84-4d4e-8a6f-8367a0d72551"
+                },
+                {
+                    "description": "TP7 的参考字段",
+                    "pos": {
+                        "x": 145.1,
+                        "y": 173.73
+                    },
+                    "uuid": "ac99c347-4a32-4050-9782-9aca4c5a2497"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Q107 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 144.34,
+                        "y": 173.44
+                    },
+                    "uuid": "15a2735a-60b1-4662-a5f7-259530934939"
+                },
+                {
+                    "description": "TP7 的参考字段",
+                    "pos": {
+                        "x": 145.1,
+                        "y": 173.73
+                    },
+                    "uuid": "ac99c347-4a32-4050-9782-9aca4c5a2497"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Q107 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 145.86,
+                        "y": 173.44
+                    },
+                    "uuid": "97e3dc55-2338-4f8f-af32-53836bbb2a0e"
+                },
+                {
+                    "description": "TP7 的参考字段",
+                    "pos": {
+                        "x": 145.1,
+                        "y": 173.73
+                    },
+                    "uuid": "ac99c347-4a32-4050-9782-9aca4c5a2497"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Q106 的参考字段",
+                    "pos": {
+                        "x": 138.7,
+                        "y": 172.6
+                    },
+                    "uuid": "1d486a2a-6a39-47d7-a14c-14faa1c08713"
+                },
+                {
+                    "description": "TP6 的参考字段",
+                    "pos": {
+                        "x": 138.7,
+                        "y": 173.73
+                    },
+                    "uuid": "e10448c2-8afe-492a-948e-49154c05e837"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Q106 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 137.94,
+                        "y": 173.44
+                    },
+                    "uuid": "6f5650bd-c0ca-4ae7-9edf-ee83fb55b4bb"
+                },
+                {
+                    "description": "TP6 的参考字段",
+                    "pos": {
+                        "x": 138.7,
+                        "y": 173.73
+                    },
+                    "uuid": "e10448c2-8afe-492a-948e-49154c05e837"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Q106 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 139.46,
+                        "y": 173.44
+                    },
+                    "uuid": "5b4bba47-f592-40f5-baa5-de9199310f0e"
+                },
+                {
+                    "description": "TP6 的参考字段",
+                    "pos": {
+                        "x": 138.7,
+                        "y": 173.73
+                    },
+                    "uuid": "e10448c2-8afe-492a-948e-49154c05e837"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Q102 的参考字段",
+                    "pos": {
+                        "x": 113.1,
+                        "y": 172.6
+                    },
+                    "uuid": "23b8643e-9ade-4525-836e-3c44856cb14f"
+                },
+                {
+                    "description": "TP2 的参考字段",
+                    "pos": {
+                        "x": 113.1,
+                        "y": 173.73
+                    },
+                    "uuid": "25f29d9c-8fba-4e96-a4c7-70efc0ff53fd"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "TP2 的参考字段",
+                    "pos": {
+                        "x": 113.1,
+                        "y": 173.73
+                    },
+                    "uuid": "25f29d9c-8fba-4e96-a4c7-70efc0ff53fd"
+                },
+                {
+                    "description": "Q102 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 112.34,
+                        "y": 173.44
+                    },
+                    "uuid": "8fcea4f0-2aac-43f6-8cc7-bec697f1939e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "TP2 的参考字段",
+                    "pos": {
+                        "x": 113.1,
+                        "y": 173.73
+                    },
+                    "uuid": "25f29d9c-8fba-4e96-a4c7-70efc0ff53fd"
+                },
+                {
+                    "description": "Q102 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 113.86,
+                        "y": 173.44
+                    },
+                    "uuid": "bcdf55dc-4aaf-4631-ab8d-906a7d3f67bb"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "TP1 的参考字段",
+                    "pos": {
+                        "x": 106.7,
+                        "y": 173.73
+                    },
+                    "uuid": "87bc6481-e19e-44d3-8af2-1ddeea01f901"
+                },
+                {
+                    "description": "Q101 的参考字段",
+                    "pos": {
+                        "x": 106.7,
+                        "y": 172.6
+                    },
+                    "uuid": "baabc486-be77-4fa1-9c7b-76a4653591e1"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "TP1 的参考字段",
+                    "pos": {
+                        "x": 106.7,
+                        "y": 173.73
+                    },
+                    "uuid": "87bc6481-e19e-44d3-8af2-1ddeea01f901"
+                },
+                {
+                    "description": "Q101 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 105.94,
+                        "y": 173.44
+                    },
+                    "uuid": "c2399f84-9aab-4aae-ae99-a4b46e48f4bf"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Q101 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 107.46,
+                        "y": 173.44
+                    },
+                    "uuid": "4f11d819-2db8-4115-962d-569e59b44b05"
+                },
+                {
+                    "description": "TP1 的参考字段",
+                    "pos": {
+                        "x": 106.7,
+                        "y": 173.73
+                    },
+                    "uuid": "87bc6481-e19e-44d3-8af2-1ddeea01f901"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "R30 的参考字段",
+                    "pos": {
+                        "x": 156.5,
+                        "y": 241.33
+                    },
+                    "uuid": "040af298-9659-46ae-a46a-83c783609f18"
+                },
+                {
+                    "description": "R31 的参考字段",
+                    "pos": {
+                        "x": 158.5,
+                        "y": 241.33
+                    },
+                    "uuid": "d1df4cf9-0800-43dd-a1fd-908cb2262c46"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "R30 的参考字段",
+                    "pos": {
+                        "x": 156.5,
+                        "y": 241.33
+                    },
+                    "uuid": "040af298-9659-46ae-a46a-83c783609f18"
+                },
+                {
+                    "description": "R29 的参考字段",
+                    "pos": {
+                        "x": 154.5,
+                        "y": 241.33
+                    },
+                    "uuid": "0e602076-5c17-4d28-8f73-4abe4572f73a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "R29 的参考字段",
+                    "pos": {
+                        "x": 154.5,
+                        "y": 241.33
+                    },
+                    "uuid": "0e602076-5c17-4d28-8f73-4abe4572f73a"
+                },
+                {
+                    "description": "R28 的参考字段",
+                    "pos": {
+                        "x": 152.5,
+                        "y": 241.33
+                    },
+                    "uuid": "de9f996c-c905-4ef7-9b26-c8cf289b7f04"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "R28 的参考字段",
+                    "pos": {
+                        "x": 152.5,
+                        "y": 241.33
+                    },
+                    "uuid": "de9f996c-c905-4ef7-9b26-c8cf289b7f04"
+                },
+                {
+                    "description": "R27 的参考字段",
+                    "pos": {
+                        "x": 150.5,
+                        "y": 241.33
+                    },
+                    "uuid": "f38a9927-3d70-403e-9782-36b63fe04587"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Q210 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 165.06,
+                        "y": 240.56
+                    },
+                    "uuid": "27852e75-4e7c-48e9-bcd6-f787172cd8e3"
+                },
+                {
+                    "description": "MH4 的参考字段",
+                    "pos": {
+                        "x": 163.0,
+                        "y": 240.85
+                    },
+                    "uuid": "b4c92551-39b0-404f-9e73-ec68305e6755"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "R22 的参考字段",
+                    "pos": {
+                        "x": 112.5,
+                        "y": 241.33
+                    },
+                    "uuid": "23257d4a-f8ae-417a-a059-994bfff8906b"
+                },
+                {
+                    "description": "R23 的参考字段",
+                    "pos": {
+                        "x": 114.5,
+                        "y": 241.33
+                    },
+                    "uuid": "da9673eb-f8f6-45bd-ba5c-bc030fee2388"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "R24 的参考字段",
+                    "pos": {
+                        "x": 116.5,
+                        "y": 241.33
+                    },
+                    "uuid": "5d48b064-df22-4e5c-932c-84a223d6f4b0"
+                },
+                {
+                    "description": "R23 的参考字段",
+                    "pos": {
+                        "x": 114.5,
+                        "y": 241.33
+                    },
+                    "uuid": "da9673eb-f8f6-45bd-ba5c-bc030fee2388"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "R25 的参考字段",
+                    "pos": {
+                        "x": 118.5,
+                        "y": 241.33
+                    },
+                    "uuid": "218d5e08-059b-42bd-9748-edc9a67f7e5d"
+                },
+                {
+                    "description": "R24 的参考字段",
+                    "pos": {
+                        "x": 116.5,
+                        "y": 241.33
+                    },
+                    "uuid": "5d48b064-df22-4e5c-932c-84a223d6f4b0"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "R26 的参考字段",
+                    "pos": {
+                        "x": 120.5,
+                        "y": 241.33
+                    },
+                    "uuid": "1016191c-9f8f-45e4-881e-79414399e8ff"
+                },
+                {
+                    "description": "R25 的参考字段",
+                    "pos": {
+                        "x": 118.5,
+                        "y": 241.33
+                    },
+                    "uuid": "218d5e08-059b-42bd-9748-edc9a67f7e5d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "MH2 的参考字段",
+                    "pos": {
+                        "x": 108.0,
+                        "y": 240.85
+                    },
+                    "uuid": "bfd5625e-e9b2-4f9f-a425-144e12e107ad"
+                },
+                {
+                    "description": "Q201 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 107.46,
+                        "y": 240.56
+                    },
+                    "uuid": "d8e26d37-316b-42bc-9026-12ac9cb49dc9"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "MH2 的参考字段",
+                    "pos": {
+                        "x": 108.0,
+                        "y": 240.85
+                    },
+                    "uuid": "bfd5625e-e9b2-4f9f-a425-144e12e107ad"
+                },
+                {
+                    "description": "Q201 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 107.46,
+                        "y": 239.56
+                    },
+                    "uuid": "bfe78973-509f-4027-874f-311ab0b2157d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "TP3 的参考字段",
+                    "pos": {
+                        "x": 119.5,
+                        "y": 173.73
+                    },
+                    "uuid": "d595c5fa-cfec-4ca6-b7e6-3ffbe47bb36a"
+                },
+                {
+                    "description": "F.Cu 上 Q103 的焊盘 1 [ROW10]",
+                    "pos": {
+                        "x": 118.5625,
+                        "y": 174.05
+                    },
+                    "uuid": "5087bf38-00e0-485c-abaa-0ee84e8b43a2"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "TP4 的参考字段",
+                    "pos": {
+                        "x": 125.9,
+                        "y": 173.73
+                    },
+                    "uuid": "f53ecf5c-ec68-49ad-abd2-2abbe55a7b31"
+                },
+                {
+                    "description": "F.Cu 上 Q104 的焊盘 1 [ROW10]",
+                    "pos": {
+                        "x": 124.9625,
+                        "y": 174.05
+                    },
+                    "uuid": "2c87b87c-746c-46ac-a9c3-f591fe236deb"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "TP5 的参考字段",
+                    "pos": {
+                        "x": 132.3,
+                        "y": 173.73
+                    },
+                    "uuid": "79afb2c9-e23e-47ae-ada0-34b784e3b678"
+                },
+                {
+                    "description": "F.Cu 上 Q105 的焊盘 1 [ROW10]",
+                    "pos": {
+                        "x": 131.3625,
+                        "y": 174.05
+                    },
+                    "uuid": "3b6b04d9-8112-4d3b-a7a3-ff212e307716"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "TP10 的参考字段",
+                    "pos": {
+                        "x": 164.3,
+                        "y": 173.73
+                    },
+                    "uuid": "3e7b6147-f692-426b-9b37-a2046c0449a3"
+                },
+                {
+                    "description": "F.Cu 上 Q110 的焊盘 1 [ROW10]",
+                    "pos": {
+                        "x": 163.3625,
+                        "y": 174.05
+                    },
+                    "uuid": "6dcb8690-4c87-4c2f-bdf1-c1e54a759b7f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "TP7 的参考字段",
+                    "pos": {
+                        "x": 145.1,
+                        "y": 173.73
+                    },
+                    "uuid": "ac99c347-4a32-4050-9782-9aca4c5a2497"
+                },
+                {
+                    "description": "F.Cu 上 Q107 的焊盘 1 [ROW10]",
+                    "pos": {
+                        "x": 144.1625,
+                        "y": 174.05
+                    },
+                    "uuid": "195f911e-b1fe-4cf5-ac43-382389ef8db3"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "TP6 的参考字段",
+                    "pos": {
+                        "x": 138.7,
+                        "y": 173.73
+                    },
+                    "uuid": "e10448c2-8afe-492a-948e-49154c05e837"
+                },
+                {
+                    "description": "F.Cu 上 Q106 的焊盘 1 [ROW10]",
+                    "pos": {
+                        "x": 137.7625,
+                        "y": 174.05
+                    },
+                    "uuid": "4ef5849f-1d03-4478-9615-6f21c122f6f3"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "TP8 的参考字段",
+                    "pos": {
+                        "x": 151.5,
+                        "y": 173.73
+                    },
+                    "uuid": "51caf50c-f7cb-4066-b574-b943810f95ea"
+                },
+                {
+                    "description": "F.Cu 上 Q108 的焊盘 1 [ROW10]",
+                    "pos": {
+                        "x": 150.5625,
+                        "y": 174.05
+                    },
+                    "uuid": "3b6e6f30-fa61-440c-9722-afb26aa719b3"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "TP2 的参考字段",
+                    "pos": {
+                        "x": 113.1,
+                        "y": 173.73
+                    },
+                    "uuid": "25f29d9c-8fba-4e96-a4c7-70efc0ff53fd"
+                },
+                {
+                    "description": "F.Cu 上 Q102 的焊盘 1 [ROW10]",
+                    "pos": {
+                        "x": 112.1625,
+                        "y": 174.05
+                    },
+                    "uuid": "eda981e4-b88b-458d-9c7f-3d75c18f99dd"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "TP1 的参考字段",
+                    "pos": {
+                        "x": 106.7,
+                        "y": 173.73
+                    },
+                    "uuid": "87bc6481-e19e-44d3-8af2-1ddeea01f901"
+                },
+                {
+                    "description": "F.Cu 上 Q101 的焊盘 1 [ROW10]",
+                    "pos": {
+                        "x": 105.7625,
+                        "y": 174.05
+                    },
+                    "uuid": "9d3da785-4613-4047-9612-a34e9a725660"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "MH4 的参考字段",
+                    "pos": {
+                        "x": 163.0,
+                        "y": 240.85
+                    },
+                    "uuid": "b4c92551-39b0-404f-9e73-ec68305e6755"
+                },
+                {
+                    "description": "F.Cu 上 Q210 的焊盘 2 [COL9]",
+                    "pos": {
+                        "x": 163.3625,
+                        "y": 239.95
+                    },
+                    "uuid": "578ac00f-5801-459e-9a88-3c94f52fc178"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "TP9 的参考字段",
+                    "pos": {
+                        "x": 157.9,
+                        "y": 173.73
+                    },
+                    "uuid": "f62fda94-6b97-4b6c-8d39-4a1386922f33"
+                },
+                {
+                    "description": "F.Cu 上 Q109 的焊盘 1 [ROW10]",
+                    "pos": {
+                        "x": 156.9625,
+                        "y": 174.05
+                    },
+                    "uuid": "7b4d581c-c4d3-4122-a03c-b2bd4f89eb36"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}
