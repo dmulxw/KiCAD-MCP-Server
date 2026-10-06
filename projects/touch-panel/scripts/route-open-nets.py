@@ -51,7 +51,10 @@ def item_shape(item):
                 bb.GetRight() / S, bb.GetBottom() / S, 0.0, True)
     if isinstance(item, pcbnew.PCB_VIA):
         p = item.GetPosition()
-        r = item.GetWidth() / S / 2
+        # NOT item.GetWidth(): on a PCB_VIA that overload asserts
+        # (pcb_track.cpp:387) and returns a bogus radius.  Under a console the
+        # assert raises a modal dialog and the whole run blocks forever.
+        r = item.GetFrontWidth() / S / 2
         return (p.x / S - r, p.y / S - r, p.x / S + r, p.y / S + r, 0.0, True)
     if isinstance(item, pcbnew.PCB_TRACK):
         s, e = item.GetStart(), item.GetEnd()
@@ -106,7 +109,8 @@ def netname(item):
 class Grid:
     """Distance-to-other-net-copper for one net, on both copper layers."""
 
-    def __init__(self, board, step, keep, edge_keep, pad_keep, via_edge_keep):
+    def __init__(self, board, step, keep, edge_keep, pad_keep, via_edge_keep,
+                 align=None):
         self.step = step
         self.keep = keep
         self.edge_keep = edge_keep
@@ -121,6 +125,15 @@ class Grid:
         pad = 0.5
         self.x0 = bb.GetLeft() / S - pad
         self.y0 = bb.GetTop() / S - pad
+        if align is not None:
+            # Snap the origin so the pad we start from sits exactly on a grid
+            # point.  A 0.5mm-pitch FFC field leaves a track only 0.25mm of
+            # clearance either side of the pad centre line, but a 0.2mm step
+            # lands 0.05mm off that line and reads as blocked -- the escape
+            # exists, the grid just could not express it.
+            ax, ay = align
+            self.x0 = ax - round((ax - self.x0) / step) * step
+            self.y0 = ay - round((ay - self.y0) / step) * step
         self.x1 = bb.GetRight() / S + pad
         self.y1 = bb.GetBottom() / S + pad
         self.nx = int((self.x1 - self.x0) / step) + 1
@@ -481,7 +494,9 @@ def main():
         for fp in board.GetFootprints():
             others.extend(p for p in fp.Pads() if p.GetNetname() != name)
 
-        grid = Grid(board, a.step, keep, edge_keep, pad_keep, via_edge_keep)
+        pp0 = pad.GetPosition()
+        grid = Grid(board, a.step, keep, edge_keep, pad_keep, via_edge_keep,
+                    align=(pp0.x / S, pp0.y / S))
         grid.build(layers, others)
 
         # Start: cells overlapping the open pad.

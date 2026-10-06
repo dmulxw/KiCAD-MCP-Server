@@ -1,0 +1,37 @@
+grid 1512 x 922 per layer, 2.8M cells
+  layer 0: 16604 runs
+  layer 2: 27823 runs
+  26880 row unions, 6996 via unions
+components: 727
+largest components (cells, mm^2 at 0.01mm^2/cell):
+   #228      576277 cells    5762.8 mm2
+   #363      187228 cells    1872.3 mm2
+   #448      109591 cells    1095.9 mm2
+   #125       62898 cells     629.0 mm2
+   #180       32779 cells     327.8 mm2
+   #274       31988 cells     319.9 mm2
+   #204       31417 cells     314.2 mm2
+   #238       29952 cells     299.5 mm2
+
+output pad offsets (mm):
+   15(+2.48,-3.17)  1(-2.48,-4.45)  2(-2.48,-3.17)  3(-2.48,-1.91)  4(-2.48,-0.64)  5(-2.48,+0.64)  6(-2.48,+1.91)  7(-2.48,+3.17)
+
+validation -- the four seeded sites must each land in ONE component,
+and A and B, 31mm apart in the same strip and 0.20mm apart per the
+calibration, must land in the SAME one:
+   chip A at (96.5, 238.2)  ->  components [228]   OK
+        component sizes [576277]   (the wavefront found 122288 cells for A)
+   chip B at (97.0, 207.2)  ->  components [228]   OK
+        component sizes [576277]   (the wavefront found 122338 cells for B)
+   chip C at (170.5, 171.2)  ->  components [228, 274]   SPLIT!
+        component sizes [31988, 576277]   (the wavefront found 58967 cells for C)
+   chip D at (172.5, 134.2)  ->  components [228]   OK
+        component sizes [576277]   (the wavefront found 22371 cells for D)
+   A and B same component: YES
+   C and D same component: NO
+
+cross-check on this grid, seed = chip A's output pads:
+   wavefront 331365 cells   labelling 331365 cells   both 331365
+   flood-only 0   label-only 0   -> AGREE
+
+(no all_sites in _tp_place.json -- skipping the four-site search)

@@ -1,0 +1,1 @@
+C:\Program Files\KiCad\10.0\bin\python.exe: can't open file 'D:\\source\\repos\\KiCAD-MCP-Server\\_tp_rip.py': [Errno 2] No such file or directory

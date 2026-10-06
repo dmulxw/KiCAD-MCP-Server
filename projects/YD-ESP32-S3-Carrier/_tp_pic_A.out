@@ -1,0 +1,81 @@
+chip A at (96.5, 238.2)   targets ROW20 ROW19 CSEL0 CSEL1 CSEL2 CSEL8 CSEL7 CSEL9
+legend: '#' flooded free space   a-h = this chip's nets   'o' = any other net's copper   ' ' = blocked (clearance or edge)
+each cell = 2mm; board x 89..182, y 99..251
+
+      89999900000111112222233333444445555566666777778
+   99 ################ooooooooooooooooooooo          
+  101 #######oooooooooooooooooooooooo     oo         
+  103 ######ooooooooooooooooooooo ooooooooooo        
+  105 ####oooooooooooooooooooooooooooooooooooo       
+  107 ####ooooooooooooooooooooooooooooooooooooo      
+  109 ###oooooooooooooooooooooooooooooooooooooo      
+  111 ##ooooooooooooooooooooooooooooooooooooooo      
+  113 ##ooooooooooooooooooooooooooooooooooooooo      
+  115 ##oo#oooooooooooooooooooooooooooooooooooo      
+  117 ##oo#oooooooooooooooooooooooooooooooooooo      
+  119 ##ooooooooooooooooooooooooooooooooooooooo      
+  121 ##oooooooooooooooooooooooooooooooooooooooo     
+  123 ##ooooooooooooooooooooooooooooooooooooooooo    
+  125 ##ooooooooooooooooooooooooooooooooooooooo oo   
+  127 ##ooooooooooooooooooooooooooooooooooooooo ooo  
+  129 ##ooooooooooooooooooooooooooooooooooooooo ooo  
+  131 ##oo#oooooooooooooooooooooooooooooooooooo ooo  
+  133 ##oo#oooooooooooooooooooooooooooooooooooo ooo  
+  135 ##oo#oooooooooooooooooooooooooooooooooooo ooo  
+  137 ##oo#oooooooooooooooooooooooooooooooooooo ooo  
+  139 ##oo#oooooooooooooooooooooooooooooooooooo ooo  
+  141 ##oo#oooooooooooooooooooooooooooooooooooo ooo  
+  143 ##ooooooooooooooooooooooooooooooooooooooo ooo  
+  145 ##ooooooooooooooooooooooooooooooooooooooo ooo  
+  147 ##ooooooooooooooooooooooooooooooooooooooooooo  
+  149 ##oo#oooooooooooooooooooooooooooooooooooooooo  
+  151 ##oo#oooooooooooooooooooooooooooooooooooo ooo  
+  153 ##oo#oooooooooooooooooooooooooooooooooooo ooo  
+  155 ##oo#oooooooooooooooooooooooooooooooooooo ooo  
+  157 ##oo#oooooooooooooooooooooooooooooooooooo ooo  
+  159 ##ooooooooooooooooooooooooooooooooooooooo ooo  
+  161 ##ooooooooooooooooooooooooooooooooooooooo ooo  
+  163 ##ooooooooooooooooooooooooooooooooooooooo ooo  
+  165 ##o##oooooooooooooooooooooooooooooooooooooooo  
+  167 ##o##oooooooooooooooooooooooooooooooooooooooo  
+  169 ##o##oooooooooooooooooooooooooooooooooooooooo  
+  171 ##o##oooooooooooooooooooooooooooooooooooooooo  
+  173 ##o##oooooooooooooooooooooooooooooooooooooooo  
+  175 ##o##oooooooooooooooooooooooooooooooooooooooo  
+  177 ##o##oooooooooooooooooooooooooooooooooooo ooo  
+  179 ##o##oooooooooooooooooooooooooooooooooooo ooo  
+  181 ##o##oooooooooooooooooooooooooooooooooooo ooo  
+  183 ##o##oooooooooooooooooooooooooooooooooooo ooo  
+  185 ##o##oooooooooooooooooooooooooooooooooooo ooo  
+  187 ##o##oooooooooooooooooooooooooooooooooooo ooo  
+  189 ##o##oooooooooooooooooooooooooooooooooooo ooo  
+  191 ##o##oooooooooooooooooooooooooooooooooooo ooo  
+  193 ##o##oooooooooooooooooooooooooooooooooooo ooo  
+  195 ##oo#oooooooooooooooooooooooooooooooooooo ooo  
+  197 ###oooooooooooooooooooooooooooooooooooooo ooo  
+  199 ####ooooooooooooooooooooooooooooooooooooo ooo  
+  201 ##ooooooooooooooooooooooooooooooooooooooo ooo  
+  203 ##ooooooooooooooooooooooooooooooooooooooo ooo  
+  205 ##ooooooooooooooooooooooooooooooooooooooo ooo  
+  207 ##ooooooooooooooooooooooooooooooooooooooo ooo  
+  209 ##ooooooooooooooooooooooooooooooooooooooo ooo  
+  211 ##ooooooooooooooooooooooooooooooooooooooo ooo  
+  213 #####oooooooooooooooooooooooooooooooooooo ooo  
+  215 #####oooooooooooooooooooooooooooooooooooo ooo  
+  217 #####oooooooooooooooooooooooooooooooooooo ooo  
+  219 #####oooooooooooooooooooooooooooooooooooo ooo  
+  221 #####oooooooooooooooooooooooooooooooooooo ooo  
+  223 #####oooooooooooooooooooooooooooooooooooo ooo  
+  225 #####oooooooooooooooooooooooooooooooooooo ooo  
+  227 #####bboooooooooooooooooooooooooooooooooo ooo  
+  229 #####bbbboobooboobbobbbbboobooboobbobbooo ooo  
+  231 #####oobbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbooo  oo  
+  233 #####oooooooooooooooooboooooooooooooooooo  oo  
+  235 #####aaoooooooooooooaacaooooooooooooooooo ooo  
+  237 #####oaaaaaaaaaaaaaaaabaaaaaaaaaaaaaaaoooooo   
+  239 #####ooooooooooooooooobaaaoooooogfooooooooo    
+  241 #####oooooocdeooooooddfgfhggggggghhooooooo     
+  243 ######ooooocdeeeeeeeeggefhhhhhhhhhhoooooo      
+  245 #######oooccddeeeeeeeeeeoohhhhhhhhhooooo       
+  247 ########ooccccccccoccoooooooooooooooooo        
+  249               o oooooooooooooooooooooo         

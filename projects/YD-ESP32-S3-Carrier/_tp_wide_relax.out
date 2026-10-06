@@ -1,0 +1,59 @@
+board: _tp_wide.kicad_pcb   sites: _tp_places_wide.json (9927)
+components a site can stand in: #228 (9927 sites, 1765077 cells), #274 (2 sites, 31988 cells)
+site-reachable free space: 953187 cells (union of layers), 9531.9 mm2
+
+gap from each net's own copper to reachable free space:
+  net      gap mm   where (mm)
+  CSEL3      0.00   (96.7, 149.8)
+  CSEL4      0.00   (127.2, 102.5)
+  CSEL5      0.00   (133.6, 102.5)
+  CSEL6      0.00   (176.8, 128.7)
+  ROW0       0.00   (93.8, 114.3)
+  ROW1       0.00   (96.7, 132.8)
+  ROW10      0.00   (176.8, 208.2)
+  ROW2       0.00   (102.2, 161.4)
+  ROW3       0.00   (101.6, 127.0)
+  ROW4       0.00   (101.6, 133.4)
+  ROW5       0.00   (96.5, 162.8)
+  ROW6       0.00   (169.9, 113.5)
+  ROW7       0.00   (148.4, 101.7)
+  ROW8       0.00   (102.8, 162.0)
+  ROW9       0.00   (138.8, 114.0)
+  ROW12      0.42   (107.6, 246.8)
+  ROW11      0.90   (168.9, 180.9)
+  ROW13      0.95   (164.0, 247.4)
+  ROW14      0.95   (166.5, 244.9)
+  ROW15      1.00   (101.6, 203.8)
+  ROW16      1.20   (101.6, 210.2)
+  ROW17      1.40   (101.6, 216.6)
+  ROW18      1.40   (101.6, 223.0)
+  ROW19      1.40   (101.6, 229.4)
+  ROW20      1.40   (101.6, 235.8)
+  CSEL0      1.81   (111.6, 247.8)
+  CSEL1      5.99   (115.5, 246.8)
+  CSEL9      6.99   (157.6, 246.8)
+  CSEL2      8.63   (116.7, 243.2)
+  CSEL8      9.57   (156.1, 244.2)
+  CSEL7     12.32   (154.1, 242.4)
+
+net copper within one grid step (<= 0.15 mm) of reachable free space:
+   15/31: CSEL3 CSEL4 CSEL5 CSEL6 ROW0 ROW1 ROW10 ROW2 ROW3 ROW4 ROW5 ROW6 ROW7 ROW8 ROW9
+
+what blocks each unreached net (copper within gap + 0.3mm of the
+closest approach point, by owning net):
+  ROW12  gap  0.42 at (107.6, 246.8)   GND x142, ROW12 x100, CSEL4 x81,  x37, ROW1 x15
+  ROW11  gap  0.90 at (168.9, 180.9)   CSEL3 x175, ROW11 x144, ROW10 x141, ROW7 x136, ROW9 x136
+  ROW13  gap  0.95 at (164.0, 247.4)   CSEL3 x207, ROW18 x192, ROW14 x151, ROW13 x134, ROW9 x119
+  ROW14  gap  0.95 at (166.5, 244.9)   CSEL3 x195, ROW9 x183, ROW14 x170, ROW13 x143, ROW11 x132
+  ROW15  gap  1.00 at (101.6, 203.8)   GND x355, ROW15 x167, ROW1 x162, ROW12 x162, ROW2 x162
+  ROW16  gap  1.20 at (101.6, 210.2)   GND x444, ROW1 x248, ROW12 x248, ROW16 x189, ROW2 x186
+  ROW17  gap  1.40 at (101.6, 216.6)   ROW1 x466, GND x422, ROW16 x310, ROW17 x219, CSEL4 x210
+  ROW18  gap  1.40 at (101.6, 223.0)   GND x454, ROW1 x447, ROW18 x215, CSEL4 x210, ROW12 x210
+  ROW19  gap  1.40 at (101.6, 229.4)   GND x445, ROW1 x434, ROW19 x219, CSEL4 x210, ROW12 x210
+  ROW20  gap  1.40 at (101.6, 235.8)   ROW1 x443, GND x413, CSEL4 x210, ROW12 x210, ROW20 x209
+  CSEL0  gap  1.81 at (111.6, 247.8)   GND x740, CSEL4 x738, CSEL0 x586, COL0 x310, ROW12 x252
+  CSEL1  gap  5.99 at (115.5, 246.8)   GND x4166, CSEL4 x3030, CSEL0 x1482, COL1 x1151, CSEL1 x1107
+  CSEL9  gap  6.99 at (157.6, 246.8)   GND x2532, CSEL3 x2479, ROW10 x2079,  x2027, ROW18 x1583
+  CSEL2  gap  8.63 at (116.7, 243.2)   GND x5106, CSEL4 x4310, PAD202 x3344, PAD203 x3344, COL1 x2138
+  CSEL8  gap  9.57 at (156.1, 244.2)   CSEL3 x3842, PAD208 x3326, PAD209 x3318, ROW10 x2894, GND x2857
+  CSEL7  gap 12.32 at (154.1, 242.4)   CSEL3 x4291, GND x4001, ROW10 x3720, PAD198 x3416, PAD199 x3416

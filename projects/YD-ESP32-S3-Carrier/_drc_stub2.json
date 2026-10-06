@@ -1,0 +1,1610 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-02T02:01:12",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "YD-ESP32-S3-Carrier.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J10 的PTH 焊盘 1 [GND]",
+                    "pos": {
+                        "x": 2.0,
+                        "y": 71.8
+                    },
+                    "uuid": "7eddbbeb-df4e-4bff-baca-9049d92d3e56"
+                },
+                {
+                    "description": "J10 的PTH 焊盘 2 [GND]",
+                    "pos": {
+                        "x": 4.54,
+                        "y": 71.8
+                    },
+                    "uuid": "047b172e-1091-44e5-a722-5a62d1e9bb18"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J10 的PTH 焊盘 2 [GND]",
+                    "pos": {
+                        "x": 4.54,
+                        "y": 71.8
+                    },
+                    "uuid": "047b172e-1091-44e5-a722-5a62d1e9bb18"
+                },
+                {
+                    "description": "J10 的PTH 焊盘 3 [GND]",
+                    "pos": {
+                        "x": 7.08,
+                        "y": 71.8
+                    },
+                    "uuid": "e1f19b6d-bb4b-495c-8b78-a27ad68ddcc3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J10 的PTH 焊盘 3 [GND]",
+                    "pos": {
+                        "x": 7.08,
+                        "y": 71.8
+                    },
+                    "uuid": "e1f19b6d-bb4b-495c-8b78-a27ad68ddcc3"
+                },
+                {
+                    "description": "J10 的PTH 焊盘 4 [GND]",
+                    "pos": {
+                        "x": 9.62,
+                        "y": 71.8
+                    },
+                    "uuid": "e01bdfa1-07b7-463c-a686-98ec2b55608b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J10 的PTH 焊盘 4 [GND]",
+                    "pos": {
+                        "x": 9.62,
+                        "y": 71.8
+                    },
+                    "uuid": "e01bdfa1-07b7-463c-a686-98ec2b55608b"
+                },
+                {
+                    "description": "J10 的PTH 焊盘 5 [GND]",
+                    "pos": {
+                        "x": 12.16,
+                        "y": 71.8
+                    },
+                    "uuid": "b90b64d8-1f6e-4c25-8948-fe7cd4c7a54f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J1 的PTH 焊盘 22 [GND]",
+                    "pos": {
+                        "x": 11.0,
+                        "y": 61.34
+                    },
+                    "uuid": "23a0c12f-d8a3-453d-8426-a38918184ec5"
+                },
+                {
+                    "description": "J8 的PTH 焊盘 5 [GND]",
+                    "pos": {
+                        "x": 12.16,
+                        "y": 68.1
+                    },
+                    "uuid": "0b9c88e1-670c-4ee3-8ad2-f2eac4a58ce3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J10 的PTH 焊盘 5 [GND]",
+                    "pos": {
+                        "x": 12.16,
+                        "y": 71.8
+                    },
+                    "uuid": "b90b64d8-1f6e-4c25-8948-fe7cd4c7a54f"
+                },
+                {
+                    "description": "J10 的PTH 焊盘 6 [GND]",
+                    "pos": {
+                        "x": 14.7,
+                        "y": 71.8
+                    },
+                    "uuid": "e54f87d0-0237-445d-a9f3-82f121fe839b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J8 的PTH 焊盘 6 [GND]",
+                    "pos": {
+                        "x": 14.7,
+                        "y": 68.1
+                    },
+                    "uuid": "a8688039-feb0-49f8-8fef-951e9ccccafa"
+                },
+                {
+                    "description": "J8 的PTH 焊盘 5 [GND]",
+                    "pos": {
+                        "x": 12.16,
+                        "y": 68.1
+                    },
+                    "uuid": "0b9c88e1-670c-4ee3-8ad2-f2eac4a58ce3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J10 的PTH 焊盘 6 [GND]",
+                    "pos": {
+                        "x": 14.7,
+                        "y": 71.8
+                    },
+                    "uuid": "e54f87d0-0237-445d-a9f3-82f121fe839b"
+                },
+                {
+                    "description": "J10 的PTH 焊盘 7 [GND]",
+                    "pos": {
+                        "x": 17.24,
+                        "y": 71.8
+                    },
+                    "uuid": "aec98a84-cc6f-4b40-8b11-dbc1db2a93a9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J8 的PTH 焊盘 7 [GND]",
+                    "pos": {
+                        "x": 17.24,
+                        "y": 68.1
+                    },
+                    "uuid": "309b595f-c062-440b-92d9-38489e746dae"
+                },
+                {
+                    "description": "J8 的PTH 焊盘 6 [GND]",
+                    "pos": {
+                        "x": 14.7,
+                        "y": 68.1
+                    },
+                    "uuid": "a8688039-feb0-49f8-8fef-951e9ccccafa"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J10 的PTH 焊盘 7 [GND]",
+                    "pos": {
+                        "x": 17.24,
+                        "y": 71.8
+                    },
+                    "uuid": "aec98a84-cc6f-4b40-8b11-dbc1db2a93a9"
+                },
+                {
+                    "description": "J10 的PTH 焊盘 8 [GND]",
+                    "pos": {
+                        "x": 19.78,
+                        "y": 71.8
+                    },
+                    "uuid": "97256820-771d-4ab6-a3b8-15bb5b1641ef"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J8 的PTH 焊盘 8 [GND]",
+                    "pos": {
+                        "x": 19.78,
+                        "y": 68.1
+                    },
+                    "uuid": "1b9a17f3-4c4f-4544-9a01-bf92fea66ca7"
+                },
+                {
+                    "description": "J8 的PTH 焊盘 7 [GND]",
+                    "pos": {
+                        "x": 17.24,
+                        "y": 68.1
+                    },
+                    "uuid": "309b595f-c062-440b-92d9-38489e746dae"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J10 的PTH 焊盘 8 [GND]",
+                    "pos": {
+                        "x": 19.78,
+                        "y": 71.8
+                    },
+                    "uuid": "97256820-771d-4ab6-a3b8-15bb5b1641ef"
+                },
+                {
+                    "description": "J10 的PTH 焊盘 9 [GND]",
+                    "pos": {
+                        "x": 22.32,
+                        "y": 71.8
+                    },
+                    "uuid": "6aee37c0-c62a-4e92-a5af-d4e30a126050"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J8 的PTH 焊盘 9 [GND]",
+                    "pos": {
+                        "x": 22.32,
+                        "y": 68.1
+                    },
+                    "uuid": "39979b7d-d285-47a1-a5b3-e74374142b27"
+                },
+                {
+                    "description": "J8 的PTH 焊盘 8 [GND]",
+                    "pos": {
+                        "x": 19.78,
+                        "y": 68.1
+                    },
+                    "uuid": "1b9a17f3-4c4f-4544-9a01-bf92fea66ca7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J10 的PTH 焊盘 9 [GND]",
+                    "pos": {
+                        "x": 22.32,
+                        "y": 71.8
+                    },
+                    "uuid": "6aee37c0-c62a-4e92-a5af-d4e30a126050"
+                },
+                {
+                    "description": "J10 的PTH 焊盘 10 [GND]",
+                    "pos": {
+                        "x": 24.86,
+                        "y": 71.8
+                    },
+                    "uuid": "b15c1cad-c770-4ba2-93c7-042a15983942"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J8 的PTH 焊盘 10 [GND]",
+                    "pos": {
+                        "x": 24.86,
+                        "y": 68.1
+                    },
+                    "uuid": "e83ed601-540f-4abc-b248-1bcff0790c31"
+                },
+                {
+                    "description": "J8 的PTH 焊盘 9 [GND]",
+                    "pos": {
+                        "x": 22.32,
+                        "y": 68.1
+                    },
+                    "uuid": "39979b7d-d285-47a1-a5b3-e74374142b27"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J10 的PTH 焊盘 10 [GND]",
+                    "pos": {
+                        "x": 24.86,
+                        "y": 71.8
+                    },
+                    "uuid": "b15c1cad-c770-4ba2-93c7-042a15983942"
+                },
+                {
+                    "description": "J10 的PTH 焊盘 11 [GND]",
+                    "pos": {
+                        "x": 27.4,
+                        "y": 71.8
+                    },
+                    "uuid": "bebdb5c2-3203-4e5d-be46-5b002b85b73c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J8 的PTH 焊盘 11 [GND]",
+                    "pos": {
+                        "x": 27.4,
+                        "y": 68.1
+                    },
+                    "uuid": "84747663-c297-4a27-bd2f-e9d1fdfd2b60"
+                },
+                {
+                    "description": "J8 的PTH 焊盘 10 [GND]",
+                    "pos": {
+                        "x": 24.86,
+                        "y": 68.1
+                    },
+                    "uuid": "e83ed601-540f-4abc-b248-1bcff0790c31"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J8 的PTH 焊盘 11 [GND]",
+                    "pos": {
+                        "x": 27.4,
+                        "y": 68.1
+                    },
+                    "uuid": "84747663-c297-4a27-bd2f-e9d1fdfd2b60"
+                },
+                {
+                    "description": "J8 的PTH 焊盘 12 [GND]",
+                    "pos": {
+                        "x": 29.94,
+                        "y": 68.1
+                    },
+                    "uuid": "9cc0f03b-f375-4df3-ae5c-98e528344f5c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J10 的PTH 焊盘 11 [GND]",
+                    "pos": {
+                        "x": 27.4,
+                        "y": 71.8
+                    },
+                    "uuid": "bebdb5c2-3203-4e5d-be46-5b002b85b73c"
+                },
+                {
+                    "description": "J10 的PTH 焊盘 12 [GND]",
+                    "pos": {
+                        "x": 29.94,
+                        "y": 71.8
+                    },
+                    "uuid": "a82ed38d-c978-4b61-8f7c-dbe6730ef234"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J8 的PTH 焊盘 12 [GND]",
+                    "pos": {
+                        "x": 29.94,
+                        "y": 68.1
+                    },
+                    "uuid": "9cc0f03b-f375-4df3-ae5c-98e528344f5c"
+                },
+                {
+                    "description": "J8 的PTH 焊盘 13 [GND]",
+                    "pos": {
+                        "x": 32.48,
+                        "y": 68.1
+                    },
+                    "uuid": "378a9231-6e75-4671-a8fe-dac503dd4931"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J10 的PTH 焊盘 12 [GND]",
+                    "pos": {
+                        "x": 29.94,
+                        "y": 71.8
+                    },
+                    "uuid": "a82ed38d-c978-4b61-8f7c-dbe6730ef234"
+                },
+                {
+                    "description": "J10 的PTH 焊盘 13 [GND]",
+                    "pos": {
+                        "x": 32.48,
+                        "y": 71.8
+                    },
+                    "uuid": "f8c768db-23b9-4cca-b6f5-09634324cf40"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J8 的PTH 焊盘 13 [GND]",
+                    "pos": {
+                        "x": 32.48,
+                        "y": 68.1
+                    },
+                    "uuid": "378a9231-6e75-4671-a8fe-dac503dd4931"
+                },
+                {
+                    "description": "J8 的PTH 焊盘 14 [GND]",
+                    "pos": {
+                        "x": 35.02,
+                        "y": 68.1
+                    },
+                    "uuid": "240236c0-fcd5-4703-a82e-78a48af3efcd"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J8 的PTH 焊盘 13 [GND]",
+                    "pos": {
+                        "x": 32.48,
+                        "y": 68.1
+                    },
+                    "uuid": "378a9231-6e75-4671-a8fe-dac503dd4931"
+                },
+                {
+                    "description": "J10 的PTH 焊盘 13 [GND]",
+                    "pos": {
+                        "x": 32.48,
+                        "y": 71.8
+                    },
+                    "uuid": "f8c768db-23b9-4cca-b6f5-09634324cf40"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J10 的PTH 焊盘 13 [GND]",
+                    "pos": {
+                        "x": 32.48,
+                        "y": 71.8
+                    },
+                    "uuid": "f8c768db-23b9-4cca-b6f5-09634324cf40"
+                },
+                {
+                    "description": "J10 的PTH 焊盘 14 [GND]",
+                    "pos": {
+                        "x": 35.02,
+                        "y": 71.8
+                    },
+                    "uuid": "e129dc2e-43e8-44d6-822e-18ba5feea37e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J8 的PTH 焊盘 14 [GND]",
+                    "pos": {
+                        "x": 35.02,
+                        "y": 68.1
+                    },
+                    "uuid": "240236c0-fcd5-4703-a82e-78a48af3efcd"
+                },
+                {
+                    "description": "J8 的PTH 焊盘 15 [GND]",
+                    "pos": {
+                        "x": 37.56,
+                        "y": 68.1
+                    },
+                    "uuid": "679f7ed2-abf1-4e3c-939a-9137c47e040a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J10 的PTH 焊盘 14 [GND]",
+                    "pos": {
+                        "x": 35.02,
+                        "y": 71.8
+                    },
+                    "uuid": "e129dc2e-43e8-44d6-822e-18ba5feea37e"
+                },
+                {
+                    "description": "J10 的PTH 焊盘 15 [GND]",
+                    "pos": {
+                        "x": 37.56,
+                        "y": 71.8
+                    },
+                    "uuid": "46ddf293-4e10-4523-934d-e3d663c0f117"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J2 的PTH 焊盘 21 [GND]",
+                    "pos": {
+                        "x": 36.4,
+                        "y": 58.8
+                    },
+                    "uuid": "12d524dc-49b6-40b1-88bd-bff48ad6c6eb"
+                },
+                {
+                    "description": "J2 的PTH 焊盘 22 [GND]",
+                    "pos": {
+                        "x": 36.4,
+                        "y": 61.34
+                    },
+                    "uuid": "54784ed9-3aa4-46a8-bc26-39c24454cc32"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J8 的PTH 焊盘 15 [GND]",
+                    "pos": {
+                        "x": 37.56,
+                        "y": 68.1
+                    },
+                    "uuid": "679f7ed2-abf1-4e3c-939a-9137c47e040a"
+                },
+                {
+                    "description": "J8 的PTH 焊盘 16 [GND]",
+                    "pos": {
+                        "x": 40.1,
+                        "y": 68.1
+                    },
+                    "uuid": "778df5f1-e04d-47f9-bf3c-910594592b24"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J8 的PTH 焊盘 15 [GND]",
+                    "pos": {
+                        "x": 37.56,
+                        "y": 68.1
+                    },
+                    "uuid": "679f7ed2-abf1-4e3c-939a-9137c47e040a"
+                },
+                {
+                    "description": "J2 的PTH 焊盘 22 [GND]",
+                    "pos": {
+                        "x": 36.4,
+                        "y": 61.34
+                    },
+                    "uuid": "54784ed9-3aa4-46a8-bc26-39c24454cc32"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J10 的PTH 焊盘 15 [GND]",
+                    "pos": {
+                        "x": 37.56,
+                        "y": 71.8
+                    },
+                    "uuid": "46ddf293-4e10-4523-934d-e3d663c0f117"
+                },
+                {
+                    "description": "J10 的PTH 焊盘 16 [GND]",
+                    "pos": {
+                        "x": 40.1,
+                        "y": 71.8
+                    },
+                    "uuid": "9320cca1-0b71-448b-980e-d9b552ff82cc"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J8 的PTH 焊盘 16 [GND]",
+                    "pos": {
+                        "x": 40.1,
+                        "y": 68.1
+                    },
+                    "uuid": "778df5f1-e04d-47f9-bf3c-910594592b24"
+                },
+                {
+                    "description": "J8 的PTH 焊盘 17 [GND]",
+                    "pos": {
+                        "x": 42.64,
+                        "y": 68.1
+                    },
+                    "uuid": "3e35e10f-d43f-4437-a131-83a321919dc1"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J8 的PTH 焊盘 17 [GND]",
+                    "pos": {
+                        "x": 42.64,
+                        "y": 68.1
+                    },
+                    "uuid": "3e35e10f-d43f-4437-a131-83a321919dc1"
+                },
+                {
+                    "description": "J8 的PTH 焊盘 18 [GND]",
+                    "pos": {
+                        "x": 45.18,
+                        "y": 68.1
+                    },
+                    "uuid": "ee0a3794-2a28-484f-9400-81ce7407d918"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J5 的PTH 焊盘 2 [GND]",
+                    "pos": {
+                        "x": 46.14,
+                        "y": 5.4
+                    },
+                    "uuid": "976c04a2-ced1-464c-ab64-547e78bae776"
+                },
+                {
+                    "description": "J2 的PTH 焊盘 1 [GND]",
+                    "pos": {
+                        "x": 36.4,
+                        "y": 8.0
+                    },
+                    "uuid": "ca8ed998-a101-49e9-b927-66b91625589c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J8 的PTH 焊盘 19 [GND]",
+                    "pos": {
+                        "x": 47.72,
+                        "y": 68.1
+                    },
+                    "uuid": "c492c7ff-960f-4192-a0d2-fb286487a9fb"
+                },
+                {
+                    "description": "J8 的PTH 焊盘 18 [GND]",
+                    "pos": {
+                        "x": 45.18,
+                        "y": 68.1
+                    },
+                    "uuid": "ee0a3794-2a28-484f-9400-81ce7407d918"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J8 的PTH 焊盘 19 [GND]",
+                    "pos": {
+                        "x": 47.72,
+                        "y": 68.1
+                    },
+                    "uuid": "c492c7ff-960f-4192-a0d2-fb286487a9fb"
+                },
+                {
+                    "description": "J8 的PTH 焊盘 20 [GND]",
+                    "pos": {
+                        "x": 50.26,
+                        "y": 68.1
+                    },
+                    "uuid": "29f01861-7e42-4043-98ff-8ff84661f857"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R6 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 48.0,
+                        "y": 19.175
+                    },
+                    "uuid": "08a949ba-8639-45a9-b2fe-1918e526dbe4"
+                },
+                {
+                    "description": "F.Cu 上 R7 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 54.75,
+                        "y": 18.425
+                    },
+                    "uuid": "29be1df1-94e0-4294-9498-e53cac4b69d5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R6 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 48.0,
+                        "y": 19.175
+                    },
+                    "uuid": "08a949ba-8639-45a9-b2fe-1918e526dbe4"
+                },
+                {
+                    "description": "J5 的PTH 焊盘 2 [GND]",
+                    "pos": {
+                        "x": 46.14,
+                        "y": 5.4
+                    },
+                    "uuid": "976c04a2-ced1-464c-ab64-547e78bae776"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "SW1 的PTH 焊盘 2 [GND]",
+                    "pos": {
+                        "x": 49.0,
+                        "y": 52.5
+                    },
+                    "uuid": "626ad181-7a27-4c20-8aa6-3335a3f47c1f"
+                },
+                {
+                    "description": "SW1 的PTH 焊盘 2 [GND]",
+                    "pos": {
+                        "x": 49.0,
+                        "y": 59.0
+                    },
+                    "uuid": "ea4d67ef-d6da-465d-8618-2abb3b205254"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "SW1 的PTH 焊盘 2 [GND]",
+                    "pos": {
+                        "x": 49.0,
+                        "y": 59.0
+                    },
+                    "uuid": "ea4d67ef-d6da-465d-8618-2abb3b205254"
+                },
+                {
+                    "description": "J8 的PTH 焊盘 20 [GND]",
+                    "pos": {
+                        "x": 50.26,
+                        "y": 68.1
+                    },
+                    "uuid": "29f01861-7e42-4043-98ff-8ff84661f857"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "C2 的PTH 焊盘 2 [GND]",
+                    "pos": {
+                        "x": 50.075,
+                        "y": 42.575
+                    },
+                    "uuid": "b3f36092-bc61-47e6-972d-8ea70808072b"
+                },
+                {
+                    "description": "C1 的PTH 焊盘 2 [GND]",
+                    "pos": {
+                        "x": 45.275,
+                        "y": 40.615
+                    },
+                    "uuid": "09bda1f3-24cb-4b02-96bb-52f5008624cf"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "C2 的PTH 焊盘 2 [GND]",
+                    "pos": {
+                        "x": 50.075,
+                        "y": 42.575
+                    },
+                    "uuid": "b3f36092-bc61-47e6-972d-8ea70808072b"
+                },
+                {
+                    "description": "SW1 的PTH 焊盘 2 [GND]",
+                    "pos": {
+                        "x": 49.0,
+                        "y": 52.5
+                    },
+                    "uuid": "626ad181-7a27-4c20-8aa6-3335a3f47c1f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "C3 的PTH 焊盘 2 [GND]",
+                    "pos": {
+                        "x": 54.875,
+                        "y": 40.615
+                    },
+                    "uuid": "6c0b8f33-4c6d-43b4-943a-9da29d295555"
+                },
+                {
+                    "description": "C2 的PTH 焊盘 2 [GND]",
+                    "pos": {
+                        "x": 50.075,
+                        "y": 42.575
+                    },
+                    "uuid": "b3f36092-bc61-47e6-972d-8ea70808072b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "C4 的PTH 焊盘 2 [GND]",
+                    "pos": {
+                        "x": 59.675,
+                        "y": 42.575
+                    },
+                    "uuid": "63bd1953-7311-4e17-8e26-c9f6e0fb10fe"
+                },
+                {
+                    "description": "C3 的PTH 焊盘 2 [GND]",
+                    "pos": {
+                        "x": 54.875,
+                        "y": 40.615
+                    },
+                    "uuid": "6c0b8f33-4c6d-43b4-943a-9da29d295555"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "C4 的PTH 焊盘 2 [GND]",
+                    "pos": {
+                        "x": 59.675,
+                        "y": 42.575
+                    },
+                    "uuid": "63bd1953-7311-4e17-8e26-c9f6e0fb10fe"
+                },
+                {
+                    "description": "D1 的PTH 焊盘 1 [GND]",
+                    "pos": {
+                        "x": 64.935,
+                        "y": 38.465
+                    },
+                    "uuid": "b1a11d3f-d85d-4127-ad00-7baed5adae27"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R8 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 60.0,
+                        "y": 19.175
+                    },
+                    "uuid": "29ec4bad-17a5-44fd-9b15-4aec57a0a2c0"
+                },
+                {
+                    "description": "F.Cu 上 R7 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 54.75,
+                        "y": 18.425
+                    },
+                    "uuid": "29be1df1-94e0-4294-9498-e53cac4b69d5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R8 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 60.0,
+                        "y": 19.175
+                    },
+                    "uuid": "29ec4bad-17a5-44fd-9b15-4aec57a0a2c0"
+                },
+                {
+                    "description": "F.Cu 上 C5 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 64.37,
+                        "y": 9.995
+                    },
+                    "uuid": "b2907cb1-00c2-4a00-9d1d-1bbb347c777e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "SW2 的PTH 焊盘 2 [GND]",
+                    "pos": {
+                        "x": 60.0,
+                        "y": 52.5
+                    },
+                    "uuid": "7832e4b4-f183-483e-a7e9-2f55aa7cd619"
+                },
+                {
+                    "description": "C4 的PTH 焊盘 2 [GND]",
+                    "pos": {
+                        "x": 59.675,
+                        "y": 42.575
+                    },
+                    "uuid": "63bd1953-7311-4e17-8e26-c9f6e0fb10fe"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "SW2 的PTH 焊盘 2 [GND]",
+                    "pos": {
+                        "x": 60.0,
+                        "y": 59.0
+                    },
+                    "uuid": "08dbc666-d968-44d7-9b09-b6e59463186f"
+                },
+                {
+                    "description": "SW2 的PTH 焊盘 2 [GND]",
+                    "pos": {
+                        "x": 60.0,
+                        "y": 52.5
+                    },
+                    "uuid": "7832e4b4-f183-483e-a7e9-2f55aa7cd619"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "SW2 的PTH 焊盘 2 [GND]",
+                    "pos": {
+                        "x": 60.0,
+                        "y": 59.0
+                    },
+                    "uuid": "08dbc666-d968-44d7-9b09-b6e59463186f"
+                },
+                {
+                    "description": "SW3 的PTH 焊盘 2 [GND]",
+                    "pos": {
+                        "x": 71.0,
+                        "y": 59.0
+                    },
+                    "uuid": "cd9598ef-829f-41fb-a918-269f7c8bd79e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 C5 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 64.37,
+                        "y": 9.995
+                    },
+                    "uuid": "b2907cb1-00c2-4a00-9d1d-1bbb347c777e"
+                },
+                {
+                    "description": "F.Cu 上 U1 的焊盘 3 [GND]",
+                    "pos": {
+                        "x": 64.769999,
+                        "y": 6.48
+                    },
+                    "uuid": "33b23b31-05d9-443c-9a48-6599da91dc2d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 U1 的焊盘 1 [GND]",
+                    "pos": {
+                        "x": 64.769999,
+                        "y": 3.94
+                    },
+                    "uuid": "807ebc49-d39d-45ae-bc0a-13ade03d8c45"
+                },
+                {
+                    "description": "F.Cu 上 R2 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 64.3125,
+                        "y": 1.795
+                    },
+                    "uuid": "f5e833e6-1763-4320-95e4-026aa43ed19e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 U1 的焊盘 3 [GND]",
+                    "pos": {
+                        "x": 64.769999,
+                        "y": 6.48
+                    },
+                    "uuid": "33b23b31-05d9-443c-9a48-6599da91dc2d"
+                },
+                {
+                    "description": "U1 的PTH 焊盘 9 [GND]",
+                    "pos": {
+                        "x": 66.544999,
+                        "y": 7.045
+                    },
+                    "uuid": "b778fae6-5bd0-4409-b2bd-88450f3443d3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "U1 的PTH 焊盘 9 [GND]",
+                    "pos": {
+                        "x": 66.544999,
+                        "y": 4.645
+                    },
+                    "uuid": "17e2b903-3355-40bf-beed-6038c309a24a"
+                },
+                {
+                    "description": "F.Cu 上 U1 的焊盘 1 [GND]",
+                    "pos": {
+                        "x": 64.769999,
+                        "y": 3.94
+                    },
+                    "uuid": "807ebc49-d39d-45ae-bc0a-13ade03d8c45"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "U1 的PTH 焊盘 9 [GND]",
+                    "pos": {
+                        "x": 67.944999,
+                        "y": 7.045
+                    },
+                    "uuid": "e17da04c-e37a-41f7-b238-2bc10ae67993"
+                },
+                {
+                    "description": "F.Cu 上 C6 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 69.37,
+                        "y": 9.995
+                    },
+                    "uuid": "5ff0d6d8-c1bf-4aa9-8d5b-7f204e887db9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J3 的PTH 焊盘 10 [GND]",
+                    "pos": {
+                        "x": 68.86,
+                        "y": 32.0
+                    },
+                    "uuid": "ca862da3-8f53-49ca-9d31-115718316cef"
+                },
+                {
+                    "description": "D1 的PTH 焊盘 1 [GND]",
+                    "pos": {
+                        "x": 64.935,
+                        "y": 38.465
+                    },
+                    "uuid": "b1a11d3f-d85d-4127-ad00-7baed5adae27"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "SW3 的PTH 焊盘 2 [GND]",
+                    "pos": {
+                        "x": 71.0,
+                        "y": 52.5
+                    },
+                    "uuid": "9f20b79a-e1af-4d2f-ab73-be47105ce136"
+                },
+                {
+                    "description": "SW3 的PTH 焊盘 2 [GND]",
+                    "pos": {
+                        "x": 71.0,
+                        "y": 59.0
+                    },
+                    "uuid": "cd9598ef-829f-41fb-a918-269f7c8bd79e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 C7 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 76.07,
+                        "y": 1.995
+                    },
+                    "uuid": "29fc1864-4054-46c6-a7c7-39319dcc9e0a"
+                },
+                {
+                    "description": "U1 的PTH 焊盘 9 [GND]",
+                    "pos": {
+                        "x": 67.944999,
+                        "y": 4.645
+                    },
+                    "uuid": "b2f3f338-4b1f-4764-9a41-1458bbafba9d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J6 的PTH 焊盘 2 [GND]",
+                    "pos": {
+                        "x": 79.04,
+                        "y": 17.5
+                    },
+                    "uuid": "a32e8244-36ca-4f09-b571-71db395e0566"
+                },
+                {
+                    "description": "J7 的PTH 焊盘 2 [GND]",
+                    "pos": {
+                        "x": 79.04,
+                        "y": 26.0
+                    },
+                    "uuid": "2262d2e2-2cf7-437c-a17e-98ad8f8ccd27"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J6 的PTH 焊盘 2 [GND]",
+                    "pos": {
+                        "x": 79.04,
+                        "y": 17.5
+                    },
+                    "uuid": "a32e8244-36ca-4f09-b571-71db395e0566"
+                },
+                {
+                    "description": "F.Cu 上 U2 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 83.3575,
+                        "y": 9.745
+                    },
+                    "uuid": "b967c495-abf7-4496-a918-01e320a0f11a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J7 的PTH 焊盘 2 [GND]",
+                    "pos": {
+                        "x": 79.04,
+                        "y": 26.0
+                    },
+                    "uuid": "2262d2e2-2cf7-437c-a17e-98ad8f8ccd27"
+                },
+                {
+                    "description": "J3 的PTH 焊盘 10 [GND]",
+                    "pos": {
+                        "x": 68.86,
+                        "y": 32.0
+                    },
+                    "uuid": "ca862da3-8f53-49ca-9d31-115718316cef"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J4 的PTH 焊盘 7 [GND]",
+                    "pos": {
+                        "x": 82.0,
+                        "y": 46.24
+                    },
+                    "uuid": "23765ae9-cfdd-4e30-83c8-d90b79bf4f48"
+                },
+                {
+                    "description": "SW4 的PTH 焊盘 2 [GND]",
+                    "pos": {
+                        "x": 82.0,
+                        "y": 52.5
+                    },
+                    "uuid": "db6dd75d-275c-4cd1-88d9-477ac0e55baa"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J4 的PTH 焊盘 7 [GND]",
+                    "pos": {
+                        "x": 82.0,
+                        "y": 46.24
+                    },
+                    "uuid": "23765ae9-cfdd-4e30-83c8-d90b79bf4f48"
+                },
+                {
+                    "description": "J9 的PTH 焊盘 3 [GND]",
+                    "pos": {
+                        "x": 95.08,
+                        "y": 42.0
+                    },
+                    "uuid": "5ba96c95-f021-4263-9ff5-cd9985368fe3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "SW4 的PTH 焊盘 2 [GND]",
+                    "pos": {
+                        "x": 82.0,
+                        "y": 59.0
+                    },
+                    "uuid": "301392c2-e317-4744-a435-ba1397664988"
+                },
+                {
+                    "description": "SW4 的PTH 焊盘 2 [GND]",
+                    "pos": {
+                        "x": 82.0,
+                        "y": 52.5
+                    },
+                    "uuid": "db6dd75d-275c-4cd1-88d9-477ac0e55baa"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "SW4 的PTH 焊盘 2 [GND]",
+                    "pos": {
+                        "x": 82.0,
+                        "y": 59.0
+                    },
+                    "uuid": "301392c2-e317-4744-a435-ba1397664988"
+                },
+                {
+                    "description": "SW3 的PTH 焊盘 2 [GND]",
+                    "pos": {
+                        "x": 71.0,
+                        "y": 59.0
+                    },
+                    "uuid": "cd9598ef-829f-41fb-a918-269f7c8bd79e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 U2 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 83.3575,
+                        "y": 9.745
+                    },
+                    "uuid": "b967c495-abf7-4496-a918-01e320a0f11a"
+                },
+                {
+                    "description": "F.Cu 上 C7 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 76.07,
+                        "y": 1.995
+                    },
+                    "uuid": "29fc1864-4054-46c6-a7c7-39319dcc9e0a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 C8 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 87.87,
+                        "y": 10.095
+                    },
+                    "uuid": "6548e665-81bb-410b-9dbd-76f65117c25f"
+                },
+                {
+                    "description": "F.Cu 上 U2 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 83.3575,
+                        "y": 9.745
+                    },
+                    "uuid": "b967c495-abf7-4496-a918-01e320a0f11a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R5 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 88.7875,
+                        "y": 12.795
+                    },
+                    "uuid": "281202ec-77c8-4c78-88a7-0da783eab3ae"
+                },
+                {
+                    "description": "F.Cu 上 C8 的焊盘 2 [GND]",
+                    "pos": {
+                        "x": 87.87,
+                        "y": 10.095
+                    },
+                    "uuid": "6548e665-81bb-410b-9dbd-76f65117c25f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [IO9] (F.Cu), 长度: 2.8000 mm",
+                    "pos": {
+                        "x": 67.4,
+                        "y": 63.2
+                    },
+                    "uuid": "9e1a141c-a406-4413-aa6d-1e35a5329a65"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "封装 'SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.3mm_ThermalVias' 与库 'Package_SO' 中的副本不匹配",
+            "items": [
+                {
+                    "description": "封装 U1",
+                    "pos": {
+                        "x": 67.244999,
+                        "y": 5.845
+                    },
+                    "uuid": "415f2557-99ec-4c18-8274-e5cce6f80e5e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        }
+    ]
+}

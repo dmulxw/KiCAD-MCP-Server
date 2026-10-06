@@ -1,0 +1,15 @@
+dropped 1 footprint(s): J1
+extended bottom edge by 20mm (2 vertical edges)
+chip at (134.50, 249.00) rot 0   output pads x 132.03..136.97  y 244.56..252.18
+board items: 3164 tracks, 979 pads
+  ROW20     23.0mm                    goals   847  expanded   22625   (build 0.3s route 0.4s)
+  ROW19  NO PATH                      goals   905  expanded 1004785   (build 0.3s route 14.5s)
+  ROW18  NO PATH                      goals  1042  expanded 1009630   (build 0.3s route 13.8s)
+  ROW17  NO PATH                      goals   976  expanded  937358   (build 0.4s route 12.9s)
+  ROW16  NO PATH                      goals  1063  expanded 1112556   (build 0.3s route 15.7s)
+  ROW15      0.1mm                    goals   913  expanded       2   (build 0.3s route 0.1s)
+  ROW13  NO PATH                      goals   868  expanded 1116504   (build 0.3s route 14.3s)
+
+=== chip at (134.50, 249.00) rot 0: 2/7 nets drivable ===
+drivable : ROW15 ROW20
+NOT      : ROW13 ROW16 ROW17 ROW18 ROW19

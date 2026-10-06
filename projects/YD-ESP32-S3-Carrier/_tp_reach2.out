@@ -1,0 +1,51 @@
+dropped 1 footprint(s): J1
+extended bottom edge by 20mm (2 vertical edges)
+outline: x 90.00..181.00  y 100.00..270.00
+board items: 3164 tracks, 979 pads
+
+net    strip     margin     goal component
+  [strip holds 84749 chip-site cells = 11 chip footprints]
+  [margin holds 10978 chip-site cells = 1 chip footprints]
+  ROW0   yes       yes        #235 616611 cells, x 90.8..180.2 y 100.8..269.2  [= strip]  [= margin]   (0.9s)
+  ROW1   yes       yes        #543 480674 cells, x 90.8..180.2 y 100.8..269.2  [= strip]  [= margin]   (0.9s)
+  ROW2   NO        NO         #324 351672 cells, x 101.5..169.7 y 115.4..206.4   (0.8s)
+  ROW3   yes       yes        #198 560581 cells, x 90.8..180.2 y 100.8..269.2  [= strip]  [= margin]   (0.8s)
+  ROW4   NO        NO         #420 413279 cells, x 101.5..169.7 y 127.8..244.2   (0.8s)
+  ROW5   yes       yes        #460 604255 cells, x 90.8..180.2 y 100.8..269.2  [= strip]  [= margin]   (0.8s)
+  ROW6   yes       yes        #200 544586 cells, x 90.8..180.2 y 100.8..269.2  [= strip]  [= margin]   (0.8s)
+  ROW7   yes       yes        #192 477193 cells, x 90.8..180.2 y 100.8..269.2  [= strip]  [= margin]   (0.8s)
+  ROW8   NO        NO         #251 56440 cells, x 101.5..169.2 y 153.4..179.8   (0.8s)
+  ROW9   yes       yes        #315 859028 cells, x 90.8..180.2 y 100.8..269.2  [= strip]  [= margin]   (0.8s)
+  ROW10  yes       yes        #553 479581 cells, x 90.8..180.2 y 100.8..269.2  [= strip]  [= margin]   (0.7s)
+  ROW11  NO        NO         #344 164902 cells, x 101.5..168.1 y 166.2..206.4   (0.8s)
+  ROW12  NO        NO         #427 256617 cells, x 101.6..168.1 y 166.2..231.9   (0.8s)
+  ROW13  NO        NO         #343 164451 cells, x 101.5..168.1 y 166.2..206.4   (0.8s)
+  ROW14  NO        NO         #343 164197 cells, x 101.5..168.1 y 166.2..206.4   (0.8s)
+  ROW15  NO        NO         #426 256919 cells, x 101.6..168.1 y 166.2..232.1   (0.8s)
+  ROW16  NO        NO         #428 99397 cells, x 101.5..166.4 y 204.6..231.9   (0.8s)
+  ROW17  NO        NO         #424 110558 cells, x 101.6..166.4 y 204.6..231.9   (0.8s)
+  ROW18  NO        NO         #428 109987 cells, x 101.5..166.4 y 204.6..231.9   (0.8s)
+  ROW19  NO        NO         #448 121568 cells, x 101.6..166.4 y 204.6..244.4   (0.8s)
+  ROW20  yes       yes        #469 496988 cells, x 90.8..180.2 y 100.8..269.2  [= strip]  [= margin]   (0.8s)
+  CSEL0  NO        NO         #580 1456 cells, x 107.9..125.7 y 242.4..247.9   (0.8s)
+  CSEL1  NO        NO         #577 3109 cells, x 107.6..118.8 y 241.9..248.2   (0.8s)
+  CSEL2  NO        NO         #580 2298 cells, x 115.6..125.7 y 241.9..248.2   (0.8s)
+  CSEL3  yes       yes        #226 480314 cells, x 90.8..180.2 y 100.8..269.2  [= strip]  [= margin]   (0.8s)
+  CSEL4  yes       yes        #577 481841 cells, x 90.8..180.2 y 100.8..269.2  [= strip]  [= margin]   (0.8s)
+  CSEL5  yes       yes        #381 481166 cells, x 90.8..180.2 y 100.8..269.2  [= strip]  [= margin]   (0.8s)
+  CSEL6  yes       yes        #519 526396 cells, x 90.8..180.2 y 100.8..269.2  [= strip]  [= margin]   (0.8s)
+  CSEL7  yes       yes        #228 472025 cells, x 90.8..180.2 y 100.8..269.2  [= strip]  [= margin]   (0.7s)
+  CSEL8  yes       yes        #582 1120 cells, x 150.6..154.4 y 243.2..248.2   (0.7s)
+  CSEL9  yes       yes        #585 1051 cells, x 155.9..158.4 y 242.4..248.2   (0.8s)
+
+=== connected to the strip ===
+  16/31: CSEL3 CSEL4 CSEL5 CSEL6 CSEL7 CSEL8 CSEL9 ROW0 ROW1 ROW10 ROW20 ROW3 ROW5 ROW6 ROW7 ROW9
+=== connected to the margins ===
+  16/31: CSEL3 CSEL4 CSEL5 CSEL6 CSEL7 CSEL8 CSEL9 ROW0 ROW1 ROW10 ROW20 ROW3 ROW5 ROW6 ROW7 ROW9
+=== connected to either ===
+  16/31
+  isolated from both: ROW2 ROW4 ROW8 ROW11 ROW12 ROW13 ROW14 ROW15 ROW16 ROW17 ROW18 ROW19 CSEL0 CSEL1 CSEL2
+
+  strip-only:  (none)
+  margin-only: (none)
+swig/python detected a memory leak of type 'FOOTPRINT *', no destructor found.

@@ -1,0 +1,66 @@
+STEP=0.100  KEEP=0.340 (gap 0.240 vs DRC rule 0.200)  strip y >= 244.5
+net        starts   expanded  verdict
+ROW0         2162         15  PATH 15 cells; tightest D=0.400 at (125.750, 243.150) F.Cu vs 'ROW1' -> gap 0.300
+ROW1         2375          -  ALREADY in the strip (e.g. 125.95, 247.35)
+ROW2         1282         10  PATH 10 cells; tightest D=0.367 at (105.950, 244.550) F.Cu vs 'GND' -> gap 0.267
+ROW3         1041      83760  PATH 1303 cells; tightest D=0.390 at (96.250, 147.450) F.Cu vs 'CSEL4' -> gap 0.290
+ROW4         1768          -  ALREADY in the strip (e.g. 127.75, 244.55)
+ROW5         2253      20498  PATH 800 cells; tightest D=0.607 at (96.250, 196.750) B.Cu vs 'ROW1' -> gap 0.507
+ROW6         3330          -  ALREADY in the strip (e.g. 128.75, 244.55)
+ROW7         3244          -  ALREADY in the strip (e.g. 129.25, 244.55)
+ROW8          899         15  PATH 15 cells; tightest D=0.350 at (105.350, 243.150) B.Cu vs 'ROW12' -> gap 0.250
+ROW9         4584          -  ALREADY in the strip (e.g. 130.25, 244.55)
+ROW10        1713          -  ALREADY in the strip (e.g. 124.85, 244.55)
+ROW11        1068          -  ALREADY in the strip (e.g. 131.05, 244.55)
+ROW12        1342          -  ALREADY in the strip (e.g. 131.75, 244.55)
+ROW13         868          -  ALREADY in the strip (e.g. 132.25, 245.55)
+ROW14        1138          -  ALREADY in the strip (e.g. 122.65, 244.55)
+ROW15         913          -  ALREADY in the strip (e.g. 135.35, 244.55)
+ROW16        1063     120753  NO PATH -- closest (105.250, 242.350) F.Cu, 2.15mm short
+ROW17         976     145450  NO PATH -- closest (133.750, 243.750) F.Cu, 0.75mm short
+ROW18        1042          -  ALREADY in the strip (e.g. 134.45, 245.75)
+ROW19         905     143426  NO PATH -- closest (135.750, 243.950) F.Cu, 0.55mm short
+ROW20         847       5462  PATH 66 cells; tightest D=0.350 at (147.650, 238.750) F.Cu vs 'PAD207' -> gap 0.250
+CSEL0         315          -  ALREADY in the strip (e.g. 110.85, 246.55)
+CSEL1         108          -  ALREADY in the strip (e.g. 114.75, 246.55)
+CSEL2         135          -  ALREADY in the strip (e.g. 118.05, 244.55)
+CSEL3        1811          -  ALREADY in the strip (e.g. 147.75, 244.55)
+CSEL4        1145          -  ALREADY in the strip (e.g. 121.85, 246.55)
+CSEL5        1453          -  ALREADY in the strip (e.g. 149.95, 244.55)
+CSEL6        1462       3374  PATH 70 cells; tightest D=0.348 at (142.250, 241.750) F.Cu vs 'GND' -> gap 0.248
+CSEL7         189          -  ALREADY in the strip (e.g. 148.85, 245.05)
+CSEL8         178          -  ALREADY in the strip (e.g. 140.05, 244.55)
+CSEL9         108          -  ALREADY in the strip (e.g. 140.75, 244.55)
+
+--- verdict tally ---
+  ROW0     ok
+  ROW1     present
+  ROW2     ok
+  ROW3     ok
+  ROW4     present
+  ROW5     ok
+  ROW6     present
+  ROW7     present
+  ROW8     ok
+  ROW9     present
+  ROW10    present
+  ROW11    present
+  ROW12    present
+  ROW13    present
+  ROW14    present
+  ROW15    present
+  ROW16    sealed
+  ROW17    sealed
+  ROW18    present
+  ROW19    sealed
+  ROW20    ok
+  CSEL0    present
+  CSEL1    present
+  CSEL2    present
+  CSEL3    present
+  CSEL4    present
+  CSEL5    present
+  CSEL6    ok
+  CSEL7    present
+  CSEL8    present
+  CSEL9    present

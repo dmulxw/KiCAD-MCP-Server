@@ -1,0 +1,71 @@
+
+======== chip A at (96.5, 238.2) ========
+  flood: 122288 cells, 1491 iterations, bbox x 90.8..121.5  y 100.8..249.2
+  oracle -- distance from the flooded set to the other chips' pads:
+     B (same strip)  min distance   0.20 mm   
+     C (other side)  min distance  66.90 mm   
+     D (other side)  min distance  59.76 mm   
+  targets:  ownership-halo (conservative) | optimistic (any copper)
+     ROW20   own no    opt no    halo cells   8496
+     ROW19   own no    opt no    halo cells   9418
+     CSEL0   own no    opt no    halo cells   2986
+     CSEL1   own no    opt no    halo cells   2185
+     CSEL2   own no    opt no    halo cells   2212
+     CSEL8   own no    opt no    halo cells   2204
+     CSEL7   own no    opt no    halo cells   1859
+     CSEL9   own no    opt no    halo cells   1653
+  chip A: ownership 0/8   optimistic 0/8
+     optimistic still missing: ROW20 ROW19 CSEL0 CSEL1 CSEL2 CSEL8 CSEL7 CSEL9
+
+======== chip B at (97.0, 207.2) ========
+  flood: 122338 cells, 1181 iterations, bbox x 90.8..121.5  y 100.8..249.2
+  oracle -- distance from the flooded set to the other chips' pads:
+     A (same strip)  min distance   0.20 mm   
+     C (other side)  min distance  66.90 mm   
+     D (other side)  min distance  59.76 mm   
+  targets:  ownership-halo (conservative) | optimistic (any copper)
+     ROW1    own yes   opt yes   halo cells  29595
+     CSEL4   own yes   opt yes   halo cells  21335
+     ROW16   own no    opt no    halo cells  11750
+     ROW12   own no    opt yes   halo cells  13979
+     ROW15   own no    opt no    halo cells  12587
+     ROW14   own no    opt no    halo cells  14403
+     ROW17   own no    opt no    halo cells  10387
+     ROW18   own no    opt no    halo cells  12061
+  chip B: ownership 2/8   optimistic 3/8
+     optimistic still missing: ROW16 ROW15 ROW14 ROW17 ROW18
+
+======== chip C at (170.5, 171.2) ========
+  flood: 58967 cells, 719 iterations, bbox x 103.7..176.9  y 145.4..239.9
+  oracle -- distance from the flooded set to the other chips' pads:
+     A (other side)  min distance  71.10 mm   
+     B (other side)  min distance  45.31 mm   
+     D (same strip)  min distance   6.82 mm   
+  targets:  ownership-halo (conservative) | optimistic (any copper)
+     ROW6    own yes   opt yes   halo cells  41264
+     ROW7    own yes   opt yes   halo cells  35700
+     ROW0    own yes   opt yes   halo cells  28163
+     ROW9    own yes   opt yes   halo cells  55406
+     ROW10   own yes   opt yes   halo cells  23663
+     ROW11   own no    opt no    halo cells  15290
+     ROW8    own no    opt no    halo cells  11140
+     ROW13   own no    opt no    halo cells  12360
+  chip C: ownership 5/8   optimistic 5/8
+     optimistic still missing: ROW11 ROW8 ROW13
+
+======== chip D at (172.5, 134.2) ========
+  flood: 22371 cells, 424 iterations, bbox x 168.8..176.4  y 121.2..179.8
+  oracle -- distance from the flooded set to the other chips' pads:
+     A (other side)  min distance  97.62 mm   
+     B (other side)  min distance  84.28 mm   
+     C (same strip)  min distance   1.30 mm   
+  targets:  ownership-halo (conservative) | optimistic (any copper)
+     CSEL5   own yes   opt yes   halo cells  23104
+     CSEL3   own yes   opt yes   halo cells  31921
+     CSEL6   own yes   opt yes   halo cells  20886
+     ROW4    own no    opt no    halo cells  19115
+     ROW5    own no    opt no    halo cells  22237
+     ROW3    own no    opt no    halo cells  10995
+     ROW2    own no    opt no    halo cells  18794
+  chip D: ownership 3/7   optimistic 3/7
+     optimistic still missing: ROW4 ROW5 ROW3 ROW2

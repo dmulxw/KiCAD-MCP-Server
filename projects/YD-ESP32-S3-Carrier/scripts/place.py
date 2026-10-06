@@ -17,7 +17,7 @@ import pcbnew
 BOARD = (r"D:\source\repos\KiCAD-MCP-Server\projects\YD-ESP32-S3-Carrier"
          r"\YD-ESP32-S3-Carrier.kicad_pcb")
 
-BOARD_W, BOARD_H = 100.0, 64.0
+BOARD_W, BOARD_H = 100.0, 74.0
 
 FPLIB = r"C:\Program Files\KiCad\10.0\share\kicad\footprints"
 
@@ -33,14 +33,17 @@ SWAP = {
 
 # (reference, pad name, board position of that pad in mm, direction pad2 lies in)
 #
-# The v2 board is 24 mm shorter and 26 mm wider: the bottom edge now sits on the dev
-# board's USB edge (y 63.25) so the socket hangs off the board instead of being
-# buried behind it, and the extra width is what the power section and the three
-# spare-IO headers live in.
+# The v2 board is 24 mm shorter and 26 mm wider than v1, and then grew 10 mm further
+# south (64 -> 74) to open the band the two panel headers live in.  The dev board's
+# bottom edge is its USB connector, so the sockets had to travel that same 10 mm for
+# the plug to end up flush with the board edge rather than buried behind it -- 8.00
+# is the v2 number, 18.80 the current one, and move_sockets.py is the delta that
+# slid J1/J2 down and pushed J8/J10 east into the band at the bottom right.  The
+# dev board's body now ends at 74.05, level with the edge.
 PLACE = [
     # --- dev board + audio module + display + battery (hard mechanical anchors) ---
-    ("J1",  "pad1", (11.00,  8.00), "down"),
-    ("J2",  "pad1", (36.40,  8.00), "down"),
+    ("J1",  "pad1", (11.00, 18.80), "down"),
+    ("J2",  "pad1", (36.40, 18.80), "down"),
     ("J3",  "pad1", (46.00, 32.00), "right"),
     ("J4",  "pad1", (82.00, 31.00), "down"),
     ("J5",  "pad1", (43.60,  5.40), "right"),
@@ -60,6 +63,13 @@ PLACE = [
     ("J6",  "pad1", (76.50, 17.50), "right"),
     ("J7",  "pad1", (76.50, 26.00), "right"),
     ("J9",  "pad1", (90.00, 42.00), "right"),
+
+    # --- panel headers, in the band the extra 10 mm opened at the bottom right ----
+    # These two are 20-pin 2.54 mm rows, so pad 1 at x 50.00 puts pad 20 at 98.26 and
+    # the row ends 1.74 mm short of the edge.  They cannot go back to the left: the
+    # dev board's pin columns now run straight through where they used to sit.
+    ("J8",  "pad1", (50.00, 67.10), "right"),
+    ("J10", "pad1", (50.00, 71.80), "right"),
 
     # --- filtering / indicator row (C1 C2 C3 C4 D1 R1), below J3's labels --------
     # R1 is a vertical axial part 9.77 mm tall, so the row is anchored on a common

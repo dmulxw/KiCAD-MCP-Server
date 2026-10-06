@@ -1,0 +1,215 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-02T13:41:13",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "_v90_fix.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "填充区[GND]在 F.Cu 上, 优先级 0",
+                    "pos": {
+                        "x": 0.5,
+                        "y": 0.5
+                    },
+                    "uuid": "f80fcc81-03ff-4aca-860b-f7333478436e"
+                },
+                {
+                    "description": "填充区[GND]在 F.Cu 上, 优先级 0",
+                    "pos": {
+                        "x": 0.5,
+                        "y": 0.5
+                    },
+                    "uuid": "f80fcc81-03ff-4aca-860b-f7333478436e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "缓释热焊盘 (花焊盘) 与填充区的连接不完整 (层 F.Cu; 填充区 最小引线数量 2; 实际 1)",
+            "items": [
+                {
+                    "description": "填充区[GND]在 F.Cu 上, 优先级 0",
+                    "pos": {
+                        "x": 0.5,
+                        "y": 0.5
+                    },
+                    "uuid": "f80fcc81-03ff-4aca-860b-f7333478436e"
+                },
+                {
+                    "description": "D1 的PTH 焊盘 1 [GND]",
+                    "pos": {
+                        "x": 64.935,
+                        "y": 38.465
+                    },
+                    "uuid": "b1a11d3f-d85d-4127-ad00-7baed5adae27"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "封装 'SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.3mm_ThermalVias' 与库 'Package_SO' 中的副本不匹配",
+            "items": [
+                {
+                    "description": "封装 U1",
+                    "pos": {
+                        "x": 67.244999,
+                        "y": 5.845
+                    },
+                    "uuid": "415f2557-99ec-4c18-8274-e5cce6f80e5e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "J10 的参考字段",
+                    "pos": {
+                        "x": 98.2,
+                        "y": 65.6
+                    },
+                    "uuid": "30380262-8968-49b2-b471-e5fdc7268152"
+                },
+                {
+                    "description": "J8 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 51.27,
+                        "y": 65.719999
+                    },
+                    "uuid": "7c292853-1dcc-4280-ae80-d16a55a37f30"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "J2 的参考字段",
+                    "pos": {
+                        "x": 36.4,
+                        "y": 25.0
+                    },
+                    "uuid": "54272a09-cb7f-47fc-b9d4-9f96d5f4a01d"
+                },
+                {
+                    "description": "J2 的PTH 焊盘 3 [IO44]",
+                    "pos": {
+                        "x": 36.4,
+                        "y": 23.88
+                    },
+                    "uuid": "18934126-8f3e-42ff-8425-1b178d79ee7f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "J2 的参考字段",
+                    "pos": {
+                        "x": 36.4,
+                        "y": 25.0
+                    },
+                    "uuid": "54272a09-cb7f-47fc-b9d4-9f96d5f4a01d"
+                },
+                {
+                    "description": "J2 的PTH 焊盘 4 [I2C_SDA]",
+                    "pos": {
+                        "x": 36.4,
+                        "y": 26.42
+                    },
+                    "uuid": "62be1364-0542-4d9d-a1a9-312666538e6f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "J1 的参考字段",
+                    "pos": {
+                        "x": 11.0,
+                        "y": 25.0
+                    },
+                    "uuid": "934d17b6-badc-4017-ad35-fec6299ae114"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 3 [BTN_RST]",
+                    "pos": {
+                        "x": 11.0,
+                        "y": 23.88
+                    },
+                    "uuid": "cd77b2f4-3428-4c59-8ffc-0fcfc93c3716"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "J1 的参考字段",
+                    "pos": {
+                        "x": 11.0,
+                        "y": 25.0
+                    },
+                    "uuid": "934d17b6-badc-4017-ad35-fec6299ae114"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 4 [BTN_VOL_UP]",
+                    "pos": {
+                        "x": 11.0,
+                        "y": 26.42
+                    },
+                    "uuid": "c9489bdf-9d62-4759-81ca-2ead032b25fd"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

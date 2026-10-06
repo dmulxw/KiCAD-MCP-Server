@@ -1,0 +1,41 @@
+{
+ "R240": [
+  "ROW10",
+  "ROW6",
+  "ROW7",
+  "ROW11",
+  "ROW9",
+  "ROW13",
+  "ROW14",
+  "ROW4"
+ ],
+ "R168": [
+  "CSEL5",
+  "CSEL6",
+  "CSEL3",
+  "ROW0",
+  "ROW5",
+  "ROW3",
+  "CSEL9"
+ ],
+ "L218": [
+  "ROW1",
+  "ROW8",
+  "ROW17",
+  "ROW12",
+  "ROW18",
+  "ROW15",
+  "CSEL8",
+  "CSEL7"
+ ],
+ "L228": [
+  "CSEL4",
+  "ROW19",
+  "ROW2",
+  "ROW16",
+  "ROW20",
+  "CSEL0",
+  "CSEL1",
+  "CSEL2"
+ ]
+}

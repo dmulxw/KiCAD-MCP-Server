@@ -1,0 +1,14 @@
+vias on the board: 529
+
+by diameter (mm):
+   0.600   x529   ############################################################
+
+by drill (mm):
+   0.300   x529   ############################################################
+
+board design rules:
+   m_ViasMinSize          0.600 mm
+   m_MinThroughDrill      0.300 mm
+   m_TrackMinWidth        0.200 mm
+   m_MinClearance         0.200 mm
+   m_ViasMinAnnularWidth  0.100 mm

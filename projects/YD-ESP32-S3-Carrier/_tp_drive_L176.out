@@ -1,0 +1,37 @@
+chip at (95.50, 176.00) rot 180   output pads x 93.03..97.97  y 172.82..180.44
+board items: 3164 tracks, 1021 pads
+  ROW0      42.8mm                    goals  2169  expanded    5240   (build 0.3s route 0.2s)
+  ROW1       1.1mm                    goals  2377  expanded      12   (build 0.3s route 0.1s)
+  ROW2   NO PATH                      goals  1284  expanded 1056895   (build 0.3s route 15.3s)
+  ROW3      61.9mm                    goals  1046  expanded  144250   (build 0.3s route 2.1s)
+  ROW4   NO PATH                      goals  1770  expanded  629089   (build 0.3s route 8.2s)
+  ROW5       8.8mm                    goals  2258  expanded      82   (build 0.4s route 0.2s)
+  ROW6      66.7mm                    goals  3332  expanded  174985   (build 0.4s route 2.4s)
+  ROW7      59.5mm                    goals  3246  expanded  165586   (build 0.3s route 2.3s)
+  ROW8   NO PATH                      goals   901  expanded  912690   (build 0.3s route 13.7s)
+  ROW9      39.3mm                    goals  4586  expanded   80178   (build 0.3s route 1.0s)
+  ROW10    219.4mm                    goals  1698  expanded  440617   (build 0.3s route 4.9s)
+  ROW11  NO PATH                      goals  1070  expanded  785420   (build 0.3s route 8.7s)
+  ROW12  NO PATH                      goals  1344  expanded 1074674   (build 0.3s route 13.0s)
+  ROW13  NO PATH                      goals   870  expanded  783937   (build 0.3s route 9.8s)
+  ROW14  NO PATH                      goals  1114  expanded  752626   (build 0.3s route 9.4s)
+  ROW15  NO PATH                      goals   913  expanded  752729   (build 0.3s route 9.6s)
+  ROW16  NO PATH                      goals  1065  expanded 1210997   (build 0.4s route 17.9s)
+  ROW17  NO PATH                      goals   978  expanded  576277   (build 0.3s route 7.2s)
+  ROW18  NO PATH                      goals  1044  expanded  664936   (build 0.3s route 9.8s)
+  ROW19  NO PATH                      goals   907  expanded  661960   (build 0.3s route 9.0s)
+  ROW20  NO PATH                      goals   849  expanded  648828   (build 0.3s route 8.2s)
+  CSEL0  NO PATH                      goals   317  expanded  585242   (build 0.3s route 7.7s)
+  CSEL1  NO PATH                      goals   110  expanded  576277   (build 0.3s route 6.4s)
+  CSEL2  NO PATH                      goals   137  expanded  607271   (build 0.3s route 8.2s)
+  CSEL3     21.5mm                    goals  1699  expanded    1576   (build 0.4s route 0.2s)
+  CSEL4     24.0mm                    goals  1147  expanded     518   (build 0.3s route 0.2s)
+  CSEL5    107.6mm                    goals  1454  expanded  269705   (build 0.3s route 3.8s)
+  CSEL6    118.1mm                    goals  1464  expanded  291830   (build 0.3s route 3.8s)
+  CSEL7  NO PATH                      goals   189  expanded  576277   (build 0.3s route 7.1s)
+  CSEL8  NO PATH                      goals   180  expanded  576277   (build 0.3s route 7.4s)
+  CSEL9  NO PATH                      goals   110  expanded  576277   (build 0.3s route 7.5s)
+
+=== chip at (95.50, 176.00) rot 180: 12/31 nets drivable ===
+drivable : CSEL3 CSEL4 CSEL5 CSEL6 ROW0 ROW1 ROW10 ROW3 ROW5 ROW6 ROW7 ROW9
+NOT      : CSEL0 CSEL1 CSEL2 CSEL7 CSEL8 CSEL9 ROW11 ROW12 ROW13 ROW14 ROW15 ROW16 ROW17 ROW18 ROW19 ROW2 ROW20 ROW4 ROW8
